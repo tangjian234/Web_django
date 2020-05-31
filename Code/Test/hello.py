@@ -1,7 +1,8 @@
-
-# Function : 
-def hello():
-  print("Hello!")
-
+import json_lib as jlb
+#import matplotlib.pyplot as plt
+import sys
 if __name__ == "__main__":
-    hello()  
+  print(sys.path)
+  jlb.hello_json()
+
+
