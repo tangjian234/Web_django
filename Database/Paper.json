@@ -1,0 +1,14 @@
+{
+	"1": {
+		"title": "Bidirectional LSTM-CRF Models for Sequence Tagging",
+		"names": "Zhiheng Huang, Wei Xu, Kai Yu"
+	},
+	"2": {
+		"title": " Framewise phoneme classification with bidirectional LSTM and other neural network architectures",
+		"names": "A Graves, J Schmidhuber , K li"
+	},
+	"3": {
+		"title": "Learning to forget: Continual prediction with LSTM",
+		"names": "FA Gers, J Schmidhuber, F Cummins "
+	}
+}
