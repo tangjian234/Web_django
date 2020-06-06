@@ -27,8 +27,3 @@ https://arxiv.org/list/cs/1902?skip=0&show=200050
 cs
 
 ### download and test :
-
-
-###
-
-https://towardsdatascience.com/name-classification-with-naive-bayes-7c5e1415788a

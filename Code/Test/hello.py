@@ -5,8 +5,8 @@ import numpy as np
 import string_lib as s_lib
 import sys
 from pathlib import Path
-import re
-
+import re  
+import  sd
 
 def load_chinese_name():
     # Func:

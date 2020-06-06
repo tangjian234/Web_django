@@ -36,6 +36,17 @@
 
 How to
 
+## Flask
+
+### design
+
+- add input box. in web page.
+- visualization area : display the input text and simple pre-decided python plot
+
+### input box
+
+- collect html snippets input : input box.
+
 ## Reading
 
 ### How to Build a Data Science Portfolio Website
@@ -49,10 +60,16 @@ guide that will hopefully help you create your own data science portfolio websit
 install flask : pip install flask
 run : python -m flask run
 
-####
+#### web framework : flask
+
+60 min
+[Django vs. Flask in 2019: Which Framework to Choose](https://testdriven.io/blog/django-vs-flask/)
+Regardless of whether your end goal is to learn Flask or Django, start with Flask. It's a great tool for learning web development fundamentals and best practices along with the core pieces of a web framework that are common to almost all frameworks.
+
+###
 
 ## Reference
 
 - [How to Build a Data Science Portfolio Website](https://towardsdatascience.com/how-to-build-a-data-science-portfolio-website-335b0f253822)
 
-[What is Flask Python](https://pythonbasics.org/what-is-flask-python/)
+- [What is Flask Python](https://pythonbasics.org/what-is-flask-python/)
