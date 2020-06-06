@@ -5,8 +5,8 @@ import numpy as np
 import string_lib as s_lib
 import sys
 from pathlib import Path
-import re  
-import  sd
+import re
+
 
 def load_chinese_name():
     # Func:
@@ -28,6 +28,7 @@ def load_paper():
 
 def is_chinese_name(name, chinese_name):
     return(name in chinese_name)
+
 
     # %%
 if __name__ == "__main__":
