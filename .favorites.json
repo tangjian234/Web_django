@@ -1,0 +1,19 @@
+[
+    {
+        "type": "Group",
+        "name": "f1",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "375LEKytwC6xOmdp"
+    },
+    {
+        "type": "File",
+        "name": "c:\\Local\\Work\\ML_Name\\Note\\Setup.md",
+        "parent_id": null,
+        "fsPath": "c:\\Local\\Work\\ML_Name\\Note\\Setup.md",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "BqFWjv9nOYEuV5dw"
+    }
+]

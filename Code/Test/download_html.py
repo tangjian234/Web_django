@@ -1,4 +1,4 @@
-
+# %%
 import sys
 import os
 from pathlib import Path
@@ -10,9 +10,11 @@ import web_lib as w_lib
 import re
 from requests_file import FileAdapter
 data_folder = Path("C: \Local\Work\ML_Name\Database")
-
+# %%
 
 # %%
+
+
 def load_web_page(link):
     # Func:
     page = requests.get(link)
@@ -62,32 +64,28 @@ def local_file_to_web_link(f):
 
 def test():
     # Func:
+
+ # %%
     config = j_lib.load_json(
         "C:\Local\Work\ML_Name\Code\Config\chinese_name_config.json")
     mypath = config["out_put_html_dir"]
 
-load_
-regex
+
 file = "C:\Local\Work\ML_Name\Database\link_list_t.json"
 link_list = w_lib.read_link_list(file)
-base_dir =
+base_dir = "C:\Local\Work\ML_Name\Database"
 # for link in link_list:
 # download_link("https://arxiv.org/list/cs/1901?skip=0&show=200050")
-i = 1
 
-for url in link_list:
+for i, url in enumerate(link_list):
     print(url)
     p = re.compile(r"list\/(.*)\/(.*)\?")
     f_dir = p.search(url).group(1)
-
     f_dir = base_dir+f_dir
     f_name = p.search(url).group(2)
-
     file_name = f_dir+"_"+f_name+".html"
-
-    w_lib.download_link(url, f_dir, file_name)
+    # w_lib.download_link(url, f_dir, file_name)
     print(file_name)
-    i = i+1
 
     # file_name = "f1901.html"
 
