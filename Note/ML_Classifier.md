@@ -22,6 +22,7 @@
 ## Objective
 
 - [Name Classification with Naive Bayes](https://towardsdatascience.com/name-classification-with-naive-bayes-7c5e1415788a)
+- [Important classifier python implementation](file:///c:/Local/Work/ML_Name/Code/Test/ML_classifer.py)
 
 ## Process
 
@@ -54,8 +55,7 @@ This technique produces a vector with length of entire vocabulary, with each ind
 
 <each index location is the frequence of the word >
 
-each word is uniquely represented . 
-
+each word is uniquely represented .
 
 This way, the order of the words in the document is not retained, but it’s a simple and intuitive way of representing a document by integers. Let’s take a look at this in action.
 

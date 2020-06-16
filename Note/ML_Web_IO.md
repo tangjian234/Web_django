@@ -41,7 +41,8 @@ How to
 
 ## Flask simple
 
-https://towardsdatascience.com/how-to-build-a-data-science-portfolio-website-335b0f253822
+- [how-to-build-a-data-science](https://towardsdatascience.com/how-to-build-a-data-science-portfolio-website-335b0f253822)
+
 C:\Local\Work\ML_Name\web\web_dev\app.py
 
 ## Flask structure
@@ -52,6 +53,10 @@ C:\Local\Work\ML_Name\web\web_dev\app.py
 
 -[Source](https://flask.palletsprojects.com/en/1.1.x/patterns/templateinheritance/)
 
+- [Primer on Jinja Templating](https://realpython.com/primer-on-jinja-templating/)
+
+C:\Local\Work\Tools\web_learn\jinja2_learn
+
 The most powerful part of Jinja is template inheritance.
 
 1. layout.html is the “skeleton” :
@@ -60,19 +65,80 @@ The most powerful part of Jinja is template inheritance.
 
 2.  index.html is the t child templates
 
-##### Example :
+### jinja2 snippets
 
-1. block :
+'''
+jblock {% block name %} {% endblock name %}
+jif {% if cond %} {% endif %}
+jifelse {% if cond %} {% else %} {% endif %}
+jextend {% extends 'file' %}
+jfor {% for A in B %} {% endfor %}
+jrandom {{ range(MIN, MAX) | random }}
+jvar {{ variable }}
+jfunc {% function %}
+jround {% float | round %}
+jjoin {% list | join(',') %}
+jset {% set A = B %}
+jurl {{ url_for('dir', filename='file') }}
+jcall {% call func %} {% endcall %}
+jfilter {% filter cmd %} {% endfilter %}
+jinclude {% include 'file' %}
+jfrom {% from 'dir' import func %}
+jimg <img src="{{ url_for('static', filename='A') }}" alt="B">
+jhref a href with url_for embed
+'''
 
-- in layout.html
+#### Jinja Block :
+
+1. in layout.html
 <title>{% block title %}{% endblock %}</title>
-- in index.html :
+
+2. in index.html :
+
 - {% block title %}Welcome to Flask Tracking!{% endblock %}
   {% extends "layout.html" %}
 
   <the {% block %} tags define four blocks that child templates can fill in>
 
-see : jinja2 snippets extension .
+see : jinja2 snippets extension : jblock snippet in global
+
+### Primer
+
+- [Primer on Jinja Templating](https://realpython.com/primer-on-jinja-templating/)
+
+#### Quick Example :
+
+'''
+
+> > > from jinja2 import Template
+> > > t = Template("Hello {{ something }}!")
+> > > t.render(something="World")
+> > > u'Hello World!'
+
+> > > t = Template("My favorite numbers: {% for n in range(1,10) %}{{n}} " "{% endfor %}")
+> > > t.render()
+
+'''
+
+#### python run file
+
+C:\Local\Work\Tools\web_learn\jinja2_learn\run.py
+
+#### html template:
+
+#### jvar
+
+#### jfor
+
+jfor {% for A in B %}{{Action}} {% endfor %}
+
+#### Template Inheritance : jblock
+
+#### Super Blocks
+
+####
+
+# ANCHOR work
 
 ## Flask Personal task
 
@@ -93,7 +159,7 @@ see : jinja2 snippets extension .
 ### bare bone
 
 ANCHOR bare bone
-
+web work space
 C:\Local\Work\Tools\web_learn : web_learn
 
 #### How to run the

@@ -32,7 +32,6 @@ from sklearn.ensemble import RandomForestClassifier
 # %%
 # ANCHOR 1. Collecting and Generating the Name Data
 
-
 def generate_name(country, num=5):
     fake = Faker(country)  # initialize the faker instance for chosen country
     print('\n{} Fake Names: '.format(country))
@@ -43,7 +42,7 @@ def generate_name(country, num=5):
 generate_name('ja_JP')
 generate_name('en_US')
 
-# ANCHOR Taking a look at various names
+# ANCHOR 2. Loading data :
 
 # %%
 # setting up path to the data file
