@@ -1,4 +1,4 @@
-#
+# ML_Classifier.md
 
 - [ML_Classifier.md](file:///c:/Local/Work/ML_Name/Note/ML_Classifier.md)
 
@@ -10,6 +10,8 @@
 ## Todo
 
 - [ ] Read [paper](#paper-1)
+- [ ] Complete the summary of ML classifier from website [V_2][d_3]
+  - [ ] [link](#encoding-the-country-labels)
 
 ## Reference
 
@@ -17,7 +19,6 @@
 
     - Classify of Chinese name
     - Contain : ML technology
-    - []()
 
 ## Objective
 

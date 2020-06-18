@@ -9,7 +9,42 @@
 
 ## Todo
 
-- [ ] Read [paper](#paper-1)
+- [x] Read [paper](#paper-1)
+- [ ] Sort the [Topic](#topic)
+- [ ] Design Name vs Non-Name [classifier](#classifier)
+  - [ ] Single input dimension
+  - [ ] Multiple input demission
+
+## Progress
+
+- Name identifier MVP ready
+-
+
+### Highlight
+
+## Roadmap
+
+## Topic:
+
+1. Name identifier
+
+## Use case :
+
+1. Name identifier
+
+- As a user , I can input a name string and get the nationality of the person.
+
+2. Name identifier
+
+- As a user , I can input a webpage and get the human names highlighted.
+
+3. Aspect highlighter
+
+- As a user , I can input an Amazon comment and highlight which aspect it is talking about. .
+
+4. Statistical analysis and visualization
+
+- As a user , I can know the statistics of a web page and have them visualized.
 
 ## Vision
 
@@ -19,13 +54,15 @@
 
 ## Objective
 
-- To Ultimately answer Social science topic : what is the percentage of Chinese Nationality in STEM topics.
+- To Ultimately answer Social science topic :
+  - What is the percentage of Chinese Nationality in STEM topics.
+  - Given a name, what is the personal's nationality :
 
 ### Knowledge learnt
 
 - What knowledge do you gain by this practice
   - Statistics ML: end to end.
-  - Web service :
+  - Web service : Flask based web framework
   - Visualization : PowerBI
 
 ### Key concepts
@@ -40,13 +77,11 @@
 
 ### Building block
 
-<!-- // REVIEW  Building block Overview -->
-
-1. Crawler :
+1. **Crawler** :
    1. Crawler from web get the STEM names
-2. Classifier
+2. **Classifier**
    1. Build System that Classify of Chinese name
-3. WebIO :
+3. **WebIO** :
    1. web I/Output and visualize Result
       1. Statistical percentage.
 
@@ -70,7 +105,8 @@
 
 #### Crawler :
 
-- Crawler from web get the STEM names,
+- Crawler from web get the STEM names, [DONE]
+- Crawler from web get the STEM subjects ,
 
 ##### Short vs Long term design
 
@@ -88,12 +124,20 @@ NONE
 
 #### Classifier
 
-     1. Build System that Classify of Chinese name
+     1. Build System that Classify of Chinese name vs other names [DONE]
+     2.  Build System that Classify of  Name vs  None Names .
 
 ##### Short vs Long term design
 
-- Short Longer: use the lookup table to search
-- Long Term :
+1. Chinese vs Non-Chinese
+
+- Short Term: use the lookup table to search [DONE]
+- Long Term : use classifier to check [DONE]
+
+2. Name vs Non-Name :
+
+- Short Term: use simple one dimension classsifer .
+- Long Term : use classifier to check
 
 ##### Input
 
@@ -101,10 +145,17 @@ NONE
 
 #### IO :
 
-     1. I/Output and visualize Result
-        1. Statistical percentage.
+1. I/Output and visualize Result
+   1. Statistical percentage.
+
+- [ ] Good input/output UI :
+  - [ ] Give a webpage : provide the statistic of the name in the webpage.
+    - [ ] Web link :
+  - [ ] Scan the Chinese name
 
 ##### Input
+
+- Input name , display the nationality:
 
 ##### Output
 

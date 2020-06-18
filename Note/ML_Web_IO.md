@@ -10,7 +10,10 @@
 ## Todo
 
 - [ ] Read [paper](#paper-1)
-- [ ] Sort current doc
+- [ ] Sort current doc 
+- [ ] Search for good web template for data science project[P1][d3]
+  - Search item : "data science website" "data science website design"
+    - [How To Create a Data Science Portfolio Website](#how-to-create-a-data-science-portfolio-website-v2)
 
 ## Reference
 
@@ -22,6 +25,11 @@
   - []()
 
 ## Objective
+
+- Use flask :
+  - data visualization webpage design.
+  - search for the template of the
+- have HTML and css that have
 
 ### I/Output
 
@@ -138,7 +146,7 @@ jfor {% for A in B %}{{Action}} {% endfor %}
 
 ####
 
-# ANCHOR work
+ANCHOR work
 
 ## Flask Personal task
 
@@ -344,14 +352,76 @@ run : python -m flask run
 [Django vs. Flask in 2019: Which Framework to Choose](https://testdriven.io/blog/django-vs-flask/)
 Regardless of whether your end goal is to learn Flask or Django, start with Flask. It's a great tool for learning web development fundamentals and best practices along with the core pieces of a web framework that are common to almost all frameworks.
 
-###
-
 https://realpython.com/python-web-applications-with-flask-part-i/
 
 pip install -r .\requirements.txt
+
+### How To Create a Data Science Portfolio Website [v2]
+
+- [Web](https://towardsdatascience.com/how-to-create-a-data-science-portfolio-website-dcba6bf00994)
+
+- [Local](C:\Local\Work\ML_Name\Material\Web\TP1)
+
+  tangjian234@gmail.com
+  Tangwin@345
+
+##### One liner
+
+- Guiding work on the content.
+
+#### About
+
+- Objective : I strongly recommend building a data science portfolio website to showcase all the work you do.
+- For example, include projects that demonstrate your skills in:
+  Data Collection
+  Data Preprocessing
+  Data Visualization
+  Data Analytics
+  ETL Pipelines
+  Machine Learning
+
+#### Reference
+
+##### Here are some tutorials I found useful when trying to build from scratch:
+
+1. How to Make Website using HTML and CSS
+2. How to Create a Portfolio Gallery
+3. Code a Stylish Portfolio Design in HTML and CSS
+   There are also templates with beautiful, responsive design that you can use. The HTML, CSS, and Jquery is all provided for you. All you have to do is tweak the code to match your needs.
+
+##### Some templates I thought were nice:
+
+4. W3 CSS Templates
+5. Portfolio Website Templates
+6. 38 Free Portfolio Website Templates For All Creative Professionals
+
+##### Some reference websites for inspiration:
+
+7. Julia Nikulski’s data science portfolio
+8. David Venturi’s data science portfolio
+9. [My data science portfolio](https://natassha.github.io/natasshaselvaraj/) (I am still in the process of tweaking and adding new sections in, and learning new things along the way).
+
+// ANCHOR now
+
+### Add dynamic components to your HTML templates
+
+- [Add dynamic components to your HTML templates using <form>s, Flask, and Jinja](https://medium.com/@mikaelagurney/add-dynamic-components-to-your-html-templates-using-form-s-flask-and-jinja-59b4169ec3e1)
+
+##### One liner
+
+Dynamic forms.
 
 ## Reference
 
 - [How to Build a Data Science Portfolio Website](https://towardsdatascience.com/how-to-build-a-data-science-portfolio-website-335b0f253822)
 
 - [What is Flask Python](https://pythonbasics.org/what-is-flask-python/)
+
+- [How To Create a Data Science Portfolio Website](https://towardsdatascience.com/how-to-create-a-data-science-portfolio-website-dcba6bf00994) [V2]
+
+- [Add dynamic components to your HTML templates using <form>s, Flask, and Jinja](https://medium.com/@mikaelagurney/add-dynamic-components-to-your-html-templates-using-form-s-flask-and-jinja-59b4169ec3e1)
+
+- [Visualize from Text for COVID-19 Cases Update from Slack Bot](https://towardsdatascience.com/visualize-from-text-for-covid-19-cases-update-from-slack-bot-2590ea780887) [V2]
+
+- [ ] [V2]
+

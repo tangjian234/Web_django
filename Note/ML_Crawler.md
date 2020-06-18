@@ -10,9 +10,14 @@
 
 ## Todo
 
-- [ ] Read [paper](#paper-1)
+- [ ] Scaffolding of basic plan , IO , time line : [V_2][d_1]
+- [ ] Get the web scrappy download and study [V_2][d_1]
+  - [ ] Get the basic reference website of scrappy [V_2][d_4]
+    - [ ] [link](#scrappy)
 
 ## Reference
+
+### scrappy
 
 ## Vision
 
