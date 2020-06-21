@@ -25,6 +25,20 @@ c:\Local\Work\ML_Name\Note\ML_study.md
 
 - Reading of importing website documentations regarding the ML
 
+1. Bag of word
+   1. -[Source](https://towardsdatascience.com/your-guide-to-natural-language-processing-nlp-48ea2511f6e1)
+
+assume give each use the occurance as 1,0
+
+for example :
+vocabulary is jian tang li wang
+
+jian tang 1 1 0 0
+wang li 0 0 1 1
+li jian 1 0 1 0
+
+  <It make sure that every s is unique>
+
 ## 1.4. Name classification
 
 ### 1.4.1. Reading 1 : Build a classifier to distinguish person’s name’s origin/country.
@@ -137,13 +151,15 @@ Coursera – Data-Driven Decision Making
 
 #### 1.6.2.1. P1
 
-- [How to Build a Data Science Portfolio Website](https://towardsdatascience.com/how-to-build-a-data-science-portfolio-website-335b0f253822)
+- [Your Guide to Natural Language Processing (NLP)](https://towardsdatascience.com/your-guide-to-natural-language-processing-nlp-48ea2511f6e1) [V1][d_2]
 
-- [Name Classification with Naive Bayes](https://towardsdatascience.com/name-classification-with-naive-bayes-7c5e1415788a) [P1]
+* [How to Build a Data Science Portfolio Website](https://towardsdatascience.com/how-to-build-a-data-science-portfolio-website-335b0f253822)
 
-- [A Comprehensive Guide to Understand and Implement Text Classification in Python](https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand-and-implement-text-classification-in-python/)
+* [Name Classification with Naive Bayes](https://towardsdatascience.com/name-classification-with-naive-bayes-7c5e1415788a) [P1]
 
-* [Text Classification in Python](https://towardsdatascience.com/text-classification-in-python-dd95d264c802) [P1]
+* [A Comprehensive Guide to Understand and Implement Text Classification in Python](https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand-and-implement-text-classification-in-python/)
+
+- [Text Classification in Python](https://towardsdatascience.com/text-classification-in-python-dd95d264c802) [P1]
 
 #### 1.6.2.2. P2
 

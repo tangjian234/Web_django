@@ -7,29 +7,33 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![Travis](https://img.shields.io/travis/zalandoresearch/flair.svg)](https://travis-ci.org/zalandoresearch/flair)
 
-## Todo
+## DONE
 
-- [ ] Read [paper](#paper-1)
-- [ ] Sort current doc 
-- [ ] Search for good web template for data science project[P1][d3]
+- [x] Search for good web template for data science project[P1][d3]
   - Search item : "data science website" "data science website design"
     - [How To Create a Data Science Portfolio Website](#how-to-create-a-data-science-portfolio-website-v2)
+- [x] Sort current doc
 
-## Reference
+## Todo
+
+- [ ] Study [streamlit](#streamlit-101-an-in-depth-introduction)
+- [ ] Study of [voila](#voila) : jupyter notebook
 
 ## Vision
 
 - <IO>:
   - web I/Output and visualize Result
   - Contain : ML technology
-  - []()
 
 ## Objective
 
-- Use flask :
-  - data visualization webpage design.
-  - search for the template of the
-- have HTML and css that have
+1. Use [flask](#flask)
+   - data visualization webpage design.
+   - search for the template of the
+   - have HTML and css that have
+2. Use of [voila](#voila) : jupyter notebook
+3. Use of [streamlit](#streamlit-101-an-in-depth-introduction)
+   - Stand alone
 
 ### I/Output
 
@@ -47,13 +51,13 @@
 
 How to
 
-## Flask simple
+## Flask
+
+### Flask simple
 
 - [how-to-build-a-data-science](https://towardsdatascience.com/how-to-build-a-data-science-portfolio-website-335b0f253822)
 
 C:\Local\Work\ML_Name\web\web_dev\app.py
-
-## Flask structure
 
 ### Jinja
 
@@ -144,46 +148,41 @@ jfor {% for A in B %}{{Action}} {% endfor %}
 
 #### Super Blocks
 
-####
+### Flask Personal task
 
-ANCHOR work
-
-## Flask Personal task
-
-### design
+#### design
 
 - add input box. in web page.
 - visualization area : display the input text and simple pre-decided python plot
 
-#### input box
+##### input box
 
 - collect html snippets input : input box.
 
-### min :
+#### min :
 
 - [ ] create flask development git. : web_learn
 - [ ]
 
-### bare bone
+#### bare bone
 
-ANCHOR bare bone
 web work space
 C:\Local\Work\Tools\web_learn : web_learn
 
-#### How to run the
+##### How to run the
 
 app.py
 if **name** == "**main**":
 app.run()
 run as normal python file .
 
-#### what is a boilerplat
+##### what is a boilerplat
 
 C:\Local\Work\Tools\web_learn_boiler
 functioning simple boilerplat :
 run app.py in vscode
 
-#### How insert a html in another HTML
+##### How insert a html in another HTML
 
 {% block head %}
 
@@ -197,7 +196,7 @@ run app.py in vscode
 <title>{% block title %}{% endblock %}</title>
 {% endblock %}
 
-#### How to use block as template
+##### How to use block as template
 
 https://jinja.palletsprojects.com/en/2.11.x/templates/ -[Source](#https://flask.palletsprojects.com/en/1.1.x/patterns/templateinheritance/)
 {% block footer %}Jim !{% endblock %}
@@ -245,6 +244,102 @@ https://medium.com/@mikaelagurney/add-dynamic-components-to-your-html-templates-
 <p><input type="Submit" value="Save Site"></p>
 </fieldset>
 </form>
+
+## Voila
+
+### One liner
+
+part of jupyter notebook
+
+### Voila Study
+
+voila NotImplementedError
+fixed : https://stackoverflow.com/questions/60959503/voila-for-jupyter-raises-error-raise-notimplementederror
+
+## Streamlit
+
+### One liner
+
+The fastest way to build data apps
+
+- Good data visualization web app tool :
+- Comparable with flask
+
+### Introduction
+
+Streamlit is an awesome new tool that allows engineers to quickly build highly **interactive web applications around** their data, machine learning models, and pretty much anything.
+
+The best thing about Streamlit is it doesn’t require any knowledge of **web development.** If you know Python, you’re good to go!
+
+-[Source](<[streamlit](https://www.streamlit.io/)>)
+
+### Output
+
+- Streamlit testing :
+- C:\Local\Work\Python\PyLib\streamlit_lib.py
+
+### flask vs streamlit
+
+<Question: what is best use area for the streamlit?>
+
+- - Can it mix well with existing web framework such as flask and djingo?
+
+<Answer: >
+
+- - [Will Streamlit cause the extinction of Flask? - Towards Data Science](https://towardsdatascience.com/part-2-will-streamlit-cause-the-extinction-of-flask-395d282296ed)
+    )
+
+  - Comparable with flask
+  - A good full-stack Flask programmer will have years of experience.
+
+  **However, an excellent Streamlit hacker (like a Machine Learning Scientist) requires weeks of experience to design, develop, and deploy a production-ready web-based dashboard.**
+
+  If we are Python Streamlit Machine Learning or Deep Learning Scientists, we do NOT need to know Javascript, HTML, CSS, etc.., and different POST/GET URL packages in the stack. Instead, our software stack consists of Streamlit (and maybe Docker). That is it!
+
+### streamlit study
+
+#### Get started
+
+- [Get started — Streamlit 0.61.0 documentation](https://docs.streamlit.io/en/latest/getting_started.html#write-a-data-frame)
+
+##### run
+
+- streamlit run streamlit_lib.py
+- http://localhost:8501/
+
+##### Comment :
+
+- auto rerun
+
+  - it is great running debugger : don't need to print()
+
+- Can draw a map with one python line.
+
+#### Streamlit 101: An in-depth introduction
+
+##### One liner
+
+Streamlit is an awesome new tool that allows engineers to quickly build highly interactive web applications around their data, machine learning models, and pretty much anything.
+
+The best thing about Streamlit is it doesn’t require any knowledge of web development. If you know Python, you’re good to go!
+
+#### Widget
+
+##### multiselect Widget
+
+st_widget_multiselect
+
+The multiselect widget is one of the most powerful and handy tools in Streamlit. One use aside from column selection is to filter a dataframe based on one or more values of a column.
+
+### Streamlit Reference:
+
+- [Turn Python Scripts into Beautiful ML Tools - Towards Data Science](https://towardsdatascience.com/coding-ml-tools-like-you-code-ml-models-ddba3357eace)
+
+- [Streamlit 101: An in-depth introduction - Towards Data Science](https://towardsdatascience.com/streamlit-101-an-in-depth-introduction-fc8aad9492f2)
+
+- [How to Use Streamlit to Make a Website - Towards Data Science](https://towardsdatascience.com/how-to-use-streamlit-to-create-web-applications-218af44064f5)
+
+- [How to build interactive dashboards in Python using Streamlit](https://towardsdatascience.com/how-to-build-interactive-dashboards-in-python-using-streamlit-1198d4f7061b)
 
 ## Reading
 
@@ -424,4 +519,4 @@ Dynamic forms.
 - [Visualize from Text for COVID-19 Cases Update from Slack Bot](https://towardsdatascience.com/visualize-from-text-for-covid-19-cases-update-from-slack-bot-2590ea780887) [V2]
 
 - [ ] [V2]
-
+      z

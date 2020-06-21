@@ -1,34 +1,16 @@
-# [Name Nationality ]
+# [ML_Finance_Insight.md]
 
-- [ML_Name_Nationality](file:///c:/Local/Work/ML_Name/Note/ML_Name_Nationality.md)
+- [ML_Finance_Insight.md](file:///C:/Local/Work/ML_Name/Note/ML_Finance_Insight.md)
 
-[![GitHub Issues](https://img.shields.io/github/issues/zalandoresearch/flair.svg)](https://github.com/zalandoresearch/flair/issues)
-[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
-[![Travis](https://img.shields.io/travis/zalandoresearch/flair.svg)](https://travis-ci.org/zalandoresearch/flair)
+- [![GitHub Issues](https://img.shields.io/github/issues/zalandoresearch/flair.svg)](https://github.com/zalandoresearch/flair/issues)
+  [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+  [![Travis](https://img.shields.io/travis/zalandoresearch/flair.svg)](https://travis-ci.org/zalandoresearch/flair)
 
 ## Todo
 
-- [x] Read [paper](#paper-1)
-- [x] Sort the [Topic](#topic)
-- [x] Design Name vs Non-Name [classifier](#classifier)
-  - [ ] Single input dimension
-  - [ ] Multiple input demission
-- [ ] Add more key nationality
-  1. Add indian and German/italy name/ jewish for nationality classifier . (1 hour )
-  2. Change all word into latin :
-     1. Japanese from Japanese word to Latin : ditto Korean.
-
-## Key doc
-
-### Web IO :
-
-- [flask-chatterbot-master](c:\Local\Work\ML_Name\Code\flask-chatterbot-master\)
-
-### Engine
-
-- [ML_classifer :](c:\Local\Work\ML_Name\Code\flask-chatterbot-master\ML_classifer_test.py)
-- Both training and testing.
+- [ ] Sort the name websites : axriv
+- [ ] Sort the current doc : remove the
 
 ## Progress
 
@@ -44,27 +26,9 @@
 
 ## Use case :
 
-1. Name identifier
-
-- As a user , I can input a name string and get the nationality of the person.
-
-2. Name identifier
-
-- As a user , I can input a webpage and get the human names highlighted.
-
-3. Aspect highlighter
-
-- As a user , I can input an Amazon comment and highlight which aspect it is talking about. .
-
-4. Statistical analysis and visualization
-
-- As a user , I can know the statistics of a web page and have them visualized.
+- As a user , find the names in the web.
 
 ## Vision
-
-    - Publish a in medium : key machine learning websites.
-    - End to end design , arch and implement a ML system to solve a topic of interest.
-    - My pet project.
 
 ## Objective
 

@@ -26,3 +26,29 @@
   - Contain : ML technology
 
 ## Objective
+
+## Content :
+
+### Reading 1: Scrapy Tutorial
+
+- [Scrapy Tutorial](https://docs.scrapy.org/en/latest/intro/tutorial.html)
+
+An open source and collaborative framework for extracting the data you need from websites.
+
+In a fast, simple, yet extensible way.
+
+1. <Question: >
+
+2. <Answer: >
+
+   1. Creating a new Scrapy project
+   2. Writing a spider to crawl a site and extract data
+   3. Exporting the scraped data using the command line
+   4. Changing spider to recursively follow links
+   5. Using spider arguments
+
+## Reference
+
+- [Scrapy Tutorial](https://docs.scrapy.org/en/latest/intro/tutorial.html)
+
+- [scrapy org](https://scrapy.org/)

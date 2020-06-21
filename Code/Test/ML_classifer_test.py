@@ -1,4 +1,5 @@
 # %%
+import configparser
 import pickle
 from sklearn import svm
 from sklearn.linear_model import LogisticRegression
@@ -35,6 +36,8 @@ import matplotlib.pyplot as plt
 
 # %%
 
+def lib_test():
+  print("ML lib test")
 
 # %%
 # ANCHOR 1.Generate data
@@ -140,7 +143,7 @@ def train_model(input_data, output_data, trained_model_file):
 # %%
 
 
-def test_model(trained_model_file, df):
+def test_model(trained_model_file, output_class_file,some_names):
     # Func:
     clf = pickle.load(open(trained_model_file, 'rb'))
     vectorizer = CountVectorizer().fit(df['name'])
@@ -148,12 +151,21 @@ def test_model(trained_model_file, df):
     x_t = vectorizer.transform(some_names)
     pred = clf.predict(x_t)
     # show the classes :
-    class_names = list(LabelEncoder().fit(df['code']).classes_)
+    #class_names = list(LabelEncoder().fit(df['code']).classes_)
+    with open(output_class_file, 'rb') as fp:
+        class_names = pickle.load(fp)
+    print(class_names)
     # transfer index to content of outlist
     nationality = [class_names[i] for i in pred]
     Dict = dict(zip(some_names, nationality))
-    dict_pretty_disp(Dict)
+    #dict_pretty_disp(Dict)
+    return(output_string(Dict))
 
+def output_string(Dict):
+    s=""
+    for i, key in enumerate(Dict):
+        s= s+ f"{i}.{key:20} -> {Dict[key]}"+ ";"
+    return(s)    
 
 def dict_pretty_disp(Dict):
     print('='*20, "Result", '='*20)
@@ -164,7 +176,7 @@ def dict_pretty_disp(Dict):
 def verify_model(trained_model_file, df, x_test, y_test):
     # Func: print confusion matrix
     clf = pickle.load(open(trained_model_file, 'rb'))
-    disp_confusion_matrix(clf, df, x_test, y_test)
+    #disp_confusion_matrix(clf, df, x_test, y_test)
 
 
 def disp_confusion_matrix(clf, df, x_test, y_test):
@@ -193,21 +205,50 @@ def disp_confusion_matrix(clf, df, x_test, y_test):
 
 # %%
 # ANCHOR Main:  Seting
-TRAIN_MODEL = True
-TRAINED_MODEL_FILE = 'trained_model.bin'
-DATA_FILE_NAME = 'C:\Local\Work\ML_Name\Code\Test\data\multi_class_tst_pinyin.csv'
-some_names = ['Jack Nicholson', 'li zhang',
-              '山本 裕樹', 'wang wei', '伊藤 真綾', '青山 くみ子', 'Lourdes del Tur', 'Jose Llanos Amores', 'Lisa Jackson', '윤 예준']
+TRAIN_MODEL = False
+#TRAIN_MODEL = True
+import configparser
 
+# TRAINED_MODEL_FILE = 'C:\Local\Work\ML_Name\Code\Test\\trained_model.bin'
+# OUTPUT_CLASS_FILE = 'C:\Local\Work\ML_Name\Code\Test\output_class.bin'
+# DATA_FILE_NAME = 'C:\Local\Work\ML_Name\Code\Test\data\multi_class_tst_pinyin.csv'
+CONF_FILE='C:\Local\Work\ML_Name\Code\Test\ML_classifer.cfg'
+# %%
+def load_conf():
+  #Func: 
+  config = configparser.ConfigParser()
+  config.read(CONF_FILE)
+  return(config['File']['TRAINED_MODEL_FILE'],config['File']['OUTPUT_CLASS_FILE'],config['File']['DATA_FILE_NAME'])
+#load_conf()
+#%%
+
+
+def get_name_nationality(some_names):
+    print("abd")
+    print(some_names)
+    (TRAINED_MODEL_FILE,OUTPUT_CLASS_FILE,DATA_FILE_NAME)=load_conf()
+    return(test_model(TRAINED_MODEL_FILE, OUTPUT_CLASS_FILE, some_names))
+    
+
+  
+  
 if __name__ == '__main__':
-    trained_model_file = TRAINED_MODEL_FILE
+    some_names = ['Jack Nicholson']  
+    
+    (TRAINED_MODEL_FILE,OUTPUT_CLASS_FILE,DATA_FILE_NAME)=load_conf()
+    
     df = load_data(DATA_FILE_NAME)
+    
     if TRAIN_MODEL == True:
         (input_data, output_data) = data_preprocessing(df)
-        clf = train_model(input_data, output_data, trained_model_file)
+        clf = train_model(input_data, output_data, TRAINED_MODEL_FILE)
+        # save class names
+        class_names = list(LabelEncoder().fit(df['code']).classes_)
+        with open(OUTPUT_CLASS_FILE, 'wb') as fp:
+            pickle.dump(class_names, fp)
         #test_model(trained_model_file, df)
     else:
-        test_model(trained_model_file, df)
+        test_model(TRAINED_MODEL_FILE, OUTPUT_CLASS_FILE, some_names)
 
 
 # list(encoder.classes_)
@@ -221,9 +262,3 @@ if __name__ == '__main__':
 #  'Portuguese (Brazil)',
 #  'Russian',
 #  'Spanish (Spain)']
-
-
-
-
-
-
