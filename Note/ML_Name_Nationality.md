@@ -222,3 +222,22 @@ import json
 
 with open('data.txt') as json_file:
 data = json.load(json_file)
+
+
+### Extract name-generation python.  (15 min )
+generate_name() DONE
+
+### Get the loca for german (15 min ) DONE
+German de_DE
+France fr_FR
+Italy it_IT
+hindi hi_IN
+japense ja
+https://stackoverflow.com/questions/3191664/list-of-all-locales-and-their-short-codes
+
+###  Create 10000 German name : ( 15 min)
+Done 
+#generate_name_file('de_DE',10000,'a1.csv')
+
+### Create 10000 Indian name latin  : ( 15 min)
+http://mylanguages.org/hindi_romanization.php

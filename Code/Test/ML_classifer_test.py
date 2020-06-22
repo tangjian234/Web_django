@@ -28,7 +28,7 @@ import os
 import pandas as pd
 from faker import Faker
 import matplotlib.pyplot as plt
-
+import streamlit as st
 # remember to make sure all module files are installed
 # [Name Classification with Naive Bayes](https://towardsdatascience.com/name-classification-with-naive-bayes-7c5e1415788a)
 # %%
@@ -41,15 +41,44 @@ def lib_test():
 
 # %%
 # ANCHOR 1.Generate data
+LANGUAGE_BY_LOCALE = {
+  'de_DE': "German (Germany)",
+  'fr_FR': 'French (France)',
+  'it_IT':'Italian (Italy)', 
+  'hi_IN':'Hindi (India)',
+  'hi_IN':'Hindi (India)',
+  'ja_JP': "Japanese (Japan)",
+  'ja': "Japanese",
+} 
 
-def generate_name(country, num=5):
+def generate_name(country, num=2,file_name=''):
     fake = Faker(country)  # initialize the faker instance for chosen country
-    print('\n{} Fake Names: '.format(country))
+    country_full_name=LANGUAGE_BY_LOCALE[country]
+    st.write('\n{} Fake Names: '.format(country),country_full_name)
     for i in range(num):
-        print(fake.name())  # just to save line, don't code like this.
+        st.write(fake.name())  # just to save line, don't code like this.
+        
+def generate_name_file(country, num=2,file_name=''):
+    fake = Faker(country)  # initialize the faker instance for chosen country
+    country_full_name=LANGUAGE_BY_LOCALE[country]
+    with open(file_name,   encoding='utf-8', mode="w") as file:
+      file.write("code,name\n")    
+      #st.write('\n{} Fake Names: '.format(country)+country_full_name)
+      for i in range(num):
+          #st.write(fake.name())  # just to save line, don't code like this.
+          #s=country_full_name +','+ fake.name()+'\n'
+          s= fake.name()+'\n'
+          file.write(s)  
 
+#generate_name('fr_FR')
+#generate_name_file('de_DE',10000,'a1.csv')
+#generate_name_file('fr_FR',10000,'a1.csv')
+#generate_name_file('ja_JP',10000,'a1.csv')
 
+# generate_name('it_IT')
+# generate_name('hi_IN')
 # generate_name('ja_JP')
+# generate_name('ja')
 # generate_name('en_US')
 
 # ANCHOR 2. Loading data :
@@ -114,7 +143,7 @@ def data_preprocessing(df):
 
 # %%
 
-def train_model(input_data, output_data, trained_model_file):
+def train_model(df,input_data, output_data, trained_model_file):
     # Func:
 
     # ANCHOR 4.1 Split into training and testing set
@@ -142,9 +171,11 @@ def train_model(input_data, output_data, trained_model_file):
 # ANCHOR 5. Model testing
 # %%
 
-
-def test_model(trained_model_file, output_class_file,some_names):
+## ANCHOR test
+def test_model(trained_model_file, output_class_file,DATA_FILE_NAME,some_names):
     # Func:
+    df = load_data(DATA_FILE_NAME)
+    
     clf = pickle.load(open(trained_model_file, 'rb'))
     vectorizer = CountVectorizer().fit(df['name'])
     # transform encode the names by vectorizer
@@ -159,18 +190,21 @@ def test_model(trained_model_file, output_class_file,some_names):
     nationality = [class_names[i] for i in pred]
     Dict = dict(zip(some_names, nationality))
     #dict_pretty_disp(Dict)
+    print("abdsss",Dict)
+    
     return(output_string(Dict))
 
 def output_string(Dict):
     s=""
     for i, key in enumerate(Dict):
-        s= s+ f"{i}.{key:20} -> {Dict[key]}"+ ";"
+        s= s+ f"{i}.{key:20}'s nationality is -> {Dict[key]}"+ ";"
+    print("",s)
     return(s)    
 
 def dict_pretty_disp(Dict):
     print('='*20, "Result", '='*20)
     for i, key in enumerate(Dict):
-        print(f"{i}.{key:20} -> {Dict[key]}")
+        print(f"{i}.{key:20}'s nationality is {Dict[key]}")
 
 
 def verify_model(trained_model_file, df, x_test, y_test):
@@ -212,7 +246,7 @@ import configparser
 # TRAINED_MODEL_FILE = 'C:\Local\Work\ML_Name\Code\Test\\trained_model.bin'
 # OUTPUT_CLASS_FILE = 'C:\Local\Work\ML_Name\Code\Test\output_class.bin'
 # DATA_FILE_NAME = 'C:\Local\Work\ML_Name\Code\Test\data\multi_class_tst_pinyin.csv'
-CONF_FILE='C:\Local\Work\ML_Name\Code\Test\ML_classifer.cfg'
+CONF_FILE='C:\Local\Work\ML_Name\Code\Test\ML_classifer_ger_ita.cfg'
 # %%
 def load_conf():
   #Func: 
@@ -222,33 +256,37 @@ def load_conf():
 #load_conf()
 #%%
 
-
+#  ANCHOR now
 def get_name_nationality(some_names):
-    print("abd")
-    print(some_names)
+    print("get",some_names)
     (TRAINED_MODEL_FILE,OUTPUT_CLASS_FILE,DATA_FILE_NAME)=load_conf()
-    return(test_model(TRAINED_MODEL_FILE, OUTPUT_CLASS_FILE, some_names))
+    return(test_model(TRAINED_MODEL_FILE, OUTPUT_CLASS_FILE, DATA_FILE_NAME,some_names))
     
-
-  
-  
-if __name__ == '__main__':
-    some_names = ['Jack Nicholson']  
+# %%
+def Run():
+    #Func: 
+    some_names = ['Jack Nicholson','krisnn ishaan','hamada hanako']  
     
     (TRAINED_MODEL_FILE,OUTPUT_CLASS_FILE,DATA_FILE_NAME)=load_conf()
-    
+    DATA_FILE_NAME
     df = load_data(DATA_FILE_NAME)
     
     if TRAIN_MODEL == True:
         (input_data, output_data) = data_preprocessing(df)
-        clf = train_model(input_data, output_data, TRAINED_MODEL_FILE)
+        clf = train_model(df,input_data, output_data, TRAINED_MODEL_FILE)
         # save class names
         class_names = list(LabelEncoder().fit(df['code']).classes_)
         with open(OUTPUT_CLASS_FILE, 'wb') as fp:
             pickle.dump(class_names, fp)
         #test_model(trained_model_file, df)
     else:
-        test_model(TRAINED_MODEL_FILE, OUTPUT_CLASS_FILE, some_names)
+        test_model(TRAINED_MODEL_FILE, OUTPUT_CLASS_FILE, DATA_FILE_NAME,some_names)
+        
+#Test()  
+
+if __name__ == '__main__':
+  Run()
+
 
 
 # list(encoder.classes_)

@@ -142,11 +142,9 @@ def train_model(input_data, output_data, trained_model_file):
 # ANCHOR 5. Model testing
 # %%
 
-## ANCHOR test
-def test_model(trained_model_file, output_class_file,DATA_FILE_NAME,some_names):
+
+def test_model(trained_model_file, output_class_file,some_names):
     # Func:
-    df = load_data(DATA_FILE_NAME)
-    
     clf = pickle.load(open(trained_model_file, 'rb'))
     vectorizer = CountVectorizer().fit(df['name'])
     # transform encode the names by vectorizer
@@ -161,21 +159,18 @@ def test_model(trained_model_file, output_class_file,DATA_FILE_NAME,some_names):
     nationality = [class_names[i] for i in pred]
     Dict = dict(zip(some_names, nationality))
     #dict_pretty_disp(Dict)
-    print("abdsss",Dict)
-    
     return(output_string(Dict))
 
 def output_string(Dict):
     s=""
     for i, key in enumerate(Dict):
-        s= s+ f"{i}.{key:20}'s nationality is -> {Dict[key]}"+ ";"
-    print("Here",s)
+        s= s+ f"{i}.{key:20} -> {Dict[key]}"+ ";"
     return(s)    
 
 def dict_pretty_disp(Dict):
     print('='*20, "Result", '='*20)
     for i, key in enumerate(Dict):
-        print(f"{i}.{key:20}'s nationality is {Dict[key]}")
+        print(f"{i}.{key:20} -> {Dict[key]}")
 
 
 def verify_model(trained_model_file, df, x_test, y_test):
@@ -227,12 +222,15 @@ def load_conf():
 #load_conf()
 #%%
 
-#  ANCHOR now
+
 def get_name_nationality(some_names):
-    print("get",some_names)
+    print("abd")
+    print(some_names)
     (TRAINED_MODEL_FILE,OUTPUT_CLASS_FILE,DATA_FILE_NAME)=load_conf()
-    return(test_model(TRAINED_MODEL_FILE, OUTPUT_CLASS_FILE, DATA_FILE_NAME,some_names))
+    return(test_model(TRAINED_MODEL_FILE, OUTPUT_CLASS_FILE, some_names))
     
+
+  
   
 if __name__ == '__main__':
     some_names = ['Jack Nicholson']  
