@@ -17,7 +17,7 @@ data_folder = Path("C: \Local\Work\ML_Name\Database")
 
 
 def load_web_page(link):
-    # Func:
+    # Func: load a page given a link
     page = requests.get(link)
     tree = html.fromstring(page.content)
     X = "//div[@class = 'list-title mathjax']/text()"
