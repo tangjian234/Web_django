@@ -70,12 +70,14 @@ def generate_name_file(country, num=2, file_name=''):
         #st.write('\n{} Fake Names: '.format(country)+country_full_name)
         for i in range(num):
             # st.write(fake.name())  # just to save line, don't code like this.
-            #s=country_full_name +','+ fake.name()+'\n'
-            s = fake.name()+'\n'
+            s = country_full_name + ',' + fake.name()+'\n'
+            st.write(s)
+            #s = fake.name()+'\n'
             file.write(s)
 
+
 # generate_name('fr_FR')
-# generate_name_file('de_DE',10000,'a1.csv')
+# generate_name_file('de_DE', 10, 'a1.csv')
 # generate_name_file('fr_FR',10000,'a1.csv')
 # generate_name_file('ja_JP',10000,'a1.csv')
 
@@ -194,9 +196,8 @@ def test_model(trained_model_file, output_class_file, DATA_FILE_NAME, some_names
     nationality = [class_names[i] for i in pred]
     Dict = dict(zip(some_names, nationality))
     # dict_pretty_disp(Dict)
-    print("abdsss", Dict)
-
-    return(output_string(Dict))
+    return(Dict)
+    # return(output_string(Dict))
 
 
 def output_string(Dict):
@@ -273,11 +274,24 @@ def get_name_nationality(some_names):
 
 # %%
 
+# %%
 
-def Name_nationality(some_names):
+
+def get_class_name():
+    # Func:
+    (TRAINED_MODEL_FILE, OUTPUT_CLASS_FILE, DATA_FILE_NAME) = load_conf()
+    object = pd.read_pickle(OUTPUT_CLASS_FILE)
+    st.json(object)
+    return(0)
+
+
+# get_class_name()
+
+
+def name_nationality(some_names):
     # Func:
     #some_names = ['Jack Nicholson', 'krisnn ishaan', 'hamada hanako']
-
+    some_names = some_names.split(',')
     (TRAINED_MODEL_FILE, OUTPUT_CLASS_FILE, DATA_FILE_NAME) = load_conf()
     DATA_FILE_NAME
     df = load_data(DATA_FILE_NAME)
@@ -291,14 +305,16 @@ def Name_nationality(some_names):
             pickle.dump(class_names, fp)
         #test_model(trained_model_file, df)
     else:
-        test_model(TRAINED_MODEL_FILE, OUTPUT_CLASS_FILE,
-                   DATA_FILE_NAME, some_names)
+        s = test_model(TRAINED_MODEL_FILE, OUTPUT_CLASS_FILE,
+                       DATA_FILE_NAME, some_names)
+        return(s)
 
 # Test()
 
 
 if __name__ == '__main__':
-    Name_nationality()
+    #  name_nationality()
+    pass
 
 
 # list(encoder.classes_)

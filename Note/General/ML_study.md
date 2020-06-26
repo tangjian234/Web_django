@@ -15,46 +15,27 @@
 
 ## 1.2. Vision
 
-- <Tech>:
-  - Technology study, reading
-  - Contain : ML technology
+- Get the big picture and comprehensive understanding of ML.
 
-## 1.3. Objective
+## 1.3. Objective and Key Results
 
-c:\Local\Work\ML_Name\Note\ML_study.md
+### Objective
 
-- Reading of importing website documentations regarding the ML
+- Reading of important website documentations regarding the ML
 
-1. Bag of word
-   1. -[Source](https://towardsdatascience.com/your-guide-to-natural-language-processing-nlp-48ea2511f6e1)
+### Key Results
 
-assume give each use the occurance as 1,0
+- STUB
 
-for example :
-vocabulary is jian tang li wang
+## Reading
 
-jian tang 1 1 0 0
-wang li 0 0 1 1
-li jian 1 0 1 0
+### Reading 1. Text Classification in Python
 
-  <It make sure that every s is unique>
-
-## 1.4. Name classification
-
-### 1.4.1. Reading 1 : Build a classifier to distinguish person’s name’s origin/country.
-
-#### 1.4.1.1. LINK
+#### 1.4.1.2.
 
 - [Text Classification in Python](https://towardsdatascience.com/text-classification-in-python-dd95d264c802)
   - [Latest News Classifier](https://github.com/miguelfzafra/Latest-News-Classifier)
     C:\Local\Work\ML_Name\Material
-
-#### 1.4.1.2. Summary
-
-##### 1.4.1.2.1. Evaluation
-
-P1 :
-<Pro> : Good data science project complete step by step
 
 ##### 1.4.1.2.2. Introduction
 

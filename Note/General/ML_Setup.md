@@ -49,3 +49,5 @@
 ### 1.7. Git
 
 - install github extension
+
+### 1.8. Azure 

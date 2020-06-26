@@ -1,5 +1,7 @@
 # Web_ML_IO
 
+`<V_1>` `<Webapp>` `<WebIO>`
+
 -[ML_Web_IO.md](file:///c:/Local/Work/ML_Name/Note/ML_Web_IO.md)
 
 [![GitHub Issues](https://img.shields.io/github/issues/zalandoresearch/flair.svg)](https://github.com/zalandoresearch/flair/issues)
@@ -9,6 +11,15 @@
 
 ## DONE
 
+IMPORTANT
+
+{WEBAPP}
+
+{PYTHON_LIST}
+
+`df`
+WP
+
 - [x] Search for good web template for data science project[P1][d3]
   - Search item : "data science website" "data science website design"
     - [How To Create a Data Science Portfolio Website](#how-to-create-a-data-science-portfolio-website-v2)
@@ -16,6 +27,7 @@
 
 ## Todo
 
+- [ ] Study
 - [ ] Study [streamlit](#streamlit-101-an-in-depth-introduction)
 - [ ] Study of [voila](#voila) : jupyter notebook
 
@@ -34,6 +46,9 @@
 2. Use of [voila](#voila) : jupyter notebook
 3. Use of [streamlit](#streamlit-101-an-in-depth-introduction)
    - Stand alone
+
+// {STREAM_LIT}
+// STUB
 
 ### I/Output
 
@@ -520,3 +535,9 @@ Dynamic forms.
 
 - [ ] [V2]
       z
+
+## widges
+
+### navbars
+
+https://www.webdesignerdepot.com/2018/03/12-fixed-sticky-navbars-thatll-grab-your-attention/

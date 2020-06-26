@@ -1,85 +1,115 @@
-# [Name Nationality ]
+# [ML_Finance_Insight.md]
 
-- [ML_Name_Nationality](file:///c:/Local/Work/ML_Name/Note/ML_Name_Nationality.md)
+- [ML_Finance_Insight.md](file:///C:/Local/Work/ML_Name/Note/ML_Finance_Insight.md)
 
-[![GitHub Issues](https://img.shields.io/github/issues/zalandoresearch/flair.svg)](https://github.com/zalandoresearch/flair/issues)
-[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
-[![Travis](https://img.shields.io/travis/zalandoresearch/flair.svg)](https://travis-ci.org/zalandoresearch/flair)
+- [![GitHub Issues](https://img.shields.io/github/issues/zalandoresearch/flair.svg)](https://github.com/zalandoresearch/flair/issues)
+  [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+  [![Travis](https://img.shields.io/travis/zalandoresearch/flair.svg)](https://travis-ci.org/zalandoresearch/flair)
 
 ## Todo
 
-- [x] Read [paper](#paper-1)
-- [x] Sort the [Topic](#topic)
-- [x] Design Name vs Non-Name [classifier](#classifier)
-  - [ ] Single input dimension
-  - [ ] Multiple input demission
-- [ ] Add more key nationality
-  1. Add indian and German/italy name/ jewish for nationality classifier . (1 hour )
-  2. Change all word into latin :
-     1. Japanese from Japanese word to Latin : ditto Korean.
-
-## Key doc
-
-### Web IO :
-
-- [flask-chatterbot-master](c:\Local\Work\ML_Name\Code\flask-chatterbot-master\)
-
-### Engine
-
-- [ML_classifer :](c:\Local\Work\ML_Name\Code\flask-chatterbot-master\ML_classifer_test.py)
-- Both training and testing.
+- [ ] Sort the name websites : axriv
+- [ ] Sort the current doc : remove the
 
 ## Progress
 
-- Name identifier MVP ready
+- Name Nationality MVP ready
+-
 
 ### Highlight
 
+**Output** : Classifer : C:\Local\Work\ML_Name\Code\Lib\name_nationality.py
+
 ## Roadmap
+
+- one day to complete the summary of work
 
 ## Topic:
 
-1. Name identifier
+1. Name Nationality
 
 ## Use case :
 
-1. Name identifier
-
+- As a user, I can get the nationality of the person by given a list of names,
 - As a user , I can input a name string and get the nationality of the person.
 
-2. Name identifier
-
-- As a user , I can input a webpage and get the human names highlighted.
-
-3. Aspect highlighter
-
-- As a user , I can input an Amazon comment and highlight which aspect it is talking about. .
-
-4. Statistical analysis and visualization
-
-- As a user , I can know the statistics of a web page and have them visualized.
 
 ## Vision
 
-    - Publish a in medium : key machine learning websites.
-    - End to end design , arch and implement a ML system to solve a topic of interest.
-    - My pet project.
-
 ## Objective
 
-- To Ultimately answer Social science topic :
+- Given a name, what is the personal's nationality :
+
+- Together with name identification , to ultimately answer Social science topic :
   - What is the percentage of Chinese Nationality in STEM topics.
-  - Given a name, what is the personal's nationality :
 
 ### Knowledge learnt
 
-- What knowledge do you gain by this practice
-  - Statistics ML: end to end.
-  - Web service : Flask based web framework
-  - Visualization : PowerBI
+- Key framework of ML process :
 
-### Key concepts
+  1. - Problem statement : define key parameter of the work
+  2. - Raw data Crawler : obtain .
+  3. - Data preparation : data cleaning, conversion :
+  4. - Classification : using classifier such as SVM and LSTM for training and testing,
+  5. - Visualization : visualize the end result in webapps .
+
+- Text vectorization via beg of words
+- Stream lit based webapp Data visualization
+
+### Key process parameter definition :
+
+#### Raw data Crawler :
+
+- Use python faker to create 10000 names for key nationalities .
+  - Japanese, Hindi, German, Italy,
+- [Crawler.md]
+
+#### Data preparation :
+
+- Converted every names into latin format :
+
+  - Japanese, Hindi, Chinese
+  - [Data_preparation.md]
+
+#### Classification:
+
+1.  Use scikit-learn to train 
+    
+    https://scikit-learn.org/stable/
+
+4) List of current languages are : 1.
+
+### Key File used and parameters.
+
+- [Main_file]
+
+  - C:\Local\Work\ML_Name\Code\Test
+
+- [Data]
+
+  - C:\Local\Work\ML_Name\Code\Test\data
+
+- [Configuration]
+
+  - CONF_FILE = 'C:\Local\Work\ML_Name\Code\Test\ML_classifer_ger_ita.cfg'
+
+- [List_of_languages]
+
+      [
+          0:"Chinese (China)"
+          1:"French"
+          2:"German (Germany)"
+          3:"Hindi (India)"
+          4:"Italian (Italy)"
+          5:"Japanese (Japan)"
+          6:"Norwegian"
+          7:"Portuguese (Brazil)"
+          8:"Russian"
+          9:"Spanish (Spain)"
+          10:"UK English"
+          11:"US English"
+      ]
 
 #### STEM Names :
 
@@ -222,22 +252,3 @@ import json
 
 with open('data.txt') as json_file:
 data = json.load(json_file)
-
-
-### Extract name-generation python.  (15 min )
-generate_name() DONE
-
-### Get the loca for german (15 min ) DONE
-German de_DE
-France fr_FR
-Italy it_IT
-hindi hi_IN
-japense ja
-https://stackoverflow.com/questions/3191664/list-of-all-locales-and-their-short-codes
-
-###  Create 10000 German name : ( 15 min)
-Done 
-#generate_name_file('de_DE',10000,'a1.csv')
-
-### Create 10000 Indian name latin  : ( 15 min)
-http://mylanguages.org/hindi_romanization.php

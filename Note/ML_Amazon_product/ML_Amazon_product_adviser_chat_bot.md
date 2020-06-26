@@ -28,11 +28,14 @@
 
   - Use aladdin theme for each of the sub project
 
-- Chat bot on amazon search :
-  help user to make wise decision :
+- Chat bot on amazon search , help user to make wise decision :
 
 language processing :
 product data mining and analysis
+
+## 1.9. Use case :
+
+- As a user , I can input an Amazon comment and highlight which aspect it is talking about. .
 
 ### User experience
 

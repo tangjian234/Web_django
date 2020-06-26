@@ -1,6 +1,6 @@
-# [ML_Finance_Insight.md]
+# ML_Name_Identification.md
 
-- [ML_Finance_Insight.md](file:///C:/Local/Work/ML_Name/Note/ML_Finance_Insight.md)
+- [ML_Name_Identification.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_Identification/ML_Name_Identification.md)
 
 - [![GitHub Issues](https://img.shields.io/github/issues/zalandoresearch/flair.svg)](https://github.com/zalandoresearch/flair/issues)
   [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
@@ -9,47 +9,54 @@
 
 ## Todo
 
-- [ ] Sort the name websites : axriv
-- [ ] Sort the current doc : remove the
+## Topic:
+
+- Name identifier
 
 ## Progress
 
-- Name identifier MVP ready
-
 ### Highlight
-
-## Roadmap
-
-## Topic:
-
-1. Name identifier
 
 ## Use case :
 
-- As a user , find the names in the web.
+- As a user , I can automatically highlight the personal names of a webpage
+- As a user , I can input a webpage and get the human names highlighted.
 
 ## Vision
 
-## Objective
+- Ability to process webpage and give webpage information summary.
+- First step of web information summery service. // STUB : x1 create full package scaffolding.
+- Webpage highlighting.
 
-- To Ultimately answer Social science topic :
-  - What is the percentage of Chinese Nationality in STEM topics.
-  - Given a name, what is the personal's nationality :
+## Road map
+
+- One week from now : 24-06
+
+## Future :
+
+### use case  
+As a user , I can know the statistics of a web page and have them visualized.
+
+- Web page information summary service :
+  - key info of webpage :
+    - Title :
+    - topic :
+    - key words list :
+      - tags :
+    - Categorization :
+      - tags :
+    - summary text :
+      - paragraph level
+    - Key information list
+      - names : name nationality etc.
+      - digits :
+        Other information of satisitical anlaysis .
+
+## Objective and key result
 
 ### Knowledge learnt
 
-- What knowledge do you gain by this practice
-  - Statistics ML: end to end.
-  - Web service : Flask based web framework
-  - Visualization : PowerBI
-
 ### Key concepts
-
-#### STEM Names :
-
-- 1. Patents inventers
-  2. Paper authors.
-  3. Factually member in a STEM department. e.g University Cambridge
 
 ## System Overview
 
