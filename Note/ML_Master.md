@@ -49,6 +49,7 @@ NLP Projects:
 3. - Amazon_Product_Adviser : provide advise for amazon buyer
 4. - Finance_Insight : Get insight from finance data
 5. - Job_Hunter : Help user and hirer to better hunt for job.
+6. - Job_Hunter : Help user and hirer to better hunt for job.
 
 ### 1.3.5. MAIN DOC :
 
