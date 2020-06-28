@@ -10,6 +10,7 @@
 ## 1.1. Todo
 
 - [ ] Sort and extend the plan [V_1][d_1]
+- [ ] Work on basic information extraction first
   - [ ] [target](#vision)
 - [ ] Read the most important
   - [ ] [paper](#paper-1--deep-learning-for-specific-information-extraction-from-unstructured-texts)
@@ -17,6 +18,7 @@
 ## 1.2. Progress
 
 ### 1.2.1. Highlight
+[27-06] : completed inform
 
 ## 1.3. Road map
 
@@ -101,6 +103,56 @@ Question : in each price range, what is the most
 
 1. How to rank the
 
+### Product dictionary definition.
+
+build keywords then build structure.
+
+Expected result, : Product key aspect dictionary
+
+#### Product dictionary data structure
+
+product hieratically key aspect structure. Object oriented.
+
+- Product dictionary <PD>
+
+  - key aspect <KA>
+    - Key words <KW>
+    - Key characters <KC>
+
+  1.  Product dictionary cotain key aspects.
+  2.  Key aspects contain keywords and key characters
+      1.  **Key aspect contain keywords that describe/characterize the key aspect.** can be further breakdown into structures.
+
+
+        Example :
+          Bluetooth speaker <PD> : {
+               Sound<KA> : {
+                 key words list [KW]: [Range,bass, stereo]
+                 Sound spectrum range <KC>  : {
+                     - bass,
+                     - middle
+                     - high
+                 }
+                 volume <KC>:
+                   - loudness
+               },
+                Connectivity<KA> : {
+
+                }
+          }
+
+- [Audio Spectrum](https://www.teachmeaudio.com/mixing/techniques/audio-spectrum)
+
+1.  object oriented relationship : **key aspect belong a a category of devices,**
+
+    1.  all bluetooth device has
+        1.  connectivity
+        2.  battery
+        3.  charger
+        4.  water proof
+    2.  all product has **price** aspect
+    3.  all speaker has **sound quality** aspect.
+
 ### Feature extraction
 
     1. Some features is known should have stronger discriminative power by expert knowledge
@@ -110,10 +162,69 @@ Question : in each price range, what is the most
         1) e.g ginsberg is a jewish name.
         2) Li is a chinese name.
 
-### Statistical analysis :
+### Feature indictor location vs key aspect.
 
-    1. Most frequent meaningful bi-words.
-    2. Most mentioned meaningful model :
+Identify and potential feature component location :
+
+feature component :  
+ Have the power to discriminate between the 2 classes :
+
+Expert knowledge:
+Bluetooth : key aspect :
+
+- Key aspect word is in a certain location, these location/Feature indict if it is a key aspect.
+
+- Key aspect and the feature component. Reverse bootstrap,
+
+  1. use expert knowledge to find a location of the feature component,
+     - e.g sound is the key aspect word, where is sound normally in the listing (title, heading )
+     - as the main Noun phrase of listing heading? Is it always in capital chance of it is in capital is really high (What is the percentage?)
+
+  2) Use feature component to identify other Key aspect :
+
+keyword spotting in the listing :
+
+- give a key word, evaluate its effectiveness and importance.
+- highlight the keywords.
+
+- Miss catching, the light that does not have keywords.
+
+- Evaluate feature's discriminative power, before and after adding the feature.
+
+#### potential feature or indication of feature component.
+
+    - is_capsulized : IC
+    - is_in_product_title IPT
+    - is_in_listing_title_line. ILT
+
+#### MVP design : boot straping the feature indictor location vs key aspect.
+
+-> feature component location list
+
+download 100 listings of bluetooth speaker :
+give 100 link.
+
+- extract 100 product listing. (Bluetooth speaker)
+- 2 input frame, key aspect word
+- highlight the key aspect word in listing.
+
+  - mark it is matched (IC,IPT, ILT)
+  - mark it does not belong to any of the indicator.
+    - a new potential feature indicator is found.
+
+- format of the product listing summary
+
+      {
+          "product_id":
+          {
+          "title" : "",
+          "listing" : "",
+          "price" : "",
+          },
+      }
+
+  - Show product listing using streamlit : input a id :
+  -
 
 ### Semantical study
 
@@ -122,6 +233,13 @@ Question : in each price range, what is the most
         - 1. ,
         - 2. signal strength,
       2. How does number quantify :
+
+research topic :
+
+clustering word according to its semantic closeness :
+cost - price should be close.
+
+http://www.ilc.cnr.it/EAGLES96/rep2/node37.html#:~:text=Word%20clustering%20is%20a%20technique,to%20information%20retrieval%20and%20filtering.
 
 ### Sentiment analysis
 
@@ -132,6 +250,20 @@ Question : in each price range, what is the most
            1. most / least .
         1. How does the trend increase and decrease over the year. (trended analysis .)
       1.
+
+### Research new product example
+
+#### Amazon microphone
+
+- What is the key aspects of amazon microphone :
+  key words .
+- what is key sub Category?
+  step 1 : best ranking article in on the topic - lapel vs shotgun : - PC stand along.
+  Expected outcome:
+
+- Excellent shopping experience.
+- Just speak loud and clear. Never get yourself muffled.
+- Maybe because of too small voice instead of the microphone.
 
 ### UI for the amazon :
 
@@ -158,6 +290,30 @@ Dialogue : chatbot format :
   - What is the commonality of the best seller:
     - Best seller has the following aspect :
 
+## Work Plan
+
+### Basic Amazon product work
+
+### Product basic information extraction
+
+      1 Extract key information from product. :
+         - price. title listing.
+         - history
+
+### Product time dimension monitoring
+
+      - time dimension monitoring :
+        - giving a product code, change across time. (price , rank , comment. )
+      - automatically check every day.
+      - Graph : Data structure of Amazon project
+
+### Statistical analysis :
+
+    1. Most frequent meaningful bi-words.
+    2. Most mentioned meaningful model :
+
+### Build product graph
+
 ## 1.6. Objective
 
 ### 1.6.1. Knowledge learnt
@@ -166,6 +322,11 @@ Dialogue : chatbot format :
   - Statistics ML: end to end.
   - Web service : Flask based web framework
   - Visualization : PowerBI
+
+#### Key benefit :
+
+      - My pet project
+      - Beneficial to the financial insight project
 
 ### 1.6.2. Key concepts
 
