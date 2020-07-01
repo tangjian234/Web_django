@@ -130,11 +130,17 @@ Purchase list :
 1. My Web server for ML projects.
 2. Tensorflow object detection
 
-# Summary
-
 ## My Web server
 
+## object detection for NN study .
+
+scikit-learn will run on a Raspberry Pi just as well as any other Linux machine.
+
+# Summary
+
 ### Search items :
+
+s
 
 - Raspberry Pi : web server
 

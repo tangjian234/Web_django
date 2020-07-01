@@ -14,13 +14,59 @@
   - [ ] [target](#vision)
 - [ ] Read the most important
   - [ ] [paper](#paper-1--deep-learning-for-specific-information-extraction-from-unstructured-texts)
+- [ ] Named Entity Recognition : use spacy to train aspect ?
 
 ## 1.2. Progress
 
 ### 1.2.1. Highlight
+
 [27-06] : completed inform
 
 ## 1.3. Road map
+
+1. Get 10 random amazon web product name
+   See detail : in [amazon web product name](#product-name)
+
+2) improve scraping of key infos : [60 min ][done]
+
+   1. Price.
+   2. rating
+   3. producer
+   4. first comment time [later]
+   5. total comment:
+
+3) scrap 100 bluetooth listing. [30 min ][done 30 ones ]
+
+   1. give link , get the product_id.
+      20 listing downloaded.
+
+4) Scrap 100 bluetooth tech article
+  
+5) Highlighting the product dictionary in the content.
+
+   1. to find the feature component locations
+   2. important. bootstrap.
+
+6) side by side comparison of aspect.
+
+- P1 listing line on connectivity
+- P2 listing line on connectivity
+
+Comparing of price:
+
+- price range and aspect
+
+  - price from 10-20 usd : percentage have feature x.
+
+    4.coverage of product dictionary of the listing. which one is taged and which one does not.
+
+5. detection of noun phrase in title :
+   which of the noun phrase is
+   how to train a more accurate noun phrase.
+
+6. publish in a web-hosting. take input .
+
+7. study amazon API
 
 ## 1.4. Topic:
 
@@ -72,7 +118,11 @@ Same for name classification.
 
 ## Arch Thought
 
+### Noun phrase extraction
+
 ### New structure ideal :
+
+- [What is a noun phrase](https://www.softschools.com/examples/grammar/noun_phrases_examples/65/#:~:text=The%20other%20words%20modify%20the,I%20want%20a%20skate%20board.)
 
 #### the Aspect/Topic is concrete and known :
 
@@ -102,6 +152,24 @@ In all the listing:
 Question : in each price range, what is the most
 
 1. How to rank the
+
+#### apsect creation
+
+1. first line of each listing : generate the aspects words
+
+   1. sound
+   2. price
+   3. water proof
+
+2. for each of the aspect words , tag the review article .
+3. tag the comment according to aspect words.
+
+issue : the accuracy of spacy is not good . see the example
+
+task :
+color tag the html according to identified words.'s identify (person etc)
+
+aspect dictionary . : what are the feature to be considered when selecting :
 
 ### Product dictionary definition.
 
@@ -142,6 +210,38 @@ product hieratically key aspect structure. Object oriented.
           }
 
 - [Audio Spectrum](https://www.teachmeaudio.com/mixing/techniques/audio-spectrum)
+
+##### bluetooth speaker aspection dictionary
+
+https://www.outeraudio.com/portable-bluetooth-speakers/
+
+"key factors"
+
+- ## size :
+- connectivity
+- Sound
+  - Sound Quality:
+  - mid
+  - low
+  - bass, whoffer
+- Portability (more on that below)
+- Design
+  - Design Quality and Materials
+- Waterproof
+  - Waterproof Ratings and Durability
+- Battery
+  - Battery Life
+- Connectivity
+- Bluetooth Range and Connectivity
+- price
+  - Value for Money
+
+bluetooth product will have + connectivity
+
+object inheritance : tree.
+
+Postive noun :
+negative noun : negative sentense .
 
 1.  object oriented relationship : **key aspect belong a a category of devices,**
 
@@ -364,6 +464,10 @@ Dialogue : chatbot format :
 ## 1.8. System Design Detail
 
 ### 1.8.1. Building block construction
+
+- [ ] Named Entity Recognition : use spacy to train aspect
+
+- [Named Entity Recognition](https://spacy.io/usage/linguistic-features#named-entities)
 
 #### 1.8.1.1. Crawler :
 
@@ -618,6 +722,50 @@ input layer is 3D format :
 
 #### Results
 
+## Material info
+
+### product name
+
+amazon web product name
+
+1. normal
+
+   1. B07QBMJW6W
+   2. B00NB2MCI2
+   3. B07YV84PTM
+   4. B07PWPYHM3
+   5. B079QB9BD7
+   6. B08B5YNVFW
+   7. B087KGR54J
+   8. B087KGR54J
+   9. B07KY63Z3R
+   10. B07ZGCNX14
+
+2. bluetooth speaker: amazon.com
+
+   1. B010OYASRG
+   2. B07WSH46LX
+   3. B016XTADG2
+   4. B01CQOV3YO
+   5. B07P39MLKH
+   6. B01HETFQKS
+   7. B07XJ8B9NV
+   8. B07QK2SPP7
+   9. B07ZRVX6RM
+   10. B07NNF7WH1
+
+3. bluetooth speaker: amazon.co.uk
+   1. B010OYASRG
+   2. B07WSH46LX
+   3. B016XTADG2
+   4. B01CQOV3YO
+   5. B07P39MLKH
+   6. B01HETFQKS
+   7. B07XJ8B9NV
+   8. B07QK2SPP7
+   9. B07ZRVX6RM
+   10. B07NNF7WH1
+
 ## 2.2. Ref :
 
 ### 2.2.1. Paper 1 : Deep learning for specific information extraction from unstructured texts
@@ -650,3 +798,9 @@ demo page
 - [White paper — Job Skills extraction with LSTM and Word Embeddings](https://medium.com/@nikkisharma536/white-paper-job-skills-extraction-with-lstm-and-word-embeddings-d71d1f96024f)
 
 * [paper Job Skills extraction with LSTM and Word Embeddings]](https://confusedcoders.com/wp-content/uploads/2019/09/Job-Skills-extraction-with-LSTM-and-Word-Embeddings-Nikita-Sharma.pdf)
+
+- [The Best Portable Bluetooth Speaker: article on bluetooth](https://www.outeraudio.com/portable-bluetooth-speakers/)
+
+- [Semantic distance](http://www.ilc.cnr.it/EAGLES96/rep2/rep2.html)
+
+- [bluetooth speaker search](https://www.amazon.com/s?k=bluetooth+speaker&i=mi&ref=nb_sb_noss_2)

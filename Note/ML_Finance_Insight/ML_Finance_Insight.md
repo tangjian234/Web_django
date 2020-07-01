@@ -33,6 +33,14 @@
 language processing :
 product data mining and analysis
 
+### 3. How to get a trending financial data
+
+    1. and what kind of insight can it bring. Publicly available data.
+
+1.  log the input : mark the result
+
+Check rosbersbary pi.
+
 ### User experience
 
 1. What is most popular bluetooth headset product.

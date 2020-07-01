@@ -9,48 +9,64 @@
 
 ## Todo
 
+- [ ] Check text topic extraction.
+- [ ] - select list and NER [highlighter](#add-mark-to-html-file)
+
 ## Topic:
 
-- Name identifier
+- Name identifier : NER : name entry recognition .
+- Noun phrase Identification
+- web statistical summary.
 
 ## Progress
+
+[28-06]
+
+- MVP is Done, NER is Recognized and highlighted; to be Summarized.
+- Next : Identify the noun phrase.
+- to be Complete the future work.(web Statistical work)
 
 ### Highlight
 
 ## Use case :
 
-- As a user , I can automatically highlight the personal names of a webpage
-- As a user , I can input a webpage and get the human names highlighted.
+- As a user , I can automatically highlight the personal names of a webpage [Done]
+
+- As a user, I can see the important noun phrase of a text. [Topic extraction]
+
+- As a user , I can know the statistics of a web page and have them visualized.
 
 ## Vision
 
 - Ability to process webpage and give webpage information summary.
-- First step of web information summery service. // STUB : x1 create full package scaffolding.
+- First step of web information summery service.
 - Webpage highlighting.
 
 ## Road map
 
-- One week from now : 24-06
+- One week from now : 24-06 MVP DONE and excess the
 
-## Future :
+## Future
 
-### use case  
-As a user , I can know the statistics of a web page and have them visualized.
+### Noun Phrase
 
-- Web page information summary service :
-  - key info of webpage :
-    - Title :
-    - topic :
-    - key words list :
-      - tags :
-    - Categorization :
-      - tags :
-    - summary text :
-      - paragraph level
-    - Key information list
-      - names : name nationality etc.
-      - digits :
-        Other information of satisitical anlaysis .
+### Web page
+
+#### Web page information summary service :
+
+- key info of webpage :
+  - Title :
+  - topic :
+  - key words list :
+    - tags :
+  - Categorization :
+    - tags :
+  - summary text :
+    - paragraph level
+  - Key information list
+    - names : name nationality etc.
+    - digits :
+      Other information of statistical analysis .
 
 ## Objective and key result
 
@@ -86,43 +102,62 @@ As a user , I can know the statistics of a web page and have them visualized.
 
 ## System Design Detail
 
-### Building block construction
+### Name entry recognition (NER)
+
+- Input : webpage
+- highlighted
+- use article to get webpage text content
+- use spacy for NER
+
+#### Result :
+
+- ML_Master.py: Name entry recognition section of
+- name_entity_reco.py: C:\Local\Work\ML_Name\Code\Lib\name_entity_reco.py
+  - nlp_text = ner.Get_html_text(message)
 
 #### Crawler :
 
-- Crawler from web get the STEM names, [DONE]
-- Crawler from web get the STEM subjects ,
-
-##### Short vs Long term design
-
-- Short Longer: Manual download 100 Chinese, standard mainland Mandarin : from different places.
-- Long Term : Crawler download 100000 Chinese name from database, using web crawler.
-
-##### Input
-
-NONE
-
-##### Output
-
-- List of names
-  - in Json format
+NONE : already trained.
 
 #### Classifier
 
-     1. Build System that Classify of Chinese name vs other names [DONE]
-     2.  Build System that Classify of  Name vs  None Names .
+- use spacy : C:\Local\Work\ML_Name\Code\Lib\name_entity_reco.py
+- get_person_name()
 
-##### Short vs Long term design
+##### Input : webpage
 
-1. Chinese vs Non-Chinese
+### use article to extract key words.f
 
-- Short Term: use the lookup table to search [DONE]
-- Long Term : use classifier to check [DONE]
+##### Output
 
-2. Name vs Non-Name :
+#### IO :
 
-- Short Term: use simple one dimension classsifer .
-- Long Term : use classifier to check
+- Display hightlighted marked up:
+  - \*\*\*\* as highlighter
+- use the markup
+
+##### add mark to html file
+
+urllib.request.urlretrieve("http://www.example.org/", "webpage.html")
+st.write
+
+### add the UI component
+
+- selector list and NER highlighter
+
+### Noun phase
+
+- [ ] ### What is NP :
+
+- [Noun Phrases Examples](https://www.softschools.com/examples/grammar/noun_phrases_examples/65/#:~:text=The%20other%20words%20modify%20the,I%20want%20a%20skate%20board.)
+
+#### Crawler :
+
+##### Input
+
+##### Output
+
+#### Classifier
 
 ##### Input
 
@@ -130,45 +165,50 @@ NONE
 
 #### IO :
 
-1. I/Output and visualize Result
-   1. Statistical percentage.
-
-- [ ] Good input/output UI :
-  - [ ] Give a webpage : provide the statistic of the name in the webpage.
-    - [ ] Web link :
-  - [ ] Scan the Chinese name
-
 ##### Input
 
 - Input name , display the nationality:
 
 ##### Output
 
-- List of names e
-  - in Json forma
+### Webpage statistic
 
-Creation of Corpse
-Crawler to Get the names of the paper :
+- Web Statistic according to spacey:
 
-- First author?
+1. Find how many persons's of each nationality belong to
+2. 2 are chinese and 3 are english.
 
-- Steps :
+## Reference
 
-  - Recognition of chinese name ;
-    - Simple : 100 Known Chinese name : Fixed
-    - Complex : use NN LSTM to recognition of name :
+#### Python (NLTK) - more efficient way to extract noun phrases?
 
-End result :
+- [extract noun phrases](https://stackoverflow.com/questions/49564176/python-nltk-more-efficient-way-to-extract-noun-phrases)
 
-- visualization
-  - Power BI
+#### How To Easily Recognize People’s Names In A Text
 
-Challenges :
+- [How To Easily Recognize People’s Names In A Text](https://thetokenizer.com/2013/08/25/how-to-easily-recognize-peoples-names-in-a-text/)
 
-- complex : how to step by step simplify a issue.
-- simplify :
+use google search to verify .
 
-[------------------------------------------------------------------------------------------------------------------------------------]: #
+- [freebase](https://developers.google.com/freebase)
+
+#### traditional NER use the spacy.
+
+- [Named Entity Recognition with NLTK and SpaCy](https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da#:~:text=Named%20entity%20recognition%20%28NER%29is%20probably%20the%20first%20step,can%20help%20answering%20many%20real-world%20questions%2C%20such%20as%3A)
+
+https://spacy.io/usage/linguistic-features
+https://towardsdatascience.com/named-entity-recognition-with-nltk-and-spacy-8c4a7d88e7da#:~:text=Named%20entity%20recognition%20%28NER%29is%20probably%20the%20first%20step,can%20help%20answering%20many%20real-world%20questions%2C%20such%20as%3A
+
+- [Evaluation in a Spacy NER model](https://stackoverflow.com/questions/44827930/evaluation-in-a-spacy-ner-model)
+
+Articles
+
+- [Scrape and Summarize News Articles in 5 Lines of Python Code](https://towardsdatascience.com/scrape-and-summarize-news-articles-in-5-lines-of-python-code-175f0e5c7dfc)
+
+* [news site 1](https://finance.yahoo.com/)
+
+* [news site 2](https://www.npr.org/2019/07/10/740387601/university-of-texas-austin-promises-free-tuition-for-low-income-students-in-2020)
+  [------------------------------------------------------------------------------------------------------------------------------------]: #
 
 ## Draft
 
@@ -193,3 +233,5 @@ import json
 
 with open('data.txt') as json_file:
 data = json.load(json_file)
+
+- [Python by Examples](http://python.omics.wiki/www/download-webpage)

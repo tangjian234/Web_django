@@ -7,7 +7,29 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![Travis](https://img.shields.io/travis/zalandoresearch/flair.svg)](https://travis-ci.org/zalandoresearch/flair)
 
-## 1.1.
+## todo
+
+- [ ] download [amazon database](#database)
+
+
+https://htmledit.squarefree.com/
+
+## database
+
+[27-06]
+
+- [The 25 Best Datasets for Natural Language Processing](https://lionbridge.ai/datasets/the-best-25-datasets-for-natural-language-processing/)
+
+- **Amazon reviews data**
+
+  - http://jmcauley.ucsd.edu/data/amazon/
+  - http://deepyeti.ucsd.edu/jianmo/amazon/index.html
+    https://snap.stanford.edu/data/web-Amazon.html
+    // TODO : review and download
+
+- [The Blog Authorship Corpus](http://u.cs.biu.ac.il/~koppel/BlogCorpus.htm)
+
+- [20 Newsgroups](http://qwone.com/~jason/20Newsgroups/)
 
 ## Text vectorization
 

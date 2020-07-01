@@ -97,7 +97,7 @@ def name_nationality(my_text):
 def main():
     """ NLP Based App with Streamlit """
     # Title
-    st.title("NLPiffy with Streamlit")
+    st.title("Jian's work ")
 
     # sidbar title image
     image = Image.open('my_nlp-word-cloud.jpg')
@@ -110,7 +110,9 @@ def main():
     	Tokenization,NER,Sentiment,Summarization
     	""")
 
+
     # Tokenization
+    '''
     if st.sidebar.checkbox("Show Tokens and Lemma"):
         st.subheader("Tokenize Your Text")
 
@@ -157,7 +159,7 @@ def main():
                 summary_result = summarize(rawtext)
 
             st.success(summary_result)
-
+'''
     # Name Nationality
     if st.sidebar.checkbox("Name Nationality Recongition"):
         st.subheader("Enter your names, seperated by , ")
@@ -177,7 +179,15 @@ def main():
             (nlp_text, person_name_all) = ner.get_person_name(nlp_text)
             st.write(person_name_all)
             st.markdown(nlp_text)
-
+    # Name entity recognition
+    import bs_lib
+    if st.sidebar.checkbox("Amazon Product"):
+        st.subheader("Enter your product ID ")
+        message = st.text_area(
+            "ID")
+        if st.button("Analyze"):            
+            amazon_product_dict = bs_lib.get_amazon_product_info(message)
+            st.write(amazon_product_dict)
     st.sidebar.subheader("About App")
     st.sidebar.text("NLP with Streamlit")
     st.sidebar.info("Cudos to the Streamlit Team")

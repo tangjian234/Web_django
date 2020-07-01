@@ -34,7 +34,6 @@
 - As a user, I can get the nationality of the person by given a list of names,
 - As a user , I can input a name string and get the nationality of the person.
 
-
 ## Vision
 
 ## Objective
@@ -61,6 +60,8 @@
 
 #### Raw data Crawler :
 
+- Generate data for bootstrap
+
 - Use python faker to create 10000 names for key nationalities .
   - Japanese, Hindi, German, Italy,
 - [Crawler.md]
@@ -72,10 +73,16 @@
   - Japanese, Hindi, Chinese
   - [Data_preparation.md]
 
+File data reading format :
+configure file
+[]
+:
+csv file
+
 #### Classification:
 
-1.  Use scikit-learn to train 
-    
+1.  Use scikit-learn to train
+
     https://scikit-learn.org/stable/
 
 4) List of current languages are : 1.
@@ -191,6 +198,17 @@ NONE
 
 1. I/Output and visualize Result
    1. Statistical percentage.
+
+##### UI of the existing interface :
+
+cosmetic :
+
+1. best color for text for a chatbot ?
+   <Question: what is the optimail interface for the >
+
+<Answer: no color so fa >
+
+Generate data for bootstrap
 
 - [ ] Good input/output UI :
   - [ ] Give a webpage : provide the statistic of the name in the webpage.
