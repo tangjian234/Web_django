@@ -30,6 +30,7 @@ WP
 - [ ] Study
 - [ ] Study [streamlit](#streamlit-101-an-in-depth-introduction)
 - [ ] Study of [voila](#voila) : jupyter notebook
+- [ ] A good web page design : (Web_ML_IO.md #Objective) [60 min ] - Search a good data science visualization template page.
 
 ## Vision
 
@@ -43,8 +44,9 @@ WP
    - data visualization webpage design.
    - search for the template of the
    - have HTML and css that have
-2. Use of [voila](#voila) : jupyter notebook
-3. Use of [streamlit](#streamlit-101-an-in-depth-introduction)
+2.
+3. Use of [voila](#voila) : jupyter notebook
+4. Use of [streamlit](#streamlit-101-an-in-depth-introduction)
    - Stand alone
 
 // {STREAM_LIT}

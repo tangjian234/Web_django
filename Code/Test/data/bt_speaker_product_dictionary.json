@@ -1,0 +1,51 @@
+{
+	"ASIN": "",
+	"title": "",
+	"price": "",
+	"feature_list": {
+		"sound": {
+			"list_title": "",
+			"list_content": "",
+			"key_word": ["sound", "bass", "stereo", "mids", "volume"],
+			"key_character": {
+				"spectrum_range": {
+					"bass": "",
+					"middle": "",
+					"high": ""
+				},
+				"volume": {
+					"loudness": ""
+				}
+			},
+			"match": {}
+		},
+		"connectivity": {
+			"list_title": "",
+			"list_content": "",
+			"key_word": ["connectivity", "range"],
+			"key_character": {
+				"distance": ""
+			},
+			"match": {}
+		},
+		"battery": {
+			"list_title": "",
+			"list_content": "",
+			"key_word": ["battery"],
+			"key_character": {
+				"playtime": "",
+				"capacity": ""
+			},
+			"match": {}
+		},
+		"waterproof": {
+			"list_title": "",
+			"list_content": "",
+			"key_word": ["waterproof", "water", "IPX"],
+			"key_character": {
+				"ipx": ""
+			},
+			"match": {}
+		}
+	}
+}

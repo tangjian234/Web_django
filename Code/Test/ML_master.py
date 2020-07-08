@@ -100,7 +100,7 @@ def main():
     st.title("Jian's work ")
 
     # sidbar title image
-    image = Image.open('my_nlp-word-cloud.jpg')
+    image = Image.open('C:/Local/Work/ML_Name/Code/Lib/my_nlp-word-cloud.jpg')
     st.sidebar.image(image, caption='NLP Cloud',
                      use_column_width=True)
     st.sidebar.subheader("Natural Language Processing On the Go..")

@@ -9,6 +9,13 @@
 
 ## 1.1. Todo
 
+      - [x] ML OKR and Plan [ 1 hour ]
+
+      1. Scaffolding for the key python data science library. (45 min)
+
+1. scaffolding :
+   1. sort the library of ML study
+
 ## 1.2. Vision
 
     - Publish a in medium : key machine learning websites.
@@ -56,6 +63,10 @@ NLP Projects:
 NLP_Master.py
 
 - [NLP_Master.py](file:///C:/Local/Work/Python/PyLib/NLP_Master.py)
+
+### 1.3.6. Text processing
+
+- [ML_Text_Process.md](file:///C:/Local/Work/ML_Name/Note/ML_Text_Process.md)
 
 ### 1.3.6. STUDY
 

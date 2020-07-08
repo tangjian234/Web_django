@@ -22,12 +22,14 @@
 
 [27-06] : completed inform
 
-## 1.3. Road map
+## 1.3. Roadmap and progress
+
+### Product Info crawling :
 
 1. Get 10 random amazon web product name
    See detail : in [amazon web product name](#product-name)
 
-2) improve scraping of key infos : [60 min ][done]
+2. improve scraping of key infos : [60 min ][done]
 
    1. Price.
    2. rating
@@ -39,15 +41,20 @@
 
    1. give link , get the product_id.
       20 listing downloaded.
+- [ML_master.py] 
 
-4) Scrap 100 bluetooth tech article
-  
-5) Highlighting the product dictionary in the content.
+### product dictionary creation
+
+amazon_product_dictionary.py : processing and matching production dictionary vs asin product info
+
+4. Scrap 100 bluetooth tech article
+
+5. Highlighting the product dictionary in the content.
 
    1. to find the feature component locations
    2. important. bootstrap.
 
-6) side by side comparison of aspect.
+6. side by side comparison of aspect.
 
 - P1 listing line on connectivity
 - P2 listing line on connectivity
@@ -173,9 +180,27 @@ aspect dictionary . : what are the feature to be considered when selecting :
 
 ### Product dictionary definition.
 
-build keywords then build structure.
+- build keywords then build structure.
 
-Expected result, : Product key aspect dictionary
+- Expected result, : Product key aspect dictionary
+
+#### Activity.
+
+- 1. Load json file
+
+  - load_product_listing_json
+
+  1. Generate Product dictionary json file
+
+     - load_product_dictionary_json
+
+  - keywords :
+
+- 1. match and tag aspects into each listing sentences. **One last sentence. One aspect.**
+  2. Highlight the key word match
+  3. Give each aspect feature a value/discription.
+     1. bass : 'xx sentence'
+     2. waterproff : 'IPX'
 
 #### Product dictionary data structure
 
@@ -187,7 +212,7 @@ product hieratically key aspect structure. Object oriented.
     - Key words <KW>
     - Key characters <KC>
 
-  1.  Product dictionary cotain key aspects.
+  1.  Product dictionary contain key aspects.
   2.  Key aspects contain keywords and key characters
       1.  **Key aspect contain keywords that describe/characterize the key aspect.** can be further breakdown into structures.
 
@@ -217,7 +242,7 @@ https://www.outeraudio.com/portable-bluetooth-speakers/
 
 "key factors"
 
-- ## size :
+- size :
 - connectivity
 - Sound
   - Sound Quality:
@@ -460,6 +485,186 @@ Dialogue : chatbot format :
 1. Make MVP first : Frame work first, Get more detail later .
 2. how to Simplify, Well still keep the system integrity
 3. Each component/Building block have a file
+
+## steps planning
+
+[03-07]
+
+### Crawler :
+
+    1. Get 100 best seller : <bluetooth speaker>
+
+### User experience and scenario
+
+- what is most effective shopping strategy :
+
+1. Use microphone, nice example.
+2. what is the general landscape
+   1. price range.
+   2. what kind of **sub category** microphone we have :
+      1. price range of each sub category
+      2. pro and cons :
+         1. effective description.
+   3. what the most important key characters?
+      1. task : KC identification :
+         1. see `by features`
+   4. for each of the key character deminsion, what is most recommended product.
+      1. branded product (high end )
+      2. Sound quality. best
+      3. bluetooth range.
+         1. best connectivity product. (hard parameter):
+         2. 1. hard parameter : distance.
+   5. How does the some recommended products comparing using the matrics of key characters ?
+      1. see `Compare with similar items` in a product
+         1. B01MTB55WH
+      2. critics for it is too simple. And that's less informative..
+      3. three points need to be vastly improved to be more Informative and useful :
+         1. `Read reviews that mention`
+         2. `By feature`
+         3. `Compare with similar items`
+
+### Statistical survey of top 100 best saler - listing:
+
+#### Text processing :
+
+- [ML_Text_Process.md](file:///C:/Local/Work/ML_Name/Note/ML_Text_Process.md)
+
+Noun\_
+
+#### Objective.
+
+- fast quick landscape. just for quick peaking.
+
+#### items
+
+- - 1. Summarize the core parameter of a product :
+    2. price range and histogram.
+    3. Title analysis.
+    4. listing vs product dictionary
+
+#### Summarize the core parameter of a product :
+
+- - 1. best seller rank
+    2. brand
+    3. price
+
+#### price range and histogram.
+
+- - 1. max, min, median, standard derivation statistical diagrams.
+    2. weighted by sales number
+
+#### Title analysis.
+
+- - 1.  title keywords extraction and coverage.
+    2.  Cluster of title keywords.
+    3.  frequency analysis of the key words.
+
+#### Listing vs product dictionary
+
+##### Objective Done
+
+- Current Categorize the listing according to know key character list: What is the next strategy?
+
+##### Content.
+
+- - 1.  Product KC coverage in listing
+        1.  especially what is not covered KC
+    2.  Most used and mentioned KC in feature listing
+
+    3.  Have all the basic grammatical analyze and think.
+        1.  extract the NER, noun phrase.
+    4.  what feature is the **key most price driver**.
+    5.  Feature vs price correlation.
+        1.  brand?
+        2.  a specific feature such as waterproof/battery life?
+    6.  Feature vs comment , best seller correlation :
+
+##### product dictionary KC vs listing
+
+##### Product KC coverage in listing
+
+##### Most used and mentioned KC in feature listing
+
+##### basic grammatical analyze
+
+- - 1.  extract the NER, noun phrase in feature list
+
+#### KC vs product :
+
+- - 1. out of 100 products, which one have best bluetooth connectivity
+    2. out of 100 products, which one have best sound quality
+    3. out of 100 products, which one have longest battery life.
+    4.
+-
+
+#### Side question:
+
+    1. how to get 1000 best seller.
+
+### Time tracker of each best saler
+
+#### Objective.
+
+- - 1. Can be quickly productive and show it to users.
+
+##### How
+
+- - 1. given product id : download and compare every day.
+    2. mark a product and provide time_stampeded update
+    3. check for:
+       1. Ranking change. price curve,
+       2. Comment increase: Daily increase.
+       3. new comment,
+       4. price change.
+
+##### Action
+
+- send alert my price
+- check honey droplist :
+
+  - https://www.joinhoney.com/ : Droplist
+  - time to change
+
+- How to get the promo code?
+  - How to search the right website to get prompt code
+  - check honey. : https://www.joinhoney.com/
+  - honey promp code : https://www.joinhoney.com/page/DR-US-Evergreen-Simplified-Widget-Airpods-Yellow/
+
+### Statistical survey of top 100 best saler - comments:
+
+    1. What is the most informative comment.
+               1. highly recommended .
+               2. worst , 1 star, long and represetive .
+
+### Seller Perspective analysis
+
+#### 2 personality :
+
+            1.  as a buyer to get the best product.
+            2.  as a seller, find the best niche to sell.
+
+#### Content :
+
+- - 1.  monitor the price of a keywords and for effective ad promotion:
+    2.  What is most sensitive to future? If I want to have a new product to developed.
+        1. is this product price driving,
+        2. feature driving
+        3. or brand driving?
+
+### UX design.
+
+#### Objective.
+
+- How to design to get the best web interface to help the user to make an informed decision : clean website.
+
+#### Sub categories
+
+- the product have 3 kind of sub categories :
+
+  - definition of the each categories.
+  - pro and con of each category.
+
+- formulate ; make structure, filling in the content
 
 ## 1.8. System Design Detail
 
