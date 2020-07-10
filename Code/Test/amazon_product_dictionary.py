@@ -60,7 +60,7 @@ product_id = product_ids[random.randint(1, (len(product_ids)))]
 
 
 def clean_feature_list(feature_list):
-    # Func:
+    # Func: Remove the non feature list description in the feature list 
     feature_list = [x for x in feature_list if not (
         (x == "This fits your .") | (x == " Make sure this fits") | (x == "by entering your model number."))]
     return(feature_list)
@@ -68,6 +68,7 @@ def clean_feature_list(feature_list):
 
 
 def get_match(string):
+  # Func:  Used to get the first sentence, which is the feature list title . Separated by the separator.
     separators = [': ', '- ', '; ', '】 ']
     # shortest no empty match
 
@@ -86,6 +87,8 @@ def get_match(string):
 
 
 def get_feature_list_title(feature_list):
+  # func : split out the title according to seperator
+  # first sentence with Separated by the separator. 
     feature_list_title = [get_match(s.lower())
                           for s in feature_list]
     feature_list_title
@@ -93,18 +96,23 @@ def get_feature_list_title(feature_list):
 
 
 def process_product_dictionary(product_dict, product_info):
+    # match product_dict vs asin_product info
     product_dict
     product_info
 
+    #  Get feature list needs a title, which is the first sentence.
     feature_list = product_info["feature_list"]
     feature_list = clean_feature_list(feature_list)
     feature_list_title = get_feature_list_title(feature_list)
 
+    # fill in the Product dictionary.
     product_dict["ASIN"] = product_info["ASIN"]
     product_dict["title"] = product_info["title"]
     product_dict["price"] = product_info["price"]
     st.write("match with --------------------\n")
     mat = {}
+    # if there is any key word of the product aspect in the feature list title sentence 
+    # it is a match. 
     for f in feature_list_title:
         mat[f] = {}
         for kc in product_dict["feature_list"].keys():
@@ -114,6 +122,7 @@ def process_product_dictionary(product_dict, product_info):
                 product_dict["feature_list"][kc]["match"][f] = fl
                 mat[f][kc] = fl
     # product_dict
+    
     mat
     return(product_dict)
 

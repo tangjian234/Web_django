@@ -15,7 +15,7 @@ import streamlit as st
 
 
 # download file given a list of asin 
-product_id_list_file = 'C:/Local/Work/ML_Name/Code/Test/product_id_list_file.json'
+product_id_list_file = 'C:/Local/Work/ML_Name/Code/Test/asin_list_file.json'
 product_id_list = json_lib.load_json(product_id_list_file)
 
 for k in product_id_list.keys():

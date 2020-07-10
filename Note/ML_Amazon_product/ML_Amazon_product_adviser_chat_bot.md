@@ -16,45 +16,288 @@
   - [ ] [paper](#paper-1--deep-learning-for-specific-information-extraction-from-unstructured-texts)
 - [ ] Named Entity Recognition : use spacy to train aspect ?
 
-## 1.2. Progress
+## 1.2. Vision
 
-### 1.2.1. Highlight
+- Name : **Genie** :
 
-[27-06] : completed inform
+  - Use aladdin theme for each of the sub project
+  - Chat bot on amazon search , help user to make wise decision while shoping
 
-## 1.3. Roadmap and progress
+## 1.3. Objective
 
-### Product Info crawling :
+### 1.3.1. Knowledge learnt
 
-1. Get 10 random amazon web product name
-   See detail : in [amazon web product name](#product-name)
+- What knowledge do you gain by this practice
+  - Statistics ML: end to end.
+  - Web service : Flask based web framework
+  - Visualization : PowerBI
+  - language processing :
+  - product data mining and analysis
 
-2. improve scraping of key infos : [60 min ][done]
+### 1.3.2. Key benefit :
 
-   1. Price.
-   2. rating
-   3. producer
-   4. first comment time [later]
-   5. total comment:
+      - My pet project
+      - Beneficial to the financial insight project
 
-3) scrap 100 bluetooth listing. [30 min ][done 30 ones ]
+### 1.3.3. What is not todo :
 
-   1. give link , get the product_id.
-      20 listing downloaded.
-- [ML_master.py] 
+    - Sub optimization :
+    - build a MVP : for each component:
+    - make the whole things work first.
 
-### product dictionary creation
+-
 
-amazon_product_dictionary.py : processing and matching production dictionary vs asin product info
+### 1.3.4. Key concepts
 
-4. Scrap 100 bluetooth tech article
+#### 1.3.4.1. Aspects :
 
-5. Highlighting the product dictionary in the content.
+## 1.4. High level Work Plan
 
-   1. to find the feature component locations
-   2. important. bootstrap.
+### 1.4.1. Basic Amazon product work
 
-6. side by side comparison of aspect.
+### 1.4.2. Product basic information extraction
+
+      1 Extract key information from product. :
+         - price. title listing.
+         - history
+
+### 1.4.3. Product time dimension monitoring
+
+      - time dimension monitoring :
+        - giving a product code, change across time. (price , rank , comment. )
+      - automatically check every day.
+      - Graph : Data structure of Amazon project
+
+### 1.4.4. Statistical analysis :
+
+    1. Most frequent meaningful bi-words.
+    2. Most mentioned meaningful model :
+
+### 1.4.5. Build product graph
+
+## 1.5. Key docs and data structure:
+
+### 1.5.1. Key python files.
+
+- - 1.  [ML_master.py] :
+        - Running the streamlit based web UI :
+    2.  [ML_amazon_best_seller.py] :
+        - given search term: get the top 100 best seller.
+    3.  [ML_amazon_listing_download.py] :
+        - download file given a list of asin : use bs_lib.get_amazon_product_info(asin)
+    4.  [amazon_product_dictionary.py] :
+        - processing and matching production dictionary vs asin product info -
+
+### 1.5.2. Key md files.
+
+- - 1.  [ML_Amazon_product_adviser_chat_bot.md]: master file :
+    2.
+-
+- -
+- :
+
+### 1.5.3. Key data structure
+
+#### 1.5.3.1. asin list
+
+[detail](#1331-asin-list)
+
+##### 1.5.3.1.1. Format
+
+`asin_list_file.json`
+
+    format :
+    {
+    "1": "B0742BV75P",
+    "2": "B0719M4YZB",
+    ...
+    }
+
+##### 1.5.3.1.2. Example
+
+- [asin_list_file.json](file:///C:/Local/Work/ML_Name/Code/Test/asin_list_file.json)
+- [bluetooth+speaker.json](file:///C:/Local/Work/ML_Name/Code/Test/data/best_seller/bluetooth+speaker.json) : output of the best_seller scraping
+
+#### 1.5.3.2. Asin information dictionary
+
+- [detail](#1332-asin-information-dictionary)
+
+##### 1.5.3.2.1. Format
+
+      {
+      "ASIN": "B07ZRVX6RM",
+      "title": """,
+      "feature_list": [
+      ],
+      "price": "",
+      "rating": ",
+      "no_of_comments": "",
+      "producer": "",
+      "best_seller_rank": "",
+      "date_first_available": ""
+      }
+
+##### 1.5.3.2.2. Example
+
+- [B07ZRVX6RM.json](file:///C:/Local/Work/ML_Name/Code/Test/data/asin/B07ZRVX6RM.json)
+
+#### 1.5.3.3. Product Dictionary :
+
+- [detail](#1333-product-dictionary-)
+
+##### 1.5.3.3.1. What
+
+- Provide aspects ->
+
+##### 1.5.3.3.2. Format
+
+- - - get empty place to fill
+      "feature_list": {
+      "sound": {},
+      "connectivity": {},
+      "battery": {}
+      }
+
+##### 1.5.3.3.3. Example
+
+- [bt_speaker_product_dictionary.json](file:///C:/Local/Work/ML_Name/Code/Test/data/bt_speaker_product_dictionary.json)
+
+## 1.6. Work Completed
+
+### 1.6.1. Summary
+
+- - 1. Scrap top 100 bluetooth listing and get 100 asin list. e.g 'bluetooth+speaker'
+    2. Scrap each asin , get asin information dictionary
+    3. Match product dictionary with asin information dictory
+
+### 1.6.2. scrap top 100 bluetooth listing.
+
+`ML_amazon_best_seller.py`
+
+#### 1.6.2.1. Summary : - get the top 100 best seller.
+
+##### 1.6.2.1.1. Input :
+
+- - 1. given search term: 'bluetooth+speaker'
+
+#### 1.6.2.2. Output
+
+- - 1. Output dir : ASIN_OUT_DIR = 'C:/Local/Work/ML_Name/Code/Test/data/best_seller/'
+    2. list of asin file : same format as
+       1. [detail](#1331-asin-list)
+
+    `asin_list_file.json`
+
+          format :
+          {
+          "1": "B0742BV75P",
+          "2": "B0719M4YZB",
+          ...
+          }
+
+#### 1.6.2.3. Implementation
+
+- - 1. build google search page : build_google_search_page()
+    2. Get 50 best seller asin for a best seller page : get_a_page_best_seller_asin(soup):
+    3. get 100 best seller : get_best_seller_asin(Amazon_best_seller_page)
+       1. get first 50 seller
+       2. get next page link
+       3. get next 50
+
+### 1.6.3. Product Info crawling and display :
+
+#### 1.6.3.1. Amazon product asin list :
+
+- - 1.  Get amazon web product name list
+
+`product_id_list_file.json`
+format :  
+ {
+"1": "B0742BV75P",
+"2": "B0719M4YZB",
+...
+}
+
+#### 1.6.3.2. Scraping of key infos of one listing's Asin
+
+`bs_lib.py : get_amazon_product_info()`
+
+##### 1.6.3.2.1. Key product information
+
+- - 1.  Price.
+    2.  rating
+    3.  producer
+    4.  first comment time [later]
+    5.  total comment:
+
+##### 1.6.3.2.2. Implementation : bs_lib.py : get_amazon_product_info()
+
+- - - input : asin id
+    - Output :
+      - product info : dictionary json file
+      - output_dir : 'C:/Local/Work/ML_Name/Code/Test/data/asin/'
+
+#### 1.6.3.3. Scrap a list of asin :
+
+`ML_amazon_listing_download.py`
+`amazon_product_dict = bs_lib.get_amazon_product_info(asin)`
+
+- - 1. input : list is in `product_id_list_file.json`
+    2. Output : Go though and scrap and save in output_dir :
+       1. 'C:/Local/Work/ML_Name/Code/Test/data/asin/'
+
+#### 1.6.3.4. Display in streamlit
+
+- [ML_master.py]
+
+##### 1.6.3.4.1. called in :
+
+- - - ML_master.py : given a web interface :
+    - - input text box : asin id
+    - - output : scrap that asin and display product info
+
+### 1.6.4. product dictionary creation
+
+// ANCHOR now
+
+#### 1.6.4.1. Product dictionary data
+
+- [detail](#1333-product-dictionary-)
+
+##### 1.6.4.1.1. Format
+
+- - - get empty place to fill
+      "feature_list": {
+      "sound": {},
+      "connectivity": {},
+      "battery": {}
+      }
+- [bt_speaker_product_dictionary.json](file:///C:/Local/Work/ML_Name/Code/Test/data/bt_speaker_product_dictionary.json)
+
+### 1.6.4. product dictionary vs asin info
+ #### Hard matching : 
+- **classify each feature list title : belong to which aspect**
+  - if the keyword of the aspect is in the feature list title 
+- Example :
+  
+## 1.7. Work: Next steps
+
+### Plot radar diagram :
+
+- [](#aspect-score-visualization-)
+
+### 1.7.1. Scrap 100 bluetooth tech article
+
+// STUB
+
+### 1.7.2. Highlighting the product dictionary in the content.
+
+1.  to find the feature component locations
+2.  important. bootstrap.
+
+// STUB
+
+### 1.7.3. side by side comparison of aspect.
 
 - P1 listing line on connectivity
 - P2 listing line on connectivity
@@ -67,32 +310,23 @@ Comparing of price:
 
     4.coverage of product dictionary of the listing. which one is taged and which one does not.
 
-5. detection of noun phrase in title :
-   which of the noun phrase is
-   how to train a more accurate noun phrase.
+### 1.7.4. detection of noun phrase in title :
 
-6. publish in a web-hosting. take input .
+which of the noun phrase is
+how to train a more accurate noun phrase.
 
-7. study amazon API
+### 1.7.5. publish in a web-hosting. take input .
 
-## 1.4. Topic:
+### 1.7.6. study amazon API
 
-## 1.5. Vision
+## 1.8. Use case and User experience :
 
-- Name : **Genie** :
-
-  - Use aladdin theme for each of the sub project
-
-- Chat bot on amazon search , help user to make wise decision :
-
-language processing :
-product data mining and analysis
-
-## 1.9. Use case :
+### 1.8.1. Generic
 
 - As a user , I can input an Amazon comment and highlight which aspect it is talking about. .
+- As a suer : I want to know what is most effective shopping strategy.
 
-### User experience
+### 1.8.2. User experience Example : Bluetooth speaker purchasing
 
 1. What is most popular bluetooth headset product.
 
@@ -114,40 +348,69 @@ product data mining and analysis
 6. Which have lowest price
 7. Which one have most native ration
 
--
+### 1.8.3. User experience and scenario : microphone purchasing
 
-What is not todo :
-Sub optimization :
-build a MVP : for each component:
-make the whole things work first.
+1. Use microphone, nice example.
+2. what is the general landscape
+   1. price range.
+   2. what kind of **sub category** microphone we have :
+      1. price range of each sub category
+      2. pro and cons :
+         1. effective description.
+   3. what the most important key characters?
+      1. task : KC identification :
+         1. see `by features`
+   4. for each of the key character deminsion, what is most recommended product.
+      1. branded product (high end )
+      2. Sound quality. best
+      3. bluetooth range.
+         1. best connectivity product. (hard parameter):
+         2. 1. hard parameter : distance.
+   5. How does the some recommended products comparing using the matrics of key characters ?
+      1. see `Compare with similar items` in a product
+         1. B01MTB55WH
+      2. critics for it is too simple. And that's less informative..
+      3. three points need to be vastly improved to be more Informative and useful :
+         1. `Read reviews that mention`
+         2. `By feature`
+         3. `Compare with similar items`
 
-Same for name classification.
+## 1.9. Core Ideas
 
-## Arch Thought
+### 1.9.1. Noun phrase extraction
 
-### Noun phrase extraction
+- - 1.  Highlight Noun phrase in an article
 
-### New structure ideal :
+### 1.9.2. Aspect Extraction and matching
 
-- [What is a noun phrase](https://www.softschools.com/examples/grammar/noun_phrases_examples/65/#:~:text=The%20other%20words%20modify%20the,I%20want%20a%20skate%20board.)
+#### 1.9.2.1. the Aspect evaluation : Scores :
 
-#### the Aspect/Topic is concrete and known :
+- Assumption:
 
-    1. Limited: expert knowledge guided first :
+  1. Limited: expert knowledge guided first :
 
-    - - For bluetooth earpiece :
-          the Aspect/Topic is concrete and known :
+  - - For bluetooth earpiece :
+      the Aspect/Topic is concrete and known :
 
-      - - A1 : Connectivity :
-        - A2 : Sound Quality :
-        - A3 : Battery life :
+    - - A1 : Connectivity :
+      - A2 : Sound Quality :
+      - A3 : Battery life :
 
 Total score = weighted score of the aspect: - radar diagram :
 In all the listing:
 
+##### Aspect score Visualization :
+
+- Radar diagram
+
+#### 1.9.2.1. the Aspect, NP matching.
+
+##### Objective
+
+define and match the NP with aspects
+
 - - 1. What kind of NP belong to each category:
   - 2. if one NP belong to the category, the NP of the sentence in the listing is likely to belong to the category.
-
 
     1. Boots strap
        Label -> classify -> re-label for non classified items.
@@ -160,7 +423,7 @@ Question : in each price range, what is the most
 
 1. How to rank the
 
-#### apsect creation
+#### 1.9.2.2. apsect creation
 
 1. first line of each listing : generate the aspects words
 
@@ -178,13 +441,13 @@ color tag the html according to identified words.'s identify (person etc)
 
 aspect dictionary . : what are the feature to be considered when selecting :
 
-### Product dictionary definition.
+### 1.9.3. Product dictionary definition.
 
 - build keywords then build structure.
 
 - Expected result, : Product key aspect dictionary
 
-#### Activity.
+#### 1.9.3.1. Activity.
 
 - 1. Load json file
 
@@ -202,7 +465,7 @@ aspect dictionary . : what are the feature to be considered when selecting :
      1. bass : 'xx sentence'
      2. waterproff : 'IPX'
 
-#### Product dictionary data structure
+#### 1.9.3.2. Product dictionary data structure
 
 product hieratically key aspect structure. Object oriented.
 
@@ -236,7 +499,7 @@ product hieratically key aspect structure. Object oriented.
 
 - [Audio Spectrum](https://www.teachmeaudio.com/mixing/techniques/audio-spectrum)
 
-##### bluetooth speaker aspection dictionary
+##### 1.9.3.2.1. bluetooth speaker aspection dictionary
 
 https://www.outeraudio.com/portable-bluetooth-speakers/
 
@@ -278,7 +541,7 @@ negative noun : negative sentense .
     2.  all product has **price** aspect
     3.  all speaker has **sound quality** aspect.
 
-### Feature extraction
+### 1.9.4. Feature extraction
 
     1. Some features is known should have stronger discriminative power by expert knowledge
 
@@ -287,7 +550,7 @@ negative noun : negative sentense .
         1) e.g ginsberg is a jewish name.
         2) Li is a chinese name.
 
-### Feature indictor location vs key aspect.
+### 1.9.5. Feature indictor location vs key aspect.
 
 Identify and potential feature component location :
 
@@ -316,13 +579,13 @@ keyword spotting in the listing :
 
 - Evaluate feature's discriminative power, before and after adding the feature.
 
-#### potential feature or indication of feature component.
+#### 1.9.5.1. potential feature or indication of feature component.
 
     - is_capsulized : IC
     - is_in_product_title IPT
     - is_in_listing_title_line. ILT
 
-#### MVP design : boot straping the feature indictor location vs key aspect.
+#### 1.9.5.2. MVP design : boot straping the feature indictor location vs key aspect.
 
 -> feature component location list
 
@@ -351,7 +614,7 @@ give 100 link.
   - Show product listing using streamlit : input a id :
   -
 
-### Semantical study
+### 1.9.6. Semantical study
 
 - - - 1. <Question: How to Semantically grouping a pack of words.>
       - Example : Bluetooth Connectivity.
@@ -366,7 +629,7 @@ cost - price should be close.
 
 http://www.ilc.cnr.it/EAGLES96/rep2/node37.html#:~:text=Word%20clustering%20is%20a%20technique,to%20information%20retrieval%20and%20filtering.
 
-### Sentiment analysis
+### 1.9.7. Sentiment analysis
 
       1. Enhance the database by go though the typical names
       2. Indian name : identifier .
@@ -376,9 +639,9 @@ http://www.ilc.cnr.it/EAGLES96/rep2/node37.html#:~:text=Word%20clustering%20is%2
         1. How does the trend increase and decrease over the year. (trended analysis .)
       1.
 
-### Research new product example
+### 1.9.8. Research new product example
 
-#### Amazon microphone
+#### 1.9.8.1. Amazon microphone
 
 - What is the key aspects of amazon microphone :
   key words .
@@ -390,7 +653,7 @@ http://www.ilc.cnr.it/EAGLES96/rep2/node37.html#:~:text=Word%20clustering%20is%2
 - Just speak loud and clear. Never get yourself muffled.
 - Maybe because of too small voice instead of the microphone.
 
-### UI for the amazon :
+### 1.9.9. UI for the amazon :
 
 Dialogue : chatbot format :
 
@@ -415,51 +678,9 @@ Dialogue : chatbot format :
   - What is the commonality of the best seller:
     - Best seller has the following aspect :
 
-## Work Plan
+## 1.10. System Overview
 
-### Basic Amazon product work
-
-### Product basic information extraction
-
-      1 Extract key information from product. :
-         - price. title listing.
-         - history
-
-### Product time dimension monitoring
-
-      - time dimension monitoring :
-        - giving a product code, change across time. (price , rank , comment. )
-      - automatically check every day.
-      - Graph : Data structure of Amazon project
-
-### Statistical analysis :
-
-    1. Most frequent meaningful bi-words.
-    2. Most mentioned meaningful model :
-
-### Build product graph
-
-## 1.6. Objective
-
-### 1.6.1. Knowledge learnt
-
-- What knowledge do you gain by this practice
-  - Statistics ML: end to end.
-  - Web service : Flask based web framework
-  - Visualization : PowerBI
-
-#### Key benefit :
-
-      - My pet project
-      - Beneficial to the financial insight project
-
-### 1.6.2. Key concepts
-
-#### 1.6.2.1. Aspects :
-
-## 1.7. System Overview
-
-### 1.7.1. Building block
+### 1.10.1. Building block
 
 1. **Crawler** :
    1. Crawler from web for amazon web pages and comments
@@ -472,7 +693,7 @@ Dialogue : chatbot format :
    4. Data Visualization :
       1. Statistical Visualization.
 
-### 1.7.2. Key Technology
+### 1.10.2. Key Technology
 
 - 1. Use web-service as input/ output. (Azure website)
   2. Use Python as Language
@@ -480,92 +701,57 @@ Dialogue : chatbot format :
   4. Use previous simplified crawler.
   5. Use Pattern recognition as Name Nationality Classifer.
 
-### 1.7.3. Key principles
+### 1.10.3. Key principles
 
 1. Make MVP first : Frame work first, Get more detail later .
 2. how to Simplify, Well still keep the system integrity
 3. Each component/Building block have a file
 
-## steps planning
+## 1.11. Steps planning
 
-[03-07]
+### 1.11.1. Statistical survey of top 100 best saler - listing:
 
-### Crawler :
-
-    1. Get 100 best seller : <bluetooth speaker>
-
-### User experience and scenario
-
-- what is most effective shopping strategy :
-
-1. Use microphone, nice example.
-2. what is the general landscape
-   1. price range.
-   2. what kind of **sub category** microphone we have :
-      1. price range of each sub category
-      2. pro and cons :
-         1. effective description.
-   3. what the most important key characters?
-      1. task : KC identification :
-         1. see `by features`
-   4. for each of the key character deminsion, what is most recommended product.
-      1. branded product (high end )
-      2. Sound quality. best
-      3. bluetooth range.
-         1. best connectivity product. (hard parameter):
-         2. 1. hard parameter : distance.
-   5. How does the some recommended products comparing using the matrics of key characters ?
-      1. see `Compare with similar items` in a product
-         1. B01MTB55WH
-      2. critics for it is too simple. And that's less informative..
-      3. three points need to be vastly improved to be more Informative and useful :
-         1. `Read reviews that mention`
-         2. `By feature`
-         3. `Compare with similar items`
-
-### Statistical survey of top 100 best saler - listing:
-
-#### Text processing :
+#### 1.11.1.1. Text processing :
 
 - [ML_Text_Process.md](file:///C:/Local/Work/ML_Name/Note/ML_Text_Process.md)
 
 Noun\_
 
-#### Objective.
+#### 1.11.1.2. Objective.
 
 - fast quick landscape. just for quick peaking.
 
-#### items
+#### 1.11.1.3. items
 
 - - 1. Summarize the core parameter of a product :
     2. price range and histogram.
     3. Title analysis.
     4. listing vs product dictionary
 
-#### Summarize the core parameter of a product :
+#### 1.11.1.4. Summarize the core parameter of a product :
 
 - - 1. best seller rank
     2. brand
     3. price
 
-#### price range and histogram.
+#### 1.11.1.5. price range and histogram.
 
 - - 1. max, min, median, standard derivation statistical diagrams.
     2. weighted by sales number
 
-#### Title analysis.
+#### 1.11.1.6. Title analysis.
 
 - - 1.  title keywords extraction and coverage.
     2.  Cluster of title keywords.
     3.  frequency analysis of the key words.
 
-#### Listing vs product dictionary
+#### 1.11.1.7. Listing vs product dictionary
 
-##### Objective Done
+##### 1.11.1.7.1. Objective Done
 
 - Current Categorize the listing according to know key character list: What is the next strategy?
 
-##### Content.
+##### 1.11.1.7.2. Content.
 
 - - 1.  Product KC coverage in listing
         1.  especially what is not covered KC
@@ -579,17 +765,17 @@ Noun\_
         2.  a specific feature such as waterproof/battery life?
     6.  Feature vs comment , best seller correlation :
 
-##### product dictionary KC vs listing
+##### 1.11.1.7.3. product dictionary KC vs listing
 
-##### Product KC coverage in listing
+##### 1.11.1.7.4. Product KC coverage in listing
 
-##### Most used and mentioned KC in feature listing
+##### 1.11.1.7.5. Most used and mentioned KC in feature listing
 
-##### basic grammatical analyze
+##### 1.11.1.7.6. basic grammatical analyze
 
 - - 1.  extract the NER, noun phrase in feature list
 
-#### KC vs product :
+#### 1.11.1.8. KC vs product :
 
 - - 1. out of 100 products, which one have best bluetooth connectivity
     2. out of 100 products, which one have best sound quality
@@ -597,17 +783,17 @@ Noun\_
     4.
 -
 
-#### Side question:
+#### 1.11.1.9. Side question:
 
     1. how to get 1000 best seller.
 
-### Time tracker of each best saler
+### 1.11.2. Time tracker of each best saler
 
-#### Objective.
+#### 1.11.2.1. Objective.
 
 - - 1. Can be quickly productive and show it to users.
 
-##### How
+##### 1.11.2.1.1. How
 
 - - 1. given product id : download and compare every day.
     2. mark a product and provide time_stampeded update
@@ -617,7 +803,7 @@ Noun\_
        3. new comment,
        4. price change.
 
-##### Action
+##### 1.11.2.1.2. Action
 
 - send alert my price
 - check honey droplist :
@@ -630,20 +816,20 @@ Noun\_
   - check honey. : https://www.joinhoney.com/
   - honey promp code : https://www.joinhoney.com/page/DR-US-Evergreen-Simplified-Widget-Airpods-Yellow/
 
-### Statistical survey of top 100 best saler - comments:
+### 1.11.3. Statistical survey of top 100 best saler - comments:
 
     1. What is the most informative comment.
                1. highly recommended .
                2. worst , 1 star, long and represetive .
 
-### Seller Perspective analysis
+### 1.11.4. Seller Perspective analysis
 
-#### 2 personality :
+#### 1.11.4.1. personality :
 
             1.  as a buyer to get the best product.
             2.  as a seller, find the best niche to sell.
 
-#### Content :
+#### 1.11.4.2. Content :
 
 - - 1.  monitor the price of a keywords and for effective ad promotion:
     2.  What is most sensitive to future? If I want to have a new product to developed.
@@ -651,13 +837,13 @@ Noun\_
         2. feature driving
         3. or brand driving?
 
-### UX design.
+### 1.11.5. UX design.
 
-#### Objective.
+#### 1.11.5.1. Objective.
 
 - How to design to get the best web interface to help the user to make an informed decision : clean website.
 
-#### Sub categories
+#### 1.11.5.2. Sub categories
 
 - the product have 3 kind of sub categories :
 
@@ -666,53 +852,53 @@ Noun\_
 
 - formulate ; make structure, filling in the content
 
-## 1.8. System Design Detail
+## 1.12. System Design Detail
 
-### 1.8.1. Building block construction
+### 1.12.1. Building block construction
 
 - [ ] Named Entity Recognition : use spacy to train aspect
 
 - [Named Entity Recognition](https://spacy.io/usage/linguistic-features#named-entities)
 
-#### 1.8.1.1. Crawler :
+#### 1.12.1.1. Crawler :
 
 - Crawler from web get the STEM names, [DONE]
 - Crawler from web get the STEM subjects ,
 
-##### 1.8.1.1.1. Versions and stages
+##### 1.12.1.1.1. Versions and stages
 
 1.  S1 :
 2.  S2 :
 
-##### 1.8.1.1.2. Input
+##### 1.12.1.1.2. Input
 
 - Amazon pages :
   - product pages.
   - comment pages
 
-##### 1.8.1.1.3. Output
+##### 1.12.1.1.3. Output
 
 - listing :
 
-#### 1.8.1.2. Classifier
+#### 1.12.1.2. Classifier
 
-#### 1.8.1.3.
+#### 1.12.1.3. .
 
-##### 1.8.1.3.1. Input
+##### 1.12.1.3.1. Input
 
 - product listings
 
-##### 1.8.1.3.2. Output
+##### 1.12.1.3.2. Output
 
 - Key extraction: aspect file tags :
 
-#### 1.8.1.4. IO :
+#### 1.12.1.4. IO :
 
-##### 1.8.1.4.1. Input
+##### 1.12.1.4.1. Input
 
 - Input name , display the nationality:
 
-##### 1.8.1.4.2. Output
+##### 1.12.1.4.2. Output
 
 - visualization
   - Power BI
@@ -722,7 +908,7 @@ Challenges :
 - complex : how to step by step simplify a issue.
 - simplify :
 
-### 1.8.2. Thought
+### 1.12.2. Thought
 
 1.
 
@@ -775,16 +961,16 @@ Popular methods of texts vectorisation, such as tfidf, word2vec or GloVe models 
 
 Raise question : dont answer and think question
 
-##### word2vec
+##### 2.1.1.4.1. word2vec
 
 https://www.tensorflow.org/tutorials/word2vec
 
-##### GloVe
+##### 2.1.1.4.2. GloVe
 
 https://nlp.stanford.edu/projects/glove/
 Introduction :
 
-#### Specific task : extracting aspects from text
+#### 2.1.1.5. Specific task : extracting aspects from text
 
 <Question: What is the key task>
 
@@ -799,7 +985,7 @@ The other example is extracting professional skills from the CVs’ corpus. If w
 <Resume CV -> Skill words>
 Skill words are vectorized .
 
-#### Output Example
+#### 2.1.1.6. Output Example
 
 IMPORTANT
 
@@ -814,7 +1000,7 @@ Stacking :
 feature engineering
 // ANCHOR now
 
-#### Step 1: Parts of speech tagging
+#### 2.1.1.7. Step 1: Parts of speech tagging
 
 - As far as skills are mainly present in so-called noun phrases
 
@@ -831,9 +1017,9 @@ output : Noun Phrase :
 
 Next : label NP : as : Skill vs Non-skill
 
-#### Step 2: Deep learning architecture for candidates classification
+#### 2.1.1.8. Step 2: Deep learning architecture for candidates classification
 
-##### Feature set design
+##### 2.1.1.8.1. Feature set design
 
 Word vector contains:
 
@@ -852,7 +1038,7 @@ foot : F0=0: F1=0; F3=0
 6. F6 : And the addition of **one-hot vectors encoding parts of speech** to the models’ features set boosted our results to 84.6%
 7. F7 : We used GloVe model vectors with 50 dimensions which improved our models’ performance up to 89.1% correct results on a test set.
 
-##### Classification :
+##### 2.1.1.8.2. Classification :
 
 1. input layer 1 : Phrase :
 
@@ -925,11 +1111,11 @@ https://machinelearningmastery.com/reshape-input-data-long-short-term-memory-net
 
 input layer is 3D format :
 
-#### Results
+#### 2.1.1.9. Results
 
-## Material info
+## 2.2. Material info
 
-### product name
+### 2.2.1. product name
 
 amazon web product name
 
@@ -971,34 +1157,36 @@ amazon web product name
    9. B07ZRVX6RM
    10. B07NNF7WH1
 
-## 2.2. Ref :
+## 2.3. Ref :
 
-### 2.2.1. Paper 1 : Deep learning for specific information extraction from unstructured texts
+- [What is a noun phrase](https://www.softschools.com/examples/grammar/noun_phrases_examples/65/#:~:text=The%20other%20words%20modify%20the,I%20want%20a%20skate%20board.)
+
+### 2.3.1. Paper 1 : Deep learning for specific information extraction from unstructured texts
 
 1. using LSTM on the resume for skill words IMPORTANT
 
-#### 2.2.1.1. - Website
+#### 2.3.1.1. - Website
 
 - [Deep learning for specific information extraction from unstructured texts](https://towardsdatascience.com/deep-learning-for-specific-information-extraction-from-unstructured-texts-12c5b9dceada)
 - [iki](https://iki.ai/)
 
-#### 2.2.1.2. - Github
+#### 2.3.1.2. - Github
 
 - [code](https://gist.github.com/IntuitionEngineering/a6e6e8a1f942a528c97e1d01af782ea2#file-skills_extract_nn-py)
 
-#### 2.2.1.3. - Local
+#### 2.3.1.3. - Local
 
 - C:\Local\Work\ML_Name\Material\Amazon_Product\TP1
 
 demo page
 
-### 2.2.2. Paper 2 : White paper — Job Skills extraction with LSTM and Word Embeddings
+### 2.3.2. Paper 2 : White paper — Job Skills extraction with LSTM and Word Embeddings
 
-#### 2.2.2.1. - Local
+#### 2.3.2.1. - Local
 
 - C:\Local\Work\ML_Name\Material\Amazon_Product\TP2
 
-#### 2.2.2.2. - Website
+#### 2.3.2.2. - Website
 
 - [White paper — Job Skills extraction with LSTM and Word Embeddings](https://medium.com/@nikkisharma536/white-paper-job-skills-extraction-with-lstm-and-word-embeddings-d71d1f96024f)
 
