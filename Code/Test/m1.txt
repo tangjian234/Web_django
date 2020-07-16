@@ -1,0 +1,23 @@
+
+shuffle(Proxy_id_pool)
+shuffle(Headers_pool)
+Proxy_id = Proxy_id_pool[1]
+Headers = Headers_pool[1]
+yield scrapy.Request(url=Product_url, callback=self.Product_parse, meta={'Asin_item': Asin, 'proxy': Proxy_id}, headers=Headers)
+Proxy_id_pool = ["http://35.222.1.33:8080", "http://35.237.84.12:80"]
+
+    # firefox:
+    Headers1 = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS
+    10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.
+    Safari/537.36'}
+    # chrome
+    Headers2 = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x6
+    AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safa
+    537.36'}
+    #  chrome
+    Headers3={
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1944.0 Safari/537.36'}
+
+
+        https://www.google.com/search?&q=best+review+bluetooth+speaker+&oq=best+review+bluetooth+speaker&num=100
+        

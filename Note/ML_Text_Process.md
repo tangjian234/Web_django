@@ -8,6 +8,8 @@
 
 ## 1.1. Todo
 
+- [ML_Text_Process.md](#summarize-the-html-text-processing)
+
 ## 1.2. Vision
 
 ## 1.3. Objective
@@ -93,7 +95,7 @@ there
 - - Motown Venneboerger Czestochwa Ranzer Conchita Trumplane Christos
   - Oceanside Escobar Kreisler Sawyer Cougar Yvette Ervin ODI Darryl CTCA
   - Shannon A.K.C. Meltex Liverpool ...
-- 
+-
 
 #### 1.4.1.14. NNS: noun, common, plural
 
@@ -205,19 +207,123 @@ that what whatever which whichever
 
 how however whence whenever where whereby whereever wherein whereof why
 
-## 1.5. NLP tasks :
-- [](#15-nlp-tasks-)
-[09-07]
+## 1.5. HTML
 
-### 1.5.1. Noun Phrase Chunking
+### Download one link single file into clipboard
 
-#### 1.5.1.1. Spacy_lib.py
+<T- _10 min> <GOLD> <P1>
+
+#### What
+
+- - 1. Copy the link into clipboard 
+  - 2. Run web.ps1
+  - 3. Get the content as a md file in clipborad
+
+#### Content
+
+- - 1. get_webpage_content
+
+#### Result
+
+- - - [get_web_content.py]
+    - [web.ps1]
+    - [ML_Text_Process.md](#download-one-link-single-file-into-clipboard)
+
+
+### 1.5.1. Summarize the html text processing
+
+- [ ] Form a python function:
+
+#### 1.5.1.1. what
+
+- Finish organizing the article download
+- use Different ways to get plain text from a html file
+
+  - BeautifulSoup()
+  - Browser()
+  - html2text
+
+#### web_lib
+
+###### 1.5.1.2.1. web_lib : download_link_article()
+
+- - -  use article lib to read a html 
+
+###### 1.5.1.2.1. web_lib : link_title()
+
+- - -  use Browser to read a html title 
+
+###### 1.5.1.2.1. web_lib :  get_google_search_result()
+
+- - - Google API to get link list
+
+###### 1.5.1.2.1. web_lib : clip_board_get_url()
+
+- - - Put url into clip board
+
+#### bs_lib
+
+##### 1.5.1.2.1. bs_lib : get_html_info()
+
+- - - - use of BeautifulSoup :
+    - get chunk of text, without markdown.
+
+##### 1.5.1.2.2. bs_lib: : get_html_info_html2text
+
+- - - - use of html2text :
+      - get chunk of text, with markdown, good for streamlit
+
+
+
+
+
+### Download review article 
+
+review.ps1 : 'best review bluetooth speaker' 1
+Function : download <number_of_search_items> with <search_item>
+
+#### Master file I/O :
+
+- - 1. input :
+       1. search_item: 'best review bluetooth speaker'
+       2. number_of_search_items : 1
+    1. output :
+       1. directory :
+          1. C:/Local/Work/ML_Name/Code/Test/data/review_article/best_review_bluetooth_speaker/
+       2. files :
+          1. link_list_file : Link_list_best_review_bluetooth_speaker_1.json
+          2. link_content_file: Best_Bluetooth_speakers_2020_portable_speakers_for_any_budget_TechRadar.json
+
+#### ML_review_article_download.py steps : 
+
+- - 1. Get command line input
+    2. Build the output target search_item_dir
+    3. Build the link_list_file name
+    4. Use google search API: get_google_search_result() get link_list
+       1. link_list is the `search result urls list`
+    5. Save link_list into link_list_file
+    6. Download each url into format : use `html2text` lib
+       1. rank
+       2. title
+       3. url
+       4. text_content : `in markdown format`
+
+#### 1.5.1.3. Result
+
+- [ML_review_article_download.py]
+- [ML_Text_Process.md](#151-summarize-the-html-text-processing)
+
+## 1.6. NLP tasks :
+
+### 1.6.1. Noun Phrase Chunking
+
+#### 1.6.1.1. Spacy_lib.py
 
     noun_phrase_generator_spacy(sent)
         - Func: Use spacy to NP generation
         - Return : list of NP in a sentence
 
-#### 1.5.1.2. NLTK_lib.py
+#### 1.6.1.2. NLTK_lib.py
 
     noun_phrase_generator_nltk(sent)
 
@@ -227,62 +333,62 @@ how however whence whenever where whereby whereever wherein whereof why
       Use grammar :
        NP = "NP: {(<V\w+>|<NN\w?>|<JJ\w?>)+.*<NN\w?>}"
 
-### 1.5.2. Part of speech tagging
+### 1.6.2. Part of speech tagging
 
-#### 1.5.2.1. Spacy_lib.py
+#### 1.6.2.1. Spacy_lib.py
 
     pos_spacy(sent)
 
-#### 1.5.2.2. NLTK_lib.py
+#### 1.6.2.2. NLTK_lib.py
 
     pos_nltk(sentence):
 
-### 1.5.3. Sematic similarity
+### 1.6.3. Sematic similarity
 
-#### 1.5.3.1. Spacy_lib
+#### 1.6.3.1. Spacy_lib
 
      word_similarity_distance()
 
-### 1.5.4. Visualization
+### 1.6.4. Visualization
 
-### 1.5.4.1. Spacy_lib.py
+### 1.6.5. Spacy_lib.py
 
     displacy_spacy
 
-### 1.5.4.2. Classification
+### 1.6.6. Classification
 
 - (Naive Bayes, Decision Tree)
 
-### 1.5.4.3. Sentiment analysis
+### 1.6.7. Sentiment analysis
 
-### 1.5.4.4. Tokenization
+### 1.6.8. Tokenization
 
 - (splitting text into words and sentences)
 
-### 1.5.4.5. Word and phrase frequencies
+### 1.6.9. Word and phrase frequencies
 
-### 1.5.4.6. Parsing
+### 1.6.10. Parsing
 
-### 1.5.4.7. n-grams
+### 1.6.11. n-grams
 
-### 1.5.4.8. Word inflection
+### 1.6.12. Word inflection
 
 (pluralization and singularization) and lemmatization
 
-### 1.5.4.9. Spelling correction
+### 1.6.13. Spelling correction
 
-### 1.5.4.10. Add new models or languages through extensions
+### 1.6.14. Add new models or languages through extensions
 
-### 1.5.4.11. WordNet integration
+### 1.6.15. WordNet integration
 
-## 1.6. String operations:
+## 1.7. String operations:
 
 - get_embed(string,begin,end)
 
-## 1.7. Reference
+## 1.8. Reference
 
 - [NLP_study.md](file:///C:/Local/Work/Python/Note/NLP/NLP_study.md)
 
-## 1.8. POS tags
+### 1.8.1. POS tags
 
 - [What are all possible pos tags of NLTK?](https://stackoverflow.com/questions/15388831/what-are-all-possible-pos-tags-of-nltk)

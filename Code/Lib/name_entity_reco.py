@@ -50,6 +50,14 @@ link = 'https://www.npr.org/2019/07/10/740387601/university-of-texas-austin-prom
 #link = 'https://www.amazon.com/Pyle-Wireless-Portable-Speaker-System/dp/B07L4ZTB9D?ref_=s9_apbd_orecs_hd_bw_b7ijb6h&pf_rd_r=EDHJNF1JGB0X93YWFFY4&pf_rd_p=4bb337e0-ad10-51c8-81e9-9fe76bed3238&pf_rd_s=merchandised-search-10&pf_rd_t=BROWSE&pf_rd_i=7073956011'
 
 
+def get_html_info(link):
+    article = Article(link)
+    article.download()
+    article.parse()
+    article.nlp()
+    return(article.title, link, article.text)
+
+
 def Get_html_text(link):
     article = Article(link)
     article.download()
