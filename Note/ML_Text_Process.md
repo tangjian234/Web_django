@@ -392,3 +392,10 @@ Function : download <number_of_search_items> with <search_item>
 ### 1.8.1. POS tags
 
 - [What are all possible pos tags of NLTK?](https://stackoverflow.com/questions/15388831/what-are-all-possible-pos-tags-of-nltk)
+
+
+## Ref  
+http://stockrt.github.io/p/emulating-a-browser-in-python-with-mechanize/
+http://wiki.dreamrunner.org/public_html/Python/Python-Mechanize-Cheat-Sheet%20.html
+https://thispointer.com/python-pandas-how-to-create-dataframe-from-dictionary/
+https://www.geeksforgeeks.org/how-to-use-sys-argv-in-python/

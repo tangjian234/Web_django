@@ -67,18 +67,28 @@ def Get_html_text(link):
     return(article.text)
 
 
-def insert_char(mystring, position, char_to_insert):
-    mystring = mystring[:position] + char_to_insert + mystring[position:]
-    return(mystring)
+import string_lib
+
+
+
+def get_entry_highlight(text,entry_ID):
+    article = nlp(text)
+    entry_name_all = [(ent.text, ent.start_char, ent.end_char, ent.label_)
+                       for ent in article.ents if ent.label_ == entry_ID]
+    for i, p in enumerate(entry_name_all):
+        (_, st, end, _) = p
+        shift = i*4
+        text = string_lib.insert_char(text, st+shift, '**')
+        text = string_lib.insert_char(text, end+shift+2, '**')
+
+    return(text, entry_name_all)
+
 
 
 def get_person_name(text):
     article = nlp(text)
     person_name_all = [(ent.text, ent.start_char, ent.end_char, ent.label_)
                        for ent in article.ents if ent.label_ == 'PERSON']
-
-    person_name = [ent.text
-                   for ent in article.ents if ent.label_ == 'PERSON']
     for i, p in enumerate(person_name_all):
         (name, st, end, label) = p
         shift = i*4

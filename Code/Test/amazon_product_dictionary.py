@@ -95,6 +95,7 @@ def get_feature_list_title(feature_list):
     return(feature_list_title)
 
 
+
 def process_product_dictionary(product_dict, product_info):
     # match product_dict vs asin_product info
     product_dict
@@ -110,29 +111,83 @@ def process_product_dictionary(product_dict, product_info):
     product_dict["title"] = product_info["title"]
     product_dict["price"] = product_info["price"]
     st.write("match with --------------------\n")
-    mat = {}
+    
+    mat=tag_sent_with_aspect_keyword(feature_list_title,product_dict)
     # if there is any key word of the product aspect in the feature list title sentence 
     # it is a match. 
-    for f in feature_list_title:
-        mat[f] = {}
-        for kc in product_dict["feature_list"].keys():
-            key_word_list = product_dict["feature_list"][kc]['key_word']
-            fl = [k for k in key_word_list if k in f]
-            if(len(fl) > 0):
-                product_dict["feature_list"][kc]["match"][f] = fl
-                mat[f][kc] = fl
+    # for f in feature_list_title:
+    #     mat[f] = {}
+    #     for kc in product_dict["feature_list"].keys():
+    #         key_word_list = product_dict["feature_list"][kc]['key_word']
+    #         fl = [k for k in key_word_list if k in f]
+    #         if(len(fl) > 0):
+    #             product_dict["feature_list"][kc]["match"][f] = fl
+    #             mat[f][kc] = fl
     # product_dict
     
     mat
     return(product_dict)
 
+def analyze_text_by_product_dict(text,product_dict):
+  sentences=string_lib.split_text_to_sentences(text)  
+  sentences=[s.lower() for s in sentences ]
+  
+  mat=tag_sent_with_aspect_keyword(sentences,product_dict)
+  highlight_text_with_aspect_keywords(mat)
+  return(mat)
 
-# init the
-product_dict = json_lib.load_json(dict_f_name)
-product_info = json_lib.load_json(info_f_name)
+def tag_sent_with_aspect_keyword(sentences,product_dict): 
+      # Func :   for each sentence : match with the dictionary for keywords 
+      mat = {}      
+      for sent in sentences:
+        mat[sent] = {}
+        for aspect in product_dict["feature_list"].keys():
+            key_word_list = product_dict["feature_list"][aspect]['key_word']
+            # key_word_list : if the sentence content the these keywords 
+            matched_key_word_list = [keyword for keyword in key_word_list if keyword in sent]
+            if(len(matched_key_word_list) > 0):
+                mat[sent][aspect] = matched_key_word_list
+      return(mat)
 
-process_product_dictionary(product_dict, product_info)
+def highlight_text_with_aspect_keywords(mat):
+  # Func :  
+  highlighted_text=''
+  aspect_tags=[]
+  for sent in mat: 
+    # sent
+    sent_highlight=sent
+    for aspect in mat[sent]:
+      aspect_tags.append(aspect)
+      for key_word in mat[sent][aspect]:
+        aspect_highlight='{'+aspect+'} '
+        # aspect_highlight
+        key_word_highlight= "**"+ key_word+"**"  + aspect_highlight
+        # key_word_highlight
+        sent_highlight=sent_highlight.replace(key_word,key_word_highlight)
+    highlighted_text= highlighted_text+sent_highlight
+  highlighted_text
+  aspect_tags
 
-nlp = en_core_web_sm.load()
+import string_lib
+import name_entity_reco 
+import NLTK_lib
+import spacy_lib
+if __name__ == "__main__":
 
-doc = nlp('Astonishing Sound: Breathtaking stereo sound with deep bass is delivered with exceptional clarity and zero distortion by two high-sensitivity drivers and a patented bass port.')
+# init the 
+  product_dict = json_lib.load_json(dict_f_name)
+  product_info = json_lib.load_json(info_f_name)
+  
+  text6='''LONGER BATTERY PLAYTIME UP TO 14 HOURS - Play from morning till night; battery can play up to 14 hours at 2/3 volume; AUX IN Jack connect from TVs and non-Bluetooth devices with a 3.5mm Line-In cable for the Perfect Line-In Speaker; BUILT-IN Microphone for personal handsfree speakerphone calls from a Cellphone or iPhone; Light-weight just 10 oz, 5” long, 2.8” high INCLUDES Micro-USB charging cable; Official OontZ Angle 3 Carry Case available sold separately on Amazon ''' 
+  #mat=analyze_text_by_product_dict(text6,product_dict)
+  
+  (text, entry_name_all)=name_entity_reco.get_entry_highlight(text6,'CARDINAL')
+  text
+  s= NLTK_lib.noun_phrase_generator_nltk(text6)
+  s
+  s1 = spacy_lib.noun_phrase_generator_highlight_spacy(text6)
+  s1
+  text6
+  #mat
+  
+  # process_product_dictionary(product_dict, product_info)

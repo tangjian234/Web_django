@@ -6,7 +6,7 @@
 		"sound": {
 			"list_title": "",
 			"list_content": "",
-			"key_word": ["sound", "bass", "stereo", "mids", "volume"],
+			"key_word": ["sound", "bass", "stereo", "mids", "volume","woofer" ],
 			"key_character": {
 				"spectrum_range": {
 					"bass": "",
@@ -28,10 +28,10 @@
 			},
 			"match": {}
 		},
-		"battery": {
+		"power": {
 			"list_title": "",
 			"list_content": "",
-			"key_word": ["battery"],
+			"key_word": ["power","battery","charging"],
 			"key_character": {
 				"playtime": "",
 				"capacity": ""
@@ -41,11 +41,33 @@
 		"waterproof": {
 			"list_title": "",
 			"list_content": "",
-			"key_word": ["waterproof", "water", "IPX"],
+			"key_word": ["waterproof ", "water ", "IPX","pool","splash"],
 			"key_character": {
 				"ipx": ""
 			},
 			"match": {}
-		}
-	}
+    },
+    "price": {
+			"list_title": "",
+			"list_content": "",
+			"key_word": ["price","cheap","money"],
+			"key_character": {
+				"playtime": "",
+				"capacity": ""
+			},
+      "match": {}
+    },
+    "weight": {
+			"list_title": "",
+			"list_content": "",
+			"key_word": ["weight","light"],
+			"key_character": {
+				"xx": "",
+				"xx": ""
+			},
+      "match": {}
+    }
+
+
+  }
 }

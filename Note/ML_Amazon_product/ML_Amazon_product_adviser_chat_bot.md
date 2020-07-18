@@ -732,6 +732,9 @@ of ASIN feature list of
 
     1. how to get 1000 best seller.
 
+
+
+
 ### 1.9.7. Time tracker of each best saler
 
 #### 1.9.7.1. Objective.
@@ -755,21 +758,45 @@ of ASIN feature list of
    - automatically check every day.
    - Graph : Data structure of Amazon project
 
+ Scrap 100 bluetooth tech article
 ##### 1.9.7.1.2. Action
 
-### 1.9.8. product graph
+### 1.9.8. Review Article : Highlight text keyword : Given product dictionary
+[16-07]
 
-### 1.9.9. Competitor analysis.
+#### 1.9.8.1. What 
+input: text paragraph 
+
+Output : highlighted text : 
+    keywords 
+Summary : 
+  - topic : 
+  - keywords list : 
+
+#### 1.9.8.2. Content : 
+  ##### 1.9.8.2.1. Steps 
+- - 1.  split the text into sentences : 
+    2.  tag each sentence with topic and keywords (if there.) (15 min)
+        1.  for each sentence : match with the dictionary for keywords 
+        2.  def tag_sent_with_aspect_keyword(): 
+    3. highlight the keyword that match in text and tag list the aspect for the text . 
+       1. def highlight_text_with_aspect_keywords. keep all the article format. 
+    4. revert to better highligher name recognation.
+
+
+### 1.9.9. product graph
+
+### 1.9.10. Competitor analysis.
 
 see - [](#honey-droplist)
 
-### 1.9.10. Scrap 100 bluetooth tech article
+### 1.9.11. Scrap 100 bluetooth tech article
 
 - Get the overall information :
   - how many types of bluetooth speaker are there
   - how many types of microphone are there
 
-#### 1.9.10.1. Sub categories (types)
+#### 1.9.11.1. Sub categories (types)
 
 - the product have 3 kind of sub categories :
 
@@ -778,21 +805,21 @@ see - [](#honey-droplist)
 
 - formulate ; make structure, filling in the content
 
-### 1.9.11. Statistical survey of top 100 best saler - comments:
+### 1.9.12. Statistical survey of top 100 best saler - comments:
 
     1. What is the most informative comment.
                1. highly recommended .
                2. worst , 1 star, long and represetive .
 
-#### 1.9.11.1. download Comments.
+#### 1.9.12.1. download Comments.
 
-#### 1.9.11.2. User comment scoring each aspect
+#### 1.9.12.2. User comment scoring each aspect
 
-#### 1.9.11.3. Visualization Plot radar diagram :
+#### 1.9.12.3. Visualization Plot radar diagram :
 
 - [](#aspect-score-visualization-)
 
-### 1.9.12. Train aspect
+### 1.9.13. Train aspect
 
 IMPORTANT train aspect from NP :
 for example : sound is trained as aspects word.
@@ -806,14 +833,14 @@ SEE Example : extract skill NP from resume :
 - [ML_Amazon_Train_Extract_skill_from_CV.md]
 - See - [#core idea](#194-feature-extraction) for detail
 
-### 1.9.13. Seller Perspective analysis
+### 1.9.14. Seller Perspective analysis
 
-#### 1.9.13.1. personality :
+#### 1.9.14.1. personality :
 
             1.  as a buyer to get the best product.
             2.  as a seller, find the best niche to sell.
 
-#### 1.9.13.2. Content :
+#### 1.9.14.2. Content :
 
 - - 1.  monitor the price of a keywords and for effective ad promotion:
     2.  What is most sensitive to future? If I want to have a new product to developed.
@@ -821,13 +848,13 @@ SEE Example : extract skill NP from resume :
         2. feature driving
         3. or brand driving?
 
-### 1.9.14. UX design.
+### 1.9.15. UX design.
 
-#### 1.9.14.1. Objective.
+#### 1.9.15.1. Objective.
 
 - How to design to get the best web interface to help the user to make an informed decision : clean website.
 
-#### 1.9.14.2. Dialogue : chatbot format :
+#### 1.9.15.2. Dialogue : chatbot format :
 
 - Give me search item :
 
@@ -852,16 +879,16 @@ SEE Example : extract skill NP from resume :
   - What is the commonality of the best seller:
     - Best seller has the following aspect :
 
-#### 1.9.14.3. Sub categories (types)
+#### 1.9.15.3. Sub categories (types)
 
 - the product have 3 kind of sub categories :
   how many types of microphone are there
 
-#### 1.9.14.4. key aspect highlighting in web interface
+#### 1.9.15.4. key aspect highlighting in web interface
 
-### 1.9.15. publish in a web-hosting. take input .
+### 1.9.16. publish in a web-hosting. take input .
 
-### 1.9.16. study amazon API
+### 1.9.17. study amazon API
 
 ## 1.10. Use case and User experience :
 

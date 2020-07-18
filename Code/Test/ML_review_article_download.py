@@ -41,7 +41,7 @@ def get_a_page_best_seller_asin(soup):
     #
     titles = soup.find_all(class_="aok-inline-block zg-item")
     asin = [str(i.find("a", href=re.compile("dp"))) for i in titles]
-    asin = [string_lib.get_embed(i, "/dp/", "/") for i in asin]
+    asin = [string_lib.get_mid_string_in_between(i, "/dp/", "/") for i in asin]
     return(asin)
 
 # main func : get best seller asin list from a
@@ -56,7 +56,7 @@ def get_best_seller_asin(Amazon_best_seller_page):
     next_page = soup.find(class_="a-last").find_all("a",
                                                     href=re.compile("zgbs"))[0]
     # between href= and \
-    next_page = string_lib.get_embed(str(next_page), "href=\"",  "\"")
+    next_page = string_lib.get_mid_string_in_between(str(next_page), "href=\"",  "\"")
     next_page
     soup = bs_lib.get_soup(next_page)
     # second 50 best seller page
