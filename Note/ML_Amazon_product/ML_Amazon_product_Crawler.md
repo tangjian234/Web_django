@@ -35,7 +35,13 @@
 
 - develop anti -anti crawler
 
-## Content
+# Content
+## Basic 
+
+### Basic run command 
+
+scrappy crawl simple -L ERROR  
+- get the old work run
 
 ### how to get header run
 
@@ -45,12 +51,25 @@
 ### How to run proxy
 
 // STUB
-https proxy
-
-### Get the scrappy run,
+https proxys
 
 // STUB
 
-get the old work run
+
+
+
+
+### setup logging activity.
+
+### use meta to transfer data 
+
+### use meta to transfer data 
+
+
 
 ## Reference
+- [Scrapy 2.2 documentation](https://docs.scrapy.org/en/latest/index.html)
+- [Scrapy 2.2 documentation: -logging ](https://docs.scrapy.org/en/latest/topics/logging.html#topics-logging-settings)
+- [selectors](https://docs.scrapy.org/en/latest/topics/selectors.html)
+- [Using your browser’s Developer Tools for scraping](https://docs.scrapy.org/en/latest/topics/developer-tools.html#topics-developer-tools)
+
