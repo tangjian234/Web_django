@@ -219,25 +219,20 @@ import configparser
 # DATA_FILE_NAME = 'C:\Local\Work\ML_Name\Code\Test\data\multi_class_tst_pinyin.csv'
 CONF_FILE='C:\Local\Work\ML_Name\Code\Test\ML_classifer.cfg'
 # %%
-def load_conf():
-  #Func: 
-  config = configparser.ConfigParser()
-  config.read(CONF_FILE)
-  return(config['File']['TRAINED_MODEL_FILE'],config['File']['OUTPUT_CLASS_FILE'],config['File']['DATA_FILE_NAME'])
-#load_conf()
+import conf_lib
 #%%
 
 #  ANCHOR now
 def get_name_nationality(some_names):
     print("get",some_names)
-    (TRAINED_MODEL_FILE,OUTPUT_CLASS_FILE,DATA_FILE_NAME)=load_conf()
+    (TRAINED_MODEL_FILE,OUTPUT_CLASS_FILE,DATA_FILE_NAME)=conf_lib.load_conf(CONF_FILE)
     return(test_model(TRAINED_MODEL_FILE, OUTPUT_CLASS_FILE, DATA_FILE_NAME,some_names))
     
   
 if __name__ == '__main__':
     some_names = ['Jack Nicholson']  
     
-    (TRAINED_MODEL_FILE,OUTPUT_CLASS_FILE,DATA_FILE_NAME)=load_conf()
+    (TRAINED_MODEL_FILE,OUTPUT_CLASS_FILE,DATA_FILE_NAME)=conf_lib.load_conf(CONF_FILE)
     
     df = load_data(DATA_FILE_NAME)
     
