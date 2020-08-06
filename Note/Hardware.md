@@ -8,7 +8,9 @@
 - [x] Read web server setup [](#my-web-server) [07-07]
   - [x] two documents.
 
+ 
 ## Todo
+- [ ]  buy 32G scandisk drive [Link](#search-for-raspberry-pi-zero-monitor)
 
 - [ ] set up actual webpage in Raspberry pi
   - [ ] run simple streamlit work in Raspberry pi :
@@ -264,6 +266,28 @@ hen install software updates, and then install Apache, PHP and MySQL.
 #### Web logging :
 
 - Log the incoming
+
+## Surveillance
+###  Search for raspberry pi zero monitor
+- 32 GB. Raspberry pi monitor.
+[15_min]
+- 
+#### Howto
+- - 1. Search for Raspberry pi in youtube
+    1. find the door monitor. one ,
+    2. find what is the operation system.  
+    3. find How many gigabyte is needed. 
+
+#### Content 
+Surveillance
+- [Raspberry Pi Zero W Surveillance Camera](https://www.youtube.com/watch?v=rhIzfRmKHnQ&list=WL&index=2&t=881s)
+- need 32GB motioneye os : 
+- need card reader. 
+
+- [ ]  buy 32G scandisk drive [Link](#search-for-raspberry-pi-zero-monitor)
+
+  
+
 
 ## Object Detection
 
