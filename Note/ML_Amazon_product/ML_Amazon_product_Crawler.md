@@ -24,7 +24,7 @@
 - [ ] Review amazon native api: [Amazon_API](#amazon-native-api)
 - [ ] Review scrape hero : [Scrapehero]
 - [ ] Review amazon super URL.[_](#amazon-super-url) 
-
+- [ ] ebay :  Make a ebay bidding app 
 
 ## Vision
 
@@ -551,6 +551,8 @@ REVIEW : Question : how to make sense out of the curl output
 
 - see mingw64 : a mini bash simulator  
  
+## ebay :  Make a ebay bidding app
+
 ## Reference
 
 - [Scrapy 2.2 documentation](https://docs.scrapy.org/en/latest/index.html)
@@ -562,7 +564,7 @@ REVIEW : Question : how to make sense out of the curl output
 - [Amazon Product Advertising API](https://webservices.amazon.com/paapi5/documentation/quick-start/using-sdk.html)
 - [xpath](https://www.guru99.com/using-contains-sbiling-ancestor-to-find-element-in-selenium.html)
  
-# Todo 
+# Next step  
  
 ### amazon super url 
  

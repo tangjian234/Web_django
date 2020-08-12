@@ -7,7 +7,9 @@
 - [x] Study Raspberry Pi [P_4][v_3] [07-07]
 - [x] Read web server setup [](#my-web-server) [07-07]
   - [x] two documents.
-
+ -  [ ] buy a super cheap sd_card from top heatter . 
+    - for Raspberry pi door monitor project 
+ -  [ ] check and collect information on the Raspberry pi 
  
 ## Todo
 - [ ]  buy 32G scandisk drive [Link](#search-for-raspberry-pi-zero-monitor)
@@ -268,10 +270,16 @@ hen install software updates, and then install Apache, PHP and MySQL.
 - Log the incoming
 
 ## Surveillance
+
 ###  Search for raspberry pi zero monitor
 - 32 GB. Raspberry pi monitor.
 [15_min]
-- 
+
+#### sd_card purchase : 
+
+buy a super cheap sd_card from top heatter
+//STUB
+ 
 #### Howto
 - - 1. Search for Raspberry pi in youtube
     1. find the door monitor. one ,
