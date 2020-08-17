@@ -1,28 +1,46 @@
-# Hardware.md
+# Raspberry_pi.md
 
-- [Hardware.md](file:///C:/Local/Work/ML_Name/Note/Hardware.md)
+- [Raspberry_pi.md](file:///C:/Local/Work/ML_Name/Note/Raspberry_pi.md) 
 
+[](#)
 ## DONE
 
 - [x] Study Raspberry Pi [P_4][v_3] [07-07]
 - [x] Read web server setup [](#my-web-server) [07-07]
   - [x] two documents.
- -  [ ] buy a super cheap sd_card from top heatter . 
+ -  [x] buy a super cheap sd_card from top heatter.- [∞](#sd_card-purchase-) 
     - for Raspberry pi door monitor project 
- -  [ ] check and collect information on the Raspberry pi 
+- [x]  buy 64G scandisk drive [Link](#search-for-raspberry-pi-zero-monitor)
+- [x] Purchase pi zero & Camera
+  - [∞](#purchase-pi-zero--camera)
+
+- [x]  Raspberry pi 4 Camera motioneye
+  - [∞](#raspberry-pi-4-camera-motioneye)
  
 ## Todo
-- [ ]  buy 32G scandisk drive [Link](#search-for-raspberry-pi-zero-monitor)
 
+- [ ] Raspberry pi zero Camera HW install: 
+  - [∞](#raspberry-pi-zero-camera-hw-install)
+
+- [ ]  Pi 4 Open CV 
+  - [∞](#pi-4-open-cv)
+
+- [ ] Raspberry pi zero w Camera motioneye
+  
 - [ ] set up actual webpage in Raspberry pi
   - [ ] run simple streamlit work in Raspberry pi :
     - [ ] show publishable web-essential extractor.
+ 
+ -  [ ] check and collect information on the Raspberry pi 
 
 ## Objective
 
 - Use of Raspberry_Pi to develop
   - web_server to as free NLP service.
   - object detection for NN study.
+
+- [Raspberry_pi.md](file:///C:/Local/Work/ML_Name/Note/Raspberry_pi.md#raspberry-pi-4-camera-motioneye) 
+
 
 ### Roadmap
 
@@ -41,6 +59,8 @@
   - run background scraping of amazon:
 
 ## Question :
+
+
 
 ## About Raspberry pi : Introduction
 
@@ -168,6 +188,10 @@ Purchase list : done
     2. ssh pi@192.168.1.6
     3. password for pi : tangwin/
 
+
+NOTE : 
+  1. It changes from time to time, go to the 192.168.1.1 and find the latest ip address. 
+
 ##### VNC access :
 
 - - 1. Install VNC in windows.
@@ -176,6 +200,47 @@ Purchase list : done
 #### shutdown
 
 - - - sudo shutdown -h now
+
+
+### Raspberry pi 4 Camera motioneye
+  - [∞](#raspberry-pi-4-camera-motioneye)
+
+DONE
+#### Reference
+   [Raspberry Pi Zero W Surveillance Camera](https://www.youtube.com/watch?v=rhIzfRmKHnQ)
+
+  https://www.youtube.com/watch?v=Y2QFu-tTvTI&list=WL&index=59&t=440s
+
+#### Howto 
+
+- - 1. Flash motioneye OS into usb microsb drive.     
+    2. Put the wpa configuration file into  
+    3. Use remote ssh to login in to 192.168.1.23 
+
+#### Used SW
+
+- [flash OS](https://www.balena.io/etcher/)
+
+NOTE : no need of camera module adapter 
+
+### Pi 4 Open CV 
+  - [∞](#pi-4-open-cv)
+
+#### Reference
+  - [Raspberry Pi Zero W and Pi Camera Application](https://tutorial.cytron.io/2017/08/16/raspberry-pi-zero-w-pi-camera-application/)
+
+
+STUB
+
+### Raspberry pi zero Camera HW install: 
+
+#### what
+
+#### Howto 
+- [Raspberry_pi.md](file:///C:/Local/Work/ML_Name/Note/Raspberry_pi.md) 
+- - 1. hardware : hwo to connect the cable 
+    2. 
+#### Result 
 
 ### Host Your Website
 
@@ -272,29 +337,43 @@ hen install software updates, and then install Apache, PHP and MySQL.
 ## Surveillance
 
 ###  Search for raspberry pi zero monitor
-- 32 GB. Raspberry pi monitor.
 [15_min]
 
-#### sd_card purchase : 
-
-buy a super cheap sd_card from top heatter
-//STUB
- 
 #### Howto
-- - 1. Search for Raspberry pi in youtube
-    1. find the door monitor. one ,
+- - 1. Search for Raspberry pi in youtube DONE
+    1. find the door monitor. one DONE
     2. find what is the operation system.  
     3. find How many gigabyte is needed. 
 
-#### Content 
-Surveillance
+#### motioneye Surveillance
+
 - [Raspberry Pi Zero W Surveillance Camera](https://www.youtube.com/watch?v=rhIzfRmKHnQ&list=WL&index=2&t=881s)
-- need 32GB motioneye os : 
-- need card reader. 
 
-- [ ]  buy 32G scandisk drive [Link](#search-for-raspberry-pi-zero-monitor)
+##### Already Have  
+  - need 64GB: install  motioneye os : 
+  - need card reader. Have : with out pi 
+  - power supply 
+    - The device needs to be powered with a 5V power supply with a USB connector; USB-C for the Raspberry Pi 4, and micro USB for all other models.
 
-  
+##### Purchase pi zero & Camera
+
+- purchase pi zero broad : 
+- purchase pi camera module 
+  - Candidate : 
+    1. Aamzon: DORHEA Raspberry Pi Mini Camera Video Module 5 Megapixels  ($8.69)
+    2. pi zero broad : 
+       1. 
+#### Result 
+##### Purchased  
+  - Raspberry Pi Zero W :  https://www.adafruit.com/opensafely
+  - Aamzon: DORHEA Raspberry Pi Mini Camera Video Module 5 Megapixels  ($8.69)
+
+
+
+### Pi zero w bootup 
+
+#### Howto 
+  - [access over wifi ](https://www.youtube.com/watch?v=LlCr09B2HZI)
 
 
 ## Object Detection
