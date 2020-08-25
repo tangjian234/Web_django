@@ -6,12 +6,17 @@
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![Travis](https://img.shields.io/travis/zalandoresearch/flair.svg)](https://travis-ci.org/zalandoresearch/flair)
-
+[](#)
 ## 1.1. Todo
 
       - [x] ML OKR and Plan [ 1 hour ]
-
       1. Scaffolding for the key python data science library. (45 min)
+
+- [ ] scaffolding :
+      1. sort the library of ML study
+- [ ] Howto run : ML_Master
+      - [∞](#howto-run--ml_master)
+
 
 1. scaffolding :
    1. sort the library of ML study
@@ -120,42 +125,109 @@ NLP_Master.py
 
     - [ML_WebIO_Flask_Djingo.md](file:///C:/Local/Work/ML_Name/Note/ML_WebIO/ML_WebIO_Flask_Djingo.md)
 
-### 1.3.8. PROJECT
+### 1.3.8. PROJECTS
+
+IMPORTANT ML run   
+
+#### Howto run : ML_Master
+  - [∞](#howto-run--ml_master)
+- - 1. Master directory 
+      - Test : C:\Local\Work\ML_Name\Code\Test
+      - Lib  : C:\Local\Work\ML_Name\Code\lib
+          - name_entity_reco.py
+          - name_nationality.py
+
+- - 1. Master file : run 
+    - srun.ps1 .\ML_master.py
+
+#### Summary 
+
+1. Name Nationality 
+   - **Identify the nationality according to person's name**
+    name_nationality.py
+
+2. Name Identification in a webpage
+  **Identify the names presented in the webpage.**
+  name_entity_reco.py
+
+3. amazon product 
+   
+   1. - [ML_Amazon_product_adviser_chat_bot.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product_adviser_chat_bot.md)
+
+
+   2. collection information : C:/Local/Work/ML_Name/Code/Test
+       1. amazon_product_dictionary.py
+       2. ML_review_article_download.py
+       3. ML_amazon_best_seller.py
+       4. ML_amazon_listing_download.py
+       5. download_link.py
+    
+    1. connect to 
 
 #### 1.3.8.1. Name Nationality
 
 - **Identify the nationality according to person's name**
-- [ML_Name_Nationality](file:///c:/Local/Work/ML_Name/Note/ML_Name_Nationality.md)
+
+- [ML_Name_Nationality.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_Nationality/ML_Name_Nationality.md) 
+
+##### Input
+
+- - 1. list of names : jian tang,john smith
+
+##### Output 
+
+- - 1. name's nationality : china , uk etc 
+
+##### Core function 
+  In .\ML_master.py
+  nn.name_nationality(message) from : name_nationality.py 
 
 ##### 1.3.8.1.1. Name Nationality : Data Prepare :
-
-     ###### Schoolers database
+  **Information** Databases to be used 
+  1. Schoolers database
        - Download data from Schoolers database : [arxiv]
          - [ML_Name_Nationality_data_prepare.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_Nationality/ML_Name_Nationality_data_prepare.md)
 
-     ###### 100 Chinese Name
+  2. 100 Chinese Name
        - Get 100 fixed Chinese last name:  100 ordinary name
          - [ML_Chinese_Name_100_names.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_Nationality/ML_Chinese_Name_100_names.md)
 
 ##### 1.3.8.1.2. Name Nationality : Crawler
 
-      - from web get the STEM names
-        - [ML_Name_Nationality_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_Nationality/ML_Name_Nationality/ML_Name_Nationality_Crawler.md)
+  1. from web get the STEM names
+        - [ML_Name_Nationality_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_Nationality/ML_Name_Nationality_Crawler.md) 
+        - **empty**  [19-08]
 
 ##### 1.3.8.1.3. Name Nationality : Classifier
 
-      -
-      - [ML_Name_Nationality_Classifier.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_Nationality/ML_Name_Nationality_Classifier.md)
+    
+  1. [ML_Name_Nationality_Classifier.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_Nationality/ML_Name_Nationality_Classifier.md)
+    - **empty** [19-08]
 
 ##### 1.3.8.1.4. Name Nationality : Visualizer
 
-      -
-      - [ML_Name_Nationality_Visualizer.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_Nationality/ML_Name_Nationality_Visualizer.md)
+  1.  [ML_Name_Nationality_Visualizer.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_Nationality/ML_Name_Nationality_Visualizer.md)
+    - **empty** [19-08]
+
 
 #### 1.3.8.2. Name Identification in a webpage
+  
+**Identify the names presented in the webpage.**
 
 - [ML_Name_web_identification.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_web_identification.md)
-  1. Identify the names presented in the webpage.
+  [Python_File] : pp name_entity_reco.py 
+
+##### Input
+- - 1. article web link 
+
+##### Output 
+- - 1. person's names in article  
+  - 2. Highlight the person's name in the article 
+
+##### core function 
+    from  name_entity_reco : 
+    nlp_text = ner.Get_html_text(message)
+    (nlp_text, person_name_all) = ner.get_person_name(nlp_text)
 
 ##### 1.3.8.2.1. Name Identification : Data Prepare :
 
@@ -175,8 +247,19 @@ NLP_Master.py
 
 #### 1.3.8.3. Amazon Product Adviser
 
+**Chat bot on amazon search , help user to make wise decision** :
 - [ML_Amazon_product_adviser_chat_bot.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_adviser_chat_bot.md)
-  1. Chat bot on amazon search , help user to make wise decision :
+ 
+##### Input
+- - 1. Enter your product ID : ASIN 
+
+##### Output 
+- - 1. product information 
+
+
+##### core function    
+    amazon_product_dict = bs_lib.get_amazon_product_info(message)
+
 
 ##### 1.3.8.3.1. Amazon Product Adviser : Data Prepare :
 

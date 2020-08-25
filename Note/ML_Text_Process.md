@@ -17,7 +17,7 @@
 ## 1.4. Concepts
 
 ### 1.4.1. POS
-
+s
 #### 1.4.1.1. noun phrase grammar
 
     - Noun (N)- Daniel, London, table, dog, teacher, pen, city, happiness, hope

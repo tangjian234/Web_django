@@ -15,7 +15,7 @@ This is a Natural Language Processing(NLP) Based App useful for basic NLP concep
 This is built with Streamlit Framework, an awesome framework for building ML and NLP tools.
 Purpose
 To perform basic and useful NLP task with Streamlit,Spacy,Textblob and Gensim/Sumy
-"""
+""" 
 # Core Pkgs
 
 from PIL import Image
@@ -96,6 +96,7 @@ def name_nationality(my_text):
 
 def main():
     """ NLP Based App with Streamlit """
+    # see  ML_Master.md
     # Title
     st.title("Jian's work ")
 
@@ -107,59 +108,9 @@ def main():
     st.markdown("""
     	# Description
     	+ This is a Natural Language Processing(NLP) Based App useful for basic NLP task
-    	Tokenization,NER,Sentiment,Summarization
+    	Tokenization,NER,Sentiment,Summarization : See 
     	""")
 
-
-    # Tokenization
-    '''
-    if st.sidebar.checkbox("Show Tokens and Lemma"):
-        st.subheader("Tokenize Your Text")
-
-        message = st.text_area("Enter Text", "Type Here ..")
-        if st.button("Analyze"):
-            nlp_result = text_analyzer(message)
-            st.json(nlp_result)
-
-    # Entity Extraction
-    if st.sidebar.checkbox("Show Named Entities"):
-        st.subheader("Analyze Your Text")
-
-        message = st.text_area("Enter Text", "Type Here ..")
-        if st.button("Extract"):
-            entity_result = entity_analyzer(message)
-            st.json(entity_result)
-
-    # Sentiment Analysis
-    if st.sidebar.checkbox("Show Sentiment Analysis"):
-        st.subheader("Analyse Your Text")
-
-        message = st.text_area("Enter Text", "Type Here ..")
-        if st.button("Analyze"):
-            blob = TextBlob(message)
-            result_sentiment = blob.sentiment
-            st.success(result_sentiment)
-
-    # Summarization
-    if st.sidebar.checkbox("Show Text Summarization"):
-        st.subheader("Summarize Your Text")
-
-        message = st.text_area("Enter Text", "Type Here ..")
-        summary_options = st.selectbox("Choose Summarizer", ['sumy', 'gensim'])
-        if st.button("Summarize"):
-            if summary_options == 'sumy':
-                st.text("Using Sumy Summarizer ..")
-                summary_result = sumy_summarizer(message)
-            elif summary_options == 'gensim':
-                st.text("Using Gensim Summarizer ..")
-                summary_result = summarize(rawtext)
-            else:
-                st.warning("Using Default Summarizer")
-                st.text("Using Gensim Summarizer ..")
-                summary_result = summarize(rawtext)
-
-            st.success(summary_result)
-'''
     # Name Nationality
     if st.sidebar.checkbox("Name Nationality Recongition"):
         st.subheader("Enter your names, seperated by , ")
@@ -172,22 +123,27 @@ def main():
     if st.sidebar.checkbox("Name Entity Recongition"):
         st.subheader("Enter your website ")
         message = st.text_area(
-            "https://finance.yahoo.com/news/why-us-china-relations-are-worsening-on-almost-every-front-213714768.html")
+            "Input:  article web link;\n  Output : person's names in article\n Highlight the person's name in the article\n Example : https://finance.yahoo.com/news/why-us-china-relations-are-worsening-on-almost-every-front-213714768.html")
         if st.button("Analyze"):
             nlp_text = ner.Get_html_text(message)
             #nlp_text = nlp_text.replace("University ", "**University** ")
             (nlp_text, person_name_all) = ner.get_person_name(nlp_text)
             st.write(person_name_all)
             st.markdown(nlp_text)
-    # Name entity recognition
+    
+    # Amazon Product Information 
+    # see  ML_Master.md
     import bs_lib
     if st.sidebar.checkbox("Amazon Product"):
         st.subheader("Enter your product ID ")
         message = st.text_area(
-            "ID")
+            "ID: eg. B079K4TVPG")
         if st.button("Analyze"):            
             amazon_product_dict = bs_lib.get_amazon_product_info(message)
             st.write(amazon_product_dict)
+    
+    
+    # 
     st.sidebar.subheader("About App")
     st.sidebar.text("NLP with Streamlit")
     st.sidebar.info("Cudos to the Streamlit Team")

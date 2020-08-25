@@ -92,7 +92,7 @@ def get_person_name(text):
     for i, p in enumerate(person_name_all):
         (name, st, end, label) = p
         shift = i*4
-        text = insert_char(text, st+shift, '**')
-        text = insert_char(text, end+shift+2, '**')
+        text = string_lib.insert_char(text, st+shift, '**')
+        text = string_lib.insert_char(text, end+shift+2, '**')
 
     return(text, person_name_all)

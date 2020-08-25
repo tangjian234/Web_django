@@ -20,10 +20,11 @@
 ## Todo
 
 - [ ] Raspberry pi zero Camera HW install: 
-  - [∞](#raspberry-pi-zero-camera-hw-install)
+  -  [∞](#pi-boot-up-install)
 
-- [ ]  Pi 4 Open CV 
-  - [∞](#pi-4-open-cv)
+- [ ]  Pi 4 Open CV
+  - [steps](#smart-security-camera)   
+  - [hwo_to](#pi-4-open-cv)
 
 - [ ] Raspberry pi zero w Camera motioneye
   
@@ -175,8 +176,9 @@ Purchase list : done
 
 ## One liner
 
-    1. My Web server for ML projects.
-    2. Tensorflow object detection
+    1. My Web server for ML projects. DONE 
+    2. Smart Camera Monitor : OpenCV pi 
+    3. Tensorflow object detection
 
 ## My Web server
 
@@ -202,10 +204,9 @@ NOTE :
 - - - sudo shutdown -h now
 
 
-### Raspberry pi 4 Camera motioneye
-  - [∞](#raspberry-pi-4-camera-motioneye)
-
+## Raspberry pi 4 Camera motioneye
 DONE
+
 #### Reference
    [Raspberry Pi Zero W Surveillance Camera](https://www.youtube.com/watch?v=rhIzfRmKHnQ)
 
@@ -222,25 +223,286 @@ DONE
 - [flash OS](https://www.balena.io/etcher/)
 
 NOTE : no need of camera module adapter 
-
-### Pi 4 Open CV 
-  - [∞](#pi-4-open-cv)
-
-#### Reference
-  - [Raspberry Pi Zero W and Pi Camera Application](https://tutorial.cytron.io/2017/08/16/raspberry-pi-zero-w-pi-camera-application/)
-
-
-STUB
+ 
+## Pi boot up install 
+  -
+  - [Pi zero w bootup  access over wifi ](https://www.youtube.com/watch?v=LlCr09B2HZI)
 
 ### Raspberry pi zero Camera HW install: 
 
 #### what
 
 #### Howto 
-- [Raspberry_pi.md](file:///C:/Local/Work/ML_Name/Note/Raspberry_pi.md) 
+
+https://www.youtube.com/watch?v=LlCr09B2HZI
+
 - - 1. hardware : hwo to connect the cable 
     2. 
 #### Result 
+
+
+
+## Pi Zero monitoring howto 
+
+### Pi 4 Open CV 
+  - [∞](#pi-4-open-cv)
+
+### Objective 
+- - 1. Simple project to kick of the interest 
+    2. 
+
+### Todo 
+- - 1. think and solve the questions   - [∞](#question-where-to-mount-the-camera-in-kitchen-)
+    2. Buy a housing for the system  
+
+### what
+- - 1. Set up a first pi project using pi zero w 
+    2. monitor the kitchen 
+    3. monitor front door for events 
+
+#### User story 
+##### Stage I 
+  - As a user, I can monitor the kitchen to see abnormal event. 
+    - Fire in the stove 
+    - fridge is not closed 
+  - 
+##### Stage II 
+  - have a web server in? 
+  - Able to access remotely : web cam : 
+    -   access via mobile phone 
+
+##### Stage III 
+  - check front door for events 
+    - delivery  
+
+##### Stage IV  
+  - Able 
+  
+### Howto 
+- - 1. Search for Raspberry pi in youtube DONE
+    1. find the door monitor. one DONE
+    2. find what is the operation system.  
+    3. find How many gigabyte is needed. 
+    4. Search for best solution for the monitoring solution   - [∞](#solution-candidate-survey)
+        - Search key word : pi zero webcam 
+        - 
+    5. Solved critical tech questions:  [∞](#question-howto-set-up-the-battery-)
+    
+
+### Steps 
+- - 1. Boot up the pi zero and have remote access 
+    2. install the operational system 
+    3. mount in right place in the kitchen
+
+### Existing Material 
+- - 1. pi zero w mother broad : 10 USD 
+    2. 3 64G sd card : 10 USD each 
+    3. Standard Pi camera 
+
+##### Already Have  
+  - need 64GB: install  motioneye os : 
+  - need card reader. Have : with out pi 
+  - power supply 
+    - The device needs to be powered with a 5V power supply with a USB connector; USB-C for the Raspberry Pi 4, and micro USB for all other models.
+
+##### Purchase pi zero & Camera
+
+- purchase pi zero broad : 
+- purchase pi camera module 
+  - Candidate : 
+    1. Aamzon: DORHEA Raspberry Pi Mini Camera Video Module 5 Megapixels  ($8.69)
+    2. pi zero broad : 
+       1. 
+
+##### Purchased  
+  - Raspberry Pi Zero W :  https://www.adafruit.com/opensafely
+  - Aamzon: DORHEA Raspberry Pi Mini Camera Video Module 5 Megapixels  ($8.69)
+
+
+
+### Solution Candidate  survey  
+- - 1. Motion eye  OS : 
+      - Pro 
+      - Con 
+    2. 
+
+### General question 
+
+#### Front door 
+##### <Question: howto set up the battery >
+
+<Answer: Use the kitchen power cable >
+
+##### <Question: Where to mount the camera in kitchen >
+<Answer: >
+
+#### Front door 
+
+##### <Question: howto set up the battery >
+
+<Answer:  >
+
+##### <Question: Where to mount the camera >
+where does the camera point to ?
+<Answer: >
+
+#### <Question: How to set a web server in pi zero or PC? >
+<Answer: >
+
+## Pi Zero monitoring Content 
+
+###  Smart Security Camera
+
+STATUS :  Planed 
+Planned : howto do is planned. to be implemented 
+
+- [How to Make a Smart Security Camera with a Raspberry Pi Zero](https://www.youtube.com/watch?v=Y2QFu-tTvTI)
+In this video, we use a Raspberry Pi Zero W and a Raspberry Pi camera to make a smart security camera! 
+
+The camera uses object detection (with OpenCV) to send you an email whenever it sees an intruder.
+It also runs a webcam so you can view live video from the camera when you are away. 
+
+
+0:00 -0:30 topics : Important
+https://www.hackster.io/hackershack/smart-security-camera-90d7bd
+
+
+7:12 start the installation 
+
+NOTE : It will really takes long time to install openCV : 8 hours to 12 hours . 
+
+#### Steps 
+  - [∞](#smart-security-camera)
+First run on pi 4 and then work on pi zero w. 
+
+##### Install 
+1. Install standard alone raspian (NOOB) in pi 4 : 
+
+  - [Pi zero w bootup  access over wifi ](https://www.youtube.com/watch?v=LlCr09B2HZI)
+
+- - 1.  Install standard alone raspian (NOOB) in pi 4 :
+
+      1. download : https://www.raspberrypi.org/downloads/noobs/
+          https://www.raspberrypi.org/downloads/
+
+      2. download imager 
+        https://www.youtube.com/watch?v=y45hsd2AOpw
+B8:27:EB.
+
+##### remote control 
+
+2. Enable remote control of pi zero w : 
+   [∞](#raspberry-pi-remote-accessing)
+  - [Pi zero w bootup  access over wifi ](https://www.youtube.com/watch?v=LlCr09B2HZI)
+
+##### Camera configure  
+3. Configure Camera : https://github.com/HackerShackOfficial/Smart-Security-Camera
+   1. Setup : sudo raspi-config
+   2. still image : raspistill -o image.jpg
+
+##### Install OpenCV 
+
+4. Install OpenCV according to : 
+   1. Installing OpenCV in PiZero W
+      1. https://towardsdatascience.com/installing-opencv-in-pizero-w-8e46bd42a3d3
+   2. Smart-Security-Camera
+      1. https://github.com/HackerShackOfficial/Smart-Security-Camera
+      2. https://www.hackster.io/hackershack/smart-security-camera-90d7bd#code
+   3. Install python 2.7 
+
+https://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-jessie-opencv-3/
+   1. first thing you should do is expand your filesystem to include all available space on your micro-SD card:
+      1. already NOOB, no need 
+
+    2. update and upgrade any existing packages:
+      $ sudo apt-get update
+      $ sudo apt-get upgrade
+      
+
+    3. dependence install  
+      $ sudo apt-get install build-essential cmake pkg-config
+      $ sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev 
+      
+      $ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+      $ sudo apt-get install libxvidcore-dev libx264-dev
+      
+      $ sudo apt-get install libgtk2.0-dev
+
+      $ sudo apt-get install libatlas-base-dev gfortran
+
+    d $ sudo apt-get install python2.7-dev python3-dev
+
+    4.   Download the OpenCV source code
+      $ cd ~
+      $ wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.1.0.zip
+      $ unzip opencv.zip
+
+       $ wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.1.0.zip
+       $ unzip opencv_contrib.zip 
+
+##### using  https://medium.com/@aadeshshah/pre-installed-and-pre-configured-raspbian-with-opencv-4-1-0-for-raspberry-pi-3-model-b-b-9c307b9a993a
+    
+    
+    5.   compiling OpenCV : 
+        $ wget https://bootstrap.pypa.io/get-pip.py
+        $ sudo python get-pip.py
+        $ sudo pip install virtualenv virtualenvwrapper
+        $ sudo rm -rf ~/.cache/pip
+
+      # virtualenv and virtualenvwrapper
+      export WORKON_HOME=$HOME/.virtualenvs
+      source /usr/local/bin/virtualenvwrapper.sh
+
+      $ echo -e "\n# virtualenv and virtualenvwrapper" >> ~/.profile
+      $ echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.profile
+      $ echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.profile
+
+      $ source ~/.profile
+
+    6. Creating your Python virtual environment
+        $ mkvirtualenv cv -p python2
+        $ mkvirtualenv cv -p python3 ## python 3 
+
+
+
+##### Send email 
+5. Customization : Send email 
+
+
+##### Running continuously 
+6. Running : 
+1. Local : 
+  <raspberrypi_ip>:5000 
+
+2. Remote : ngrok
+expose 
+https://ngrok.com/
+
+Note: To view the live stream on a different network than your Raspberry Pi, you can use ngrok to expose a local tunnel. 
+
+Once downloaded, run ngrok with ./ngrok http 5000 and visit one of the generated links in your browser.
+
+
+
+#### Objective 
+- - 1. Finish all the planning and read all the material : 
+    2. Status : Planed 
+
+    
+### Reference 
+
+- [Set Your Raspberry Pi as a Wireless PC Webcam ](https://www.youtube.com/watch?v=2yeso-ikMn0)
+[V_1]
+
+- [How to Make a Smart Security Camera with a Raspberry Pi Zero](https://www.youtube.com/watch?v=Y2QFu-tTvTI)
+
+- [Build a Raspberry Pi Webcam Server in Minutes](https://www.youtube.com/watch?v=WNKbZsrsKVs)
+
+- [How to Use Raspberry Pi as a PC Webcam](https://www.tomshardware.com/how-to/use-raspberry-pi-as-pc-webcam) 
+[V_3]
+
+  - [Raspberry Pi Zero W and Pi Camera Application](https://tutorial.cytron.io/2017/08/16/raspberry-pi-zero-w-pi-camera-application/)
+ 
 
 ### Host Your Website
 
@@ -334,57 +596,12 @@ hen install software updates, and then install Apache, PHP and MySQL.
 
 - Log the incoming
 
-## Surveillance
-
-###  Search for raspberry pi zero monitor
-[15_min]
-
-#### Howto
-- - 1. Search for Raspberry pi in youtube DONE
-    1. find the door monitor. one DONE
-    2. find what is the operation system.  
-    3. find How many gigabyte is needed. 
-
-#### motioneye Surveillance
-
-- [Raspberry Pi Zero W Surveillance Camera](https://www.youtube.com/watch?v=rhIzfRmKHnQ&list=WL&index=2&t=881s)
-
-##### Already Have  
-  - need 64GB: install  motioneye os : 
-  - need card reader. Have : with out pi 
-  - power supply 
-    - The device needs to be powered with a 5V power supply with a USB connector; USB-C for the Raspberry Pi 4, and micro USB for all other models.
-
-##### Purchase pi zero & Camera
-
-- purchase pi zero broad : 
-- purchase pi camera module 
-  - Candidate : 
-    1. Aamzon: DORHEA Raspberry Pi Mini Camera Video Module 5 Megapixels  ($8.69)
-    2. pi zero broad : 
-       1. 
-#### Result 
-##### Purchased  
-  - Raspberry Pi Zero W :  https://www.adafruit.com/opensafely
-  - Aamzon: DORHEA Raspberry Pi Mini Camera Video Module 5 Megapixels  ($8.69)
-
-
-
-### Pi zero w bootup 
-
-#### Howto 
-  - [access over wifi ](https://www.youtube.com/watch?v=LlCr09B2HZI)
-
 
 ## Object Detection
 
 - [How To Run TensorFlow Lite on Raspberry Pi for Object Detection](https://www.youtube.com/watch?v=aimSGOAUI8Y&t=206s)
 
 - scikit-learn will run on a Raspberry Pi just as well as any other Linux machine.
-
-## Reference
-
-- [What is a Raspberry Pi?](https://www.raspberrypi.org/help/what-%20is-a-raspberry-pi/)
 
 ## Raspberry Pi video resource
 
