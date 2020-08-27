@@ -7,7 +7,25 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
   [![Travis](https://img.shields.io/travis/zalandoresearch/flair.svg)](https://travis-ci.org/zalandoresearch/flair)
 
+
+## Structure
+
+### Parent
+  - [Master](file:///c:/Local/Work/ML_Name/Note/ML_Master.md)  
+  - [mm.md](file:///C:/Local/Work/Key_Tools/Note/mm.md) 
+  - [ML_todo.md](file:///C:/Local/Work/Key_Docs/Todo/ML_todo.md)
+    
+### Son 
+
+##### Amazon
+
+  - [ML_Amazon_product_adviser_chat_bot.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_adviser_chat_bot.md)  
+ - [ML_Amazon_Train_Extract_skill_from_CV.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_Train_Extract_skill_from_CV.md)  
+  - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md) 
+
 ## Todo
+  - [ ] review and understand use LSTM to extract skill words from resume for
+  - [∞](#211-using-lstm-on-the-resume-for-skill-words)
 
 ## Vision
 

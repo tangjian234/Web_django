@@ -1,6 +1,5 @@
-# [ML_Name_web_identification.md]
-
-- [ML_Name_web_identification.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_web_identification.md)
+# ML_Name_Identification_Visualizer.md
+- [ML_Name_Identification_Visualizer.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_Identification/ML_Name_Identification_Visualizer.md) 
 -
 -
 - [![GitHub Issues](https://img.shields.io/github/issues/zalandoresearch/flair.svg)](https://github.com/zalandoresearch/flair/issues)

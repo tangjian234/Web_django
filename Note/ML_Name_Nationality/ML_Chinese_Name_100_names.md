@@ -57,3 +57,8 @@ Yin 尹 • Xue 薛 • Yan 阎 • Lei 雷 • Long 龙 • Li 黎 • Shi 史 
 
 - 100 name json file :
 - C:\Local\Work\ML\Database\Chinese-100-surnames.json
+
+
+
+
+

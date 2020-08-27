@@ -1,20 +1,57 @@
 # 1. [ML_Amazon_product_adviser_chat_bot]
-
-- [ML_Amazon_product_adviser_chat_bot.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product_adviser_chat_bot.md)
+[](#)
+ML_Amazon_product_adviser_chat_bot.md
+- [ML_Amazon_product_adviser_chat_bot.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_adviser_chat_bot.md) 
 
 [![GitHub Issues](https://img.shields.io/github/issues/zalandoresearch/flair.svg)](https://github.com/zalandoresearch/flair/issues)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![Travis](https://img.shields.io/travis/zalandoresearch/flair.svg)](https://travis-ci.org/zalandoresearch/flair)
 
+## Structure
+
+### Parent
+  - [Master](file:///c:/Local/Work/ML_Name/Note/ML_Master.md)  
+  - [mm.md](file:///C:/Local/Work/Key_Tools/Note/mm.md) 
+  - [ML_todo.md](file:///C:/Local/Work/Key_Docs/Todo/ML_todo.md)
+    
+### Son 
+
+##### Amazon
+
+  - [ML_Amazon_product_adviser_chat_bot.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_adviser_chat_bot.md)  
+ - [ML_Amazon_Train_Extract_skill_from_CV.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_Train_Extract_skill_from_CV.md)  
+  - [ML_ebay_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_ebay_product_Crawler.md)   
+  - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md) 
+  - [ML_Amazon_product_data_prepare.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_data_prepare.md)
+  - [ML_Amazon_product_Visualizer.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Visualizer.md) 
+
+##### Python files 
+
+  -  [ML_master.py](file:///C:/Local/Work/ML_Name/Code/Test/ML_master.py) 
+  -  [ML_amazon_best_seller.py](file:///C:/Local/Work/ML_Name/Code/Test/ML_amazon_best_seller.py) 
+  - [ML_amazon_listing_download.py](file:///C:/Local/Work/ML_Name/Code/Test/ML_amazon_listing_download.py)
+  - [amazon_product_dictionary.py](file:///C:/Local/Work/ML_Name/Code/Test/amazon_product_dictionary.py)
+
 ## 1.1. Todo
 
-- [ ] Sort and extend the plan [V_1][d_1]
+- [ ] Sort ML_Amazon_chat_bot [V_1][d_1]
+- [ ] Plan for the next steps  
 - [ ] Work on basic information extraction first
   - [ ] [target](#vision)
 - [ ] Read the most important
   - [ ] [paper](#paper-1--deep-learning-for-specific-information-extraction-from-unstructured-texts)
 - [ ] Named Entity Recognition : use spacy to train aspect ?
+
+## Action 
+
+
+
+  ### Sort ML_Amazon_chat_bot 
+    - [∞](#sort-ml_amazon_chat_bot)
+  ### Plan for the next steps   
+    - [∞](#plan-for-the-next-steps)
+
 
 ## 1.2. Vision
 
@@ -41,9 +78,9 @@
 
 ### 1.3.3. Key principles
 
-1. Make MVP first : Frame work first, Get more detail later .
-2. how to Simplify, Well still keep the system integrity
-3. Each component/Building block have a file
+  1. Make MVP first : Frame work first, Get more detail later .
+  2. how to Simplify, Well still keep the system integrity
+  3. Each component/Building block have a file
 
 ### 1.3.4. What is not todo :
 
@@ -109,12 +146,16 @@
 ### 1.6.1. Key python files.
 
 - - 1.  [ML_master.py] :
+        - [ML_master.py](file:///C:/Local/Work/ML_Name/Code/Test/ML_master.py) 
         - Running the streamlit based web UI :
-    2.  [ML_amazon_best_seller.py] :
-        - given search term: get the top 100 best seller.
-    3.  [ML_amazon_listing_download.py] :
-        - download file given a list of asin : use bs_lib.get_amazon_product_info(asin)
+    1.  [ML_amazon_best_seller.py] :
+        -  [ML_amazon_best_seller.py](file:///C:/Local/Work/ML_Name/Code/Test/ML_amazon_best_seller.py) 
+        - given search term: get the top 100 best seller.        
+    2.  [ML_amazon_listing_download.py] :
+         - [ML_amazon_listing_download.py](file:///C:/Local/Work/ML_Name/Code/Test/ML_amazon_listing_download.py)
+         - download file given a list of asin : use bs_lib.get_amazon_product_info(asin)
     4.  [amazon_product_dictionary.py] :
+        - [amazon_product_dictionary.py](file:///C:/Local/Work/ML_Name/Code/Test/amazon_product_dictionary.py) 
         - processing and matching production dictionary vs asin product info -
           - 1. Load json file
             - load_product_listing_json
@@ -123,7 +164,7 @@
             - keywords :
           - 1. match and tag aspects into each listing sentences. **One last sentence. One aspect.**
             1. Highlight the key word match
-            1. Give each aspect feature a value/discription.
+            2. Give each aspect feature a value/discription.
                1. bass : 'xx sentence'
                2. waterproff : 'IPX'
 

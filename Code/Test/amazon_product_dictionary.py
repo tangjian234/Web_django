@@ -1,3 +1,5 @@
+#amazon_product_dictionary.py
+#- [amazon_product_dictionary.py](file:///C:/Local/Work/ML_Name/Code/Test/amazon_product_dictionary.py) 
 import en_core_web_sm
 from collections import Counter
 from spacy import displacy

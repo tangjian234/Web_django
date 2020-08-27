@@ -7,6 +7,62 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![Travis](https://img.shields.io/travis/zalandoresearch/flair.svg)](https://travis-ci.org/zalandoresearch/flair)
 [](#)
+
+
+## Structure
+
+### Parent
+  - [Master](file:///c:/Local/Work/ML_Name/Note/ML_Master.md)  
+  - [mm.md](file:///C:/Local/Work/Key_Tools/Note/mm.md) 
+  - [ML_todo.md](file:///C:/Local/Work/Key_Docs/Todo/ML_todo.md)
+    
+### Son 
+
+##### Amazon
+
+  - [**ML_Amazon_product_adviser_chat_bot.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_adviser_chat_bot.md)  
+ - [*ML_Amazon_Train_Extract_skill_from_CV.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_Train_Extract_skill_from_CV.md)  
+  - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md) 
+
+
+  - [ML_ebay_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_ebay_product_Crawler.md)   
+  - [ML_Amazon_product_data_prepare.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_data_prepare.md)
+  - [ML_Amazon_product_Visualizer.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Visualizer.md) 
+
+
+##### General  
+  - [*ML_Text_Process.md](file:///C:/Local/Work/ML_Name/Note/ML_Text_Process.md)
+  - [ML_Format.md](file:///C:/Local/Work/ML_Name/Note/ML_Format.md) 
+  - [ML_data_prepare.md](file:///C:/Local/Work/ML_Name/Note/ML_data_prepare.md)
+  - [ML_NLP_study.md](file:///C:/Local/Work/ML_Name/Note/ML_NLP_study.md)   
+  - [ML_NLP_study.md](file:///C:/Local/Work/ML_Name/Note/ML_NLP_study.md)   
+
+
+##### ML_Name_Identification
+
+  - [ML_Name_Identification.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_Identification/ML_Name_Identification.md)
+  - [ML_Name_Identification_Classifier.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_Identification/ML_Name_Identification_Classifier.md)
+
+  - [ML_Name_Identification_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_Identification/ML_Name_Identification_Crawler.md) 
+  - [ML_Name_Identification_data_prepare.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_Identification/ML_Name_Identification_data_prepare.md)
+  - [ML_Name_Identification_Visualizer.md](file:///C:/Local/Work/ML_Name/Note/ML_Name_Identification/ML_Name_Identification_Visualizer.md) 
+  - [ML_Name_Nationality](file:///c:/Local/Work/ML_Name/Note/ML_Name_Nationality.md)
+
+####  ML_Job_Hunter
+  - [ML_Job_hunter.md](file:///C:/Local/Work/ML_Name/Note/ML_Job_hunter.md)
+  - [ML_Job_Hunter_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Job_Hunter/ML_Job_Hunter_Crawler.md) 
+  - [ML_Job_Hunter_Classifier.md](file:///C:/Local/Work/ML_Name/Note/ML_Job_Hunter/ML_Job_Hunter_Classifier.md)   
+  - [ML_Job_Hunter_data_prepare.md](file:///C:/Local/Work/ML_Name/Note/ML_Job_Hunter/ML_Job_Hunter_data_prepare.md) 
+  -  [ML_Job_Hunter_Visualizer.md](file:///C:/Local/Work/ML_Name/Note/ML_Job_Hunter/ML_Job_Hunter_Visualizer.md)
+
+
+
+
+
+<!------------------------------------------------------------------------->
+
+
+
 ## 1.1. Todo
 
       - [x] ML OKR and Plan [ 1 hour ]

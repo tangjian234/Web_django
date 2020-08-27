@@ -1,6 +1,6 @@
 # ML_Amazon_product_Crawler.md
 
-- [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md) )
+- [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md) 
 
 [![GitHub Issues](https://img.shields.io/github/issues/zalandoresearch/flair.svg)](https://github.com/zalandoresearch/flair/issues)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
@@ -422,8 +422,11 @@ DOWNLOAD_DELAY = 1.5
   - [quotes_spider.py]
 
 
-###  Download Remote product page  
 
+- [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md)[](） 
+
+###  Download Remote product page  
+  - [∞](#download-remote-product-page)
 #### Get product page . 
   - get a list of urls  
   - build a local file name 
