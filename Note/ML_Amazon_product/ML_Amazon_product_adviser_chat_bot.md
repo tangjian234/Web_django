@@ -8,6 +8,12 @@ ML_Amazon_product_adviser_chat_bot.md
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![Travis](https://img.shields.io/travis/zalandoresearch/flair.svg)](https://travis-ci.org/zalandoresearch/flair)
 
+
+## Objective 
+  
+    1. Use beautifulsoup  to crawl amazon product info : Earily version 
+    2. 
+
 ## Structure
 
 ### Parent
@@ -123,6 +129,9 @@ ML_Amazon_product_adviser_chat_bot.md
 ## 1.5. High level Work Plan
 
 ### 1.5.1. Basic Amazon product work
+    - Get best_seller list 
+    - download asin in best_seller list  into product info 
+    - compare product information with product directory. 
 
 ### 1.5.2. Product basic information extraction
 
@@ -143,14 +152,17 @@ ML_Amazon_product_adviser_chat_bot.md
 
 ## 1.6. Key docs and data structure:
 
+C:\Local\Work\ML_Name\Note\ML_Name_Nationality\ML_Name_Nationality.md
+
 ### 1.6.1. Key python files.
 
 - - 1.  [ML_master.py] :
         - [ML_master.py](file:///C:/Local/Work/ML_Name/Code/Test/ML_master.py) 
         - Running the streamlit based web UI :
-    1.  [ML_amazon_best_seller.py] :
+    2.  [ML_amazon_best_seller.py] :
         -  [ML_amazon_best_seller.py](file:///C:/Local/Work/ML_Name/Code/Test/ML_amazon_best_seller.py) 
-        - given search term: get the top 100 best seller.        
+        - given search term: get the top 100 best seller.     :
+        - Already in ML_master.   
     2.  [ML_amazon_listing_download.py] :
          - [ML_amazon_listing_download.py](file:///C:/Local/Work/ML_Name/Code/Test/ML_amazon_listing_download.py)
          - download file given a list of asin : use bs_lib.get_amazon_product_info(asin)

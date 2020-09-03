@@ -19,7 +19,7 @@
 ## 1.4. Concepts
 
 ### 1.4.1. POS
-s
+
 #### 1.4.1.1. noun phrase grammar
 
     - Noun (N)- Daniel, London, table, dog, teacher, pen, city, happiness, hope
@@ -263,7 +263,7 @@ how however whence whenever where whereby whereever wherein whereof why
 
 - - - Put url into clip board
 
-#### bs_lib
+#### bs_lib 
 
 ##### 1.5.1.2.1. bs_lib : get_html_info()
 
@@ -275,7 +275,10 @@ how however whence whenever where whereby whereever wherein whereof why
 - - - - use of html2text :
       - get chunk of text, with markdown, good for streamlit
 
+##### 1.5.1.2.2. bs_lib: : get_soup
 
+use 
+##### 1.5.1.2.2. bs_lib: : get_amazon_product_info
 
 
 

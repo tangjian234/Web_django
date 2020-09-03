@@ -1,4 +1,11 @@
 # %%
+# !------------------------------------------------------------------------->
+#  Synopsis : 
+#     
+#  Documentation : 
+#    
+# !------------------------------------------------------------------------->
+
 import pickle
 from sklearn import svm
 from sklearn.linear_model import LogisticRegression

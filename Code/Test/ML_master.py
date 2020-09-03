@@ -5,6 +5,14 @@
 
 
 # https://github.com/Jcharis/Streamlit_DataScience_Apps/tree/master/NLP_App_with_Streamlit_Python
+
+# !------------------------------------------------------------------------->
+#  Synopsis : 
+#     Master doc to Running the streamlit based web UI 
+#  Documentation : 
+#     ML_Amazon_product_adviser_chat_bot.md
+# !------------------------------------------------------------------------->
+
 """
 # App: NLP App with Streamlit (NLPiffy)
 Author: [Jesse E.Agbe(JCharis)](https://github.com/Jcharis))\n
@@ -39,6 +47,7 @@ from sumy.summarizers.lex_rank import LexRankSummarizer
 
 import name_nationality as nn
 import name_entity_reco as ner
+import ML_amazon_best_seller as best_seller
 from newspaper import Article
 import urllib.request
 import itertools as it
@@ -135,7 +144,16 @@ def main():
             st.write(person_name_all)
             st.markdown(nlp_text)
     
-    # Amazon Product Information 
+    # Amazon Best seller 
+    # Give a search lis
+    if st.sidebar.checkbox("Amazon best seller list "):
+                st.subheader("Enter your product search item ")
+                message = st.text_area("Enter Name", "Type Here ..")
+                if st.button("Analyze"):
+                    best_seller.ML_amazon_best_seller(message)
+                    #st.json(nlp_name)    
+    
+    # give a product ID : download Amazon Product Information 
     # see  ML_Master.md
     import bs_lib
     if st.sidebar.checkbox("Amazon Product"):

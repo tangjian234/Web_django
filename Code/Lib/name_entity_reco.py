@@ -1,4 +1,21 @@
 # %%
+
+# !------------------------------------------------------------------------->
+# Synopsis : 
+#     Processing web content and highlight names 
+#
+# Input:  article Web link;
+# Output : person's names in article Highlighted
+#
+# - use article to get webpage text content
+# - use spacy for NER : 
+#   Highlight the person's name in the article
+#
+#  Documentation : 
+#      ML_Name_Identification.md
+# !------------------------------------------------------------------------->
+
+
 import configparser
 import pickle
 from sklearn import svm

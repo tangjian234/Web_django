@@ -1,4 +1,16 @@
+
+# !------------------------------------------------------------------------->
+# Synopsis : 
+#     Download file given a list of asin : use bs_lib.
+#
+#  Documentation : 
+#      ML_Name_Identification.md
+# !------------------------------------------------------------------------->
+
+
  # - [ML_amazon_listing_download.py](file:///C:/Local/Work/ML_Name/Code/Test/ML_amazon_listing_download.py) 
+ 
+
 from collections import Counter
 from spacy import displacy
 import spacy

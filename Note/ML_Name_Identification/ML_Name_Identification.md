@@ -28,6 +28,15 @@
 
 ### Highlight
 
+## Objective 
+### Name entry recognition (NER)
+
+- Input : webpage
+- highlighted
+- use article to get webpage text content
+- use spacy for NER : 
+
+
 ## Use case :
 
 - As a user , I can automatically highlight the personal names of a webpage [Done]
@@ -107,14 +116,18 @@
 - Input : webpage
 - highlighted
 - use article to get webpage text content
-- use spacy for NER
+- use spacy for NER : 
 
 #### Result :
 
 - ML_Master.py: Name entry recognition section of
 - name_entity_reco.py: C:\Local\Work\ML_Name\Code\Lib\name_entity_reco.py
   - nlp_text = ner.Get_html_text(message)
-
+   nlp_text = ner.Get_html_text(message)
+            #nlp_text = nlp_text.replace("University ", "**University** ")
+            (nlp_text, person_name_all) = ner.get_person_name(nlp_text)
+            st.write(person_name_all)
+            st.markdown(nlp_text)
 #### Crawler :
 
 NONE : already trained.

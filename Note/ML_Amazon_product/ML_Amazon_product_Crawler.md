@@ -8,9 +8,25 @@
 [![Travis](https://img.shields.io/travis/zalandoresearch/flair.svg)](https://travis-ci.org/zalandoresearch/flair)
 
 
-... 
+## Structure
 
-[pookie](#mymark)
+### Parent
+  - [Master](file:///c:/Local/Work/ML_Name/Note/ML_Master.md)  
+  - [mm.md](file:///C:/Local/Work/Key_Tools/Note/mm.md) 
+  - [ML_todo.md](file:///C:/Local/Work/Key_Docs/Todo/ML_todo.md)
+    
+### Sibling 
+
+##### Amazon
+
+  - [**ML_Amazon_product_adviser_chat_bot.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_adviser_chat_bot.md)  
+ - [*ML_Amazon_Train_Extract_skill_from_CV.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_Train_Extract_skill_from_CV.md)  
+  - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md) 
+
+
+  - [ML_ebay_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_ebay_product_Crawler.md)   
+  - [ML_Amazon_product_data_prepare.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_data_prepare.md)
+  - [ML_Amazon_product_Visualizer.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Visualizer.md) 
 
 ## Todo
 
@@ -26,10 +42,12 @@
 - [ ] Review amazon super URL.[_](#amazon-super-url) 
 - [ ] ebay :  Make a ebay bidding app 
 - [ ] VPN for scraping - [∞](#vpn-for-scraping)
+- [ ] 
 
-
-
-
+## Objective 
+   
+   1. Use Scrapy to crawl amazon product info : later version 
+  
 ## Vision
 
 ### Result code 
@@ -212,6 +230,11 @@ The User-Agent request header is a characteristic string that lets servers and n
 
 - [- summary](https://stackoverflow.com/questions/4710483/scrapy-and-proxies#:~:text=The%20easiest%20way%20to%20use,done%20depends%20on%20your%20shell.&text=1%2DCreate%20a%20new%20file,the%20following%20code%20to%20it.&text=Now%2C%20your%20requests%20should%20be%20passed%20by%20this%20proxy.)
 
+### Check proxy validity 
+
+web_lib.py
+
+https://github.com/clarketm/proxy-list
 
 ### Use of Yaml 
 

@@ -30,6 +30,9 @@
 ## Vision
 
 ## Objective
+  
+    1.  Using LSTM on the resume for skill words
+    2.  prepare for extract aspect keyword from 
 
 ## Content
 

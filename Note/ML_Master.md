@@ -9,7 +9,7 @@
 [](#)
 
 
-## Structure
+- ## Structure
 
 ### Parent
   - [Master](file:///c:/Local/Work/ML_Name/Note/ML_Master.md)  
@@ -18,11 +18,12 @@
     
 ### Son 
 
-##### Amazon
+##### ML_Amazon
 
   - [**ML_Amazon_product_adviser_chat_bot.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_adviser_chat_bot.md)  
- - [*ML_Amazon_Train_Extract_skill_from_CV.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_Train_Extract_skill_from_CV.md)  
-  - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md) 
+  - [* ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md) 
+ - [* ML_Amazon_Train_Extract_skill_from_CV.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_Train_Extract_skill_from_CV.md)  
+
 
 
   - [ML_ebay_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_ebay_product_Crawler.md)   
@@ -34,7 +35,6 @@
   - [*ML_Text_Process.md](file:///C:/Local/Work/ML_Name/Note/ML_Text_Process.md)
   - [ML_Format.md](file:///C:/Local/Work/ML_Name/Note/ML_Format.md) 
   - [ML_data_prepare.md](file:///C:/Local/Work/ML_Name/Note/ML_data_prepare.md)
-  - [ML_NLP_study.md](file:///C:/Local/Work/ML_Name/Note/ML_NLP_study.md)   
   - [ML_NLP_study.md](file:///C:/Local/Work/ML_Name/Note/ML_NLP_study.md)   
 
 
@@ -54,9 +54,6 @@
   - [ML_Job_Hunter_Classifier.md](file:///C:/Local/Work/ML_Name/Note/ML_Job_Hunter/ML_Job_Hunter_Classifier.md)   
   - [ML_Job_Hunter_data_prepare.md](file:///C:/Local/Work/ML_Name/Note/ML_Job_Hunter/ML_Job_Hunter_data_prepare.md) 
   -  [ML_Job_Hunter_Visualizer.md](file:///C:/Local/Work/ML_Name/Note/ML_Job_Hunter/ML_Job_Hunter_Visualizer.md)
-
-
-
 
 
 <!------------------------------------------------------------------------->
