@@ -6,6 +6,10 @@
 #     Processing and matching production dictionary vs asin product info  
 #  Documentation : 
 #     ML_Amazon_product_adviser_chat_bot.md
+# 
+#  Author:  Jian Tang
+#  Email :  tangjian234@gmail.com
+#  Project: ML : Amazon Product Analysis 
 # !------------------------------------------------------------------------->
 
 import en_core_web_sm

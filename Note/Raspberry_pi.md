@@ -16,6 +16,8 @@
 
 - [x]  Raspberry pi 4 Camera motioneye
   - [∞](#raspberry-pi-4-camera-motioneye)
+
+- [x] Raspberry pi zero w Camera motioneye 
  
 ## Todo
 
@@ -25,9 +27,8 @@
 - [ ]  Pi 4 Open CV
   - [steps](#smart-security-camera)   
   - [hwo_to](#pi-4-open-cv)
+  - [fix_tensor_flow](#fix_tensor_flow)
 
-- [ ] Raspberry pi zero w Camera motioneye
-  
 - [ ] set up actual webpage in Raspberry pi
   - [ ] run simple streamlit work in Raspberry pi :
     - [ ] show publishable web-essential extractor.
@@ -234,8 +235,8 @@ NOTE : no need of camera module adapter
 
 #### Howto 
 
-https://www.youtube.com/watch?v=LlCr09B2HZI
-
+  -  https://www.youtube.com/watch?v=LlCr09B2HZI
+  - [Raspberry Pi Zero W and Pi Camera Application](https://tutorial.cytron.io/2017/08/16/raspberry-pi-zero-w-pi-camera-application/)
 - - 1. hardware : hwo to connect the cable 
     2. 
 #### Result 
@@ -259,6 +260,11 @@ https://www.youtube.com/watch?v=LlCr09B2HZI
 - - 1. Set up a first pi project using pi zero w 
     2. monitor the kitchen 
     3. monitor front door for events 
+
+### fix_tensor_flow 
+  Currently the squre is not geting the correct person. 
+  Why. 
+
 
 #### User story 
 ##### Stage I 
@@ -595,7 +601,6 @@ hen install software updates, and then install Apache, PHP and MySQL.
 #### Web logging :
 
 - Log the incoming
-
 
 ## Object Detection
 

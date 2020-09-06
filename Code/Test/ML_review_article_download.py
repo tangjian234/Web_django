@@ -1,3 +1,23 @@
+
+# !------------------------------------------------------------------------->
+# Synopsis : 
+#     NLP : Name Nationality Recognition  
+#     Processing web content and highlight names 
+#
+# Input:  article Web link;
+# Output : person's names in article Highlighted
+#
+# - use article to get webpage text content
+# - use spacy for NER : 
+#   Highlight the person's name in the article
+#
+#  Documentation : 
+#      ML_Text_Process.md
+# 
+#  Author:  Jian Tang
+#  Email :  tangjian234@gmail.com
+#  Project: NLP : Name Nationality Recognition  
+# !------------------------------------------------------------------------->
 import sys
 import web_lib
 import file_lib

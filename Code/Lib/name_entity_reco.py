@@ -2,6 +2,7 @@
 
 # !------------------------------------------------------------------------->
 # Synopsis : 
+#     NLP : Name Nationality Recognition  
 #     Processing web content and highlight names 
 #
 # Input:  article Web link;
@@ -13,8 +14,11 @@
 #
 #  Documentation : 
 #      ML_Name_Identification.md
+# 
+#  Author:  Jian Tang
+#  Email :  tangjian234@gmail.com
+#  Project: NLP : Name Nationality Recognition  
 # !------------------------------------------------------------------------->
-
 
 import configparser
 import pickle

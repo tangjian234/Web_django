@@ -70,9 +70,18 @@
 - [ ] Howto run : ML_Master
       - [∞](#howto-run--ml_master)
 
+## Actions 
 
-1. scaffolding :
-   1. sort the library of ML study
+  1. Crawler : [15_min] 
+     1. link [3_min] <DONE>
+     2. Separate 2 files : crawler and chatbot. [12_min] <DONE>
+  2. Summary of most import topic of each documents. 
+     1. chatbot [10_min] <DONE>
+        1. given search term: get the top 100 best seller.
+        2. download file given a list of asin  
+        3. processing and matching production dictionary vs asin product info
+     2. cv [10_min] 
+
 
 ## 1.2. Vision
 
@@ -81,6 +90,35 @@
     - My pet project.
 
 ## 1.3. Structure
+
+### Howto run : ML_Master
+
+#### what
+  - [x] Find all python files and structures 
+    [10_min]
+    - [x] Streamlit :   srun <DONE>
+    - [x] ML_todo  section : 
+  - [x]  library summary and quick review. 
+    [25_min]
+    - [ML_Master.md](file:///c:/Local/Work/ML_Name/Note/ML_Master.md)
+
+#### hwoto   
+
+- - 1. Streamlit :   srun  <DONE>
+      -  srun:     srun.ps1 C:\Local\Work\ML_Name\Code\Test\ML_master.py
+
+    2. work structure tree :  <DONE>
+      1. ML_Name
+      2. Amazon_product 
+    3. Move to master <DONE>
+       1. [15_min]
+    4. review each detail :
+       1. Result : no detail yet. 
+    5. collection information : C:/Local/Work/ML_Name/Code/Test
+
+    6. connect to ML_master.py : read ML_Amazon_product_adviser_chat_bot.md
+
+
 
 ### 1.3.1. Key Technology
 

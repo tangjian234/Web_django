@@ -2,13 +2,17 @@
 
 # !------------------------------------------------------------------------->
 # Synopsis : 
+#     Amazon Product Analysis 
 #     Input: Given search term: 
 #     Get the top 100 best seller's ASIN 
 #
 #  Documentation : 
 #      ML_Amazon_product_adviser_chat_bot.md
+# 
+#  Author:  Jian Tang
+#  Email :  tangjian234@gmail.com
+#  Project: ML : Amazon Product Analysis   
 # !------------------------------------------------------------------------->
-
 
 # - [ML_amazon_best_seller.py](file:///C:/Local/Work/ML_Name/Code/Test/ML_amazon_best_seller.py) 
 from collections import Counter

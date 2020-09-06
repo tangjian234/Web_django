@@ -5,6 +5,10 @@
 #
 #  Documentation : 
 #      ML_Name_Identification.md
+#
+#  Author:  Jian Tang
+#  Email :  tangjian234@gmail.com
+#  Project: ML : Amazon 
 # !------------------------------------------------------------------------->
 
 

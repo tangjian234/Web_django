@@ -1,8 +1,13 @@
 # !------------------------------------------------------------------------->
-#  Synopsis : 
+#  Synopsis :  
+#      Name Nationality Recognition  : Given a name, what is the personal's nationality 
 #     
 #  Documentation : 
-#    
+#     ML_Name_Identification.md
+# 
+#  Author:  Jian Tang
+#  Email :  tangjian234@gmail.com
+#  Project: ML : Name Nationality Recognition  
 # !------------------------------------------------------------------------->
 
 # %%
@@ -45,7 +50,8 @@ import streamlit as st
 
 
 def lib_test():
-    print("ML lib test")
+  """Class docstrings go here."""
+  print("ML lib test")
 
 
 # %%
