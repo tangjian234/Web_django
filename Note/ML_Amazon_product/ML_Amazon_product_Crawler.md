@@ -27,16 +27,18 @@
   - [ML_ebay_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_ebay_product_Crawler.md)   
   - [ML_Amazon_product_data_prepare.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_data_prepare.md)
   - [ML_Amazon_product_Visualizer.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Visualizer.md) 
-
+  - [∞](#)
 ## Todo
 
 - [ ] test 2 scraper in a same time 
 - [x] Simple 
 - [x] How to run proxy 
   - [x] - [Link](#234-how-to-run-proxy)
-- [ ] Header 
-- [ ] full review 
-- [ ] Save the result into a json file : 
+- [x] Header 
+- [x] full review 
+- [x] Save the result into a json file : 
+- [ ] Periodically Product info monitoring 
+  -    - [∞](#periodically-product-info-monitoring)
 - [ ] Review amazon native api: [Amazon_API](#amazon-native-api)
 - [ ] Review scrape hero : [Scrapehero]
 - [ ] Review amazon super URL.[_](#amazon-super-url) 
@@ -98,6 +100,10 @@
     - scrappy crawl product_local : process local product page 
     - scrappy crawl comment : download comment page 
     - scrappy crawl comment_local :  process local comment page 
+
+
+### Perodi  run 
+
 
 ### Basic scrapy structure : 
 
@@ -596,6 +602,30 @@ REVIEW : Question : how to make sense out of the curl output
  
 # Next step  
  
+### Periodically Product info monitoring 
+
+#### what
+
+   1. periodically download product and get price etc 
+   2. 
+
+#### Howto
+
+   1. every 10 min as test : 
+   2. - scrappy crawl product 
+   3. - scrappy crawl product_local : 
+      1. Save 
+         1. the price ,   
+         2. best seller rank bsr 
+         3. number of  review. 
+      2. with time mark 
+    4. save as same product_
+    5. create a file_with time_stamp  
+       1. fix the time stamp issue 
+
+C:\Local\Work\ML_Name\Code\Test\data\asin 
+
+
 ### VPN for scraping 
 - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md#vpn-for-scraping) 
 #### What :
@@ -605,8 +635,8 @@ REVIEW : Question : how to make sense out of the curl output
 easyhideipEasy-Hide-IP VPN: Over 5,000 IPs worldwide are available for you to make use of with this VPN. The cool thing about it is the fact that you can choose the frequency in which you change your IP automatically. For example, you can have the IP of your changed every minute, every five minutes or every hour and so on. This gives you the freedom you have been looking for, to engage in web data extraction. Other than that, you connect with one click and on multiple devices. There is no data limit, and you need not worry about logs. A free trial is available as a test drive. Then, the cost of your monthly subscription is pretty affordable, and there is full money refund guarantee.
 #### Howto :
 - - 1.  
-    2.  
-
+    1.  
+C:\Local\Work\Python\PyLib\scrapy_lib.py
 
 ### amazon super url 
  
