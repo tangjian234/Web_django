@@ -604,6 +604,8 @@ REVIEW : Question : how to make sense out of the curl output
  
 ### Periodically Product info monitoring 
 
+
+  - [∞](#periodically-product-info-monitoring)
 #### what
 
    1. periodically download product and get price etc 
@@ -623,7 +625,9 @@ REVIEW : Question : how to make sense out of the curl output
     5. create a file_with time_stamp  
        1. fix the time stamp issue 
 
-C:\Local\Work\ML_Name\Code\Test\data\asin 
+#### Result 
+run 
+Output : - C:\Local\Work\ML_Name\Code\Test\data\asin 
 
 
 ### VPN for scraping 
