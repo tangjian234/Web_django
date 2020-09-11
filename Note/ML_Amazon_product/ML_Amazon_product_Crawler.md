@@ -102,7 +102,7 @@
     - scrappy crawl comment_local :  process local comment page 
 
 
-### Perodi  run 
+
 
 
 ### Basic scrapy structure : 
@@ -604,8 +604,6 @@ REVIEW : Question : how to make sense out of the curl output
  
 ### Periodically Product info monitoring 
 
-
-  - [∞](#periodically-product-info-monitoring)
 #### what
 
    1. periodically download product and get price etc 
@@ -628,6 +626,38 @@ REVIEW : Question : how to make sense out of the curl output
 #### Result 
 run 
 Output : - C:\Local\Work\ML_Name\Code\Test\data\asin 
+
+
+#### Run periodically with task Scheduler :  windows 
+  - [∞](#run-periodically-with-task-scheduler--windows)
+##### what
+  - the price item in the task Scheduler.  
+  - run 
+    - start with c:\Local\Work\Python\PyLib\scrapy\download\
+    - C:\Python38\Scripts\scrapy.exe crawl product
+    - C:\Python38\Scripts\scrapy.exe crawl product
+
+- provide a list of top 10 best seller 
+
+##### task scheduler security context
+
+#### Run periodically with task Scheduler : python  
+
+https://stackoverflow.com/questions/44228851/scrapy-on-a-schedule
+
+https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679
+
+https://stackoverflow.com/questions/44228851/scrapy-on-a-schedule
+You can use apscheduler
+
+https://www.programmersought.com/article/51911377370/
+
+##### Run Async 
+
+
+#### Proxy 
+
+
 
 
 ### VPN for scraping 
