@@ -226,6 +226,9 @@ The User-Agent request header is a characteristic string that lets servers and n
 
 ##### rotating proxy 
 
+
+
+
 #### Reference 
 - [using-a-custom-proxy-in-a-scrapy-spider](https://support.scrapinghub.com/support/solutions/articles/22000219743-using-a-custom-proxy-in-a-scrapy-spider)
 
@@ -241,6 +244,28 @@ The User-Agent request header is a characteristic string that lets servers and n
 web_lib.py
 
 https://github.com/clarketm/proxy-list
+
+### Summarize the proxy_download_validity_check
+
+#### what
+   1. download proxy from sites and 
+   2. run checking to see if it is working. 
+
+#### Hwoto
+
+   1. file: 
+      1. lib/proxy_check.py 
+      2. scrapy.py : 
+   2. input: NONE
+   3. output : validated proxy list :  
+   4. add the list to : 
+      1. c:\Local\Work\Python\PyLib\scrapy\download\download\settings.py 
+   5. save the final result in 
+      1.  c:\Local\Work\Python\PyLib\scrapy\download\download\valid_proxy_list_save.py
+
+#### Learnt : 
+    -  
+
 
 ### Use of Yaml 
 
@@ -450,8 +475,6 @@ DOWNLOAD_DELAY = 1.5
 #### File : 
   - [quotes_spider.py]
 
-
-
 - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md)[](） 
 
 ###  Download Remote product page  
@@ -481,6 +504,26 @@ get_product_review_percent_table
 
 ##### Get customer detail 
 get_product_customer_review_card
+
+### merge and run product_all for periodically
+
+
+  - product_all
+  - product_remote
+  - product_local 
+
+#### hwoto
+   - 
+### Use python command to run spider. 
+
+#### what
+   
+   - for prodict running. 
+#### hwoto
+   - search ''
+
+
+
 
 
 ###  Download Remote Comment page  

@@ -56,6 +56,7 @@ ML_Amazon_product_adviser_chat_bot.md
     - Regain all knowledge of ML 
   ### Plan for the next steps   
     - [∞](#work-next-steps)
+  
 
 - [ ]  Product time dimension monitoring : 
       - [∞](#153-product-time-dimension-monitoring)
@@ -150,6 +151,7 @@ Genie ; princess;
     
     1. Run program periodicity 
     2. crawel the key information 
+
 
 ### Statistical analysis :
 
