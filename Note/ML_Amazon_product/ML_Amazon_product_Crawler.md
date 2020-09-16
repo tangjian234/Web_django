@@ -265,7 +265,7 @@ https://github.com/clarketm/proxy-list
 
 #### Learnt : 
     -  
-
+12812 NE, 113th ST , Kirkland, WA,98033
 
 ### Use of Yaml 
 
