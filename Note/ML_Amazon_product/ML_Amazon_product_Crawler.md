@@ -515,10 +515,11 @@ get_product_customer_review_card
 #### hwoto
    - 
 ### Use python command to run spider. 
-
+c:\Local\Work\Python\PyLib\scrapy\download\download
 #### what
    
    - for prodict running. 
+
 #### hwoto
    - search ''
 
