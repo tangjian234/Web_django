@@ -506,19 +506,50 @@ get_product_review_percent_table
 get_product_customer_review_card
 
 ### merge and run product_all for periodically
-
-
   - product_all
   - product_remote
   - product_local 
 
 #### hwoto
-   - 
+   - process_save_from_text() : 
+     - save into product info dictionary as in product_local
+
+
+// ANCHOR now
 
 ###  run multiple period
+
 https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679
 
 pip install timeloop
+
+scrapy schedule periodical program
+
+  scrapy-do-cl schedule-job --project download --spider product --when 'every 1 to 2 minutes'
+  
+  scrapy-do-cl schedule-job --project quotesbot --spider toscrape-css --when 'every 5 to 15 minutes' scrapy schedule periodical program
+
+#### my curl
+C:\Users\tangj_1iyy\AppData\Local\Apps\cURL\bin\mycurl http://localhost:6800/schedule.json -d project=download -d spider=product
+
+#### reference 
+
+##### Howto 
+- [GitHub - scrapy/scrapyd: A service daemon to run Scrapy spiders](https://github.com/scrapy/scrapyd)
+
+##### Documentation
+- [Scrapyd — Scrapyd 1.2.0 documentation](https://scrapyd.readthedocs.io/en/stable/)
+- [Scrapyd — Scrapy 2.3.0 documentation](https://docs.scrapy.org/en/latest/topics/scrapyd.html)
+- [GitHub - scrapy/scrapyd-client: Command line client for Scrapyd server](https://github.com/scrapy/scrapyd-client)
+
+##### Youtube  
+- [Deploy Scrapy spiders locally - Scrapyd - YouTube](https://www.youtube.com/watch?v=PZKH5S0C8EI)
+
+- [Introduction to Scrapy API | Practical Python Web Scraping Tutorial (Part 1 of 2) - YouTube](https://www.youtube.com/watch?v=lNajD34Sfmg)
+
+#####  Tutorial
+- [A Minimalist End-to-End Scrapy Tutorial (Part IV) | by Harry Wang | Towards Data Science](https://towardsdatascience.com/a-minimalist-end-to-end-scrapy-tutorial-part-iv-3290d76a2aef)
+
 
 ### Use python command to run spider. 
 c:\Local\Work\Python\PyLib\scrapy\download\download
@@ -531,6 +562,7 @@ https://stackoverflow.com/questions/21662689/scrapy-run-spider-from-script
    - search ''
 
 
+### ScrapydWeb by my8100 
 
 
 
