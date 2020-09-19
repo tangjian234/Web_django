@@ -514,8 +514,15 @@ get_product_customer_review_card
 
 #### hwoto
    - 
+
+###  run multiple period
+https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679
+
+pip install timeloop
+
 ### Use python command to run spider. 
 c:\Local\Work\Python\PyLib\scrapy\download\download
+https://stackoverflow.com/questions/21662689/scrapy-run-spider-from-script
 #### what
    
    - for prodict running. 
