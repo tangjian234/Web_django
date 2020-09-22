@@ -580,6 +580,8 @@ Stop-Process -Name pythonw
 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/stop-process?view=powershell-7
 
 
+C:\Local\Work\material\Amazon\download\result
+
 ### Import with path 
 
 ###  Use python command to run spider. 
