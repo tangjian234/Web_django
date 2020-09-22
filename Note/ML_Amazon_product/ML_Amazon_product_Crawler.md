@@ -515,7 +515,6 @@ get_product_customer_review_card
      - save into product info dictionary as in product_local
 
 
-// ANCHOR now
 
 ###  run multiple period
 
@@ -556,10 +555,36 @@ c:\Local\Work\Python\PyLib\scrapy\download\download
 https://stackoverflow.com/questions/21662689/scrapy-run-spider-from-script
 #### what
    
-   - for prodict running. 
+### 
+
+
 
 #### hwoto
    - search ''
+// ANCHOR now
+
+### run python in the background 
+
+  #### hwoto
+      - [How to constantly run Python script in the background on Windows?](https://stackoverflow.com/questions/59125493/how-to-constantly-run-python-script-in-the-background-on-windows)
+  #### example 
+      pythonw.exe pythonw.exe C:\\Python\Scripts\moveDLs.py
+
+#### Test the process
+
+####  the process
+Get-Process -Name pythonw
+#### Kill the process 
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/stop-process?view=powershell-7
+
+
+### Import with path 
+
+###  Use python command to run spider. 
+.\run_per.py
+
+###  Use Asych-scheduler to run periodically 
+.\run_per.py
 
 
 ### ScrapydWeb by my8100 
