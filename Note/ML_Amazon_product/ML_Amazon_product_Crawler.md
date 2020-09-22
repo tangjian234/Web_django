@@ -575,6 +575,8 @@ https://stackoverflow.com/questions/21662689/scrapy-run-spider-from-script
 ####  the process
 Get-Process -Name pythonw
 #### Kill the process 
+Stop-Process -Name pythonw
+
 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/stop-process?view=powershell-7
 
 
