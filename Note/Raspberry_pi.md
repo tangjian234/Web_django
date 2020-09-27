@@ -191,7 +191,27 @@ Purchase list : done
     2. ssh pi@192.168.1.6
     3. password for pi : tangwin/
 
+#####  wifi client IPS : SSH access
 
+- [linux - ssh connection refused on Raspberry Pi - Stack Overflow](https://stackoverflow.com/questions/41318597/ssh-connection-refused-on-raspberry-pi)
+
+
+- enable ssh : 
+  - - in the Raspberry pi : 
+  - From the terminal with raspi-config
+        - Enter sudo raspi-config in a terminal window
+        - Select Interfacing Options
+        - Navigate to and select SSH
+        - Choose Yes
+        - Select Ok
+        - Choose Finish
+
+- in the Raspberry pi : 
+  - hostname -I : find the ip address : 
+  - 
+
+- SSH into your Raspberry Pi
+Default Username and Password is: username: pi. password: raspberry
 NOTE : 
   1. It changes from time to time, go to the 192.168.1.1 and find the latest ip address. 
 
@@ -200,9 +220,34 @@ NOTE :
 - - 1. Install VNC in windows.
     2. run VNC connection 192.168.1.6
 
+####   Transfer files pi 
+#### what
+  - - transfer files pi between in local wifi network Raspberry pi
+#### hwoto
+   - filezilla : in windows 10 
+   - Get the 
+
+#### Fix the ip of Raspberry pi
+#### what
+  - - Howto Fix the ip of Raspberry pi
+    192.168.1.24
+raspberry
+
+##### Reference 
+
+
+- [Provide Raspberry Pi with a static IP address - IONOS](https://www.ionos.com/digitalguide/server/configuration/provide-raspberry-pi-with-a-static-ip-address/)
+
+
+#### change the password of pi 
+  
+
+### find a introduction work 
+
 #### shutdown
 
 - - - sudo shutdown -h now
+
 
 
 ## Raspberry pi 4 Camera motioneye
