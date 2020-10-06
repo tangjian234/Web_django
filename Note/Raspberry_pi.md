@@ -173,6 +173,65 @@ Purchase list : done
 
 - [raspberrypi home site](https://www.raspberrypi.org/products/)
 
+
+# System 
+
+## Python lib installation 
+
+  1. Question: where is the rpi original installiation 
+    setup in the libary directory . 
+    in ~/.bashrc
+    export PYTHONPATH="$PYTHONPATH/usr/lib/python3/dist-packages" 
+
+  2. how to set up 
+
+## Editing bashrc
+  ~/.bashrc
+  goto bash quickly : ebash
+  add python3 to py: 
+
+
+## Start up raspberry pi program 
+
+  - [Five Ways to Run a Program On Your Raspberry Pi At Startup](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
+  - run : st.sh in sh 
+
+## apt-get and pip install 
+  - apt-get: for linux system install 
+  - pip : install 
+
+
+## Nordvpn install in rpi : 
+https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Elementary-OS-and-Linux-Mint.htm
+
+1. download : 
+https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
+2. sudo apt-get update
+3. nordvpn login
+4. nordvpn connect
+
+## Email 
+
+### send a email via python. 
+[10_min] 
+
+#### what 
+
+  1. Use of yagmail 
+  2. oneliner command line to send a 
+
+#### hwoto 
+
+  1. see semail.py : 
+    ~/web/django-todo-react/backend/todo 
+  2. set up gmail less secure app. 
+
+#### Result 
+  1. run : python3 semail.py "boidk  slsk"
+
+### Get a email 
+  no such function 
+
 # Projects
 
 ## One liner
@@ -738,3 +797,4 @@ Purchasing list : Compare different seller.
 ### Wiki
 
 - [Raspberry Pi - Wikipedia](https://en.wikipedia.org/wiki/Raspberry_Pi)
+
