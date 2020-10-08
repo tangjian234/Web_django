@@ -175,8 +175,9 @@ Purchase list : done
 
 
 # System 
+## Set up the raspberry pi system.
 
-## Python lib installation 
+### Python lib installation 
 
   1. Question: where is the rpi original installiation 
     setup in the libary directory . 
@@ -185,32 +186,33 @@ Purchase list : done
 
   2. how to set up 
 
-## Editing bashrc
+### Editing bashrc
   ~/.bashrc
   goto bash quickly : ebash
   add python3 to py: 
 
 
-## Start up raspberry pi program 
+### Start up raspberry pi program 
 
   - [Five Ways to Run a Program On Your Raspberry Pi At Startup](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
   - run : st.sh in sh 
 
-## apt-get and pip install 
+### apt-get and pip install 
   - apt-get: for linux system install 
   - pip : install 
 
 
-## Nordvpn install in rpi : 
-https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Elementary-OS-and-Linux-Mint.htm
+### Nordvpn install in rpi : 
 
-1. download : 
-https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
-2. sudo apt-get update
-3. nordvpn login
-4. nordvpn connect
+#### what
+  - [Installing and using NordVPN on Debian, Ubuntu, Elementary OS, and Linux Mint | NordVPN Customer Support](https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Elementary-OS-and-Linux-Mint.htm)
 
-## Email 
+#### Setup 
+  1. download : 
+  https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
+  2. sudo apt-get update
+  3. nordvpn login
+  4. nordvpn connect
 
 ### send a email via python. 
 [10_min] 
