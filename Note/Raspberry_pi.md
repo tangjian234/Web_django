@@ -62,23 +62,21 @@
 
 ## Question :
 
-
-
 ## About Raspberry pi : Introduction
 
 ### One liner
 
     - 35 USD
     - System on broad
-    - Linux computer
+    - Linux computer : Ubuntu system 
     - Many system ports
     - Many Hardware applications
 
 ### What is Raspberry pi
 
-The Raspberry Pi is a **low cost**, credit-card sized computer that plugs into a computer monitor or TV, and uses a standard keyboard and mouse. LINUX based
+  The Raspberry Pi is a **low cost**, credit-card sized computer that plugs into a computer monitor or TV, and uses a standard keyboard and mouse. LINUX based
 
-It is a capable little device that enables people of all ages to explore computing, and to learn how to program in languages like Scratch and Python
+  It is a capable little device that enables people of all ages to explore computing, and to learn how to program in languages like Scratch and Python
 
 ### As a hobby , Raspberry Pi
 
@@ -145,38 +143,71 @@ It is a capable little device that enables people of all ages to explore computi
 
 ### Hardware Purchasing
 
-#### Objective
+  #### Objective
 
-- Purchase optimal Hardware by comparing different offering from different sites
+  - Purchase optimal Hardware by comparing different offering from different sites
 
-Raspberry pi 4 : Price : \$35
+  Raspberry pi 4 : Price : \$35
 
-- Raspberry_Pi 0 : 5 USD
-- Raspberry_Pi 1 :
-- Raspberry_Pi 2
-- Raspberry_Pi 3 : 35 USD
+    - Raspberry_Pi 0 : 5 USD
+    - Raspberry_Pi 1 :
+    - Raspberry_Pi 2
+    - Raspberry_Pi 3 : 35 USD
 
-#### Summary
+  #### Summary
 
-Purchase list : done
+    Purchase list : done
 
-- Raspberry pi 4 [Purchase]
-- sd card [Have]
-- usb cable [Have]
-- internet cable [have]
+    - Raspberry pi 4 [Purchase]
+    - sd card [Have]
+    - usb cable [Have]
+    - internet cable [have]
 
-#### Amazon
+  #### Amazon
 
-#### eBay
+  #### eBay
 
-#### hobby site.
+  #### hobby site.
 
-- [raspberrypi home site](https://www.raspberrypi.org/products/)
+- [Raspberrypi home site](https://www.raspberrypi.org/products/)
 
 
 # System 
 
 ## Set up the raspberry pi system.
+
+### Install twisteros :  
+
+  #### Objective 
+
+    1. have both mac and windows UI 
+    2. 
+  #### what
+
+  1. Twister OS is a `Raspberry Pi OS-based Linux` distro for the RasPi. 
+    2. Its name derives from its ability to seamlessly switch between two different desktop environments, one that emulates Windows 10 and the other which appears like macOS.
+    3.  Although Twister OS is a small project hailing from a single developer, 
+        1.  unlike Raspberry Pi OS, 
+        2.  Canonical's Ubuntu, 
+        3.  or Manjaro Linux, 
+    4. it's an incredibly detail-oriented and polished operating system.
+
+  #### Hwoto
+    1. download xz file : 
+       - [Twister OS](https://twisteros.com/downloads.html)
+     2.  Using Etcher, I was able to mount the TwisterOS.xz straight to my microSD card. 
+        - [flash OS](https://www.balena.io/etcher/)
+
+  ##### Reference . 
+    - [Getting Started with Twister OS on Raspberry Pi](https://www.electromaker.io/tutorial/blog/getting-started-with-twister-os-on-raspberry-pi)
+    - [Twister OS](https://twisteros.com/downloads.html)
+
+
+### App Installation 
+  #### apt-get and pip install 
+    - apt-get: for linux system install 
+    - pip : install 
+
 
 ### Python lib installation 
 
@@ -191,31 +222,6 @@ Purchase list : done
   ~/.bashrc
   goto bash quickly : ebash
   add python3 to py: 
-
-### Sync setting :  PC and RPI  
-
-  #### Objective 
-    - Sync the setting file between `PC and Raspberry pi`
-    - find glob in 
-    - sync the 3 setup files 
-    - installed vscode list : 
-
-
-  ##### find globle in 
-      1. Where is the globals folder in rpi
-          settings :  
-              ~/.config/Code - OSS (headmelted)/User/settings.json 
-
-          keymappings :
-              ~/.config/Code - OSS (headmelted)/User/keybindings.json
-          vs snip : 
-              snippet : 
-                  /home/pi/.config/Code - OSS (headmelted)/User/snippets
-      
-      2. Download the git in 
-
-      3. Copy and paste 
-
 ###  Raspberry pi connection setup  
 
   #### Value
@@ -226,76 +232,6 @@ Purchase list : done
   1. PC -> vnc : myip.sh : get the : ip 
   2. PC -> Ubuntu : -> ssh pi@192.168.1.xx 
 
-### Git Edit Actions : Edit in PC and run in Raspberry pi
-
-  [10_min] [Priority_4]  [Difficulty_5] [Importance_4]   
-
-  #### Objective 
-    1. Edit in `PC` and run in `Raspberry pi`
-    
-    2. make powershell file to : 
-        1. `Raspberry pi` :  download from git : 
-        2. `PC`: upload from PC : 
-    
-
-    3. Change all repo into : 
-
-  #### Result
-
-    1. PC : git_web.ps1
-    2. Raspberry pi : cd web ; download_web
-
-### Start-up raspberry pi program 
-
-  - [Five Ways to Run a Program On Your Raspberry Pi At Startup](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
-  - run : st.sh in sh 
-
-### Installation 
-  #### apt-get and pip install 
-    - apt-get: for linux system install 
-    - pip : install 
-
-
-  #### Nordvpn install in rpi : 
-
-    ##### what
-      - [Installing and using NordVPN on Debian, Ubuntu, Elementary OS, and Linux Mint | NordVPN Customer Support](https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Elementary-OS-and-Linux-Mint.htm)
-
-    ##### Setup 
-      1. download : 
-      https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
-      2. sudo apt-get update
-      3. nordvpn login
-      4. nordvpn connect
-
-### send a email via python. 
-
-  #### what 
-
-    1. Use of yagmail 
-    2. oneliner command line to send a 
-
-  #### hwoto 
-
-    1. see semail.py : 
-      ~/web/django-todo-react/backend/todo 
-    2. set up gmail less secure app. 
-
-  #### Result 
-    1. run : python3 semail.py "boidk  slsk"
-
-  #### Get a email 
-    no such function 
-
-# Projects
-
-## One liner
-
-    1. My Web server for ML projects. DONE 
-    2. Smart Camera Monitor : OpenCV pi 
-    3. Tensorflow object detection
-
-## My Web server
 
 ### Raspberry pi remote accessing
 
@@ -356,15 +292,103 @@ raspberry
 #### change the password of pi 
   
 
+### Vscode Sync setting :  PC and RPI  
+  Basic vscod 
+ `settings` 
+ `keybiding` 
+  #### Objective 
+  - Sync the setting file between `PC and Raspberry pi`
+    - find glob in 
+    - sync the 3 setup files 
+    - installed vscode list : 
+
+
+  ##### find globle in 
+      1. Where is the globals folder in rpi
+          settings :  
+              ~/.config/Code - OSS (headmelted)/User/settings.json 
+
+          keymappings :
+              ~/.config/Code - OSS (headmelted)/User/keybindings.json
+          vs snip : 
+              snippet : 
+                  /home/pi/.config/Code - OSS (headmelted)/User/snippets
+      
+      2. Download the git in 
+
+      3. Copy and paste 
+
+
+### Git Edit Actions : Edit in PC and run in Raspberry pi
+
+  [10_min] [Priority_4]  [Difficulty_5] [Importance_4]   
+
+  #### Objective 
+    1. Edit in `PC` and run in `Raspberry pi`
+    
+    2. make powershell file to : 
+        1. `Raspberry pi` :  download from git : 
+        2. `PC`: upload from PC : 
+    
+
+    3. Change all repo into : 
+
+  #### Result
+
+    1. PC : git_web.ps1
+    2. Raspberry pi : cd web ; download_web
+
+### Start-up raspberry pi program 
+
+  - [Five Ways to Run a Program On Your Raspberry Pi At Startup](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
+  - run : st.sh in sh 
+
+### VPN : Nordvpn install in rpi : 
+
+    ##### what
+      - [Installing and using NordVPN on Debian, Ubuntu, Elementary OS, and Linux Mint | NordVPN Customer Support](https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Elementary-OS-and-Linux-Mint.htm)
+
+    ##### Setup 
+      1. download : 
+      https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
+      2. sudo apt-get update
+      3. nordvpn login
+      4. nordvpn connect
+
+### send a email via python. 
+
+  #### what 
+
+    1. Use of yagmail 
+    2. oneliner command line to send a 
+
+  #### hwoto 
+
+    1. see semail.py : 
+      ~/web/django-todo-react/backend/todo 
+    2. set up gmail less secure app. 
+
+  #### Result 
+    1. run : python3 semail.py "boidk  slsk"
+
+  #### Get a email 
+    no such function 
+
+# Projects
+
+## One liner
+
+    1. My Web server for ML projects. DONE 
+    2. Smart Camera Monitor : OpenCV pi 
+    3. Tensorflow object detection
+
+## My Web server
+
 ### find a introduction work 
 
 #### shutdown
 
 - - - sudo shutdown -h now
-
-
-
-
 
 
 ## Raspberry pi 4 Camera motioneye
