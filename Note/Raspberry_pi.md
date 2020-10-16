@@ -175,6 +175,7 @@ Purchase list : done
 
 
 # System 
+
 ## Set up the raspberry pi system.
 
 ### Python lib installation 
@@ -191,48 +192,100 @@ Purchase list : done
   goto bash quickly : ebash
   add python3 to py: 
 
+### Sync setting :  PC and RPI  
 
-### Start up raspberry pi program 
+  #### Objective 
+    - Sync the setting file between `PC and Raspberry pi`
+    - find glob in 
+    - sync the 3 setup files 
+    - installed vscode list : 
+
+
+  ##### find globle in 
+      1. Where is the globals folder in rpi
+          settings :  
+              ~/.config/Code - OSS (headmelted)/User/settings.json 
+
+          keymappings :
+              ~/.config/Code - OSS (headmelted)/User/keybindings.json
+          vs snip : 
+              snippet : 
+                  /home/pi/.config/Code - OSS (headmelted)/User/snippets
+      
+      2. Download the git in 
+
+      3. Copy and paste 
+
+###  Raspberry pi connection setup  
+
+  #### Value
+  [10_min] [Priority_4]  [Difficulty_5] [Importance_4]  
+  #### Objective 
+   1. setup connection between PC and Raspberry pi
+  #### Howto
+  1. PC -> vnc : myip.sh : get the : ip 
+  2. PC -> Ubuntu : -> ssh pi@192.168.1.xx 
+
+### Git Edit Actions : Edit in PC and run in Raspberry pi
+
+  [10_min] [Priority_4]  [Difficulty_5] [Importance_4]   
+
+  #### Objective 
+    1. Edit in `PC` and run in `Raspberry pi`
+    
+    2. make powershell file to : 
+        1. `Raspberry pi` :  download from git : 
+        2. `PC`: upload from PC : 
+    
+
+    3. Change all repo into : 
+
+  #### Result
+
+    1. PC : git_web.ps1
+    2. Raspberry pi : cd web ; download_web
+
+### Start-up raspberry pi program 
 
   - [Five Ways to Run a Program On Your Raspberry Pi At Startup](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
   - run : st.sh in sh 
 
-### apt-get and pip install 
-  - apt-get: for linux system install 
-  - pip : install 
+### Installation 
+  #### apt-get and pip install 
+    - apt-get: for linux system install 
+    - pip : install 
 
 
-### Nordvpn install in rpi : 
+  #### Nordvpn install in rpi : 
 
-#### what
-  - [Installing and using NordVPN on Debian, Ubuntu, Elementary OS, and Linux Mint | NordVPN Customer Support](https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Elementary-OS-and-Linux-Mint.htm)
+    ##### what
+      - [Installing and using NordVPN on Debian, Ubuntu, Elementary OS, and Linux Mint | NordVPN Customer Support](https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Elementary-OS-and-Linux-Mint.htm)
 
-#### Setup 
-  1. download : 
-  https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
-  2. sudo apt-get update
-  3. nordvpn login
-  4. nordvpn connect
+    ##### Setup 
+      1. download : 
+      https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
+      2. sudo apt-get update
+      3. nordvpn login
+      4. nordvpn connect
 
 ### send a email via python. 
-[10_min] 
 
-#### what 
+  #### what 
 
-  1. Use of yagmail 
-  2. oneliner command line to send a 
+    1. Use of yagmail 
+    2. oneliner command line to send a 
 
-#### hwoto 
+  #### hwoto 
 
-  1. see semail.py : 
-    ~/web/django-todo-react/backend/todo 
-  2. set up gmail less secure app. 
+    1. see semail.py : 
+      ~/web/django-todo-react/backend/todo 
+    2. set up gmail less secure app. 
 
-#### Result 
-  1. run : python3 semail.py "boidk  slsk"
+  #### Result 
+    1. run : python3 semail.py "boidk  slsk"
 
-### Get a email 
-  no such function 
+  #### Get a email 
+    no such function 
 
 # Projects
 
