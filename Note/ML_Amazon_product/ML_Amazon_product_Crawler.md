@@ -761,6 +761,7 @@ https://stackoverflow.com/questions/44228851/scrapy-on-a-schedule
 https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679
 
 https://stackoverflow.com/questions/44228851/scrapy-on-a-schedule
+
 You can use apscheduler
 
 https://www.programmersought.com/article/51911377370/
