@@ -208,6 +208,34 @@
   #### apt-get and pip install 
     - apt-get: for linux system install 
     - pip : install 
+    - 
+### Install Raspberry pi vscode editor
+
+
+  #### Reference 
+  - [Best way to install Visual Studio Code - Raspberry Pi Forums](https://www.raspberrypi.org/forums/viewtopic.php?t=273070)
+
+  #### Howto 
+  Run script : 
+      cd ~
+      sudo wget -qO - https://packagecloud.io/headmelted/codebuilds/gpgkey | sudo apt-key add -;
+      wget --content-disposition https://packagecloud.io/headmelted/codebuilds/packages/debian/stretch/code-oss_1.45.0-1586135927_armhf.deb/download.deb
+      sudo apt install ./code-oss_1.45.0-1586135927_armhf.deb
+  
+  #### run 
+  - code-oss 
+  - linked to code 
+
+### install remote ssh 
+
+  [20_min]
+  https://medium.com/@danielmarinomirallestaset/mounting-linux-fs-in-windows-10-using-sshfs-e29c7ca81c87
+
+  to access Raspberry pi file system 
+  \\sshfs\username@machine_ip 
+  \\sshfs\pi@192.168.1.24
+
+  net use X: \\sshfs\pi@192.168.1.23
 
 
 ### Python lib installation 

@@ -397,6 +397,7 @@ DOWNLOAD_DELAY = 1.5
   - 2. process product page 
     3. process comment page  
 
+
 ### Link String operation 
  
 #### create local url from web url 
@@ -563,12 +564,58 @@ https://stackoverflow.com/questions/21662689/scrapy-run-spider-from-script
    - search ''
 // ANCHOR now
 
+### Proxy checker : 
+[45_min]
+
+
+
+  #### Objective 
+
+   1. understand the Proxy checker 
+
+  #### Howto
+
+   1. move the paraser and modularize it .  [15_min]  
+      - input_arg_lib.py 
+   2. decompose the checker 
+   3. removal global veriable    - 
+   4. merge checker with downloader into proxy_list_lib
+      1. 
+   5. integrate the proxyChecker.py 
+      1. run and only get 10 valid proxy address 
+   6. modify settings and load proxy_list_it 
+   
+  #### what
+
+   1. Reference : https://github.com/iw4p/proxy-scraper
+   2. Local : C:\Local\Work\Python\PyLib\proxy-scraper-master
+   3. run : 
+      1. Get the scrap
+         1. python proxyScraper.py -p https
+      2. Check the validity of the 
+         1. python proxyChecker.py -p https -t 20 -s amazon.com -i input.txt 
+      3. rsp.ps1 product
+      4. rsp.ps1 product_local
+
+  #### Result
+
+   1. move the paraser and modularize it 
+   2.   
+      1. https://www.simplifiedpython.net/python-threading-example/#:~:text=Python%20Threading%20Example%201%20Step%20%231%3A%20Import%20threading,the%20thread%20after%20completion%20of%20the%20task.%20
+   3. merge checker with downloader into proxy_list_lib
+   4. remove 
+
+
+
 ### run python in the background 
 
   #### hwoto
       - [How to constantly run Python script in the background on Windows?](https://stackoverflow.com/questions/59125493/how-to-constantly-run-python-script-in-the-background-on-windows)
   #### example 
       pythonw.exe pythonw.exe C:\\Python\Scripts\moveDLs.py
+
+
+
 
 #### Test the process
 
@@ -807,4 +854,11 @@ https://www.amazon.com/product-reviews/B0791TX5P5/?ie=UTF8&filterByStar=one_star
 objective : review the structure 
 - [Scrapehero](https://www.scrapehero.com/tutorial-how-to-scrape-amazon-product-details-using-python-and-selectorlib/)
 
-
+## End 
+### run python in the background 
+@python_study
+@crawler 
+  #### hwoto
+      - [How to constantly run Python script in the background on Windows?](https://stackoverflow.com/questions/59125493/how-to-constantly-run-python-script-in-the-background-on-windows)
+  #### example 
+      pythonw.exe pythonw.exe C:\\Python\Scripts\moveDLs.py

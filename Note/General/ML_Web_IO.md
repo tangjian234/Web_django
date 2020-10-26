@@ -27,7 +27,6 @@ WP
 
 ## Todo
 
-- [ ] Study
 - [ ] Study [streamlit](#streamlit-101-an-in-depth-introduction)
 - [ ] Study of [voila](#voila) : jupyter notebook
 - [ ] A good web page design : (Web_ML_IO.md #Objective) [60 min ] - Search a good data science visualization template page.
@@ -470,12 +469,12 @@ pip install -r .\requirements.txt
 
 ### How To Create a Data Science Portfolio Website [v2]
 
-- [Web](https://towardsdatascience.com/how-to-create-a-data-science-portfolio-website-dcba6bf00994)
+  - [Web](https://towardsdatascience.com/how-to-create-a-data-science-portfolio-website-dcba6bf00994)
 
-- [Local](C:\Local\Work\ML_Name\Material\Web\TP1)
+  - [Local](C:\Local\Work\ML_Name\Material\Web\TP1)
 
-  tangjian234@gmail.com
-  Tangwin@345
+    tangjian234@gmail.com
+    Tangwin@345
 
 ##### One liner
 
@@ -536,10 +535,9 @@ Dynamic forms.
 - [Visualize from Text for COVID-19 Cases Update from Slack Bot](https://towardsdatascience.com/visualize-from-text-for-covid-19-cases-update-from-slack-bot-2590ea780887) [V2]
 
 - [ ] [V2]
-      z
 
-## widges
+## widget
 
 ### navbars
 
-https://www.webdesignerdepot.com/2018/03/12-fixed-sticky-navbars-thatll-grab-your-attention/
+  https://www.webdesignerdepot.com/2018/03/12-fixed-sticky-navbars-thatll-grab-your-attention/
