@@ -761,6 +761,28 @@ REVIEW : Question : how to make sense out of the curl output
  
 # Next step  
  
+### 10.19. Periodic running session 1 : 
+[20_min]
+  - Test the first python method 
+  - make a simple downloader and 
+   - [∞](..\..\ML_Name\Note\ML_Amazon_product\ML_Amazon_product_Crawler.md#run-periodically-with-task-scheduler--windows)
+
+
+### 10.21. Periodic running session 2 : 
+  - Test the second  python method 
+   - [∞](..\..\ML_Name\Note\ML_Amazon_product\ML_Amazon_product_Crawler.md#run-periodically-with-task-scheduler--windows) 
+
+
+### 10.16. find the srun simple display on the srun 
+[20_min]
+  - run scrapy as normal python : 
+    - python x
+
+### 10.17. Sort the existing periodic running session 
+[10_min]
+  - kick start the running everyday using the scheduler 
+   - [∞](..\..\ML_Name\Note\ML_Amazon_product\ML_Amazon_product_Crawler.md#run-periodically-with-task-scheduler--windows)
+
 ### Periodically Product info monitoring 
 
 #### what
@@ -803,15 +825,15 @@ Output : - C:\Local\Work\ML_Name\Code\Test\data\asin
 
 #### Run periodically with task Scheduler : python  
 
-https://stackoverflow.com/questions/44228851/scrapy-on-a-schedule
+  https://stackoverflow.com/questions/44228851/scrapy-on-a-schedule
 
-https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679
+  https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679
 
-https://stackoverflow.com/questions/44228851/scrapy-on-a-schedule
+  https://stackoverflow.com/questions/44228851/scrapy-on-a-schedule
 
-You can use apscheduler
+  You can use apscheduler
 
-https://www.programmersought.com/article/51911377370/
+  https://www.programmersought.com/article/51911377370/
 
 ##### Run Async 
 
