@@ -80,10 +80,7 @@
 
 - [scrapehero](https://www.scrapehero.com/how-to-fake-and-rotate-user-agents-using-python-3/)
 
-# Scrappy content 
-
-
-
+## Scrappy content 
 
 ## Basic 
 
@@ -723,6 +720,20 @@ location = xpath_location_builder(attribute,value)
 
 ## Tools 
 
+### scrapy logging file
+[20_min] gold 
+
+#### print out silently scrapy 
+
+- [python - How to save Scrapy crawl Command output - Stack Overflow](https://stackoverflow.com/questions/16650397/how-to-save-scrapy-crawl-command-output)
+
+if you want to get the output from runspider command.
+scrapy runspider scraper.py -o some.json -t json 2> some.text
+
+
+mycurl http://localhost:6800/schedule.json -d project=download -d spider=product
+ 
+
 ### hwo to use curl : 
 
 ####   Client URL
@@ -758,7 +769,16 @@ REVIEW : Question : how to make sense out of the curl output
 
 - [Amazon Product Advertising API](https://webservices.amazon.com/paapi5/documentation/quick-start/using-sdk.html)
 - [xpath](https://www.guru99.com/using-contains-sbiling-ancestor-to-find-element-in-selenium.html)
- 
+
+
+### Scrapy from within a Python script
+@crawl 
+How to run Scrapy from within a Python script
+https://stackoverflow.com/questions/13437402/how-to-run-scrapy-from-within-a-python-script
+
+### An elegant way to run periodic tasks in python
+@crawl 
+https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679 
 # Next step  
  
 ### 10.19. Periodic running session 1 : 
