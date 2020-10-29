@@ -21,20 +21,26 @@
  
 ## Todo
 
-- [ ] Raspberry pi zero Camera HW install: 
+- [][set up actual webpage in Raspberry pi `streamlit`]
+  - [website : stream lit ](#website-:-stream-lit-)
+  - [ ] run simple streamlit work in Raspberry pi
+    - [ ] show publishable web-essential extractor.
+ -  [ ] check and collect information on the Raspberry pi 
+
+ -[][set up website : django ](#website-:-django-)
+    see 
+
+
+- [][Finish Raspberry pi zero Camera HW install]: 
   -  [∞](#pi-boot-up-install)
 
-- [ ]  Pi 4 Open CV
+- [][Pi 4 Open CV]
   - [steps](#smart-security-camera)   
   - [hwo_to](#pi-4-open-cv)
   - [fix_tensor_flow](#fix_tensor_flow)
 
-- [ ] set up actual webpage in Raspberry pi
-  - [ ] run simple streamlit work in Raspberry pi :
-    - [ ] show publishable web-essential extractor.
- 
- -  [ ] check and collect information on the Raspberry pi 
 
+-  
 ## Objective
 
 - Use of Raspberry_Pi to develop
@@ -176,7 +182,7 @@
 
 ## Set up the raspberry pi system.
 
-### Install twisteros :  
+### Install base twisteros :  
 
   #### Objective 
 
@@ -209,6 +215,7 @@
     - apt-get: for linux system install 
     - pip : install 
     - 
+
 ### Install Raspberry pi vscode editor
 
 
@@ -225,17 +232,6 @@
   #### run 
   - code-oss 
   - linked to code 
-
-### install remote ssh 
-
-  [20_min]
-  https://medium.com/@danielmarinomirallestaset/mounting-linux-fs-in-windows-10-using-sshfs-e29c7ca81c87
-
-  to access Raspberry pi file system 
-  \\sshfs\username@machine_ip 
-  \\sshfs\pi@192.168.1.24
-
-  net use X: \\sshfs\pi@192.168.1.23
 
 
 ### Python lib installation 
@@ -265,6 +261,18 @@
 
 
 
+  ####  in terminal
+  sssh.ps1 12 : 
+
+  #### install remote ssh 
+
+    https://medium.com/@danielmarinomirallestaset/mounting-linux-fs-in-windows-10-using-sshfs-e29c7ca81c87
+
+    to access Raspberry pi file system 
+    \\sshfs\username@machine_ip 
+    \\sshfs\pi@192.168.1.24
+
+    net use X: \\sshfs\pi@192.168.1.23
 
 ### Raspberry pi remote accessing
 
@@ -420,6 +428,13 @@ raspberry
   #### Get a email 
     no such function 
 
+### File transfer between PC and rpi 
+   - [∞](..\..\\ML_Name\Note\Raspberry_pi.md#File-transfer-between-PC-and-rpi-)
+
+  filezila in PC . 
+  use file -> site manager 
+  check latest ip 
+
 # Projects
 
 ## One liner
@@ -427,14 +442,6 @@ raspberry
     1. My Web server for ML projects. DONE 
     2. Smart Camera Monitor : OpenCV pi 
     3. Tensorflow object detection
-
-## My Web server
-
-### find a introduction work 
-
-#### shutdown
-
-- - - sudo shutdown -h now
 
 
 ## Raspberry pi 4 Camera motioneye
@@ -471,9 +478,8 @@ NOTE : no need of camera module adapter
   - [Raspberry Pi Zero W and Pi Camera Application](https://tutorial.cytron.io/2017/08/16/raspberry-pi-zero-w-pi-camera-application/)
 - - 1. hardware : hwo to connect the cable 
     2. 
+
 #### Result 
-
-
 
 ## Pi Zero monitoring howto 
 
@@ -840,6 +846,17 @@ hen install software updates, and then install Apache, PHP and MySQL.
 
 - scikit-learn will run on a Raspberry Pi just as well as any other Linux machine.
 
+
+## Website : stream lit 
+  ###  Question :
+    1. howto host stream lit backend in rpi 
+    2. and apache ? local hosting 
+
+## website : django 
+
+## end 
+
+# Reference
 ## Raspberry Pi video resource
 
 ### Get start
