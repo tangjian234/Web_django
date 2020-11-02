@@ -265,15 +265,26 @@
   sssh.ps1 12 : 
 
   #### install remote ssh 
-
+  
+  ##### Reference
     https://medium.com/@danielmarinomirallestaset/mounting-linux-fs-in-windows-10-using-sshfs-e29c7ca81c87
+  
+  ##### Installation 
+    Install the latest version of WinFsp.
+    Install the latest version of SSHFS-Win. Choose the x64 or x86 installer according to your computer’s architecture.
+    Map Windows Drive using this URL: \\sshfs\username@machine_ip\..\..
 
     to access Raspberry pi file system 
     \\sshfs\username@machine_ip 
-    \\sshfs\pi@192.168.1.24
+    \\sshfs\pi@192.168.1.12
 
     net use X: \\sshfs\pi@192.168.1.23
+  
+  ##### Result 
+    auto run at the beginning 
+    C:\Program Files\SSHFS-Win\bin\sshfs-win.exe
 
+    mount as E: 
 ### Raspberry pi remote accessing
 
   #### wifi client IPS : SSH access
