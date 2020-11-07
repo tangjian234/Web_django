@@ -216,6 +216,24 @@
     - pip : install 
     - 
 
+
+### Mount Raspberry pi to E: drive 
+
+mountpi.ps1 : 
+
+#### Hwoto
+   - net use e: \\sshfs\pi@192.168.1.12
+   -  net use e: \\sshfs\pi@192.168.1.12 /user:pi tangwin/
+
+#### Result
+
+    net use e: \\sshfs\pi@192.168.1.12 /user:pi tangwin/
+   1. mountpi.ps1 : 
+   2. 
+
+<!------------------------------------------------------------------------->
+
+
 ### Install Raspberry pi vscode editor
 
 
