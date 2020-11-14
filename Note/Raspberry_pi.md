@@ -3,51 +3,54 @@
 - [Raspberry_pi.md](file:///C:/Local/Work/ML_Name/Note/Raspberry_pi.md) 
 
 [](#)
+
+#  Basic 
+
 ## DONE
 
-- [x] Study Raspberry Pi [P_4][v_3] [07-07]
-- [x] Read web server setup [](#my-web-server) [07-07]
-  - [x] two documents.
- -  [x] buy a super cheap sd_card from top heatter.- [∞](#sd_card-purchase-) 
-    - for Raspberry pi door monitor project 
-- [x]  buy 64G scandisk drive [Link](#search-for-raspberry-pi-zero-monitor)
-- [x] Purchase pi zero & Camera
-  - [∞](#purchase-pi-zero--camera)
+  - [x] Study Raspberry Pi [P_4][v_3] [07-07]
+  - [x] Read web server setup [](#my-web-server) [07-07]
+    - [x] two documents.
+   -  [x] buy a super cheap sd_card from top heatter.- [∞](#sd_card-purchase-) 
+      - for Raspberry pi door monitor project 
+  - [x]  buy 64G scandisk drive [Link](#search-for-raspberry-pi-zero-monitor)
+  - [x] Purchase pi zero & Camera
+    - [∞](#purchase-pi-zero--camera)
 
-- [x]  Raspberry pi 4 Camera motioneye
-  - [∞](#raspberry-pi-4-camera-motioneye)
+  - [x]  Raspberry pi 4 Camera motioneye
+    - [∞](#raspberry-pi-4-camera-motioneye)
 
-- [x] Raspberry pi zero w Camera motioneye 
+  - [x] Raspberry pi zero w Camera motioneye 
  
 ## Todo
 
-- [][set up actual webpage in Raspberry pi `streamlit`]
-  - [website : stream lit ](#website-:-stream-lit-)
-  - [ ] run simple streamlit work in Raspberry pi
-    - [ ] show publishable web-essential extractor.
- -  [ ] check and collect information on the Raspberry pi 
+  - [][set up actual webpage in Raspberry pi `streamlit`]
+    - [website : stream lit ](#website-:-stream-lit-)
+    - [ ] run simple streamlit work in Raspberry pi
+      - [ ] show publishable web-essential extractor.
+   -  [ ] check and collect information on the Raspberry pi 
 
- -[][set up website : django ](#website-:-django-)
-    see 
+   -[][set up website : django ](#website-:-django-)
+      see 
+
+  - [][Finish Raspberry pi zero Camera HW install]: 
+    -  [∞](#pi-boot-up-install)
+
+  - [][Pi 4 Open CV]
+    - [steps](#smart-security-camera)   
+    - [hwo_to](#pi-4-open-cv)
+    - [fix_tensor_flow](#fix_tensor_flow)
 
 
-- [][Finish Raspberry pi zero Camera HW install]: 
-  -  [∞](#pi-boot-up-install)
-
-- [][Pi 4 Open CV]
-  - [steps](#smart-security-camera)   
-  - [hwo_to](#pi-4-open-cv)
-  - [fix_tensor_flow](#fix_tensor_flow)
 
 
--  
 ## Objective
 
-- Use of Raspberry_Pi to develop
-  - web_server to as free NLP service.
-  - object detection for NN study.
+  - Use of Raspberry_Pi to develop
+    - web_server to as free NLP service.
+    - object detection for NN study.
 
-- [Raspberry_pi.md](file:///C:/Local/Work/ML_Name/Note/Raspberry_pi.md#raspberry-pi-4-camera-motioneye) 
+  - [Raspberry_pi.md](file:///C:/Local/Work/ML_Name/Note/Raspberry_pi.md#raspberry-pi-4-camera-motioneye) 
 
 
 ### Roadmap
@@ -70,84 +73,83 @@
 
 ## About Raspberry pi : Introduction
 
-### One liner
+  ### One liner
 
-    - 35 USD
-    - System on broad
-    - Linux computer : Ubuntu system 
-    - Many system ports
-    - Many Hardware applications
+      - 35 USD
+      - System on broad
+      - Linux computer : Ubuntu system 
+      - Many system ports
+      - Many Hardware applications
 
-### What is Raspberry pi
+  ### What is Raspberry pi
 
-  The Raspberry Pi is a **low cost**, credit-card sized computer that plugs into a computer monitor or TV, and uses a standard keyboard and mouse. LINUX based
+    The Raspberry Pi is a **low cost**, credit-card sized computer that plugs into a computer monitor or TV, and uses a standard keyboard and mouse. LINUX based
 
-  It is a capable little device that enables people of all ages to explore computing, and to learn how to program in languages like Scratch and Python
+    It is a capable little device that enables people of all ages to explore computing, and to learn how to program in languages like Scratch and Python
 
-### As a hobby , Raspberry Pi
+  #### As a hobby, Raspberry Pi
 
-    - be a simple web server to demonstration of key NLP services.
-      - Name identification.
-      - Amazon
-    - always online and provide my service.
-    - Other hobby.
+      - be a simple web server to demonstration of key NLP services.
+        - Name identification.
+        - Amazon
+      - always online and provide my service.
+      - Other hobby.
 
-## Content
 
-### Basic information
+  ### Basic Spec information
 
-#### Hardware specs
+  #### Hardware specs
 
-##### Raspberry_Pi 4
+  ##### Raspberry_Pi 4
 
-- [Spec Link :](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/)
+  - [Spec Link :](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/)
 
-- Broadcom BCM2711,
-  - **Quad core** Cortex-A72 (ARM v8) 64-bit SoC @ **1.5GHz**
--
-- 2 × micro-HDMI port
+  - Broadcom BCM2711,
+    - **Quad core** Cortex-A72 (ARM v8) 64-bit SoC @ **1.5GHz**
+  -
+  - 2 × micro-HDMI port
 
-- [spec lists](https://www.raspberrypi.org/products/)
+  - [spec lists](https://www.raspberrypi.org/products/)
 
-  - Raspberry_Pi 0 :
-  - Raspberry_Pi 1
-  - Raspberry_Pi 2
-  - Raspberry_Pi 3
+    - Raspberry_Pi 0 :
+    - Raspberry_Pi 1
+    - Raspberry_Pi 2
+    - Raspberry_Pi 3
 
-#### Software
+  #### Software
 
-- Raspian : debian based linux
-- full desktop system
+  - Raspian : debian based linux
+  - full desktop system
+  - twistor 
 
-#### Price
+  #### Price
 
-- Raspberry pi 4 broad : From \$35
-- full Canakit:
-  - Raspberry pi 4,
-  - 4GB RAM
-  - 32GB Memory drive
-  - Case.
-  - 99 USD
+  - Raspberry pi 4 broad : From \$35
+  - full Canakit:
+    - Raspberry pi 4,
+    - 4GB RAM
+    - 32GB Memory drive
+    - Case.
+    - 99 USD
 
-### Core use case
+  ### Core use case
 
-- [15 Great Uses for a Raspberry Pi | Tom's Guide](https://www.tomsguide.com/us/pictures-story/1446-uses-for-raspberry-pi.html)
+  - [15 Great Uses for a Raspberry Pi | Tom's Guide](https://www.tomsguide.com/us/pictures-story/1446-uses-for-raspberry-pi.html)
 
-- - **Web server**
-  - Laptop
-  - Kids' first computer
-  - Home theater PC
-  - Wi-Fi extender
-  - **Network-attached storage drive**
-  - **Security Camera**
-  - Music streamer with multi-room audio
+  - - **Web server**
+    - Laptop
+    - Kids' first computer
+    - Home theater PC
+    - Wi-Fi extender
+    - **Network-attached storage drive**
+    - **Security Camera**
+    - Music streamer with multi-room audio
 
-* Web server
-  - less power consumption.
-
+  * Web server
+    - less power consumption.
 ## Hardware
 
-### Hardware Purchasing
+  ### Hardware Purchasing
 
   #### Objective
 
@@ -175,294 +177,297 @@
 
   #### hobby site.
 
-- [Raspberrypi home site](https://www.raspberrypi.org/products/)
+    - [Raspberrypi home site](https://www.raspberrypi.org/products/)
 
 
 # System 
 
 ## Set up the raspberry pi system.
 
-### Install base twisteros :  
+  ### Install base twisteros :  
 
-  #### Objective 
+    #### Objective 
 
-    1. have both mac and windows UI 
-    2. 
-  
-  #### what
+      1. have both mac and windows UI 
+      2. 
+    
+    #### what
 
-  1. Twister OS is a `Raspberry Pi OS-based Linux` distro for the RasPi. 
-    2. Its name derives from its ability to seamlessly switch between two different desktop environments, one that emulates Windows 10 and the other which appears like macOS.
-    3.  Although Twister OS is a small project hailing from a single developer, 
-        1.  unlike Raspberry Pi OS, 
-        2.  Canonical's Ubuntu, 
-        3.  or Manjaro Linux, 
-    4. it's an incredibly detail-oriented and polished operating system.
+    1. Twister OS is a `Raspberry Pi OS-based Linux` distro for the RasPi. 
+      2. Its name derives from its ability to seamlessly switch between two different desktop environments, one that emulates Windows 10 and the other which appears like macOS.
+      3.  Although Twister OS is a small project hailing from a single developer, 
+          1.  unlike Raspberry Pi OS, 
+          2.  Canonical's Ubuntu, 
+          3.  or Manjaro Linux, 
+      4. it's an incredibly detail-oriented and polished operating system.
+
+    #### Hwoto
+      1. download xz file : 
+        - [Twister OS](https://twisteros.com/downloads.html)
+      2.  Using Etcher, I was able to mount the TwisterOS.xz straight to my microSD card. 
+          - [flash OS](https://www.balena.io/etcher/)
+
+    ##### Reference . 
+      - [Getting Started with Twister OS on Raspberry Pi](https://www.electromaker.io/tutorial/blog/getting-started-with-twister-os-on-raspberry-pi)
+      - [Twister OS](https://twisteros.com/downloads.html)
+
+
+  ### App Installation 
+    
+  #### apt-get and pip install 
+      - apt-get: for linux system install 
+      - pip : install 
+      - 
+
+
+  ### Mount Raspberry pi to E: drive 
+
+    mountpi.ps1 : 
 
   #### Hwoto
-    1. download xz file : 
-       - [Twister OS](https://twisteros.com/downloads.html)
-     2.  Using Etcher, I was able to mount the TwisterOS.xz straight to my microSD card. 
-        - [flash OS](https://www.balena.io/etcher/)
-
-  ##### Reference . 
-    - [Getting Started with Twister OS on Raspberry Pi](https://www.electromaker.io/tutorial/blog/getting-started-with-twister-os-on-raspberry-pi)
-    - [Twister OS](https://twisteros.com/downloads.html)
-
-
-### App Installation 
-  #### apt-get and pip install 
-    - apt-get: for linux system install 
-    - pip : install 
-    - 
-
-
-### Mount Raspberry pi to E: drive 
-
-mountpi.ps1 : 
-
-#### Hwoto
-   - net use e: \\sshfs\pi@192.168.1.12
-   -  net use e: \\sshfs\pi@192.168.1.12 /user:pi tangwin/
-
-#### Result
-
-    net use e: \\sshfs\pi@192.168.1.12 /user:pi tangwin/
-   1. mountpi.ps1 : 
-   2. 
-
-<!------------------------------------------------------------------------->
-
-
-### Install Raspberry pi vscode editor
-
-
-  #### Reference 
-  - [Best way to install Visual Studio Code - Raspberry Pi Forums](https://www.raspberrypi.org/forums/viewtopic.php?t=273070)
-
-  #### Howto 
-  Run script : 
-      cd ~
-      sudo wget -qO - https://packagecloud.io/headmelted/codebuilds/gpgkey | sudo apt-key add -;
-      wget --content-disposition https://packagecloud.io/headmelted/codebuilds/packages/debian/stretch/code-oss_1.45.0-1586135927_armhf.deb/download.deb
-      sudo apt install ./code-oss_1.45.0-1586135927_armhf.deb
   
-  #### run 
-  - code-oss 
-  - linked to code 
-
-
-### Python lib installation 
-
-  1. Question: where is the rpi original installiation 
-    setup in the libary directory . 
-    in ~/.bashrc
-    export PYTHONPATH="$PYTHONPATH/usr/lib/python3/dist-packages" 
-
-  2. how to set up 
-
-### Editing bashrc
-  ~/.bashrc
-  goto bash quickly : ebash
-  add python3 to py: 
-
-
-###  Raspberry pi connection setup  
-
-  #### Value
-  [10_min] [Priority_4]  [Difficulty_5] [Importance_4]  
-  #### Objective 
-   1. setup connection between PC and Raspberry pi
-  #### Howto
-  1. PC -> vnc : myip.sh : get the : ip 
-  2. PC -> Ubuntu : -> ssh pi@192.168.1.xx 
-
-
-
-  ####  in terminal
-  sssh.ps1 12 : 
-
-  #### install remote ssh 
-  
-  ##### Reference
-    https://medium.com/@danielmarinomirallestaset/mounting-linux-fs-in-windows-10-using-sshfs-e29c7ca81c87
-  
-  ##### Installation 
-    Install the latest version of WinFsp.
-    Install the latest version of SSHFS-Win. Choose the x64 or x86 installer according to your computer’s architecture.
-    Map Windows Drive using this URL: \\sshfs\username@machine_ip\..\..
-
-    to access Raspberry pi file system 
-    \\sshfs\username@machine_ip 
-    \\sshfs\pi@192.168.1.12
-
-    net use X: \\sshfs\pi@192.168.1.23
-  
-  ##### Result 
-    auto run at the beginning 
-    C:\Program Files\SSHFS-Win\bin\sshfs-win.exe
-
-    mount as E: 
-### Raspberry pi remote accessing
-
-  #### wifi client IPS : SSH access
-
-  - - 1. raspberrypi: ip : 192.168.1.6
-      2. ssh pi@192.168.1.6
-      3. password for pi : tangwin/
-
-  ####  wifi client IPS : SSH access
-
-  - [linux - ssh connection refused on Raspberry Pi - Stack Overflow](https://stackoverflow.com/questions/41318597/ssh-connection-refused-on-raspberry-pi)
-
-
-  - enable ssh : 
-    - - in the Raspberry pi : 
-    - From the terminal with raspi-config
-          - Enter sudo raspi-config in a terminal window
-          - Select Interfacing Options
-          - Navigate to and select SSH
-          - Choose Yes
-          - Select Ok
-          - Choose Finish
-
-  - in the Raspberry pi : 
-    - hostname -I : find the ip address : 
-    - 
-
-  - SSH into your Raspberry Pi
-  Default Username and Password is: username: pi. password: raspberry
-  NOTE : 
-    1. It changes from time to time, go to the 192.168.1.1 and find the latest ip address. 
-
-  ####  Headless Raspberry pi
-
- 	- pi name : JIAN
-  - router : http://192.168.1.1/index.asp
-    - device name : JIAN : different icon 
-    - 
-    - ssh pi@192.168.1.12
-  - use the ASUS_5G connection 
-  - make a sssh.ps1 
-    - run as : sssh.ps1 12 
-  myip.sh
-  
-  #### VNC access :
-
-  - - 1. Install VNC in windows.
-      2. run VNC connection 192.168.1.6
-
-####   Transfer files pi 
-
-#### what
-  - - transfer files pi between in local wifi network Raspberry pi
-#### hwoto
-   - filezilla : in windows 10 
-   - Get the 
-
-#### Fix the ip of Raspberry pi
-#### what
-  - - Howto Fix the ip of Raspberry pi
-    192.168.1.24
-raspberry
-
-##### Reference 
-
-
-- [Provide Raspberry Pi with a static IP address - IONOS](https://www.ionos.com/digitalguide/server/configuration/provide-raspberry-pi-with-a-static-ip-address/)
-
-
-#### change the password of pi 
-  
-
-### Vscode Sync setting :  PC and RPI  
-  Basic vscod 
- `settings` 
- `keybiding` 
-  #### Objective 
-  - Sync the setting file between `PC and Raspberry pi`
-    - find glob in 
-    - sync the 3 setup files 
-    - installed vscode list : 
-
-
-  ##### find globle in 
-      1. Where is the globals folder in rpi
-          settings :  
-              ~/.config/Code - OSS (headmelted)/User/settings.json 
-
-          keymappings :
-              ~/.config/Code - OSS (headmelted)/User/keybindings.json
-          vs snip : 
-              snippet : 
-                  /home/pi/.config/Code - OSS (headmelted)/User/snippets
-      
-      2. Download the git in 
-
-      3. Copy and paste 
-
-
-### Git Edit Actions : Edit in PC and run in Raspberry pi
-
-  [10_min] [Priority_4]  [Difficulty_5] [Importance_4]   
-
-  #### Objective 
-    1. Edit in `PC` and run in `Raspberry pi`
-    
-    2. make powershell file to : 
-        1. `Raspberry pi` :  download from git : 
-        2. `PC`: upload from PC : 
-    
-
-    3. Change all repo into : 
+      - net use e: \\sshfs\pi@192.168.1.12
+      -  net use e: \\sshfs\pi@192.168.1.12 /user:pi tangwin/
 
   #### Result
 
-    1. PC : git_web.ps1
-    2. Raspberry pi : cd web ; download_web
+        net use e: \\sshfs\pi@192.168.1.12 /user:pi tangwin/
+      1. mountpi.ps1 : 
+      2. 
 
-### Start-up raspberry pi program 
+    <!------------------------------------------------------------------------->
 
-  - [Five Ways to Run a Program On Your Raspberry Pi At Startup](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
-  - run : st.sh in sh 
 
-### VPN : Nordvpn install in rpi : 
+  ### Install Raspberry pi vscode editor
 
-    ##### what
-      - [Installing and using NordVPN on Debian, Ubuntu, Elementary OS, and Linux Mint | NordVPN Customer Support](https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Elementary-OS-and-Linux-Mint.htm)
 
-    ##### Setup 
-      1. download : 
-      https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
-      2. sudo apt-get update
-      3. nordvpn login
-      4. nordvpn connect
+    #### Reference 
+    - [Best way to install Visual Studio Code - Raspberry Pi Forums](https://www.raspberrypi.org/forums/viewtopic.php?t=273070)
 
-### send a email via python. 
+    #### Howto 
+    Run script : 
+        cd ~
+        sudo wget -qO - https://packagecloud.io/headmelted/codebuilds/gpgkey | sudo apt-key add -;
+        wget --content-disposition https://packagecloud.io/headmelted/codebuilds/packages/debian/stretch/code-oss_1.45.0-1586135927_armhf.deb/download.deb
+        sudo apt install ./code-oss_1.45.0-1586135927_armhf.deb
+    
+    #### run 
+    - code-oss 
+    - linked to code 
 
-  #### what 
 
-    1. Use of yagmail 
-    2. oneliner command line to send a 
+  ### Python lib installation 
 
-  #### hwoto 
+    1. Question: where is the rpi original installiation 
+      setup in the libary directory . 
+      in ~/.bashrc
+      export PYTHONPATH="$PYTHONPATH/usr/lib/python3/dist-packages" 
 
-    1. see semail.py : 
-      ~/web/django-todo-react/backend/todo 
-    2. set up gmail less secure app. 
+    2. how to set up 
 
-  #### Result 
-    1. run : python3 semail.py "boidk  slsk"
+  ### Editing bashrc
+    ~/.bashrc
+    goto bash quickly : ebash
+    add python3 to py: 
 
-  #### Get a email 
-    no such function 
 
-### File transfer between PC and rpi 
-   - [∞](..\..\\ML_Name\Note\Raspberry_pi.md#File-transfer-between-PC-and-rpi-)
+  ### Raspberry pi connection setup  
 
-  filezila in PC . 
-  use file -> site manager 
-  check latest ip 
+    #### Value
+    [10_min] [Priority_4]  [Difficulty_5] [Importance_4]  
+    #### Objective 
+    1. setup connection between PC and Raspberry pi
+    #### Howto
+    1. PC -> vnc : myip.sh : get the : ip 
+    2. PC -> Ubuntu : -> ssh pi@192.168.1.xx 
+
+
+
+    ####  in terminal
+    sssh.ps1 12 : 
+
+    #### install remote ssh 
+    
+    ##### Reference
+      https://medium.com/@danielmarinomirallestaset/mounting-linux-fs-in-windows-10-using-sshfs-e29c7ca81c87
+    
+    ##### Installation 
+      Install the latest version of WinFsp.
+      Install the latest version of SSHFS-Win. Choose the x64 or x86 installer according to your computer’s architecture.
+      Map Windows Drive using this URL: \\sshfs\username@machine_ip\..\..
+
+      to access Raspberry pi file system 
+      \\sshfs\username@machine_ip 
+      \\sshfs\pi@192.168.1.12
+
+      net use X: \\sshfs\pi@192.168.1.23
+    
+    ##### Result 
+      auto run at the beginning 
+      C:\Program Files\SSHFS-Win\bin\sshfs-win.exe
+
+      mount as E: 
+
+  ### Raspberry pi remote accessing
+
+    #### wifi client IPS : SSH access
+
+    - - 1. raspberrypi: ip : 192.168.1.6
+        2. ssh pi@192.168.1.6
+        3. password for pi : tangwin/
+
+    ####  wifi client IPS : SSH access
+
+    - [linux - ssh connection refused on Raspberry Pi - Stack Overflow](https://stackoverflow.com/questions/41318597/ssh-connection-refused-on-raspberry-pi)
+
+
+    - enable ssh : 
+      - - in the Raspberry pi : 
+      - From the terminal with raspi-config
+            - Enter sudo raspi-config in a terminal window
+            - Select Interfacing Options
+            - Navigate to and select SSH
+            - Choose Yes
+            - Select Ok
+            - Choose Finish
+
+    - in the Raspberry pi : 
+      - hostname -I : find the ip address : 
+      - 
+
+    - SSH into your Raspberry Pi
+    Default Username and Password is: username: pi. password: raspberry
+    NOTE : 
+      1. It changes from time to time, go to the 192.168.1.1 and find the latest ip address. 
+
+    ####  Headless Raspberry pi
+
+    - pi name : JIAN
+    - router : http://192.168.1.1/index.asp
+      - device name : JIAN : different icon 
+      - 
+      - ssh pi@192.168.1.12
+    - use the ASUS_5G connection 
+    - make a sssh.ps1 
+      - run as : sssh.ps1 12 
+    myip.sh
+    
+    #### VNC access :
+
+    - - 1. Install VNC in windows.
+        2. run VNC connection 192.168.1.6
+
+  ####   Transfer files pi 
+
+  #### what
+    - - transfer files pi between in local wifi network Raspberry pi
+  #### hwoto
+    - filezilla : in windows 10 
+    - Get the 
+
+  #### Fix the ip of Raspberry pi
+  #### what
+    - - Howto Fix the ip of Raspberry pi
+      192.168.1.24
+  raspberry
+
+  ##### Reference 
+
+
+  - [Provide Raspberry Pi with a static IP address - IONOS](https://www.ionos.com/digitalguide/server/configuration/provide-raspberry-pi-with-a-static-ip-address/)
+
+
+  #### change the password of pi 
+    
+
+  ### Vscode Sync setting :  PC and RPI  
+    Basic vscod 
+  `settings` 
+  `keybiding` 
+    #### Objective 
+    - Sync the setting file between `PC and Raspberry pi`
+      - find glob in 
+      - sync the 3 setup files 
+      - installed vscode list : 
+
+
+    ##### find globle in 
+        1. Where is the globals folder in rpi
+            settings :  
+                ~/.config/Code - OSS (headmelted)/User/settings.json 
+
+            keymappings :
+                ~/.config/Code - OSS (headmelted)/User/keybindings.json
+            vs snip : 
+                snippet : 
+                    /home/pi/.config/Code - OSS (headmelted)/User/snippets
+        
+        2. Download the git in 
+
+        3. Copy and paste 
+
+
+  ### Git Edit Actions : Edit in PC and run in Raspberry pi
+
+    [10_min] [Priority_4]  [Difficulty_5] [Importance_4]   
+
+    #### Objective 
+      1. Edit in `PC` and run in `Raspberry pi`
+      
+      2. make powershell file to : 
+          1. `Raspberry pi` :  download from git : 
+          2. `PC`: upload from PC : 
+      
+
+      3. Change all repo into : 
+
+    #### Result
+
+      1. PC : git_web.ps1
+      2. Raspberry pi : cd web ; download_web
+
+  ### Start-up raspberry pi program 
+
+    - [Five Ways to Run a Program On Your Raspberry Pi At Startup](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
+    - run : st.sh in sh 
+
+  ### VPN : Nordvpn install in rpi : 
+
+      ##### what
+        - [Installing and using NordVPN on Debian, Ubuntu, Elementary OS, and Linux Mint | NordVPN Customer Support](https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Elementary-OS-and-Linux-Mint.htm)
+
+      ##### Setup 
+        1. download : 
+        https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
+        2. sudo apt-get update
+        3. nordvpn login
+        4. nordvpn connect
+
+  ### Send a email via python. 
+
+    #### what 
+
+      1. Use of yagmail 
+      2. oneliner command line to send a 
+
+    #### hwoto 
+
+      1. see semail.py : 
+        ~/web/django-todo-react/backend/todo 
+      2. set up gmail less secure app. 
+
+    #### Result 
+      1. run : python3 semail.py "boidk  slsk"
+
+    #### Get a email 
+      no such function 
+
+  ### File transfer between PC and rpi 
+    - [∞](..\..\\ML_Name\Note\Raspberry_pi.md#File-transfer-between-PC-and-rpi-)
+
+    filezila in PC . 
+    use file -> site manager 
+    check latest ip 
 
 # Projects
 
