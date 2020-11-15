@@ -239,7 +239,7 @@
 
 
   ### install the vscode  extension 
-    
+
   ### Install Raspberry pi vscode editor
 
 
@@ -629,7 +629,6 @@ where does the camera point to ?
 #### <Question: How to set a web server in pi zero or PC? >
 <Answer: >
 
-## Pi Zero monitoring Content 
 
 ###  Smart Security Camera
 
@@ -884,95 +883,97 @@ hen install software updates, and then install Apache, PHP and MySQL.
 
 
 ## Website : stream lit 
+  // TODO : link to dj_1  
   ###  Question :
     1. howto host stream lit backend in rpi 
     2. and apache ? local hosting 
 
 ## website : django 
+  // TODO : link to dj_1  
 
 ## end 
 
 # Reference
 ## Raspberry Pi video resource
 
-### Get start
+  ### Get start
 
-- [Raspberry Pi 4 Getting Started](https://www.youtube.com/watch?v=BpJCAafw2qE&t=939s)
+  - [Raspberry Pi 4 Getting Started](https://www.youtube.com/watch?v=BpJCAafw2qE&t=939s)
 
-- [Canakit Raspberry Pi 4 Unboxing and Initial Setup](https://www.youtube.com/watch?v=A40GvpEGqpg&t=111s)
+  - [Canakit Raspberry Pi 4 Unboxing and Initial Setup](https://www.youtube.com/watch?v=A40GvpEGqpg&t=111s)
 
-- [CanaKit Raspberry Pi 4 (4GB) Starter Kit Unboxing and Initial](https://www.youtube.com/watch?v=Wb1YForDARU)
+  - [CanaKit Raspberry Pi 4 (4GB) Starter Kit Unboxing and Initial](https://www.youtube.com/watch?v=Wb1YForDARU)
 
-- [Amazon](https://www.amazon.com/CanaKit-Raspberry-Starter-Clear-Case/dp/B07YLY143F/ref=asc_df_B07YLY143F/?tag=hyprod-20&linkCode=df0&hvadid=385197824350&hvpos=&hvnetw=g&hvrand=13142538446544069510&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9033288&hvtargid=pla-830000654545&psc=1&tag=&ref=&adgrpid=76690811457&hvpone=&hvptwo=&hvadid=385197824350&hvpos=&hvnetw=g&hvrand=13142538446544069510&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9033288&hvtargid=pla-830000654545)
+  - [Amazon](https://www.amazon.com/CanaKit-Raspberry-Starter-Clear-Case/dp/B07YLY143F/ref=asc_df_B07YLY143F/?tag=hyprod-20&linkCode=df0&hvadid=385197824350&hvpos=&hvnetw=g&hvrand=13142538446544069510&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9033288&hvtargid=pla-830000654545&psc=1&tag=&ref=&adgrpid=76690811457&hvpone=&hvptwo=&hvadid=385197824350&hvpos=&hvnetw=g&hvrand=13142538446544069510&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9033288&hvtargid=pla-830000654545)
 
-### Surveillance
+  ### Surveillance
 
-- [Raspberry Pi Zero W Surveillance Camera](https://www.youtube.com/watch?v=rhIzfRmKHnQ&list=WL&index=2&t=881s)
+  - [Raspberry Pi Zero W Surveillance Camera](https://www.youtube.com/watch?v=rhIzfRmKHnQ&list=WL&index=2&t=881s)
 
-- [Raspberry Pi Surveillance Monitor v2](https://www.youtube.com/watch?v=0tvX_gsv2ZU&list=WL&index=3&t=90s)
+  - [Raspberry Pi Surveillance Monitor v2](https://www.youtube.com/watch?v=0tvX_gsv2ZU&list=WL&index=3&t=90s)
 
-* [How to Make a Smart Security Camera with a Raspberry Pi Zero](https://www.youtube.com/watch?v=Y2QFu-tTvTI&list=WL&index=59&t=440s)
+  * [How to Make a Smart Security Camera with a Raspberry Pi Zero](https://www.youtube.com/watch?v=Y2QFu-tTvTI&list=WL&index=59&t=440s)
 
-### Pi projects
+  ### Pi projects
 
-- [TOP 10 Raspberry Pi projects for 2020](https://www.youtube.com/watch?v=HE6rIU8i8ho)
-- [Top 5 Raspberry Pi DIY Projects of All Time](https://www.youtube.com/watch?v=ZXpGNBzHKRY)s
+  - [TOP 10 Raspberry Pi projects for 2020](https://www.youtube.com/watch?v=HE6rIU8i8ho)
+  - [Top 5 Raspberry Pi DIY Projects of All Time](https://www.youtube.com/watch?v=ZXpGNBzHKRY)s
 
-### NAS : ne
+  ### NAS : ne
 
-- [RASPBERRY Pi 4 - How To Build POWERFUL NAS | ULTIMATE Raspberry Pi 4 NAS Server Setup 2020 Ksk Royal](https://www.youtube.com/watch?v=s0Sc2n3gUqA&list=WL&index=53&t=304s)
+  - [RASPBERRY Pi 4 - How To Build POWERFUL NAS | ULTIMATE Raspberry Pi 4 NAS Server Setup 2020 Ksk Royal](https://www.youtube.com/watch?v=s0Sc2n3gUqA&list=WL&index=53&t=304s)
 
-### VPN
+  ### VPN
 
-- [PiVPN : How to Run a VPN Server on a \$35 Raspberry Pi!](https://www.youtube.com/watch?v=15VjDVCISj0&list=WL&index=4&t=109s)
+  - [PiVPN : How to Run a VPN Server on a \$35 Raspberry Pi!](https://www.youtube.com/watch?v=15VjDVCISj0&list=WL&index=4&t=109s)
 
-### TensorFlow: Object detection
+  ### TensorFlow: Object detection
 
-- [Detect ANY Object with Raspberry Pi and TensorFlow](https://www.youtube.com/watch?v=O-FfOWdZAQ4&list=WL&index=45&t=0s)
+  - [Detect ANY Object with Raspberry Pi and TensorFlow](https://www.youtube.com/watch?v=O-FfOWdZAQ4&list=WL&index=45&t=0s)
 
-* [How to Set Up TensorFlow Object Detection on the Raspberry Pi](https://www.youtube.com/watch?v=npZ-8Nj1YwY&list=WL&index=26&t=1s)
+  * [How to Set Up TensorFlow Object Detection on the Raspberry Pi](https://www.youtube.com/watch?v=npZ-8Nj1YwY&list=WL&index=26&t=1s)
 
-- [#312 Boot a Raspberry Pi4 with an SSD to make it reliable and fast](https://www.youtube.com/watch?v=gp6XW-fGVjo&list=WL&index=34&t=0s)
+  - [#312 Boot a Raspberry Pi4 with an SSD to make it reliable and fast](https://www.youtube.com/watch?v=gp6XW-fGVjo&list=WL&index=34&t=0s)
 
-### Gaming
+  ### Gaming
 
-- [The Raspberry Pi 4 Is A Gaming Beast](https://www.youtube.com/watch?v=DvdiVwx996s&list=WL&index=50&t=769s)
+  - [The Raspberry Pi 4 Is A Gaming Beast](https://www.youtube.com/watch?v=DvdiVwx996s&list=WL&index=50&t=769s)
 
-### Android
+  ### Android
 
-- [How To Install Android On the Raspberry Pi 4 & Google Play Store](https://www.youtube.com/watch?v=QSgf_-EwfrQ&list=WL&index=60&t=15s)
+  - [How To Install Android On the Raspberry Pi 4 & Google Play Store](https://www.youtube.com/watch?v=QSgf_-EwfrQ&list=WL&index=60&t=15s)
 
-### DIY
+  ### DIY
 
-- [Top 5 Raspberry Pi DIY Projects of All Time](https://www.youtube.com/watch?v=ZXpGNBzHKRY&list=WL&index=62&t=47s)
+  - [Top 5 Raspberry Pi DIY Projects of All Time](https://www.youtube.com/watch?v=ZXpGNBzHKRY&list=WL&index=62&t=47s)
 
-### Amazon Purchase
+  ### Amazon Purchase
 
-// STUB
-Purchasing list : Compare different seller.
+  // STUB
+  Purchasing list : Compare different seller.
 
-### Basic
+  ### Basic
 
-- [Build Physical Projects With Python on the Raspberry Pi – Real Python](https://realpython.com/python-raspberry-pi/)
-- ###### tensor flow
+  - [Build Physical Projects With Python on the Raspberry Pi – Real Python](https://realpython.com/python-raspberry-pi/)
+  - ###### tensor flow
 
-### Web server
+  ### Web server
 
-- [Setting up a web server on a Raspberry Pi - Raspberry Pi Documentation](https://www.raspberrypi.org/documentation/remote-access/web-server/)
--
-- [Setup a Raspberry Pi Web Server with Your Own .COM Using Google Domains - YouTube](https://www.youtube.com/watch?v=vzojwG7OB7c) [Good]
+  - [Setting up a web server on a Raspberry Pi - Raspberry Pi Documentation](https://www.raspberrypi.org/documentation/remote-access/web-server/)
+  -
+  - [Setup a Raspberry Pi Web Server with Your Own .COM Using Google Domains - YouTube](https://www.youtube.com/watch?v=vzojwG7OB7c) [Good]
 
-- ###### website
+  - ###### website
 
-- [How to Set Up a Raspberry Pi Web Server - Tom's Hardware | Tom's Hardware](https://www.tomshardware.com/news/raspberry-pi-web-server,40174.html)
+  - [How to Set Up a Raspberry Pi Web Server - Tom's Hardware | Tom's Hardware](https://www.tomshardware.com/news/raspberry-pi-web-server,40174.html)
 
-- [Make a VPN Server with a Raspberry Pi, OpenVPN and Stunnel](https://www.youtube.com/watch?v=nnQDiGBFIXk)
+  - [Make a VPN Server with a Raspberry Pi, OpenVPN and Stunnel](https://www.youtube.com/watch?v=nnQDiGBFIXk)
 
-#### Object Detection Video.
+  #### Object Detection Video.
 
-- [How To Run TensorFlow Lite on Raspberry Pi for Object Detection](https://www.youtube.com/watch?v=aimSGOAUI8Y&t=206s)
+  - [How To Run TensorFlow Lite on Raspberry Pi for Object Detection](https://www.youtube.com/watch?v=aimSGOAUI8Y&t=206s)
 
-### Wiki
+  ### Wiki
 
-- [Raspberry Pi - Wikipedia](https://en.wikipedia.org/wiki/Raspberry_Pi)
+  - [Raspberry Pi - Wikipedia](https://en.wikipedia.org/wiki/Raspberry_Pi)
 
