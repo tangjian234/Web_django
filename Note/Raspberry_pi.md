@@ -4,7 +4,7 @@
 
 [](#)
 
-#  Basic 
+# Basic 
 
 ## DONE
 
@@ -238,6 +238,8 @@
     <!------------------------------------------------------------------------->
 
 
+  ### install the vscode  extension 
+    
   ### Install Raspberry pi vscode editor
 
 
