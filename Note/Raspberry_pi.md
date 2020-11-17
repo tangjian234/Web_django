@@ -224,6 +224,11 @@
 
     mountpi.ps1 : 
 
+  #### Fixed connection with pi 
+  - reboot the pi, computer and router 
+  - mountpi.ps1 
+    net use e: \\sshfs\pi@192.168.1.11 /user:pi tangwin/
+
   #### Hwoto
   
       - net use e: \\sshfs\pi@192.168.1.12
@@ -235,7 +240,6 @@
       1. mountpi.ps1 : 
       2. 
 
-    <!------------------------------------------------------------------------->
 
 
   ### install the vscode  extension 
@@ -883,14 +887,16 @@ hen install software updates, and then install Apache, PHP and MySQL.
 
 
 ## Website : stream lit 
-  // TODO : link to dj_1  
+
+  - [Django_apache.md](file:///C:/local/work/Web/web/note/Django_apache.md) 
+  
   ###  Question :
     1. howto host stream lit backend in rpi 
     2. and apache ? local hosting 
 
 ## website : django 
-  // TODO : link to dj_1  
-
+  - [Django_apache.md](file:///C:/local/work/Web/web/note/Django_apache.md) 
+  
 ## end 
 
 # Reference
