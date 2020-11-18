@@ -10,673 +10,672 @@
 
 ## Structure
 
-### Parent
-  - [Master](file:///c:/Local/Work/ML_Name/Note/ML_Master.md)  
-  - [mm.md](file:///C:/Local/Work/Key_Tools/Note/mm.md) 
-  - [ML_todo.md](file:///C:/Local/Work/Key_Docs/Todo/ML_todo.md)
-    
-### Sibling 
+  ### Parent
+    - [Master](file:///c:/Local/Work/ML_Name/Note/ML_Master.md)  
+    - [mm.md](file:///C:/Local/Work/Key_Tools/Note/mm.md) 
+    - [ML_todo.md](file:///C:/Local/Work/Key_Docs/Todo/ML_todo.md)
+      
+  ### Sibling 
 
-##### Amazon
+  ##### Amazon
 
-  - [**ML_Amazon_product_adviser_chat_bot.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_adviser_chat_bot.md)  
- - [*ML_Amazon_Train_Extract_skill_from_CV.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_Train_Extract_skill_from_CV.md)  
-  - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md) 
+    - [**ML_Amazon_product_adviser_chat_bot.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_adviser_chat_bot.md)  
+  - [*ML_Amazon_Train_Extract_skill_from_CV.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_Train_Extract_skill_from_CV.md)  
+    - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md) 
 
 
-  - [ML_ebay_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_ebay_product_Crawler.md)   
-  - [ML_Amazon_product_data_prepare.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_data_prepare.md)
-  - [ML_Amazon_product_Visualizer.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Visualizer.md) 
-  - [∞](#)
+    - [ML_ebay_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_ebay_product_Crawler.md)   
+    - [ML_Amazon_product_data_prepare.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_data_prepare.md)
+    - [ML_Amazon_product_Visualizer.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Visualizer.md) 
+    - [∞](#)
+
 ## Todo
 
-- [ ] test 2 scraper in a same time 
-- [x] Simple 
-- [x] How to run proxy 
-  - [x] - [Link](#234-how-to-run-proxy)
-- [x] Header 
-- [x] full review 
-- [x] Save the result into a json file : 
-- [ ] Periodically Product info monitoring 
-  -    - [∞](#periodically-product-info-monitoring)
-- [ ] Review amazon native api: [Amazon_API](#amazon-native-api)
-- [ ] Review scrape hero : [Scrapehero]
-- [ ] Review amazon super URL.[_](#amazon-super-url) 
-- [ ] ebay :  Make a ebay bidding app 
-- [ ] VPN for scraping - [∞](#vpn-for-scraping)
-- [ ] 
+  - [ ] test 2 scraper in a same time 
+  - [x] Simple 
+  - [x] How to run proxy 
+    - [x] - [Link](#234-how-to-run-proxy)
+  - [x] Header 
+  - [x] full review 
+  - [x] Save the result into a json file : 
+  - [ ] Return download the ASIN page 
+  - [ ] Periodically Product info monitoring 
+    -    - [∞](#periodically-product-info-monitoring)
+  - [ ] Review amazon native api: [Amazon_API](#amazon-native-api)
+  - [ ] Review scrape hero : [Scrapehero]
+  - [ ] Review amazon super URL.[_](#amazon-super-url) 
+  - [ ] ebay :  Make a ebay bidding app 
+  - [ ] VPN for scraping - [∞](#vpn-for-scraping)
 
-## Objective 
-   
-   1. Use Scrapy to crawl amazon product info : later version 
+
   
 ## Vision
 
-### Result code 
+  ### Result code 
 
-- [Result code](C:\Local\Work\Python\PyLib\scrapy\download\download\spiders\quotes_spider.py)
+    - [Result code](C:\Local\Work\Python\PyLib\scrapy\download\download\spiders\quotes_spider.py)
 
 
 ## Objective
 
-- develop anti -anti crawler ： see 
-- - 1.  how to run proxy :
-    2.  how to get the scrappy run, get the old work run
-    3.  how to get header run 
-    5.  build a ps1 file , give a amazon link and get the product info open it using code
-#### Strategy.
+  - develop anti -anti crawler ： see 
+  - - 1.  how to run proxy :
+      1.  how to get the scrappy run, get the old work run
+      2.  how to get header run 
+      3.  build a ps1 file , give a amazon link and get the product info open it using code
+   1. Use Scrapy to crawl amazon product info : later version 
+  
+  ### Strategy.
 
-  1. Simple one : Run beautiful soup.
+    1. Simple one : Run beautiful soup.
 
-     - bs_lib.py
+       - bs_lib.py
 
-  2. More complex, long, comprehensive one runs scrappy.
+    2. More complex, long, comprehensive one runs scrappy.
 
-      - quotes_spider.py
+        - quotes_spider.py
 
-#### Reference:  scrape- hero
+  ### Reference:  scrape- hero
 
-- overall structure on scrapy 
+  - overall structure on scrapy 
 
-- [scrapehero](https://www.scrapehero.com/how-to-fake-and-rotate-user-agents-using-python-3/)
+  - [scrapehero](https://www.scrapehero.com/how-to-fake-and-rotate-user-agents-using-python-3/)
 
-## Scrappy content 
 
 ## Basic 
-
-### Result
-
-    - [Result code](../../../Python/pylib/scrapy/download/download/spiders/quotes_spider.py) 
-    - [scrapy_lib.py](../../../Python/pylib/scrapy_lib.py)
-    - [string_lib.py](../../../Python/pylib/string_lib.py)
-    - [web_lib.py](../../../Python/pylib/web_lib.py)
-
-### Basic run command 
-
-    - scrappy crawl product : download product page 
-    - scrappy crawl product_local : process local product page 
-    - scrappy crawl comment : download comment page 
-    - scrappy crawl comment_local :  process local comment page 
-
-
-
-
-
-### Basic scrapy structure : 
-
-#### File : 
-- [quotes_spider.py](../../../Python/pylib/scrapy/download/download/spiders/quotes_spider.py)
-
-#### hwo-to run 
-
-  scrappy crawl product 
-
-#### 2 Functions: 
-
-##### Async request: 
-
-- - 1. Async request: `start_requests()` : 
-      - get the url list :
-        - remote : http://
-        - local : build local list : file://
-      
-      - launch request : 
-           scrapy.Request(url=url, callback=self.parse) 
-      
-      - Request format :
-        - url define   
-        - call back function define 
-        - meta : data passing  
-
-##### process html response
-
-    1. process html response :  `parse()`
-       1. retry if necessary :
-          1. why? see - [retry](#239-retry-done) 
-       3. process : 
-          1. remote : download min_html  
-          2. local : extract product information from min_html
+  // MARK : Basic run command 
   
+  ### Result
+
+      - [Result code](../../../Python/pylib/scrapy/download/download/spiders/quotes_spider.py) 
+      - [scrapy_lib.py](../../../Python/pylib/scrapy_lib.py)
+      - [string_lib.py](../../../Python/pylib/string_lib.py)
+      - [web_lib.py](../../../Python/pylib/web_lib.py)
+
+  ### Basic run command 
+      
+      - scrappy crawl product : download product page 
+      - scrappy crawl product_local : process local product page 
+      - scrappy crawl comment : download comment page 
+      - scrappy crawl comment_local :  process local comment page 
+
+  ### Basic scrapy structure : 
+
+  #### File : 
+  - [quotes_spider.py](../../../Python/pylib/scrapy/download/download/spiders/quotes_spider.py)
+
+  #### hwo-to run 
+
+    scrappy crawl product 
+
+  #### 2 Functions: 
+
+  ##### Async request: 
+
+  - - 1. Async request: `start_requests()` : 
+        - get the url list :
+          - remote : http://
+          - local : build local list : file://
+        
+        - launch request : 
+            scrapy.Request(url=url, callback=self.parse) 
+        
+        - Request format :
+          - url define   
+          - call back function define 
+          - meta : data passing  
+
+  ##### process html response
+
+      1. process html response :  `parse()`
+        1. retry if necessary :
+            1. why? see - [retry](#239-retry-done) 
+        3. process : 
+            1. remote : download min_html  
+            2. local : extract product information from min_html
+    
 
 ## Setting and configuration. 
+// MARK:　Setting and configuration. 
+  
+  ###  Setting file 
+  
+  // NOTE: Setting file  
 
-- - 1. C:\Local\Work\Python\PyLib\scrapy\download\download\
+  - 1. C:\Local\Work\Python\PyLib\scrapy\download\download\
     2.  [settings.py](../../../Python/pylib/scrapy/download/download/settings.py)
     3.  [conf_lib:yaml](../../../Python/pylib/conf_lib.py)
 
-### Pass argument in scrapy crawl 
+  ### Pass argument in scrapy crawl 
 
-  <Question:> How to pass a user defined argument in scrapy spider
+    <Question:> How to pass a user defined argument in scrapy spider
 
-  - scrapy crawl myspider -a category='mycategory' -a domain='example.com'
-      -  Pass parameter : -a asin='mycategory'
-      -  Get self.asin= getattr(self,'asin','')
+    - scrapy crawl myspider -a category='mycategory' -a domain='example.com'
+        -  Pass parameter : -a asin='mycategory'
+        -  Get self.asin= getattr(self,'asin','')
+        -  
+
+  ### Normal parameters : settings.py:
+// NOTE: Setting : 
+    1. in  [settings.py]
+      OUTPUT_DIR='C:/Local/Work/material/Amazon/download/result/'
+      
+    1. `get_scrapy_setting()` 
+    2. OUTPUT_DIR = scrapy_lib.get_scrapy_setting('OUTPUT_DIR')
+        1. OUTPUT_DIR_COMMENT
+        2. INPUT_URL_LIST
+        3. BLACKLIST_TAGS
+    
+    3. [quotes_spider.py]    
+
+  #### Howto
+      
+      from scrapy.utils.project import get_project_settings
+      ID='OUTPUT_DIR'
+      get_project_settings().get(ID)
+
+  ### How to get header run : web_lib.py
+      - user agent 
+      - [web_lib.py] 
+      - get_random_header() 
+        - HEADER_LIST ['Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36' ]
+
+  #### user_agent 
+
+  ##### wht is user agent 
+
+  The User-Agent request header is a characteristic string that lets servers and network peers identify the application, operating system, vendor, and/or version of the requesting user agent.
+
+  - [Definition](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent)
+
+  ##### Reference 
+
+  - [How to change user agent for Scrapy spiders](https://www.simplified.guide/scrapy/change-user-agent)
+
+  - [rotate user agent ](https://www.scrapehero.com/how-to-fake-and-rotate-user-agents-using-python-3/)
+
+  ### How to run proxy :settings.py:
+
+  - - 1.  download `scrapy-rotating-proxies`
+        - - [scrapy-proxy](https://blog.scrapinghub.com/scrapy-proxy)
+          - [scrapy-rotating-proxies](https://github.com/TeamHG-Memex/scrapy-rotating-proxies)
+      2.  Use a ROTATING_PROXY_LIST :
+          1. in  [settings.py]
+      3.  set the DOWNLOADER_MIDDLEWARES 
+          1. in  [settings.py]
+      4. Used `Working proxy website`: 
+        1. https://fanqiang.network/us-proxy  
+            1.  "206.127.88.18:80",
+                "35.230.21.108:80",
+                '64.71.145.122:3128'
+        http://spys.one/en/https-ssl-proxy/
+          85.214.61.76:3128  
+          https://free-proxy-list.net/
+
+  #### 3 ways of using proxy 
+
+  ##### manual setting.
+    meta : set 
+          self.header = {'User-Agent': user_agent}
+          self.meta_proxy= {"proxy":"207.144.111.230:8080"} 
+      
+      #yield scrapy.Request(url=url, callback=self.parse,headers=self.header,meta=self.meta_proxy)
+
+
+  ##### scrapy_proxy_pool
+
+  - [scrapy-proxy-pool](https://github.com/hyan15/scrapy-proxy-pool)
+
+  ##### rotating proxy 
+
+  #### Reference 
+  - [using-a-custom-proxy-in-a-scrapy-spider](https://support.scrapinghub.com/support/solutions/articles/22000219743-using-a-custom-proxy-in-a-scrapy-spider)
+
+
+  - [EVERYTHING YOU NEED TO KNOW ABOUT USING A PROXY IN SCRAPY](https://limeproxies.com/blog/everything-about-using-proxy-in-scrapy/)
+
+  - [scrapy a specific url ](https://stackoverflow.com/questions/48146944/how-to-use-proxy-for-specific-url-in-scrapy-spider)
+
+  - [- summary](https://stackoverflow.com/questions/4710483/scrapy-and-proxies#:~:text=The%20easiest%20way%20to%20use,done%20depends%20on%20your%20shell.&text=1%2DCreate%20a%20new%20file,the%20following%20code%20to%20it.&text=Now%2C%20your%20requests%20should%20be%20passed%20by%20this%20proxy.)
+
+  ### Check proxy validity 
+
+  web_lib.py
+
+  https://github.com/clarketm/proxy-list
+
+  ### Summarize the proxy_download_validity_check
+
+  #### what
+    1. download proxy from sites and 
+    2. run checking to see if it is working. 
+
+  #### Hwoto
+
+    1. file: 
+        1. lib/proxy_check.py 
+        2. scrapy.py : 
+    2. input: NONE
+    3. output : validated proxy list :  
+    4. add the list to : 
+        1. c:\Local\Work\Python\PyLib\scrapy\download\download\settings.py 
+    5. save the final result in 
+        1.  c:\Local\Work\Python\PyLib\scrapy\download\download\valid_proxy_list_save.py
+
+  #### Learnt : 
       -  
-###  Normal parameters : settings.py:
-   1. in  [settings.py]
-    OUTPUT_DIR='C:/Local/Work/material/Amazon/download/result/'
+  12812 NE, 113th ST , Kirkland, WA,98033
+
+  ### Use of Yaml 
+
+  <T-20 min>
+
+  #### YAML Ain't Markup Language
     
-   1. `get_scrapy_setting()` 
-   2. OUTPUT_DIR = scrapy_lib.get_scrapy_setting('OUTPUT_DIR')
-      1. OUTPUT_DIR_COMMENT
-      2. INPUT_URL_LIST
-      3. BLACKLIST_TAGS
-   3. [quotes_spider.py]    
+    - `YAML` is a human-readable data-serialization language.
+    -  It is commonly used for configuration files and in applications where data is being stored or transmitted.
+      
+  #### Simple file format : 
 
-#### Howto
-    
-    from scrapy.utils.project import get_project_settings
-    ID='OUTPUT_DIR'
-    get_project_settings().get(ID)
+  ##### Example      
+  - [scrappy_amazon_xpath.yaml]
+      product_title:
+        name: 
+          attribute: id
+          value:  productTitle
+          text:  text() 
+      product_info_table:
+        name: 
+          attribute: class
+          value:  a-color-secondary a-size-base prodDetSectionEntry 
+          text:  
+            - text()
+            - following-sibling::*//text()
+              
+  #### load file 
+    1. `load_yaml_file()` 
+    2. C:/Local/Work/Python/PyLib
+    3. [conf_lib.py]    
 
-### 2.2.2.How to get header run : web_lib.py
-    - user agent 
-    - [web_lib.py] 
-    - get_random_header() 
-      - HEADER_LIST ['Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36' ]
+  #### Access file 
+    1. `get_xpath_item_conf()` 
+    2. C:/Local/Work/Python/PyLib
+    3. [scrapy_lib.py]   
 
-#### user_agent 
+  ##### Example         
+    attribute=xpath_conf['product_info_table']['name']['attribute']  
+    output: attribute = class 
 
-##### wht is user agent 
+  #### Product xpath : 
+  ASIN : 
+    1. title : 
+      1. id="productTitle"
+    2. feature_list : 
+      1. id="feature-bullets"
+    3. Brand: 
+      1. List : 
+          1. - <a id="bylineInfo" class="a-link-normal" href="/AYL/b/ref=bl_dp_s_web_8188092011?ie=UTF8&amp;node=8188092011&amp;field-lbr_brands_browse-bin=AYL">Brand: AYL</a>
+      - 
+    4. manufacturer : 
+      - <th class="a-color-secondary a-size-base prodDetSectionEntry">
+    </th>
+        ?? get the sibling 
+        - release_date : Date First Available 
+          - 
+    5. item_dimensions:
+    6. size: 
+    7. price : 
+      - id="price_inside_buybox" 
+      - <span class="a-size-base a-color-price">$21.99</span>
 
-The User-Agent request header is a characteristic string that lets servers and network peers identify the application, operating system, vendor, and/or version of the requesting user agent.
+    8. rating : 
+      1. class_="reviewCountTextLinkedHistogram"
+    9.  no_of_comments : 
+        1.  id="acrCustomerReviewText"
+    10. producer : 
+        1.  id="bylineInfo"
+    11. best_seller_rank : 
+        1.  id="SalesRank"
+    12. link_to_all_reviews_in page : 
+        1.  class_= a-expander-content reviewText review-text-content a-expander-partial-collapse-content
 
-- [Definition](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent)
+  #### Reference 
 
-##### Reference 
-
-- [How to change user agent for Scrapy spiders](https://www.simplified.guide/scrapy/change-user-agent)
-
-- [rotate user agent ](https://www.scrapehero.com/how-to-fake-and-rotate-user-agents-using-python-3/)
-
-###  How to run proxy :settings.py:
-
-- - 1.  download `scrapy-rotating-proxies`
-      - - [scrapy-proxy](https://blog.scrapinghub.com/scrapy-proxy)
-        - [scrapy-rotating-proxies](https://github.com/TeamHG-Memex/scrapy-rotating-proxies)
-    2.  Use a ROTATING_PROXY_LIST :
-        1. in  [settings.py]
-    3.  set the DOWNLOADER_MIDDLEWARES 
-        1. in  [settings.py]
-    4. Used `Working proxy website`: 
-       1. https://fanqiang.network/us-proxy  
-          1.  "206.127.88.18:80",
-               "35.230.21.108:80",
-              '64.71.145.122:3128'
-       http://spys.one/en/https-ssl-proxy/
-        85.214.61.76:3128  
-        https://free-proxy-list.net/
-
-#### 3 ways of using proxy 
-
-##### manual setting.
-  meta : set 
-        self.header = {'User-Agent': user_agent}
-        self.meta_proxy= {"proxy":"207.144.111.230:8080"} 
-    
-    #yield scrapy.Request(url=url, callback=self.parse,headers=self.header,meta=self.meta_proxy)
-
-
-##### scrapy_proxy_pool
-
-- [scrapy-proxy-pool](https://github.com/hyan15/scrapy-proxy-pool)
-
-##### rotating proxy 
-
-
-
-
-#### Reference 
-- [using-a-custom-proxy-in-a-scrapy-spider](https://support.scrapinghub.com/support/solutions/articles/22000219743-using-a-custom-proxy-in-a-scrapy-spider)
-
-
-- [EVERYTHING YOU NEED TO KNOW ABOUT USING A PROXY IN SCRAPY](https://limeproxies.com/blog/everything-about-using-proxy-in-scrapy/)
-
-- [scrapy a specific url ](https://stackoverflow.com/questions/48146944/how-to-use-proxy-for-specific-url-in-scrapy-spider)
-
-- [- summary](https://stackoverflow.com/questions/4710483/scrapy-and-proxies#:~:text=The%20easiest%20way%20to%20use,done%20depends%20on%20your%20shell.&text=1%2DCreate%20a%20new%20file,the%20following%20code%20to%20it.&text=Now%2C%20your%20requests%20should%20be%20passed%20by%20this%20proxy.)
-
-### Check proxy validity 
-
-web_lib.py
-
-https://github.com/clarketm/proxy-list
-
-### Summarize the proxy_download_validity_check
-
-#### what
-   1. download proxy from sites and 
-   2. run checking to see if it is working. 
-
-#### Hwoto
-
-   1. file: 
-      1. lib/proxy_check.py 
-      2. scrapy.py : 
-   2. input: NONE
-   3. output : validated proxy list :  
-   4. add the list to : 
-      1. c:\Local\Work\Python\PyLib\scrapy\download\download\settings.py 
-   5. save the final result in 
-      1.  c:\Local\Work\Python\PyLib\scrapy\download\download\valid_proxy_list_save.py
-
-#### Learnt : 
-    -  
-12812 NE, 113th ST , Kirkland, WA,98033
-
-### Use of Yaml 
-
-<T-20 min>
-
-#### YAML Ain't Markup Language
+  - [Amazon_API](https://webservices.amazon.com/paapi5/documentation/item-info.html#bylineinfo)
+  - [Scrapehero](https://www.scrapehero.com/tutorial-how-to-scrape-amazon-product-details-using-python-and-selectorlib/)
   
-  - `YAML` is a human-readable data-serialization language.
-  -  It is commonly used for configuration files and in applications where data is being stored or transmitted.
-    
-#### Simple file format : 
 
-##### Example      
-- [scrappy_amazon_xpath.yaml]
-    product_title:
-      name: 
-        attribute: id
-        value:  productTitle
-        text:  text() 
-    product_info_table:
-      name: 
-        attribute: class
-        value:  a-color-secondary a-size-base prodDetSectionEntry 
-        text:  
-          - text()
-          - following-sibling::*//text()
-             
-#### load file 
-   1. `load_yaml_file()` 
-   2. C:/Local/Work/Python/PyLib
-   3. [conf_lib.py]    
+  ### scrapy politely : anti crawl detection 
 
-#### Access file 
-   1. `get_xpath_item_conf()` 
-   2. C:/Local/Work/Python/PyLib
-   3. [scrapy_lib.py]   
+  #### AutoThrottle
 
-##### Example         
-   attribute=xpath_conf['product_info_table']['name']['attribute']  
-   output: attribute = class 
+  AutoThrottle extension
+  This is an extension for automatically throttling crawling speed based on load of both the Scrapy server and the website you are crawling.
 
-#### Product xpath : 
-ASIN : 
-  1. title : 
-     1. id="productTitle"
-  2. feature_list : 
-     1. id="feature-bullets"
-  3. Brand: 
-     1. List : 
-        1. - <a id="bylineInfo" class="a-link-normal" href="/AYL/b/ref=bl_dp_s_web_8188092011?ie=UTF8&amp;node=8188092011&amp;field-lbr_brands_browse-bin=AYL">Brand: AYL</a>
-    - 
-  4. manufacturer : 
-    - <th class="a-color-secondary a-size-base prodDetSectionEntry">
-  </th>
-      ?? get the sibling 
-      - release_date : Date First Available 
-        - 
-  5. item_dimensions:
-  6. size: 
-  7. price : 
-    - id="price_inside_buybox" 
-    - <span class="a-size-base a-color-price">$21.99</span>
+  - [howto](https://docs.scrapy.org/en/1.0/topics/autothrottle.html#autothrottle-extension)
 
-  8. rating : 
-     1. class_="reviewCountTextLinkedHistogram"
-  9.  no_of_comments : 
-      1.  id="acrCustomerReviewText"
-  10. producer : 
-      1.  id="bylineInfo"
-  11. best_seller_rank : 
-      1.  id="SalesRank"
-  12. link_to_all_reviews_in page : 
-      1.  class_= a-expander-content reviewText review-text-content a-expander-partial-collapse-content
+      DOWNLOAD_DELAY = 1.5
+      AUTOTHROTTLE_ENABLED = True
+      AUTOTHROTTLE_START_DELAY = 2
+      AUTOTHROTTLE_TARGET_CONCURRENCY = 6
 
-#### Reference 
+  #### DOWNLOAD_DELAY    
 
-- [Amazon_API](https://webservices.amazon.com/paapi5/documentation/item-info.html#bylineinfo)
-- [Scrapehero](https://www.scrapehero.com/tutorial-how-to-scrape-amazon-product-details-using-python-and-selectorlib/)
- 
+  DOWNLOAD_DELAY = 1.5
 
-### scrapy politely : anti crawl detection 
+  ### Beautiful Soup
 
-#### AutoThrottle
+  - [Beautiful Soup and scrapy](https://www.datacamp.com/community/tutorials/amazon-web-scraping-using-beautifulsoup)
 
-AutoThrottle extension
-This is an extension for automatically throttling crawling speed based on load of both the Scrapy server and the website you are crawling.
+  ### Retry if robot.txt 
 
-- [howto](https://docs.scrapy.org/en/1.0/topics/autothrottle.html#autothrottle-extension)
+  <T-5 min>
 
-    DOWNLOAD_DELAY = 1.5
-    AUTOTHROTTLE_ENABLED = True
-    AUTOTHROTTLE_START_DELAY = 2
-    AUTOTHROTTLE_TARGET_CONCURRENCY = 6
+  #### File : 
+  - [quotes_spider.py]
 
-#### DOWNLOAD_DELAY    
+  #### What
+  - - 1. how to retry when the site refuse to serve :
+        1.  robot check 
+        2.   
 
-DOWNLOAD_DELAY = 1.5
+  #### Howto
+  - - 1. Get the title  
+      1. If it has 'Robot' check : `retry`. 
+      2. When you add that `dont_filter=True` , scrapy doesn't filter out the duplicate requests. So this time the request is processed.
 
-### Beautiful Soup
-
-- [Beautiful Soup and scrapy](https://www.datacamp.com/community/tutorials/amazon-web-scraping-using-beautifulsoup)
-
-### Retry if robot.txt 
-
-<T-5 min>
-
-#### File : 
-- [quotes_spider.py]
-
-#### What
-- - 1. how to retry when the site refuse to serve :
-       1.  robot check 
-       2.   
-
-#### Howto
-- - 1. Get the title  
-    1. If it has 'Robot' check : `retry`. 
-    2. When you add that `dont_filter=True` , scrapy doesn't filter out the duplicate requests. So this time the request is processed.
-
-##### Code example  
-        title=response.xpath('//title/text()').get()
-        if 'Robot' in title:
-          print("------retry-----")
-          yield scrapy.Request(url=response.url, callback=self.parse,dont_filter = True) 
+  ##### Code example  
+          title=response.xpath('//title/text()').get()
+          if 'Robot' in title:
+            print("------retry-----")
+            yield scrapy.Request(url=response.url, callback=self.parse,dont_filter = True) 
 
 
-## Amazon page processing 
+## Amazon age processing 
+// MARK:　
+
 - - 1. build link strings 
   - 2. process product page 
     3. process comment page  
 
 
-### Link String operation 
- 
-#### create local url from web url 
-  - in download product class 
-  - get_file_name_from_url(response.url)
-  - f_name='Quote-%s.html' % id
+  ### Link String operation 
   
+  #### create local url from web url 
+    - in download product class 
+    - get_file_name_from_url(response.url)
+    - f_name='Quote-%s.html' % id
+    
 
-#### create local url from web urls lists 
- - in download product_local class 
- - build_local_url_files(urls,OUTPUT_DIR)
+  #### create local url from web urls lists 
+  - in download product_local class 
+  - build_local_url_files(urls,OUTPUT_DIR)
 
-#### create comment url 
-  - in Download_comment class 
-  - build_comment_url(asin,star_id,page_num) 
-    - in start_requests()
-  
-  - get_comment_file_name_from_url(asin,star_id,page_num)
-    - in parse()
+  #### create comment url 
+    - in Download_comment class 
+    - build_comment_url(asin,star_id,page_num) 
+      - in start_requests()
+    
+    - get_comment_file_name_from_url(asin,star_id,page_num)
+      - in parse()
 
-#### create local comment file name 
-  - in Download_Test_comment_local class 
-  - get_local_comment_names(dir,asin,star_id)
-  - 
+  #### create local comment file name 
+    - in Download_Test_comment_local class 
+    - get_local_comment_names(dir,asin,star_id)
+    - 
 
 
-### local vs remote 
-<T-10 min>
+  ### local vs remote 
+  <T-10 min>
 
-#### File : 
-- [quotes_spider.py]
-
-#### What
-
-##### local vs remote Basic strategy : 
-- [why](#local-vs-remote-basic-strategy-)
-    - use remote download spider : simple  
-      - first download min_html to local file : min_html
-    - using simple_local  Process the min_html many times :
-    - Why: 
-      - dont get baned by run many times. 
-
-##### Min_html: 
-    - is the file that smallest html file that contain all necessary information. 
-      1.  Example:   C:\Local\Work\material\Amazon\download\result\Quote-B07Z393DWN.html
-  
-##### Howto 
-- - 1. Remote : 
-      class Download_Test(scrapy.Spider):
-          name = "product" 
-
-    2. Local :  
-      class Download_Test_local(scrapy.Spider):
-      name = "product_local"
-
-###  Min_html : HTML file processing   
-
-<T-10 min> 
-#### What 
-  - string operation and generate the min_html 
-  - why see [why](#local-vs-remote-basic-strategy-)
-
-#### Howto : 
-
-##### Functions :  
-  - Main function : `clean_html_body()` 
-  - Removal of line break : `remove_line_break()`
-    - line break for windows and unix :
-      - \n|\r|\\n
-    - re.sub(r'\n|\r|\\n', "", text)
-  - Removal of content between blacklisted tags : `remove_content_between_tags()` : 
-    - [settings.py]
-      - BLACKLIST_TAGS= ['style','script','header','input']
-      - 
-
-#### File : 
+  #### File : 
   - [quotes_spider.py]
 
-- [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md)[](） 
+  #### What
 
-###  Download Remote product page  
-  - [∞](#download-remote-product-page)
-#### Get product page . 
-  - get a list of urls  
-  - build a local file name 
-  - clean the script and style
-  - save a local html 
-  - 
-###  Process product page  
-  
-  - get_amazon_product_info_string(txt,xpath_conf)
-  - use xpath processing - [Link](#245-xpath--basic) 
-  - scrapy crawl product_local
+  ##### local vs remote Basic strategy : 
+  - [why](#local-vs-remote-basic-strategy-)
+      - use remote download spider : simple  
+        - first download min_html to local file : min_html
+      - using simple_local  Process the min_html many times :
+      - Why: 
+        - dont get baned by run many times. 
 
-#### product info table 
-get_product_info_table
+  ##### Min_html: 
+      - is the file that smallest html file that contain all necessary information. 
+        1.  Example:   C:\Local\Work\material\Amazon\download\result\Quote-B07Z393DWN.html
+    
+  ##### Howto 
+  - - 1. Remote : 
+        class Download_Test(scrapy.Spider):
+            name = "product" 
 
-#### product description 
-get_product_description_table
+      2. Local :  
+        class Download_Test_local(scrapy.Spider):
+        name = "product_local"
 
-#### Get customer review 
+  ###  Min_html : HTML file processing   
 
-##### Get customer star percentage  
-get_product_review_percent_table
+  <T-10 min> 
+  #### What 
+    - string operation and generate the min_html 
+    - why see [why](#local-vs-remote-basic-strategy-)
 
-##### Get customer detail 
-get_product_customer_review_card
+  #### Howto : 
 
-### merge and run product_all for periodically
-  - product_all
-  - product_remote
-  - product_local 
+  ##### Functions :  
+    - Main function : `clean_html_body()` 
+    - Removal of line break : `remove_line_break()`
+      - line break for windows and unix :
+        - \n|\r|\\n
+      - re.sub(r'\n|\r|\\n', "", text)
+    - Removal of content between blacklisted tags : `remove_content_between_tags()` : 
+      - [settings.py]
+        - BLACKLIST_TAGS= ['style','script','header','input']
+        - 
 
-#### hwoto
-   - process_save_from_text() : 
-     - save into product info dictionary as in product_local
+  #### File : 
+    - [quotes_spider.py]
 
+  - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md)[](） 
 
+  ###  Download Remote product page  
+    - [∞](#download-remote-product-page)
+  #### Get product page . 
+    - get a list of urls  
+    - build a local file name 
+    - clean the script and style
+    - save a local html 
+    - 
+  ###  Process product page  
+    
+    - get_amazon_product_info_string(txt,xpath_conf)
+    - use xpath processing - [Link](#245-xpath--basic) 
+    - scrapy crawl product_local
 
-###  run multiple period
+  #### product info table 
+  get_product_info_table
 
-https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679
+  #### product description 
+  get_product_description_table
 
-pip install timeloop
+  #### Get customer review 
 
-scrapy schedule periodical program
+  ##### Get customer star percentage  
+  get_product_review_percent_table
 
-  scrapy-do-cl schedule-job --project download --spider product --when 'every 1 to 2 minutes'
-  
-  scrapy-do-cl schedule-job --project quotesbot --spider toscrape-css --when 'every 5 to 15 minutes' scrapy schedule periodical program
+  ##### Get customer detail 
+  get_product_customer_review_card
 
-#### my curl
-C:\Users\tangj_1iyy\AppData\Local\Apps\cURL\bin\mycurl http://localhost:6800/schedule.json -d project=download -d spider=product
-
-#### reference 
-
-##### Howto 
-- [GitHub - scrapy/scrapyd: A service daemon to run Scrapy spiders](https://github.com/scrapy/scrapyd)
-
-##### Documentation
-- [Scrapyd — Scrapyd 1.2.0 documentation](https://scrapyd.readthedocs.io/en/stable/)
-- [Scrapyd — Scrapy 2.3.0 documentation](https://docs.scrapy.org/en/latest/topics/scrapyd.html)
-- [GitHub - scrapy/scrapyd-client: Command line client for Scrapyd server](https://github.com/scrapy/scrapyd-client)
-
-##### Youtube  
-- [Deploy Scrapy spiders locally - Scrapyd - YouTube](https://www.youtube.com/watch?v=PZKH5S0C8EI)
-
-- [Introduction to Scrapy API | Practical Python Web Scraping Tutorial (Part 1 of 2) - YouTube](https://www.youtube.com/watch?v=lNajD34Sfmg)
-
-#####  Tutorial
-- [A Minimalist End-to-End Scrapy Tutorial (Part IV) | by Harry Wang | Towards Data Science](https://towardsdatascience.com/a-minimalist-end-to-end-scrapy-tutorial-part-iv-3290d76a2aef)
-
-
-### Use python command to run spider. 
-c:\Local\Work\Python\PyLib\scrapy\download\download
-https://stackoverflow.com/questions/21662689/scrapy-run-spider-from-script
-#### what
-   
-### 
-
-
-
-#### hwoto
-   - search ''
-// ANCHOR now
-
-### Proxy checker : 
-[45_min]
-
-
-
-  #### Objective 
-
-   1. understand the Proxy checker 
-
-  #### Howto
-
-   1. move the paraser and modularize it .  [15_min]  
-      - input_arg_lib.py 
-   2. decompose the checker 
-   3. removal global veriable    - 
-   4. merge checker with downloader into proxy_list_lib
-      1. 
-   5. integrate the proxyChecker.py 
-      1. run and only get 10 valid proxy address 
-   6. modify settings and load proxy_list_it 
-   
-  #### what
-
-   1. Reference : https://github.com/iw4p/proxy-scraper
-   2. Local : C:\Local\Work\Python\PyLib\proxy-scraper-master
-   3. run : 
-      1. Get the scrap
-         1. python proxyScraper.py -p https
-      2. Check the validity of the 
-         1. python proxyChecker.py -p https -t 20 -s amazon.com -i input.txt 
-      3. rsp.ps1 product
-      4. rsp.ps1 product_local
-
-  #### Result
-
-   1. move the paraser and modularize it 
-   2.   
-      1. https://www.simplifiedpython.net/python-threading-example/#:~:text=Python%20Threading%20Example%201%20Step%20%231%3A%20Import%20threading,the%20thread%20after%20completion%20of%20the%20task.%20
-   3. merge checker with downloader into proxy_list_lib
-   4. remove 
-
-
-
-### run python in the background 
+  ### merge and run product_all for periodically
+    - product_all
+    - product_remote
+    - product_local 
 
   #### hwoto
-      - [How to constantly run Python script in the background on Windows?](https://stackoverflow.com/questions/59125493/how-to-constantly-run-python-script-in-the-background-on-windows)
-  #### example 
-      pythonw.exe pythonw.exe C:\\Python\Scripts\moveDLs.py
+    - process_save_from_text() : 
+      - save into product info dictionary as in product_local
+
+
+
+  ###  run multiple period
+
+  https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679
+
+  pip install timeloop
+
+  scrapy schedule periodical program
+
+    scrapy-do-cl schedule-job --project download --spider product --when 'every 1 to 2 minutes'
+    
+    scrapy-do-cl schedule-job --project quotesbot --spider toscrape-css --when 'every 5 to 15 minutes' scrapy schedule periodical program
+
+  #### my curl
+  C:\Users\tangj_1iyy\AppData\Local\Apps\cURL\bin\mycurl http://localhost:6800/schedule.json -d project=download -d spider=product
+
+  #### reference 
+
+  ##### Howto 
+  - [GitHub - scrapy/scrapyd: A service daemon to run Scrapy spiders](https://github.com/scrapy/scrapyd)
+
+  ##### Documentation
+  - [Scrapyd — Scrapyd 1.2.0 documentation](https://scrapyd.readthedocs.io/en/stable/)
+  - [Scrapyd — Scrapy 2.3.0 documentation](https://docs.scrapy.org/en/latest/topics/scrapyd.html)
+  - [GitHub - scrapy/scrapyd-client: Command line client for Scrapyd server](https://github.com/scrapy/scrapyd-client)
+
+  ##### Youtube  
+  - [Deploy Scrapy spiders locally - Scrapyd - YouTube](https://www.youtube.com/watch?v=PZKH5S0C8EI)
+
+  - [Introduction to Scrapy API | Practical Python Web Scraping Tutorial (Part 1 of 2) - YouTube](https://www.youtube.com/watch?v=lNajD34Sfmg)
+
+  #####  Tutorial
+  - [A Minimalist End-to-End Scrapy Tutorial (Part IV) | by Harry Wang | Towards Data Science](https://towardsdatascience.com/a-minimalist-end-to-end-scrapy-tutorial-part-iv-3290d76a2aef)
+
+
+  ### Use python command to run spider. 
+  c:\Local\Work\Python\PyLib\scrapy\download\download
+  https://stackoverflow.com/questions/21662689/scrapy-run-spider-from-script
+  #### what
+   
+  #### hwoto
+   - search ''
+
+  ### Proxy checker : 
+  [45_min]
+
+
+
+    #### Objective 
+
+    1. understand the Proxy checker 
+
+    #### Howto
+
+    1. move the paraser and modularize it .  [15_min]  
+        - input_arg_lib.py 
+    2. decompose the checker 
+    3. removal global veriable    - 
+    4. merge checker with downloader into proxy_list_lib
+        1. 
+    5. integrate the proxyChecker.py 
+        1. run and only get 10 valid proxy address 
+    6. modify settings and load proxy_list_it 
+    
+    #### what
+
+    1. Reference : https://github.com/iw4p/proxy-scraper
+    2. Local : C:\Local\Work\Python\PyLib\proxy-scraper-master
+    3. run : 
+        1. Get the scrap
+          1. python proxyScraper.py -p https
+        2. Check the validity of the 
+          1. python proxyChecker.py -p https -t 20 -s amazon.com -i input.txt 
+        3. rsp.ps1 product
+        4. rsp.ps1 product_local
+
+    #### Result
+
+    1. move the paraser and modularize it 
+    2.   
+        1. https://www.simplifiedpython.net/python-threading-example/#:~:text=Python%20Threading%20Example%201%20Step%20%231%3A%20Import%20threading,the%20thread%20after%20completion%20of%20the%20task.%20
+    3. merge checker with downloader into proxy_list_lib
+    4. remove 
+
+
+
+  ### run python in the background 
+
+    #### hwoto
+        - [How to constantly run Python script in the background on Windows?](https://stackoverflow.com/questions/59125493/how-to-constantly-run-python-script-in-the-background-on-windows)
+    #### example 
+        pythonw.exe pythonw.exe C:\\Python\Scripts\moveDLs.py
 
 
 
 
-#### Test the process
+  #### Test the process
 
-####  the process
-Get-Process -Name pythonw
-#### Kill the process 
-Stop-Process -Name pythonw
+  ####  the process
+  Get-Process -Name pythonw
+  #### Kill the process 
+  Stop-Process -Name pythonw
 
-https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/stop-process?view=powershell-7
-
-
-C:\Local\Work\material\Amazon\download\result
-
-### Import with path 
-
-###  Use python command to run spider. 
-.\run_per.py
-
-###  Use Asych-scheduler to run periodically 
-.\run_per.py
+  https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/stop-process?view=powershell-7
 
 
-### ScrapydWeb by my8100 
+  C:\Local\Work\material\Amazon\download\result
+
+  ### Import with path 
+
+  ###  Use python command to run spider. 
+  .\run_per.py
+
+  ###  Use Asych-scheduler to run periodically 
+  .\run_per.py
+
+
+  ### ScrapydWeb by my8100 
 
 
 
-###  Download Remote Comment page  
+  ###  Download Remote Comment page  
 
-#### Comment Link  Example : 
+  #### Comment Link  Example : 
 
-https://www.amazon.com/product-reviews/B07Z393DWN/ie=UTF8&filterByStar=one_star/ref=cm_cr_arp_d_viewopt_sr?filterByStar=one_star&pageNumber=1
+  https://www.amazon.com/product-reviews/B07Z393DWN/ie=UTF8&filterByStar=one_star/ref=cm_cr_arp_d_viewopt_sr?filterByStar=one_star&pageNumber=1
 
-- [scrapy_lib.build_comment_url]
+  - [scrapy_lib.build_comment_url]
 
-#### Get the comment by a new spider 
+  #### Get the comment by a new spider 
 
-#### Get first page of a comment page . 
-  - give a asin , build a link 
-  - build a local page, 
-  - clean the script and style
-  - save a local html 
-  
-#### find the xpath locator for next page. 
+  #### Get first page of a comment page . 
+    - give a asin , build a link 
+    - build a local page, 
+    - clean the script and style
+    - save a local html 
+    
+  #### find the xpath locator for next page. 
 
- next_page=response.url.replace(f'pageNumber={self.page_num}',f'pageNumber={self.page_num+1}')
-
-#### Get next page of a comment page. 
- if (next_page): 
   next_page=response.url.replace(f'pageNumber={self.page_num}',f'pageNumber={self.page_num+1}')
- next page numbering
 
-###  Process Comment page  
+  #### Get next page of a comment page. 
+  if (next_page): 
+    next_page=response.url.replace(f'pageNumber={self.page_num}',f'pageNumber={self.page_num+1}')
+  next page numbering
 
-#### Browser operation : get the xpath 
+  ###  Process Comment page  
 
-#####  xpal : chrome  
-- - 1. 
-    2.  
-#####  firefox 
-- - 1. Example  
-    2.  
-##### chrome 
+  #### Browser operation : get the xpath 
 
-### xpath :
+  #####  xpal : chrome  
+  - - 1. 
+      2.  
+  #####  firefox 
+  - - 1. Example  
+      2.  
+  ##### chrome 
+
+  ### xpath :
 
 ####  basic 
  - example : get_product_line_item()
@@ -720,70 +719,71 @@ location = xpath_location_builder(attribute,value)
 
 ## Tools 
 
-### scrapy logging file
-[20_min] gold 
+  ### scrapy logging file
+  [20_min] gold 
 
-#### print out silently scrapy 
+  #### print out silently scrapy 
 
-- [python - How to save Scrapy crawl Command output - Stack Overflow](https://stackoverflow.com/questions/16650397/how-to-save-scrapy-crawl-command-output)
+  - [python - How to save Scrapy crawl Command output - Stack Overflow](https://stackoverflow.com/questions/16650397/how-to-save-scrapy-crawl-command-output)
 
-if you want to get the output from runspider command.
-scrapy runspider scraper.py -o some.json -t json 2> some.text
+  if you want to get the output from runspider command.
+  scrapy runspider scraper.py -o some.json -t json 2> some.text
 
 
-mycurl http://localhost:6800/schedule.json -d project=download -d spider=product
+  mycurl http://localhost:6800/schedule.json -d project=download -d spider=product
+  
+
+  ### hwo to use curl : 
+
+  ####   Client URL
+  cURL (pronounced 'curl') is a computer software project providing a library (libcurl) and command-line tool (curl) for transferring data using various network protocols. The name stands for "Client URL", which was first released in 1997.
+
+  #### curl Proxy 
+  curl --proxy 205.185.116.235:8080 http://remote.example.org/
+
+  curl --proxy 205.185.116.235:8080 https://www.amazon.com/dp/B0791TX5P5
+
+  curl --proxy 205.185.116.235:8080 https://www.amazon.com/product-reviews/B0791TX5P5/ref=acr_dp_hist_1?ie=UTF8&filterByStar=one_star
+
+  #### Reference 
+  - [Everything curl](https://ec.haxx.se/usingcurl/usingcurl-proxies)
+
+  - [Using curl to automate HTTP jobs](https://curl.haxx.se/docs/httpscripting.html)
+
+  REVIEW : Question : how to make sense out of the curl output 
+
+  ### mingw64 
+
+  - see mingw64 : a mini bash simulator  
  
-
-### hwo to use curl : 
-
-####   Client URL
-cURL (pronounced 'curl') is a computer software project providing a library (libcurl) and command-line tool (curl) for transferring data using various network protocols. The name stands for "Client URL", which was first released in 1997.
-
-#### curl Proxy 
-curl --proxy 205.185.116.235:8080 http://remote.example.org/
-
-curl --proxy 205.185.116.235:8080 https://www.amazon.com/dp/B0791TX5P5
-
-curl --proxy 205.185.116.235:8080 https://www.amazon.com/product-reviews/B0791TX5P5/ref=acr_dp_hist_1?ie=UTF8&filterByStar=one_star
-
-#### Reference 
-- [Everything curl](https://ec.haxx.se/usingcurl/usingcurl-proxies)
-
-- [Using curl to automate HTTP jobs](https://curl.haxx.se/docs/httpscripting.html)
-
-REVIEW : Question : how to make sense out of the curl output 
-
-### mingw64 
-
-- see mingw64 : a mini bash simulator  
- 
-## ebay :  Make a ebay bidding app
 
 ## Reference
 
-- [Scrapy 2.2 documentation](https://docs.scrapy.org/en/latest/index.html)
+  ### Scrapy documentation
+    - [Scrapy 2.2 documentation](https://docs.scrapy.org/en/latest/index.html)
 
-- [Scrapy 2.2 documentation: -logging ](https://docs.scrapy.org/en/latest/topics/logging.html#topics-logging-settings)
-- [selectors](https://docs.scrapy.org/en/latest/topics/selectors.html)
-- [Using your browser’s Developer Tools for scraping](https://docs.scrapy.org/en/latest/topics/developer-tools.html#topics-developer-tools)
+    - [Scrapy 2.2 documentation: -logging ](https://docs.scrapy.org/en/latest/topics/logging.html#topics-logging-settings)
+    - [selectors](https://docs.scrapy.org/en/latest/topics/selectors.html)
+    - [Using your browser’s Developer Tools for scraping](https://docs.scrapy.org/en/latest/topics/developer-tools.html#topics-developer-tools)
 
-- [Amazon Product Advertising API](https://webservices.amazon.com/paapi5/documentation/quick-start/using-sdk.html)
-- [xpath](https://www.guru99.com/using-contains-sbiling-ancestor-to-find-element-in-selenium.html)
+    - [Amazon Product Advertising API](https://webservices.amazon.com/paapi5/documentation/quick-start/using-sdk.html)
+    - [xpath](https://www.guru99.com/using-contains-sbiling-ancestor-to-find-element-in-selenium.html)
 
 
-### Scrapy from within a Python script
-@crawl 
-How to run Scrapy from within a Python script
-https://stackoverflow.com/questions/13437402/how-to-run-scrapy-from-within-a-python-script
+  ### Scrapy from within a Python script
+    @crawl 
+    How to run Scrapy from within a Python script
+    https://stackoverflow.com/questions/13437402/how-to-run-scrapy-from-within-a-python-script
 
-### An elegant way to run periodic tasks in python
-@crawl 
-https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679 
+  ### An elegant way to run periodic tasks in python
+    @crawl 
+    https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679 
+
 # Next step  
  
 ### 10.19. Periodic running session 1 : 
 [20_min]
-  - Test the first python method 
+// TODO:   - Test the first python method 
   - make a simple downloader and 
    - [∞](..\..\ML_Name\Note\ML_Amazon_product\ML_Amazon_product_Crawler.md#run-periodically-with-task-scheduler--windows)
 
@@ -803,47 +803,111 @@ https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-i
   - kick start the running everyday using the scheduler 
    - [∞](..\..\ML_Name\Note\ML_Amazon_product\ML_Amazon_product_Crawler.md#run-periodically-with-task-scheduler--windows)
 
-### Periodically Product info monitoring 
+## Amazon Periodic download 
+// MARK: Amazon Periodic download 
 
-#### what
+  ### Objective 
+     1. Ability to download Amazon ASIN list in Raspberry pi
+     2. Work Periodically
+     3. 
+  
+  ### Rerun and port scrappy in windows 
+    
+   #### Find pervious Scheduler in windows 
+      - C:\Local\Work\Python\PyLib\scrapy\download\download\spiders\run_per.py 
+   #### rerun : 
+  // NOTE: Amazon rerun 
+    - Setting : C:\Local\Work\Python\PyLib\scrapy\download\download\settings.py
+      - INPUT_URL_LIST :
+        - 'C:/Local/Work/material/Amazon/download/url_list.json' 
+        - asin_list
+        - asin_list_best_seller_bluetooth
+      - OUTPUT_DIR : 'C:/Local/Work/material/Amazon/download/result/'
+    - Run : in folder : 
+      - in folder : C:\Local\Work\Python\PyLib\scrapy\download\download\spiders
+      - scrapy crawl product
+      - scrapy crawl product_local
 
-   1. periodically download product and get price etc 
-   2. 
+  #### Disable Proxy and enable nordvpn  
+    
+   #### Add comment and underhand to run_spider_1() 
+    - C:\Local\Work\Python\PyLib\scrapy\download\download\spiders\run_per.py 
+    -    
 
-#### Howto
+   #### Re-verify it work in windows  
+    - 
 
-   1. every 10 min as test : 
-   2. - scrappy crawl product 
-   3. - scrappy crawl product_local : 
-      1. Save 
-         1. the price ,   
-         2. best seller rank bsr 
-         3. number of  review. 
-      2. with time mark 
-    4. save as same product_
-    5. create a file_with time_stamp  
-       1. fix the time stamp issue 
+  ### Run and port scrappy in Raspberry pi
+  
+   #### Build directory for  
+      - Asin-download 
+        - Code : scrappy code 
+        - Result : download result  
+      - 
+   #### Install the necessary library for scrapy  
+    - C:\Local\Work\Python\PyLib\scrapy\download\download\spiders\run_per.py 
+    - check if the directory is matching 
+      - e.g settings = run_path("C:/Local/Work/Python/PyLib/scrapy/download/download/spiders/quotes_spider.py")
+   
+   #### Command line : 
+    - python3 run_per.py    
+   
+   #### Expected result :
+     - Downloaded ASIN file in Result json. 
+    
+  ### Run a simple scrapy in Raspberry pi
 
-#### Result 
-run 
-Output : - C:\Local\Work\ML_Name\Code\Test\data\asin 
+    https://peppe8o.com/use-raspberry-pi-as-your-personal-web-crawler-with-python-and-scrapy/
+
+  ### Periodically action in Raspberry pi
+    - simple run a scripy 
+    - run every 1 min 
+    - prepare for everyday running for amazon asin download 
+  
+
+  
+  
+
+  ### Periodically Product info monitoring 
+
+  #### what
+
+    1. periodically download product and get price etc 
+    2. 
+  #### Howto
+
+    1. every 10 min as test : 
+    2. - scrappy crawl product 
+    3. - scrappy crawl product_local : 
+        1. Save 
+          1. the price ,   
+          2. best seller rank bsr 
+          3. number of  review. 
+        2. with time mark 
+      4. save as same product_
+      5. create a file_with time_stamp  
+        1. fix the time stamp issue 
+
+  #### Result 
+  run 
+  Output : - C:\Local\Work\ML_Name\Code\Test\data\asin 
 
 
-#### Run periodically with task Scheduler :  windows 
-  - [∞](#run-periodically-with-task-scheduler--windows)
+  #### Run periodically with task Scheduler :  windows 
+    - [∞](#run-periodically-with-task-scheduler--windows)
 
-##### what
-  - the price item in the task Scheduler.  
-  - run 
-    - start with c:\Local\Work\Python\PyLib\scrapy\download\
-    - C:\Python38\Scripts\scrapy.exe crawl product
-    - C:\Python38\Scripts\scrapy.exe crawl product
+  ##### what
+    - the price item in the task Scheduler.  
+    - run 
+      - start with c:\Local\Work\Python\PyLib\scrapy\download\
+      - C:\Python38\Scripts\scrapy.exe crawl product
+      - C:\Python38\Scripts\scrapy.exe crawl product
 
-- provide a list of top 10 best seller 
+  - provide a list of top 10 best seller 
 
-##### task scheduler security context
+  ##### task scheduler security context
 
-#### Run periodically with task Scheduler : python  
+  #### Run periodically with task Scheduler : python  
 
   https://stackoverflow.com/questions/44228851/scrapy-on-a-schedule
 
@@ -857,10 +921,7 @@ Output : - C:\Local\Work\ML_Name\Code\Test\data\asin
 
 ##### Run Async 
 
-
-#### Proxy 
-
-
+  #### Proxy 
 
 
 ### VPN for scraping 
@@ -897,6 +958,7 @@ objective : review the structure
 - [Scrapehero](https://www.scrapehero.com/tutorial-how-to-scrape-amazon-product-details-using-python-and-selectorlib/)
 
 ## End 
+
 ### run python in the background 
 @python_study
 @crawler 
@@ -904,3 +966,5 @@ objective : review the structure
       - [How to constantly run Python script in the background on Windows?](https://stackoverflow.com/questions/59125493/how-to-constantly-run-python-script-in-the-background-on-windows)
   #### example 
       pythonw.exe pythonw.exe C:\\Python\Scripts\moveDLs.py
+
+## eBay :  Make a ebay bidding app
