@@ -238,11 +238,14 @@
 
   - [- summary](https://stackoverflow.com/questions/4710483/scrapy-and-proxies#:~:text=The%20easiest%20way%20to%20use,done%20depends%20on%20your%20shell.&text=1%2DCreate%20a%20new%20file,the%20following%20code%20to%20it.&text=Now%2C%20your%20requests%20should%20be%20passed%20by%20this%20proxy.)
 
+  
+  
   ### Check proxy validity 
 
+  
   web_lib.py
 
-  https://github.com/clarketm/proxy-list
+    - https://github.com/clarketm/proxy-list
 
   ### Summarize the proxy_download_validity_check
 
@@ -252,20 +255,45 @@
 
   #### Hwoto
 
+    scrapy_lib.get_proxy_from_sites()
+      download from sites 
+
     1. file: 
         1. lib/proxy_check.py 
-        2. scrapy.py : 
+        2. scrapy_lib.py : 
     2. input: NONE
     3. output : validated proxy list :  
-    4. add the list to : 
+    
+    4. Key function : 
+       1. scrapy_lib.get_proxy_from_sites
+        download https proxy from 2 websites : 100 each time
+	     1. scrapy_lib.check_proxy_list_validity 
+
+    5. add the list to : 
         1. c:\Local\Work\Python\PyLib\scrapy\download\download\settings.py 
-    5. save the final result in 
+
+    6. save the final result in 
         1.  c:\Local\Work\Python\PyLib\scrapy\download\download\valid_proxy_list_save.py
 
   #### Learnt : 
       -  
   12812 NE, 113th ST , Kirkland, WA,98033
 
+  ### Use Nordvpn 
+  
+  // NOTE:  nordvpn
+  
+    - Get use the united states #5294 : work 
+    - which nordvpn work 
+  
+  #### Select 10 working nordvpn 
+      - #5294 YES 
+      - #5280 YES 
+      
+      - #8158 NO 
+  
+  scrapy crawl product
+  
   ### Use of Yaml 
 
   <T-20 min>
@@ -391,8 +419,8 @@
             yield scrapy.Request(url=response.url, callback=self.parse,dont_filter = True) 
 
 
-## Amazon age processing 
-// MARK:　
+## Amazon page processing 
+// MARK:　Page processing 
 
 - - 1. build link strings 
   - 2. process product page 
@@ -815,6 +843,7 @@ location = xpath_location_builder(attribute,value)
     
    #### Find pervious Scheduler in windows 
       - C:\Local\Work\Python\PyLib\scrapy\download\download\spiders\run_per.py 
+   
    #### rerun : 
   // NOTE: Amazon rerun 
     - Setting : C:\Local\Work\Python\PyLib\scrapy\download\download\settings.py
@@ -828,15 +857,20 @@ location = xpath_location_builder(attribute,value)
       - scrapy crawl product
       - scrapy crawl product_local
 
+  #### Find hwoto run best proxies 
+      - proxy list 
+  
   #### Disable Proxy and enable nordvpn  
-    
+      - scrapy crawl product
+      - enable nordvpn  
+      - disabled proxy 
+      
    #### Add comment and underhand to run_spider_1() 
     - C:\Local\Work\Python\PyLib\scrapy\download\download\spiders\run_per.py 
-    -    
+    - python3  run_per.py
 
    #### Re-verify it work in windows  
-    - 
-
+    - 工作。
   ### Run and port scrappy in Raspberry pi
   
    #### Build directory for  
