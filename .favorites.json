@@ -1,19 +1,126 @@
-[
-    {
-        "type": "Group",
-        "name": "f1",
-        "parent_id": null,
-        "workspaceRoot": null,
-        "workspacePath": null,
-        "id": "375LEKytwC6xOmdp"
-    },
-    {
-        "type": "File",
-        "name": "c:\\Local\\Work\\ML_Name\\Note\\Setup.md",
-        "parent_id": null,
-        "fsPath": "c:\\Local\\Work\\ML_Name\\Note\\Setup.md",
-        "workspaceRoot": null,
-        "workspacePath": null,
-        "id": "BqFWjv9nOYEuV5dw"
-    }
+{
+  "type": "File",
+  "name": "C:\\Local\\Work\\ML_Name\\Note\\Raspberry_pi.md",
+  "parent_id": "Kez0lyDZ8xRMbJBa",
+  "fsPath": "C:\\Local\\Work\\ML_Name\\Note\\Raspberry_pi.md",
+  "workspaceRoot": null,
+  "workspacePath": null,
+  "id": "Jyhju9nieO7FEWr1"
+},
+{
+  "type": "File",
+  "name": "C:\\Local\\OneDrive_Microsoft\\Note\\Strategy\\key_infos.md",
+  "parent_id": "Kez0lyDZ8xRMbJBa",
+  "fsPath": "C:\\Local\\OneDrive_Microsoft\\Note\\Strategy\\key_infos.md",
+  "workspaceRoot": null,
+  "workspacePath": null,
+  "id": "UYubKFJT5iMo1zaR"
+},
+{
+  "type": "File",
+  "name": "C:\\Local\\OneDrive_Microsoft\\Zen\\Summary\\Daily_Work.md",
+  "parent_id": "Kez0lyDZ8xRMbJBa",
+  "fsPath": "C:\\Local\\OneDrive_Microsoft\\Zen\\Summary\\Daily_Work.md",
+  "workspaceRoot": null,
+  "workspacePath": null,
+  "id": "HLGx1nAZp3Ja5T7D"
+},
+{
+  "type": "File",
+  "name": "C:\\Local\\OneDrive_Microsoft\\Zen\\Summary\\life_hack.md",
+  "parent_id": "Kez0lyDZ8xRMbJBa",
+  "fsPath": "C:\\Local\\OneDrive_Microsoft\\Zen\\Summary\\life_hack.md",
+  "workspaceRoot": null,
+  "workspacePath": null,
+  "id": "ob1OEyDhpHsgr7dn"
+},
+{
+  "type": "File",
+  "name": "C:\\Local\\Work\\Key_Docs\\date\\onenote.md",
+  "parent_id": "Kez0lyDZ8xRMbJBa",
+  "fsPath": "C:\\Local\\Work\\Key_Docs\\date\\onenote.md",
+  "workspaceRoot": null,
+  "workspacePath": null,
+  "id": "ZOyXoflt7GjM1RPH"
+},
+{
+  "type": "Group",
+  "name": "PS",
+  "parent_id": null,
+  "workspaceRoot": null,
+  "workspacePath": null,
+  "id": "saCOedIHS43jUwGT"
+},
+{
+  "type": "Directory",
+  "name": "C:\\Local\\Work\\Key_Tools\\Powershell",
+  "parent_id": "saCOedIHS43jUwGT",
+  "fsPath": "C:\\Local\\Work\\Key_Tools\\Powershell",
+  "workspaceRoot": null,
+  "workspacePath": null,
+  "id": "zg8d4hFx20w6nQDc"
+},
+{
+  "type": "File",
+  "name": "E:\\home\\pi\\web\\django-dashboard-light-bootstrap\\core\\templates\\index.html",
+  "parent_id": "60gpYthdUxyVzB1j",
+  "fsPath": "E:\\home\\pi\\web\\django-dashboard-light-bootstrap\\core\\templates\\index.html",
+  "workspaceRoot": null,
+  "workspacePath": null,
+  "id": "cjM2hsIQWlw4nxpB"
+},
+{
+  "type": "File",
+  "name": "E:\\home\\pi\\web\\django-dashboard-light-bootstrap\\app\\views.py",
+  "parent_id": "60gpYthdUxyVzB1j",
+  "fsPath": "E:\\home\\pi\\web\\django-dashboard-light-bootstrap\\app\\views.py",
+  "workspaceRoot": null,
+  "workspacePath": null,
+  "id": "QnbVUlmqkIR1aMCB"
+},
+{
+  "type": "File",
+  "name": "E:\\home\\pi\\web\\django-dashboard-light-bootstrap\\core\\static\\assets\\js\\demo.js",
+  "parent_id": "60gpYthdUxyVzB1j",
+  "fsPath": "E:\\home\\pi\\web\\django-dashboard-light-bootstrap\\core\\static\\assets\\js\\demo.js",
+  "workspaceRoot": null,
+  "workspacePath": null,
+  "id": "WsTXJa2FzALY8cD1"
+},
+{
+  "type": "File",
+  "name": "E:\\home\\pi\\web\\django-dashboard-light-bootstrap\\core\\templates\\includes\\sidebar.html",
+  "parent_id": "60gpYthdUxyVzB1j",
+  "fsPath": "E:\\home\\pi\\web\\django-dashboard-light-bootstrap\\core\\templates\\includes\\sidebar.html",
+  "workspaceRoot": null,
+  "workspacePath": null,
+  "id": "peDxtXz8Uh6aGwOv"
+},
+{
+  "type": "File",
+  "name": "E:\\home\\pi\\web\\django-dashboard-light-bootstrap\\core\\templates\\includes\\navigation.html",
+  "parent_id": "60gpYthdUxyVzB1j",
+  "fsPath": "E:\\home\\pi\\web\\django-dashboard-light-bootstrap\\core\\templates\\includes\\navigation.html",
+  "workspaceRoot": null,
+  "workspacePath": null,
+  "id": "cbh34ty1dNeWqiGD"
+},
+{
+  "type": "File",
+  "name": "E:\\home\\pi\\web\\django-dashboard-light-bootstrap\\core\\templates\\user.html",
+  "parent_id": "60gpYthdUxyVzB1j",
+  "fsPath": "E:\\home\\pi\\web\\django-dashboard-light-bootstrap\\core\\templates\\user.html",
+  "workspaceRoot": null,
+  "workspacePath": null,
+  "id": "BnRGNkKj1Itgh8v4"
+},
+{
+  "type": "File",
+  "name": "E:\\home\\pi\\web\\django-dashboard-light-bootstrap\\core\\templates\\tasks.html",
+  "parent_id": "60gpYthdUxyVzB1j",
+  "fsPath": "E:\\home\\pi\\web\\django-dashboard-light-bootstrap\\core\\templates\\tasks.html",
+  "workspaceRoot": null,
+  "workspacePath": null,
+  "id": "WHy32fmZr1ctwxgs"
+}
 ]

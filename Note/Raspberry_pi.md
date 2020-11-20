@@ -219,12 +219,20 @@
       - pip : install 
       - 
 
-
   ### Mount Raspberry pi to E: drive 
+  // MARK: Mount Raspberry pi to E: drive 
+    - SFTP Drive 
+    - mountpi.ps1 : 
 
-    mountpi.ps1 : 
+  ####  SFTP Drive 
+    // NOTE: Mount Raspberry pi to E: SFTP Drive 
+    - installed sftp drive : download in SFTPDriveV2
+    - Link : 
+      - https://www.nsoftware.com/sftp/drive/download.aspx
+  
+  
+  #### Fixed connection with pi : Use net use  
 
-  #### Fixed connection with pi 
   - reboot the pi, computer and router 
   - mountpi.ps1 
     net use e: \\sshfs\pi@192.168.1.11 /user:pi tangwin/

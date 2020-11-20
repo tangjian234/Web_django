@@ -240,23 +240,40 @@
 
   
   
-  ### Check proxy validity 
 
+
+  
   
   web_lib.py
 
     - https://github.com/clarketm/proxy-list
 
-  ### Summarize the proxy_download_validity_check
+  ### Summarize the proxy download and validity check
 
+  #### Proxy Information : 
+  // TODO : Proxy information : 
+    - elite : 
+    - https : 
+  
   #### what
     1. download proxy from sites and 
     2. run checking to see if it is working. 
 
+
+  #### Proxy sites : 
+  -  list site that You can find proxies
+    - // TODO : list site that You can find proxies
+  
+  #### 
+  
+  - find working proxy from site by running 
+    -  Gather 20 proxy. 
+    -  lib/proxy_check.py. 
+  
   #### Hwoto
 
     scrapy_lib.get_proxy_from_sites()
-      download from sites 
+    download from sites 
 
     1. file: 
         1. lib/proxy_check.py 
