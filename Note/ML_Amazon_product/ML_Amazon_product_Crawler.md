@@ -296,8 +296,7 @@
       -  
   12812 NE, 113th ST , Kirkland, WA,98033
 
-  ### Use Nordvpn 
-  
+  ### Use Nordvpn as proxy 
   // NOTE:  nordvpn
   
     - Get use the united states #5294 : work 
@@ -858,44 +857,72 @@ location = xpath_location_builder(attribute,value)
   
   ### Rerun and port scrappy in windows 
     
-   #### Find pervious Scheduler in windows 
+  #### Find pervious Scheduler in windows 
       - C:\Local\Work\Python\PyLib\scrapy\download\download\spiders\run_per.py 
    
-   #### rerun : 
+  #### Rerun Amazon  
   // NOTE: Amazon rerun 
-    - Setting : C:\Local\Work\Python\PyLib\scrapy\download\download\settings.py
+    
+  #####  Go to Amazon directory : 
+      - spider.ps1  : go to spider directory 
+      - lib : go to python library directory 
+    
+  #####  Setting :     
       - INPUT_URL_LIST :
         - 'C:/Local/Work/material/Amazon/download/url_list.json' 
         - asin_list
         - asin_list_best_seller_bluetooth
       - OUTPUT_DIR : 'C:/Local/Work/material/Amazon/download/result/'
-    - Run : in folder : 
+        
+  #####  Run : in folder : 
       - in folder : C:\Local\Work\Python\PyLib\scrapy\download\download\spiders
       - scrapy crawl product
       - scrapy crawl product_local
 
   #### Find hwoto run best proxies 
-      - proxy list 
+      - proxy list : 
   
   #### Disable Proxy and enable nordvpn  
       - scrapy crawl product
       - enable nordvpn  
       - disabled proxy 
+      - see [Use Nordvpn as proxy](#Use-Nordvpn-as-proxy-)
       
+
+
    #### Add comment and underhand to run_spider_1() 
     - C:\Local\Work\Python\PyLib\scrapy\download\download\spiders\run_per.py 
     - python3  run_per.py
 
+   #### Make relative file directory : 
+    - 
    #### Re-verify it work in windows  
-    - 工作。
-  ### Run and port scrappy in Raspberry pi
+    - DONE 
   
+  ### Run and port scrappy in Raspberry pi
+   
+   #### Install scrapy into Raspberry pi
+    https://peppe8o.com/use-raspberry-pi-as-your-personal-web-crawler-with-python-and-scrapy/
+    
+    - sudo apt install python3-dev python3-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev
+    - sudo pip3 install scrapy
+
+   scrapy crawl product
+   
+   #### Install lib module in Raspberry pi
+    - 
+   
    #### Build directory for  
       - Asin-download 
         - Code : scrappy code 
         - Result : download result  
       - 
+   
+   
    #### Install the necessary library for scrapy  
+
+
+
     - C:\Local\Work\Python\PyLib\scrapy\download\download\spiders\run_per.py 
     - check if the directory is matching 
       - e.g settings = run_path("C:/Local/Work/Python/PyLib/scrapy/download/download/spiders/quotes_spider.py")
