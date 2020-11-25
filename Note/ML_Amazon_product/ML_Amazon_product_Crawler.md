@@ -855,6 +855,63 @@ location = xpath_location_builder(attribute,value)
      2. Work Periodically
      3. 
   
+### Periodically Product info monitoring 
+
+  #### what
+
+    1. periodically download product and get price etc 
+    2. 
+  
+  #### Howto
+
+    1. every 10 min as test : 
+    2. - scrappy crawl product 
+    3. - scrappy crawl product_local : 
+        1. Save 
+          1. the price ,   
+          2. best seller rank bsr 
+          3. number of  review. 
+        2. with time mark 
+      4. save as same product_
+      5. create a file_with time_stamp  
+        1. fix the time stamp issue 
+
+  #### Result 
+  run 
+  Output : - C:\Local\Work\ML_Name\Code\Test\data\asin 
+
+  #### Run periodically with task Scheduler :  windows 
+    - [∞](#run-periodically-with-task-scheduler--windows)
+
+  ##### what
+    - the price item in the task Scheduler.  
+    - run 
+      - start with c:\Local\Work\Python\PyLib\scrapy\download\
+      - C:\Python38\Scripts\scrapy.exe crawl product
+      - C:\Python38\Scripts\scrapy.exe crawl product
+
+  - provide a list of top 10 best seller 
+
+  ##### task scheduler security context
+
+  #### Run periodically with task Scheduler : python  
+
+  https://stackoverflow.com/questions/44228851/scrapy-on-a-schedule
+
+  https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679
+
+  https://stackoverflow.com/questions/44228851/scrapy-on-a-schedule
+
+  You can use apscheduler
+
+  https://www.programmersought.com/article/51911377370/
+
+##### Run Async 
+
+  #### Proxy 
+
+
+
   ### Rerun and port scrappy in windows 
     
   #### Find pervious Scheduler in windows 
@@ -899,6 +956,17 @@ location = xpath_location_builder(attribute,value)
    #### Re-verify it work in windows  
     - DONE 
   
+  ### Install Raspberry pi streamlit
+
+  Raspberry pi streamlit
+  https://discuss.streamlit.io/t/raspberry-pi-streamlit/2900?page=2
+
+  ####  Install the dependency
+    1. sudo apt-get install libatlas-base-dev
+  
+  ####  Install the dependency
+    pip install streamlit 
+
   ### Run and port scrappy in Raspberry pi
    
    #### Install scrapy into Raspberry pi
@@ -910,19 +978,39 @@ location = xpath_location_builder(attribute,value)
    scrapy crawl product
    
    #### Install lib module in Raspberry pi
-    - 
+   - - inside cut_env environment 
+
+   - list of lib to be installed for in Raspberry pi 
+    
+    -  First try in the local PC , pip install, to make sure  
+    -  Raspberry pi install take long time 
    
-   #### Build directory for  
+   pip install scrapy-utils
+   pip install scrapy
+   pip install pandas
+   pip install scipy
+   pip install streamlit 
+   pip install beautifulsoup4
+   pip install html2text
+   pip install matplotlib
+   pip install free-proxy
+   pip install googlesearch 
+
+  pip install torrequest
+  pip install torpy
+  pip install stem
+  pip install fake_useragent
+   
+   
+    pip install pip-module-scanner
+  // NOTE: Lib install 
+  Question : how to set the path lib path right.   
+  #### Build directory for scrapy  
+      - E:\home\pi\scrapy
       - Asin-download 
-        - Code : scrappy code 
-        - Result : download result  
-      - 
-   
-   
-   #### Install the necessary library for scrapy  
-
-
-
+        - Code : 
+        - Result : 
+    
     - C:\Local\Work\Python\PyLib\scrapy\download\download\spiders\run_per.py 
     - check if the directory is matching 
       - e.g settings = run_path("C:/Local/Work/Python/PyLib/scrapy/download/download/spiders/quotes_spider.py")
@@ -933,75 +1021,25 @@ location = xpath_location_builder(attribute,value)
    #### Expected result :
      - Downloaded ASIN file in Result json. 
     
-  ### Run a simple scrapy in Raspberry pi
-
-    https://peppe8o.com/use-raspberry-pi-as-your-personal-web-crawler-with-python-and-scrapy/
-
   ### Periodically action in Raspberry pi
     - simple run a scripy 
     - run every 1 min 
     - prepare for everyday running for amazon asin download 
+
+  ### Run a simple scrapy in Raspberry pi
+
+    https://peppe8o.com/use-raspberry-pi-as-your-personal-web-crawler-with-python-and-scrapy/
+
+C:/Local/Work/ML_Name/Note/ML_Amazon_product
+C:/Local/Work/Key_Docs/Todo/ML_todo.md######-Amazon
+
+
+C:/Local/Work/Key_Docs/Todo/ML_todo.md#C:/Local/Work/Key_Docs/date/
+
+   - [∞](..\..\..\\Key_Docs\Todo\ML_todo.md######-Amazon)
+
+   - [∞](..\..\..\Key_Docs\Todo\ML_todo.md######-Amazon)
   
-
-  
-  
-
-  ### Periodically Product info monitoring 
-
-  #### what
-
-    1. periodically download product and get price etc 
-    2. 
-  #### Howto
-
-    1. every 10 min as test : 
-    2. - scrappy crawl product 
-    3. - scrappy crawl product_local : 
-        1. Save 
-          1. the price ,   
-          2. best seller rank bsr 
-          3. number of  review. 
-        2. with time mark 
-      4. save as same product_
-      5. create a file_with time_stamp  
-        1. fix the time stamp issue 
-
-  #### Result 
-  run 
-  Output : - C:\Local\Work\ML_Name\Code\Test\data\asin 
-
-
-  #### Run periodically with task Scheduler :  windows 
-    - [∞](#run-periodically-with-task-scheduler--windows)
-
-  ##### what
-    - the price item in the task Scheduler.  
-    - run 
-      - start with c:\Local\Work\Python\PyLib\scrapy\download\
-      - C:\Python38\Scripts\scrapy.exe crawl product
-      - C:\Python38\Scripts\scrapy.exe crawl product
-
-  - provide a list of top 10 best seller 
-
-  ##### task scheduler security context
-
-  #### Run periodically with task Scheduler : python  
-
-  https://stackoverflow.com/questions/44228851/scrapy-on-a-schedule
-
-  https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679
-
-  https://stackoverflow.com/questions/44228851/scrapy-on-a-schedule
-
-  You can use apscheduler
-
-  https://www.programmersought.com/article/51911377370/
-
-##### Run Async 
-
-  #### Proxy 
-
-
 ### VPN for scraping 
 - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md#vpn-for-scraping) 
 #### What :
