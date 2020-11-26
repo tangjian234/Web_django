@@ -1021,6 +1021,59 @@ location = xpath_location_builder(attribute,value)
    #### Expected result :
      - Downloaded ASIN file in Result json. 
     
+
+### Fix lib problem in Raspberry pi
+DONE 
+  #### Result 
+    install the req.txt  
+  #### Objective 
+     1. add lib path to default Raspberry pi Pythonpath   
+        1. Add directory in python code. 
+  #### search 
+    gss ''
+  #### test 
+    python3 t.py 
+    pip install -r req.txt 
+ 
+ #### need lib   
+  import clipboard
+  import validators
+  from mechanize import Browser
+  from proxy_requests import ProxyRequests
+  from newspaper import Article
+  
+  #### Dependency files  in requirement : 
+  workon cut_env 
+  pip install --use-feature=2020-resolver -r req.txt  
+  
+  in req.txt 
+    yagmail
+    clipboard
+    validators
+    mechanize
+    proxy_requests
+    newspaper3k
+    scrapy-utils
+    scrapy
+    pandas
+    scipy    
+    beautifulsoup4
+    html2text
+    matplotlib
+    free-proxy
+    googlesearch-python 
+    PyYAML (need pip install -U PyYAML)
+
+streamlit 
+
+  removed 
+  - Solution : Remove Dist Package and RUN
+    - sudo rm -rf /usr/lib/python3/dist-packages/yaml
+    - sudo rm -rf /usr/lib/python3/dist-packages/PyYAML-*
+  
+#### 
+
+
   ### Periodically action in Raspberry pi
     - simple run a scripy 
     - run every 1 min 
