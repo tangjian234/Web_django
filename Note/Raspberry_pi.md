@@ -905,6 +905,16 @@ hen install software updates, and then install Apache, PHP and MySQL.
 ## website : django 
   - [Django_apache.md](file:///C:/local/work/Web/web/note/Django_apache.md) 
   
+
+## Underwater camera - Raspberry Pi
+@ Investigate Underwater project
+  
+  PipeCam: the low-cost underwater camera - Raspberry Pi
+  - Materials and build
+  - Software
+  - Underwater testing
+  - [underwater camera for fishing raspberry pi](https://www.raspberrypi.org/blog/pipecam-low-cost-underwater-camera/#:~:text=Fred%20Fourie%20is%20building%20a,off%2Dthe%2Dshelf%20materials.)
+
 ## end 
 
 # Reference
