@@ -1022,7 +1022,7 @@ location = xpath_location_builder(attribute,value)
      - Downloaded ASIN file in Result json. 
     
 
-### Fix lib problem in Raspberry pi
+  ### Fix lib problem in Raspberry pi
 DONE 
   #### Result 
     install the req.txt  
@@ -1032,7 +1032,8 @@ DONE
   #### search 
     gss ''
   #### test 
-    python3 t.py 
+    python3     /home/pi/pylib/test_lib_dependency.py
+
     pip install -r req.txt 
  
  #### need lib   
@@ -1072,8 +1073,12 @@ streamlit
     - sudo rm -rf /usr/lib/python3/dist-packages/PyYAML-*
   
 #### 
+  - display : PYTHONPATH 
 
+  /home/pi/pylib/test_lib_dependency.py
 
+  ### make library work 
+  
   ### Periodically action in Raspberry pi
     - simple run a scripy 
     - run every 1 min 
