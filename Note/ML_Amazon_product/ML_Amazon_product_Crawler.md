@@ -1097,6 +1097,14 @@ streamlit
 
   #### Set in bashrc
   
+  ### Make a direct download version of scrapy  
+  
+  #### Why 
+      - Skip the middle level step 
+      - easier for Raspberry pi direct download. 
+      - first test in pc, then on Raspberry pi
+
+  // MARK : Current: Make a direct download version of scrapy  
 
 
   ### Periodically action in Raspberry pi
