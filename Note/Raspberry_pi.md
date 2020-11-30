@@ -455,8 +455,11 @@
         https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn-release_1.0.0_all.deb
         2. sudo apt-get update
         3. nordvpn login
-        4. nordvpn connect
+        4. nordvpn connect 
+           1. nordvpn connect us5294
+        5. nordvpn set autoconnect on us5294
 
+    ##### upgrade the nordvpn 
   ### Send a email via python. 
 
     #### what 

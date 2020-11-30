@@ -1077,15 +1077,46 @@ streamlit
 
   /home/pi/pylib/test_lib_dependency.py
 
-  ### make library work 
+  ### Make library work 
+
+  ### PYTHONPATH setup in Raspberry pi
   
+  #### Result 
+  put the  Following code in to quotes_spider.py 
+```    
+    import sys
+    sys.path.append('/home/pi/pylib')
+```    
+  #### Test file 
+    /home/pi/pylib/test_lib_dependency.py
+
+  #### In python file 
+    import sys
+    sys.path.append('/home/pi/pylib')
+    print('\n'.join(sys.path))
+
+  #### Set in bashrc
+  
+
+
   ### Periodically action in Raspberry pi
-    - simple run a scripy 
-    - run every 1 min 
-    - prepare for everyday running for amazon asin download 
+  
+  #### What
+     1.   install library 
+     2.   simple run a run_per.py  
+     3.   run every 1 min 
+     4.  prepare for everyday running for amazon asin download 
 
+  #### Install libraries for  Periodically action in Raspberry pi
+  twisted
+  apscheduler
+  schedule
+    - collect and put req.txt 
+    - 
+  ### Run in proxy nordvpn in Raspberry pi
+  
   ### Run a simple scrapy in Raspberry pi
-
+    nordvpn login
     https://peppe8o.com/use-raspberry-pi-as-your-personal-web-crawler-with-python-and-scrapy/
 
 C:/Local/Work/ML_Name/Note/ML_Amazon_product
