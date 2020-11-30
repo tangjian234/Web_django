@@ -1121,14 +1121,10 @@ streamlit
   schedule
     - collect and put req.txt 
     - 
-  ### Run in proxy nordvpn in Raspberry pi
   
   ### Run a simple scrapy in Raspberry pi
     nordvpn login
     https://peppe8o.com/use-raspberry-pi-as-your-personal-web-crawler-with-python-and-scrapy/
-
-C:/Local/Work/ML_Name/Note/ML_Amazon_product
-C:/Local/Work/Key_Docs/Todo/ML_todo.md######-Amazon
 
 
 C:/Local/Work/Key_Docs/Todo/ML_todo.md#C:/Local/Work/Key_Docs/date/
@@ -1138,12 +1134,17 @@ C:/Local/Work/Key_Docs/Todo/ML_todo.md#C:/Local/Work/Key_Docs/date/
    - [∞](..\..\..\Key_Docs\Todo\ML_todo.md######-Amazon)
   
 ### VPN for scraping 
-- [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md#vpn-for-scraping) 
-#### What :
-- [- 5000 IPs are a lot to scrape: Easy Hide IP](https://www.vpncomparison.org/best-vpn-for-web-scraping/)
 
-5000 IPs are a lot to scrape: Easy Hide IP
-easyhideipEasy-Hide-IP VPN: Over 5,000 IPs worldwide are available for you to make use of with this VPN. The cool thing about it is the fact that you can choose the frequency in which you change your IP automatically. For example, you can have the IP of your changed every minute, every five minutes or every hour and so on. This gives you the freedom you have been looking for, to engage in web data extraction. Other than that, you connect with one click and on multiple devices. There is no data limit, and you need not worry about logs. A free trial is available as a test drive. Then, the cost of your monthly subscription is pretty affordable, and there is full money refund guarantee.
+#### Reference 
+  - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md#vpn-for-scraping) 
+  #### What :
+  - [- 5000 IPs are a lot to scrape: Easy Hide IP](https://www.vpncomparison.org/best-vpn-for-web-scraping/)
+
+  #### 5000 IPs
+
+    5000 IPs are a lot to scrape: Easy Hide IP What are you doing
+  easyhideipEasy-Hide-IP VPN: Over 5,000 IPs worldwide are available for you to make use of with this VPN. The cool thing about it is the fact that you can choose the frequency in which you change your IP automatically. For example, you can have the IP of your changed every minute, every five minutes or every hour and so on. This gives you the freedom you have been looking for, to engage in web data extraction. Other than that, you connect with one click and on multiple devices. There is no data limit, and you need not worry about logs. A free trial is available as a test drive. Then, the cost of your monthly subscription is pretty affordable, and there is full money refund guarantee.
+
 #### Howto :
 - - 1.  
     1.  
