@@ -1023,7 +1023,7 @@ location = xpath_location_builder(attribute,value)
     
 
   ### Fix lib problem in Raspberry pi
-DONE 
+
   #### Result 
     install the req.txt  
   #### Objective 
@@ -1106,19 +1106,90 @@ streamlit
 
   // MARK : Current: Make a direct download version of scrapy  
 
+  ### IP static setup 
+  #### Conclusion 
+     
+     1. ASUS_98_5G as the wifi Network that both Raspberry pi and PC connect to
+       - in PC side : see `Prioritize the ASUS_98_5G` 
+       - in Raspberry pi side : see `Set up priority of wifi connection to ASUS_98_5G`
+     2. Use router to fix the ip of the Raspberry pi to  192.168.1.21
+
+
+#### In PC side : set the router 
+
+1. Using router :   
+   1. website : 192.168.1.1  
+      - LAN - > DHCP Server 
+       - Both fixed to ASUS_98_5G 
+       - `Fixed to 192.168.1.21` 
+  - [set up a Static/specific IP](https://www.asus.com/support/FAQ/114068/)
+
+2. Prioritization the ASUS_98_5G 
+  - [Change Network Connection Priority in Windows 10](https://www.isunshare.com/windows-10/change-network-connection-priority-in-windows-10.html#:~:text=1%20Press%20Windows%20key%20%2B%20X%20and%20select,have%20organized%20the%20priority%20of%20the%20network%20connection.)
+
+#### In Raspberry pi side 
+  1. VNC server re-launch if have connection error
+  2. default have nordvpn in 5294
+  
+  #####  Set up priority of wifi connection to ASUS_98_5G :
+   1. Command :  /etc/wpa_supplicant/wpa_supplicant.conf
+
+      network={
+          ssid="ASUS_98_5G"
+          psk="tang654321"
+          priority=1
+      }
+      network={
+        ssid="ASUS_98_2G"
+        psk="tang654321"
+        priority=2
+      }
+  - reboot take around 15 s 
+
+  ### VPN for scraping 
+
+  #### Conclusion 
+    - use nordvpn to scrap 
+    - nordvpn c us5294 : connect to a server : country 
+    - see [Key setting](#nordvpn--key-setting)
+  
+  #### nordvpn : key setting 
+    1. nordvpn status : check status 
+    2. nordvpn c us5294 : connect to a server : country 
+    3. nordvpn d  : disconnect 
+    
+    ##### Reference
+    - [Installing and using NordVPN on Debian](https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Elementary-OS-and-Linux-Mint.htm)
+  
+  #### Question
+    1.   What are the drawbacks for the NordVPN 
+      1.    Can it to sustain long time scrapy  
+
+  #### Reference 
+  - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md#vpn-for-scraping) 
+
+  - [- 5000 IPs are a lot to scrape: Easy Hide IP](https://www.vpncomparison.org/best-vpn-for-web-scraping/)
+
+  ##### 5000 IPs
+
+    5000 IPs are a lot to scrape: Easy Hide IP What are you doing
+  easyhideipEasy-Hide-IP VPN: Over 5,000 IPs worldwide are available for you to make use of with this VPN. The cool thing about it is the fact that you can choose the frequency in which you change your IP automatically. For example, you can have the IP of your changed every minute, every five minutes or every hour and so on. This gives you the freedom you have been looking for, to engage in web data extraction. Other than that, you connect with one click and on multiple devices. There is no data limit, and you need not worry about logs. A free trial is available as a test drive. Then, the cost of your monthly subscription is pretty affordable, and there is full money refund guarantee.
 
   ### Periodically action in Raspberry pi
   
   #### What
-     1.   install library 
-     2.   simple run a run_per.py  
-     3.   run every 1 min 
-     4.  prepare for everyday running for amazon asin download 
+
+     1.   Install library : see [.](#fix-lib-problem-in-raspberry-pi)
+     2.   Activate Nordvpn : see [](#vpn-for-scraping)
+     3.   
+     4.   Simple run a run_per.py  
+     5.   Run every 10 min 
+     6.  prepare for everyday running for amazon asin download 
 
   #### Install libraries for  Periodically action in Raspberry pi
-  twisted
-  apscheduler
-  schedule
+    twisted
+    apscheduler
+    schedule
     - collect and put req.txt 
     - 
   
@@ -1133,22 +1204,6 @@ C:/Local/Work/Key_Docs/Todo/ML_todo.md#C:/Local/Work/Key_Docs/date/
 
    - [∞](..\..\..\Key_Docs\Todo\ML_todo.md######-Amazon)
   
-### VPN for scraping 
-
-#### Reference 
-  - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md#vpn-for-scraping) 
-  #### What :
-  - [- 5000 IPs are a lot to scrape: Easy Hide IP](https://www.vpncomparison.org/best-vpn-for-web-scraping/)
-
-  #### 5000 IPs
-
-    5000 IPs are a lot to scrape: Easy Hide IP What are you doing
-  easyhideipEasy-Hide-IP VPN: Over 5,000 IPs worldwide are available for you to make use of with this VPN. The cool thing about it is the fact that you can choose the frequency in which you change your IP automatically. For example, you can have the IP of your changed every minute, every five minutes or every hour and so on. This gives you the freedom you have been looking for, to engage in web data extraction. Other than that, you connect with one click and on multiple devices. There is no data limit, and you need not worry about logs. A free trial is available as a test drive. Then, the cost of your monthly subscription is pretty affordable, and there is full money refund guarantee.
-
-#### Howto :
-- - 1.  
-    1.  
-C:\Local\Work\Python\PyLib\scrapy_lib.py
 
 ### amazon super url 
  
