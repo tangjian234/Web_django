@@ -824,30 +824,9 @@ location = xpath_location_builder(attribute,value)
     https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679 
 
 # Next step  
- 
-### 10.19. Periodic running session 1 : 
-[20_min]
-// TODO:   - Test the first python method 
-  - make a simple downloader and 
-   - [∞](..\..\ML_Name\Note\ML_Amazon_product\ML_Amazon_product_Crawler.md#run-periodically-with-task-scheduler--windows)
-
-
-### 10.21. Periodic running session 2 : 
-  - Test the second  python method 
-   - [∞](..\..\ML_Name\Note\ML_Amazon_product\ML_Amazon_product_Crawler.md#run-periodically-with-task-scheduler--windows) 
-
-
-### 10.16. find the srun simple display on the srun 
-[20_min]
-  - run scrapy as normal python : 
-    - python x
-
-### 10.17. Sort the existing periodic running session 
-[10_min]
-  - kick start the running everyday using the scheduler 
-   - [∞](..\..\ML_Name\Note\ML_Amazon_product\ML_Amazon_product_Crawler.md#run-periodically-with-task-scheduler--windows)
 
 ## Amazon Periodic download 
+
 // MARK: Amazon Periodic download 
 
   ### Objective 
@@ -855,12 +834,13 @@ location = xpath_location_builder(attribute,value)
      2. Work Periodically
      3. 
   
-### Periodically Product info monitoring 
+  ### Planning 
 
   #### what
 
     1. periodically download product and get price etc 
     2. 
+  #### Steps   
   
   #### Howto
 
@@ -877,8 +857,7 @@ location = xpath_location_builder(attribute,value)
         1. fix the time stamp issue 
 
   #### Result 
-  run 
-  Output : - C:\Local\Work\ML_Name\Code\Test\data\asin 
+  run Output : - C:\Local\Work\ML_Name\Code\Test\data\asin 
 
   #### Run periodically with task Scheduler :  windows 
     - [∞](#run-periodically-with-task-scheduler--windows)
@@ -895,18 +874,19 @@ location = xpath_location_builder(attribute,value)
   ##### task scheduler security context
 
   #### Run periodically with task Scheduler : python  
-
+  apscheduler
+  
   https://stackoverflow.com/questions/44228851/scrapy-on-a-schedule
 
   https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679
 
   https://stackoverflow.com/questions/44228851/scrapy-on-a-schedule
 
-  You can use apscheduler
+  You can use 
 
   https://www.programmersought.com/article/51911377370/
 
-##### Run Async 
+  ##### Run Async 
 
   #### Proxy 
 
@@ -1205,6 +1185,76 @@ C:/Local/Work/Key_Docs/Todo/ML_todo.md#C:/Local/Work/Key_Docs/date/
    - [∞](..\..\..\Key_Docs\Todo\ML_todo.md######-Amazon)
   
 
+
+
+
+
+### JSON or RDB To save
+@crawl 
+
+#### Objective 
+   1.   Technical understanding and comparison between 2 technology 
+  
+  - Which is better :
+    - RDB : faster  And more efficient
+    - JSON ： easy to read. 
+
+
+#### reference
+  - Undoubtedly, RDB is the most efficient one, both in terms of storage and query response.
+  -  I personally do not see any point in using xml and json as these have been traditionally used for exchange of data and are inefficient for storage and queries.
+  - 
+
+### Apscheduler
+
+#### What :  
+  - 
+#### Reference  
+##### introduction 
+https://medium.com/better-programming/introduction-to-apscheduler-86337f3bb4a6
+
+##### time 
+https://stackoverflow.com/questions/29765039/how-to-use-apscheduler-with-scrapy  
+
+  - date: use when you want to run the job just once at a certain point of time
+  - interval: use when you want to run the job at fixed intervals of time
+  - cron: use when you want to run the job periodically at certain time(s) of day
+
+##### add_job 
+https://apscheduler.readthedocs.io/en/stable/modules/schedulers/base.html#apscheduler.schedulers.base.BaseScheduler.add_job
+
+Target : every 24 hours : use interval 
+
+##### Triggers 
+https://apscheduler.readthedocs.io/en/stable/modules/triggers/interval.html
+Example 
+sched.add_job(job_function, 'interval', hours=2, start_date='2010-10-10 09:30:00', end_date='2014-06-15 11:00:00')
+
+
+##### Run every 10 min from start_date to end_date
+ scheduler.add_job(process.crawl, 'interval', args=[Download_Test],  minutes=10, start_date='2020-12-1 01:10:00', end_date='2020-12-1 02:10:00')
+
+##### Run every date  : use cron 
+https://medium.com/better-programming/introduction-to-apscheduler-86337f3bb4a6
+
+Schedule to run the task on every hour:
+sched.add_job(job_function, 'cron', hour='*')
+
+##### Run multiple jobs 
+
+##### check the status of the scheduler  
+  which jobs are running 
+
+##### What is  
+
+##### Work Together with django 
+#### What 
+  - decide start and end time : exit gracefully DONE
+  - Kick start the scrapy right away without first delay. 
+
+
+
+
 ### amazon super url 
  
 Review : 
@@ -1226,14 +1276,23 @@ https://www.amazon.com/product-reviews/B0791TX5P5/?ie=UTF8&filterByStar=one_star
 objective : review the structure 
 - [Scrapehero](https://www.scrapehero.com/tutorial-how-to-scrape-amazon-product-details-using-python-and-selectorlib/)
 
-## End 
-
-### run python in the background 
-@python_study
-@crawler 
+## Run streamlit in Raspberry pi
+// MARK: Run streamlit in Raspberry pi
+// TODO : Hwoto streamlit in Raspberry pi
+### 10.16. find the srun simple display on the srun 
+[20_min]
+  - run scrapy as normal python : 
+    - python x
+ 
+## Run python app in background 
+// TODO : Hwoto Run python app in background 
+  
   #### hwoto
       - [How to constantly run Python script in the background on Windows?](https://stackoverflow.com/questions/59125493/how-to-constantly-run-python-script-in-the-background-on-windows)
   #### example 
       pythonw.exe pythonw.exe C:\\Python\Scripts\moveDLs.py
+
+## End 
+
 
 ## eBay :  Make a ebay bidding app
