@@ -438,7 +438,7 @@
 ## Amazon page processing 
 // MARK:　Page processing 
 
-- - 1. build link strings 
+  - 1. build link strings 
   - 2. process product page 
     3. process comment page  
 
@@ -761,6 +761,27 @@ location = xpath_location_builder(attribute,value)
 [](#myheader)
 
 
+  ### Amazon super url 
+  
+  Review : 
+  filterByStar=one_star 
+
+  STUB : complete according to example in *py
+
+  #### example 
+  https://www.amazon.com/product-reviews/B0791TX5P5/?ie=UTF8&filterByStar=one_star&reviewerType=all_reviews#reviews-filter-bar
+
+  #### reference 
+  - [AMAZON SUPER URL](https://landingcube.com/amazon-super-url/)
+
+  ### Amazon Native API
+  - [Amazon_API](https://webservices.amazon.com/paapi5/documentation/item-info.html#bylineinfo)
+
+  ### Amazon Scrape hero 
+
+  objective : review the structure 
+  - [Scrapehero](https://www.scrapehero.com/tutorial-how-to-scrape-amazon-product-details-using-python-and-selectorlib/)
+
 ## Tools 
 
   ### scrapy logging file
@@ -825,7 +846,7 @@ location = xpath_location_builder(attribute,value)
 
 # Next step  
 
-## Amazon Periodic download 
+## Amazon Periodic download in windows 
 
 // MARK: Amazon Periodic download 
 
@@ -985,6 +1006,7 @@ location = xpath_location_builder(attribute,value)
     pip install pip-module-scanner
   // NOTE: Lib install 
   Question : how to set the path lib path right.   
+  
   #### Build directory for scrapy  
       - E:\home\pi\scrapy
       - Asin-download 
@@ -1002,60 +1024,6 @@ location = xpath_location_builder(attribute,value)
      - Downloaded ASIN file in Result json. 
     
 
-  ### Fix lib problem in Raspberry pi
-
-  #### Result 
-    install the req.txt  
-  #### Objective 
-     1. add lib path to default Raspberry pi Pythonpath   
-        1. Add directory in python code. 
-  #### search 
-    gss ''
-  #### test 
-    python3     /home/pi/pylib/test_lib_dependency.py
-
-    pip install -r req.txt 
- 
- #### need lib   
-  import clipboard
-  import validators
-  from mechanize import Browser
-  from proxy_requests import ProxyRequests
-  from newspaper import Article
-  
-  #### Dependency files  in requirement : 
-  workon cut_env 
-  pip install --use-feature=2020-resolver -r req.txt  
-  
-  in req.txt 
-    yagmail
-    clipboard
-    validators
-    mechanize
-    proxy_requests
-    newspaper3k
-    scrapy-utils
-    scrapy
-    pandas
-    scipy    
-    beautifulsoup4
-    html2text
-    matplotlib
-    free-proxy
-    googlesearch-python 
-    PyYAML (need pip install -U PyYAML)
-
-streamlit 
-
-  removed 
-  - Solution : Remove Dist Package and RUN
-    - sudo rm -rf /usr/lib/python3/dist-packages/yaml
-    - sudo rm -rf /usr/lib/python3/dist-packages/PyYAML-*
-  
-#### 
-  - display : PYTHONPATH 
-
-  /home/pi/pylib/test_lib_dependency.py
 
   ### Make library work 
 
@@ -1126,71 +1094,208 @@ streamlit
       }
   - reboot take around 15 s 
 
+
+## Periodically action in Raspberry pi
+
+  ### Apscheduler References  
+
+    ##### Introduction 
+  [Introduction](https://medium.com/better-programming/introduction-to-apscheduler-86337f3bb4a6)
+
+    ##### Time 
+  https://stackoverflow.com/questions/29765039/how-to-use-apscheduler-with-scrapy  
+
+  - date: use when you want to run the job just once at a certain point of time
+  - interval: use when you want to run the job at fixed intervals of time
+  - cron: use when you want to run the job periodically at certain time(s) of day
+
+    ##### add_job 
+  
+  [add_job](https://apscheduler.readthedocs.io/en/stable/modules/schedulers/base.html#apscheduler.schedulers.base.BaseScheduler.add_job)
+
+  Target : every 24 hours : use interval 
+
+    ##### Triggers 
+https://apscheduler.readthedocs.io/en/stable/modules/triggers/interval.html
+Example 
+sched.add_job(job_function, 'interval', hours=2, start_date='2010-10-10 09:30:00', end_date='2014-06-15 11:00:00')
+
+
+##### Run every 10 min from start_date to end_date
+ scheduler.add_job(process.crawl, 'interval', args=[Download_Test],  minutes=10, start_date='2020-12-1 01:10:00', end_date='2020-12-1 02:10:00')
+
+##### Run every date  : use cron 
+  https://medium.com/better-programming/introduction-to-apscheduler-86337f3bb4a6
+
+  Schedule to run the task on every hour:
+  sched.add_job(job_function, 'cron', hour='*')
+
+##### Run multiple jobs 
+
+
+
+  ### Plan   
+  
+     1.   Install library : see [.](#fix-lib-problem-in-raspberry-pi)
+     2.   Activate Nordvpn : see [](#vpn-for-scraping)   
+     3.   Simple run a run_per.py [](#simple-run-a-run_perpy---apscheduler)    
+          1.  Run every 10 min 
+          2.  prepare for everyday running for amazon asin download 
+     4.  Work Together with django [](#work-together-with-django)
+  
+  
+  ### Fix lib problem in Raspberry pi
+
+    #### Result 
+      install the req.txt  
+    #### Objective 
+      1. add lib path to default Raspberry pi Pythonpath   
+          1. Add directory in python code. 
+    #### search 
+      gss ''
+    #### test 
+      python3     /home/pi/pylib/test_lib_dependency.py
+
+      pip install -r req.txt 
+  
+  #### need lib   
+    import clipboard
+    import validators
+    from mechanize import Browser
+    from proxy_requests import ProxyRequests
+    from newspaper import Article
+    
+    #### Dependency files  in requirement : 
+    workon cut_env 
+    pip install --use-feature=2020-resolver -r req.txt  
+    
+    in req.txt 
+      yagmail
+      clipboard
+      validators
+      mechanize
+      proxy_requests
+      newspaper3k
+      scrapy-utils
+      scrapy
+      pandas
+      scipy    
+      beautifulsoup4
+      html2text
+      matplotlib
+      free-proxy
+      googlesearch-python 
+      PyYAML (need pip install -U PyYAML)
+      twisted
+      apscheduler
+      schedule
+
+  streamlit 
+
+    removed 
+    - Solution : Remove Dist Package and RUN
+      - sudo rm -rf /usr/lib/python3/dist-packages/yaml
+      - sudo rm -rf /usr/lib/python3/dist-packages/PyYAML-*
+    
+  #### 
+    - display : PYTHONPATH 
+
+    /home/pi/pylib/test_lib_dependency.py
+    
+
+
   ### VPN for scraping 
 
   #### Conclusion 
-    - use nordvpn to scrap 
-    - nordvpn c us5294 : connect to a server : country 
-    - see [Key setting](#nordvpn--key-setting)
-  
-  #### nordvpn : key setting 
-    1. nordvpn status : check status 
-    2. nordvpn c us5294 : connect to a server : country 
-    3. nordvpn d  : disconnect 
+      - use nordvpn to scrap 
+      - nordvpn c us5294 : connect to a server : country 
+      - see [Key setting](#nordvpn--key-setting)
+      - Always fixed in us5294 
     
-    ##### Reference
-    - [Installing and using NordVPN on Debian](https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Elementary-OS-and-Linux-Mint.htm)
+    #### nordvpn : key setting 
+      1. nordvpn status : check status 
+      2. nordvpn c us5294 : connect to a server : country 
+      3. nordvpn d  : disconnect 
+      
+      ##### Reference
+      - [Installing and using NordVPN on Debian](https://support.nordvpn.com/Connectivity/Linux/1325531132/Installing-and-using-NordVPN-on-Debian-Ubuntu-Elementary-OS-and-Linux-Mint.htm)
+    
+    #### Question
+      1.   What are the drawbacks for the NordVPN 
+        1.    Can it to sustain long time scrapy  
+
+    #### Reference 
+    - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md#vpn-for-scraping) 
+
+    - [- 5000 IPs are a lot to scrape: Easy Hide IP](https://www.vpncomparison.org/best-vpn-for-web-scraping/)
+
+    ##### 5000 IPs
+
+      5000 IPs are a lot to scrape: Easy Hide IP What are you doing
+    easyhideipEasy-Hide-IP VPN: Over 5,000 IPs worldwide are available for you to make use of with this VPN. The cool thing about it is the fact that you can choose the frequency in which you change your IP automatically. For example, you can have the IP of your changed every minute, every five minutes or every hour and so on. This gives you the freedom you have been looking for, to engage in web data extraction. Other than that, you connect with one click and on multiple devices. There is no data limit, and you need not worry about logs. A free trial is available as a test drive. Then, the cost of your monthly subscription is pretty affordable, and there is full money refund guarantee.
+
+  ### Simple run a run_per.py  : Apscheduler
+
+  #### What :  
+    -  run_per.py: /home/pi/scrapy/download/download/spiders/run_per.py
+    -  Result directory :  /home/pi/scrapy/download/result
+
+  #### Howto
+
+    1. start the Raspberry pi : v2 
+    2. 
+
+  #### Fixed peroidc parameter 
+     scheduler.add_job(process.crawl, 'interval', args=[Download_Test],  minutes=10, start_date='2020-12-1 01:20:00', end_date='2020-12-1 02:10:00')
+
+  #### Read from a scheudle file 
+  // MARK : Start Periodic 
+    Perodic : minutes=10,     
+    Start_time:   start_date='2020-12-1 01:20:00', 
+    End_time: end_date='2020-12-1 02:10:00')
   
-  #### Question
-    1.   What are the drawbacks for the NordVPN 
-      1.    Can it to sustain long time scrapy  
+  #### Check the status of the scheduler  
+  - which jobs are running 
 
-  #### Reference 
-  - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md#vpn-for-scraping) 
+  ### Work Together with django 
 
-  - [- 5000 IPs are a lot to scrape: Easy Hide IP](https://www.vpncomparison.org/best-vpn-for-web-scraping/)
+  // TODO : Work Together with django to run peridoic task 
 
-  ##### 5000 IPs
-
-    5000 IPs are a lot to scrape: Easy Hide IP What are you doing
-  easyhideipEasy-Hide-IP VPN: Over 5,000 IPs worldwide are available for you to make use of with this VPN. The cool thing about it is the fact that you can choose the frequency in which you change your IP automatically. For example, you can have the IP of your changed every minute, every five minutes or every hour and so on. This gives you the freedom you have been looking for, to engage in web data extraction. Other than that, you connect with one click and on multiple devices. There is no data limit, and you need not worry about logs. A free trial is available as a test drive. Then, the cost of your monthly subscription is pretty affordable, and there is full money refund guarantee.
-
-  ### Periodically action in Raspberry pi
+  1. From django launch run_per.py 
+    /home/pi/scrapy/download/download/spiders/run_per.py
+    1.  Specify the start end parameter : 
   
-  #### What
+  2. Processing the result python scraping is done. 
+     1. Time is complete : run a program at a specific time 
+     2. Call back  Call back function when result is done 
 
-     1.   Install library : see [.](#fix-lib-problem-in-raspberry-pi)
-     2.   Activate Nordvpn : see [](#vpn-for-scraping)
-     3.   
-     4.   Simple run a run_per.py  
-     5.   Run every 10 min 
-     6.  prepare for everyday running for amazon asin download 
+  // MARK : Now ; End Periodic 
 
-  #### Install libraries for  Periodically action in Raspberry pi
-    twisted
-    apscheduler
-    schedule
-    - collect and put req.txt 
-    - 
   
-  ### Run a simple scrapy in Raspberry pi
-    nordvpn login
-    https://peppe8o.com/use-raspberry-pi-as-your-personal-web-crawler-with-python-and-scrapy/
+## Visualization 
 
+  Next See :  - [ML_Amazon_product_Visualizer.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Visualizer.md) 
 
-C:/Local/Work/Key_Docs/Todo/ML_todo.md#C:/Local/Work/Key_Docs/date/
+# Follow Up 
+## Run streamlit in Raspberry pi
+// MARK: Run streamlit in Raspberry pi
+// TODO : Hwoto streamlit in Raspberry pi
 
-   - [∞](..\..\..\\Key_Docs\Todo\ML_todo.md######-Amazon)
-
-   - [∞](..\..\..\Key_Docs\Todo\ML_todo.md######-Amazon)
+### 10.16. find the srun simple display on the srun 
+[20_min]
+  - run scrapy as normal python : 
+    - python x
+ 
+## Run python app in background 
+// TODO : Hwoto Run python app in background 
   
-
-
-
-
+  #### hwoto
+      - [How to constantly run Python script in the background on Windows?](https://stackoverflow.com/questions/59125493/how-to-constantly-run-python-script-in-the-background-on-windows)
+  
+  #### example 
+      pythonw.exe pythonw.exe C:\\Python\Scripts\moveDLs.py
 
 ### JSON or RDB To save
-@crawl 
 
 #### Objective 
    1.   Technical understanding and comparison between 2 technology 
@@ -1204,93 +1309,6 @@ C:/Local/Work/Key_Docs/Todo/ML_todo.md#C:/Local/Work/Key_Docs/date/
   - Undoubtedly, RDB is the most efficient one, both in terms of storage and query response.
   -  I personally do not see any point in using xml and json as these have been traditionally used for exchange of data and are inefficient for storage and queries.
   - 
-
-### Apscheduler
-
-#### What :  
-  - 
-#### Reference  
-##### introduction 
-https://medium.com/better-programming/introduction-to-apscheduler-86337f3bb4a6
-
-##### time 
-https://stackoverflow.com/questions/29765039/how-to-use-apscheduler-with-scrapy  
-
-  - date: use when you want to run the job just once at a certain point of time
-  - interval: use when you want to run the job at fixed intervals of time
-  - cron: use when you want to run the job periodically at certain time(s) of day
-
-##### add_job 
-https://apscheduler.readthedocs.io/en/stable/modules/schedulers/base.html#apscheduler.schedulers.base.BaseScheduler.add_job
-
-Target : every 24 hours : use interval 
-
-##### Triggers 
-https://apscheduler.readthedocs.io/en/stable/modules/triggers/interval.html
-Example 
-sched.add_job(job_function, 'interval', hours=2, start_date='2010-10-10 09:30:00', end_date='2014-06-15 11:00:00')
-
-
-##### Run every 10 min from start_date to end_date
- scheduler.add_job(process.crawl, 'interval', args=[Download_Test],  minutes=10, start_date='2020-12-1 01:10:00', end_date='2020-12-1 02:10:00')
-
-##### Run every date  : use cron 
-https://medium.com/better-programming/introduction-to-apscheduler-86337f3bb4a6
-
-Schedule to run the task on every hour:
-sched.add_job(job_function, 'cron', hour='*')
-
-##### Run multiple jobs 
-
-##### check the status of the scheduler  
-  which jobs are running 
-
-##### What is  
-
-##### Work Together with django 
-#### What 
-  - decide start and end time : exit gracefully DONE
-  - Kick start the scrapy right away without first delay. 
-
-
-
-
-### amazon super url 
- 
-Review : 
-filterByStar=one_star 
-
-STUB : complete according to example in *py
-
-#### example 
-https://www.amazon.com/product-reviews/B0791TX5P5/?ie=UTF8&filterByStar=one_star&reviewerType=all_reviews#reviews-filter-bar
-
-#### reference 
-- [AMAZON SUPER URL](https://landingcube.com/amazon-super-url/)
-
-### Amazon Native API
-- [Amazon_API](https://webservices.amazon.com/paapi5/documentation/item-info.html#bylineinfo)
-
-### Amazon Scrape hero 
-
-objective : review the structure 
-- [Scrapehero](https://www.scrapehero.com/tutorial-how-to-scrape-amazon-product-details-using-python-and-selectorlib/)
-
-## Run streamlit in Raspberry pi
-// MARK: Run streamlit in Raspberry pi
-// TODO : Hwoto streamlit in Raspberry pi
-### 10.16. find the srun simple display on the srun 
-[20_min]
-  - run scrapy as normal python : 
-    - python x
- 
-## Run python app in background 
-// TODO : Hwoto Run python app in background 
-  
-  #### hwoto
-      - [How to constantly run Python script in the background on Windows?](https://stackoverflow.com/questions/59125493/how-to-constantly-run-python-script-in-the-background-on-windows)
-  #### example 
-      pythonw.exe pythonw.exe C:\\Python\Scripts\moveDLs.py
 
 ## End 
 
