@@ -645,7 +645,7 @@ where does the camera point to ?
 <Answer: >
 
 
-###  Smart Security Camera
+### Smart Security Camera
 
 STATUS :  Planed 
 Planned : howto do is planned. to be implemented 
@@ -760,7 +760,7 @@ https://www.pyimagesearch.com/2016/04/18/install-guide-raspberry-pi-3-raspbian-j
 
 
 ##### Send email 
-5. Customization : Send email 
+   1. Customization : Send email 
 
 
 ##### Running continuously 
@@ -910,7 +910,7 @@ hen install software updates, and then install Apache, PHP and MySQL.
   
 
 ## Underwater camera - Raspberry Pi
-@ Investigate Underwater project
+// TODO : Investigate Underwater project
   
   PipeCam: the low-cost underwater camera - Raspberry Pi
   - Materials and build
