@@ -782,71 +782,7 @@ location = xpath_location_builder(attribute,value)
   objective : review the structure 
   - [Scrapehero](https://www.scrapehero.com/tutorial-how-to-scrape-amazon-product-details-using-python-and-selectorlib/)
 
-## Tools 
-
-  ### scrapy logging file
-  [20_min] gold 
-
-  #### print out silently scrapy 
-
-  - [python - How to save Scrapy crawl Command output - Stack Overflow](https://stackoverflow.com/questions/16650397/how-to-save-scrapy-crawl-command-output)
-
-  if you want to get the output from runspider command.
-  scrapy runspider scraper.py -o some.json -t json 2> some.text
-
-
-  mycurl http://localhost:6800/schedule.json -d project=download -d spider=product
-  
-
-  ### hwo to use curl : 
-
-  ####   Client URL
-  cURL (pronounced 'curl') is a computer software project providing a library (libcurl) and command-line tool (curl) for transferring data using various network protocols. The name stands for "Client URL", which was first released in 1997.
-
-  #### curl Proxy 
-  curl --proxy 205.185.116.235:8080 http://remote.example.org/
-
-  curl --proxy 205.185.116.235:8080 https://www.amazon.com/dp/B0791TX5P5
-
-  curl --proxy 205.185.116.235:8080 https://www.amazon.com/product-reviews/B0791TX5P5/ref=acr_dp_hist_1?ie=UTF8&filterByStar=one_star
-
-  #### Reference 
-  - [Everything curl](https://ec.haxx.se/usingcurl/usingcurl-proxies)
-
-  - [Using curl to automate HTTP jobs](https://curl.haxx.se/docs/httpscripting.html)
-
-  REVIEW : Question : how to make sense out of the curl output 
-
-  ### mingw64 
-
-  - see mingw64 : a mini bash simulator  
- 
-
-## Reference
-
-  ### Scrapy documentation
-    - [Scrapy 2.2 documentation](https://docs.scrapy.org/en/latest/index.html)
-
-    - [Scrapy 2.2 documentation: -logging ](https://docs.scrapy.org/en/latest/topics/logging.html#topics-logging-settings)
-    - [selectors](https://docs.scrapy.org/en/latest/topics/selectors.html)
-    - [Using your browser’s Developer Tools for scraping](https://docs.scrapy.org/en/latest/topics/developer-tools.html#topics-developer-tools)
-
-    - [Amazon Product Advertising API](https://webservices.amazon.com/paapi5/documentation/quick-start/using-sdk.html)
-    - [xpath](https://www.guru99.com/using-contains-sbiling-ancestor-to-find-element-in-selenium.html)
-
-
-  ### Scrapy from within a Python script
-    @crawl 
-    How to run Scrapy from within a Python script
-    https://stackoverflow.com/questions/13437402/how-to-run-scrapy-from-within-a-python-script
-
-  ### An elegant way to run periodic tasks in python
-    @crawl 
-    https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679 
-
-# Next step  
-
-## Amazon Periodic download in windows 
+## Amazon Periodic download in Raspberry pi
 
 // MARK: Amazon Periodic download 
 
@@ -912,6 +848,15 @@ location = xpath_location_builder(attribute,value)
   #### Proxy 
 
 
+  ### Plan   
+  
+     1.   Install library : see [.](#fix-lib-problem-in-raspberry-pi)
+     2.   Activate Nordvpn : see [](#vpn-for-scraping)   
+     3.   Simple run a run_per.py [](#simple-run-a-run_perpy---apscheduler)    
+          1.  Run every 10 min 
+          2.  prepare for everyday running for amazon asin download 
+     4.  Work Together with django [](#work-together-with-django)
+  
 
   ### Rerun and port scrappy in windows 
     
@@ -956,7 +901,9 @@ location = xpath_location_builder(attribute,value)
     - 
    #### Re-verify it work in windows  
     - DONE 
-  
+
+  ### Make library work 
+
   ### Install Raspberry pi streamlit
 
   Raspberry pi streamlit
@@ -1025,7 +972,6 @@ location = xpath_location_builder(attribute,value)
     
 
 
-  ### Make library work 
 
   ### PYTHONPATH setup in Raspberry pi
   
@@ -1054,95 +1000,51 @@ location = xpath_location_builder(attribute,value)
 
   // MARK : Current: Make a direct download version of scrapy  
 
-  ### IP static setup 
-  #### Conclusion 
-     
-     1. ASUS_98_5G as the wifi Network that both Raspberry pi and PC connect to
-       - in PC side : see `Prioritize the ASUS_98_5G` 
-       - in Raspberry pi side : see `Set up priority of wifi connection to ASUS_98_5G`
-     2. Use router to fix the ip of the Raspberry pi to  192.168.1.21
 
+  ### Apscheduler 
 
-#### In PC side : set the router 
-
-1. Using router :   
-   1. website : 192.168.1.1  
-      - LAN - > DHCP Server 
-       - Both fixed to ASUS_98_5G 
-       - `Fixed to 192.168.1.21` 
-  - [set up a Static/specific IP](https://www.asus.com/support/FAQ/114068/)
-
-2. Prioritization the ASUS_98_5G 
-  - [Change Network Connection Priority in Windows 10](https://www.isunshare.com/windows-10/change-network-connection-priority-in-windows-10.html#:~:text=1%20Press%20Windows%20key%20%2B%20X%20and%20select,have%20organized%20the%20priority%20of%20the%20network%20connection.)
-
-#### In Raspberry pi side 
-  1. VNC server re-launch if have connection error
-  2. default have nordvpn in 5294
+   #### Objective 
+    - Run python app in background 
+   ##### hwoto
+      - [How to constantly run Python script in the background on Windows?](https://stackoverflow.com/questions/59125493/how-to-constantly-run-python-script-in-the-background-on-windows)
   
-  #####  Set up priority of wifi connection to ASUS_98_5G :
-   1. Command :  /etc/wpa_supplicant/wpa_supplicant.conf
+    ##### example 
+      pythonw.exe pythonw.exe C:\\Python\Scripts\moveDLs.py
 
-      network={
-          ssid="ASUS_98_5G"
-          psk="tang654321"
-          priority=1
-      }
-      network={
-        ssid="ASUS_98_2G"
-        psk="tang654321"
-        priority=2
-      }
-  - reboot take around 15 s 
+   
+   ##### Introduction 
+  - [Introduction](https://medium.com/better-programming/introduction-to-apscheduler-86337f3bb4a6)
 
+   #### Time 
+    https://stackoverflow.com/questions/29765039/how-to-use-apscheduler-with-scrapy  
 
-## Periodically action in Raspberry pi
+    - date: use when you want to run the job just once at a certain point of time
+    - interval: use when you want to run the job at fixed intervals of time
+    - cron: use when you want to run the job periodically at certain time(s) of day
 
-  ### Apscheduler References  
-
-    ##### Introduction 
-  [Introduction](https://medium.com/better-programming/introduction-to-apscheduler-86337f3bb4a6)
-
-    ##### Time 
-  https://stackoverflow.com/questions/29765039/how-to-use-apscheduler-with-scrapy  
-
-  - date: use when you want to run the job just once at a certain point of time
-  - interval: use when you want to run the job at fixed intervals of time
-  - cron: use when you want to run the job periodically at certain time(s) of day
-
-    ##### add_job 
+   #### add_job 
   
-  [add_job](https://apscheduler.readthedocs.io/en/stable/modules/schedulers/base.html#apscheduler.schedulers.base.BaseScheduler.add_job)
+    - [add_job](https://apscheduler.readthedocs.io/en/stable/modules/schedulers/base.html#apscheduler.schedulers.base.BaseScheduler.add_job)
 
-  Target : every 24 hours : use interval 
+    - Target : every 24 hours : use interval 
 
-    ##### Triggers 
-https://apscheduler.readthedocs.io/en/stable/modules/triggers/interval.html
-Example 
-sched.add_job(job_function, 'interval', hours=2, start_date='2010-10-10 09:30:00', end_date='2014-06-15 11:00:00')
+   #### Triggers 
+    - https://apscheduler.readthedocs.io/en/stable/modules/triggers/interval.html
+    Example 
+    sched.add_job(job_function, 'interval', hours=2, start_date='2010-10-10 09:30:00', end_date='2014-06-15 11:00:00')
 
 
-##### Run every 10 min from start_date to end_date
- scheduler.add_job(process.crawl, 'interval', args=[Download_Test],  minutes=10, start_date='2020-12-1 01:10:00', end_date='2020-12-1 02:10:00')
+  #### Run every 10 min from start_date to end_date
+    scheduler.add_job(process.crawl, 'interval', args=[Download_Test],  minutes=10, start_date='2020-12-1 01:10:00', end_date='2020-12-1 02:10:00')
 
-##### Run every date  : use cron 
+  #### Run every date  : use cron 
   https://medium.com/better-programming/introduction-to-apscheduler-86337f3bb4a6
 
   Schedule to run the task on every hour:
   sched.add_job(job_function, 'cron', hour='*')
 
-##### Run multiple jobs 
+  #### Run multiple jobs 
 
-
-
-  ### Plan   
-  
-     1.   Install library : see [.](#fix-lib-problem-in-raspberry-pi)
-     2.   Activate Nordvpn : see [](#vpn-for-scraping)   
-     3.   Simple run a run_per.py [](#simple-run-a-run_perpy---apscheduler)    
-          1.  Run every 10 min 
-          2.  prepare for everyday running for amazon asin download 
-     4.  Work Together with django [](#work-together-with-django)
-  
   
   ### Fix lib problem in Raspberry pi
 
@@ -1271,12 +1173,79 @@ sched.add_job(job_function, 'interval', hours=2, start_date='2010-10-10 09:30:00
 
   // MARK : Now ; End Periodic 
 
+
+
+
+## Tools 
+
+  ### scrapy logging file
+  [20_min] gold 
+
+  #### print out silently scrapy 
+
+  - [python - How to save Scrapy crawl Command output - Stack Overflow](https://stackoverflow.com/questions/16650397/how-to-save-scrapy-crawl-command-output)
+
+  if you want to get the output from runspider command.
+  scrapy runspider scraper.py -o some.json -t json 2> some.text
+
+
+  mycurl http://localhost:6800/schedule.json -d project=download -d spider=product
+  
+
+  ### hwo to use curl : 
+
+  ####   Client URL
+  cURL (pronounced 'curl') is a computer software project providing a library (libcurl) and command-line tool (curl) for transferring data using various network protocols. The name stands for "Client URL", which was first released in 1997.
+
+  #### curl Proxy 
+  curl --proxy 205.185.116.235:8080 http://remote.example.org/
+
+  curl --proxy 205.185.116.235:8080 https://www.amazon.com/dp/B0791TX5P5
+
+  curl --proxy 205.185.116.235:8080 https://www.amazon.com/product-reviews/B0791TX5P5/ref=acr_dp_hist_1?ie=UTF8&filterByStar=one_star
+
+  #### Reference 
+  - [Everything curl](https://ec.haxx.se/usingcurl/usingcurl-proxies)
+
+  - [Using curl to automate HTTP jobs](https://curl.haxx.se/docs/httpscripting.html)
+
+  REVIEW : Question : how to make sense out of the curl output 
+
+  ### mingw64 
+
+  - see mingw64 : a mini bash simulator  
+ 
+## Reference
+
+  ### Scrapy documentation
+    - [Scrapy 2.2 documentation](https://docs.scrapy.org/en/latest/index.html)
+
+    - [Scrapy 2.2 documentation: -logging ](https://docs.scrapy.org/en/latest/topics/logging.html#topics-logging-settings)
+    - [selectors](https://docs.scrapy.org/en/latest/topics/selectors.html)
+    - [Using your browser’s Developer Tools for scraping](https://docs.scrapy.org/en/latest/topics/developer-tools.html#topics-developer-tools)
+
+    - [Amazon Product Advertising API](https://webservices.amazon.com/paapi5/documentation/quick-start/using-sdk.html)
+    - [xpath](https://www.guru99.com/using-contains-sbiling-ancestor-to-find-element-in-selenium.html)
+
+
+  ### Scrapy from within a Python script
+    @crawl 
+    How to run Scrapy from within a Python script
+    https://stackoverflow.com/questions/13437402/how-to-run-scrapy-from-within-a-python-script
+
+  ### An elegant way to run periodic tasks in python
+    @crawl 
+    https://medium.com/greedygame-engineering/an-elegant-way-to-run-periodic-tasks-in-python-61b7c477b679 
+
+# Next step  
+
   
 ## Visualization 
 
   Next See :  - [ML_Amazon_product_Visualizer.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Visualizer.md) 
 
 # Follow Up 
+
 ## Run streamlit in Raspberry pi
 // MARK: Run streamlit in Raspberry pi
 // TODO : Hwoto streamlit in Raspberry pi
@@ -1286,14 +1255,10 @@ sched.add_job(job_function, 'interval', hours=2, start_date='2010-10-10 09:30:00
   - run scrapy as normal python : 
     - python x
  
-## Run python app in background 
-// TODO : Hwoto Run python app in background 
-  
-  #### hwoto
-      - [How to constantly run Python script in the background on Windows?](https://stackoverflow.com/questions/59125493/how-to-constantly-run-python-script-in-the-background-on-windows)
-  
-  #### example 
-      pythonw.exe pythonw.exe C:\\Python\Scripts\moveDLs.py
+## 
+  // TODO : Hwo to Run python app in background 
+
+#####   ff 
 
 ### JSON or RDB To save
 
