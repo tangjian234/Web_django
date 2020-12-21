@@ -460,6 +460,7 @@
         5. nordvpn set autoconnect on us5294
 
     ##### upgrade the nordvpn 
+  
   ### Send a email via python. 
 
     #### what 
@@ -486,6 +487,18 @@
     use file -> site manager 
     check latest ip 
 
+  ### rpi : bash file , dj_run ,  Make it work . 
+  > Django_apache_1 
+  > rpi 
+
+   #### Root cause. 
+     1. Space leading or behind "=" , which is not allowed.
+        1. WRONG :e.g : alias djrun ="python manage.py runserver" 
+        1. Correct :e.g : alias djrun="python manage.py runserver" 
+   #### why space matter ? 
+    https://superuser.com/questions/1074234/why-are-spaces-not-allowed-while-setting-up-aliases-in-bashrc
+    That's just the way it's set up... bash's man page (or help alias) shows how spaces have a meaning too:
+  
 # Projects
 
 ## One liner
