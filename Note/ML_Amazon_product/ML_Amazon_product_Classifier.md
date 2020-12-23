@@ -14,6 +14,28 @@
 ## Objective
 
 ## Content
+### Past history 
+
+  Highlighting name is a great success yeah, 
+
+  idea and things .
+      1. 
+  time dimension monitoring : 
+      giving a product code, change across time. (price , rank , comment. ) 
+  automatically check every day. 
+
+  2. Extract key information from product. : 
+      price. title listing. 
+      history 
+
+  3. product hieratical key aspect structure.  Object oriented. 
+    
+  Identify and potential feature component location : 
+  feature component :  Have the power to discriminate between the class 100 + 2, 
+
+  Expert knowledge: 
+    Bluetooth :  key aspect : 
+   #### 
 
 ## Reference
 
