@@ -921,7 +921,6 @@ hen install software updates, and then install Apache, PHP and MySQL.
 ## website : django 
   - [Django_apache.md](file:///C:/local/work/Web/web/note/Django_apache.md) 
   
-
 ## Underwater camera - Raspberry Pi
 // TODO : Investigate Underwater project
   
