@@ -8,8 +8,20 @@
 [![Travis](https://img.shields.io/travis/zalandoresearch/flair.svg)](https://travis-ci.org/zalandoresearch/flair)
 [](#)
 
+## Howto  
+     - make all information in right place [2.5 hours]
 
-- ## Structure
+      1.  Configure the file structure : make it nested folder like: MASTER as example. [15*2]
+          1. Make a good breadcream is good enough.
+          2. format : Key Header in Captial letter.
+            1. title
+            2. link :
+            3. Detail
+
+    Result : c:\Local\Work\ML_Name\Note\
+    See favoirte
+
+## Structure
 
 ### Parent
   - [Master](file:///c:/Local/Work/ML_Name/Note/ML_Master.md)  
