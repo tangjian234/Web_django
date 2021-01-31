@@ -420,6 +420,30 @@ IMPORTANT ML run
 
 - [ML_Job_Hunter_Visualizer.md](file:///C:/Local/Work/ML_Name/Note/ML_Job_Hunter/ML_Job_Hunter_Visualizer.md)
 
+
+### ML Strategic plan 
+  > ML_Master.md
+  [_min] E1 
+   ####   5.6.3.1. 	Plan for the big, for the future ML.  
+    1.  Review the overall strategy document
+        1.   What is achieved: 
+             1.    Key documents Summary : 
+        2.   What is to be achieved: 
+        
+    2.  Make a monthly Plan on ML  
+    
+    3.  Focus to 2 hours section and make a tangible Achieve your goal. 
+
+    4. Learn JavaScript visualization. 
+
+    5. Recall action of machine learning and papers.  
+
+     ####    What is achieved: 
+      [35_min] E1
+      b.	Json reading and visualization.  
+      [25_min] E1
+      1. Read Json script 
+      
 ## 1.4. Result
 
 C:\Local\Work\Python\PyLib\NLP_master.py
