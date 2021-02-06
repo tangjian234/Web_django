@@ -1,4 +1,5 @@
 # ML_Amazon_product_Crawler.md
+**shortcut crawl.ps1**  
 
 - [ML_Amazon_product_Crawler.md](file:///C:/Local/Work/ML_Name/Note/ML_Amazon_product/ML_Amazon_product_Crawler.md) 
 
@@ -8,7 +9,7 @@
 [![Travis](https://img.shields.io/travis/zalandoresearch/flair.svg)](https://travis-ci.org/zalandoresearch/flair)
 
 
-## Structure
+## Structure Hi mom
 
   ### Parent
     - [Master](file:///c:/Local/Work/ML_Name/Note/ML_Master.md)  
