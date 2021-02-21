@@ -934,21 +934,21 @@ location = xpath_location_builder(attribute,value)
     -  First try in the local PC , pip install, to make sure  
     -  Raspberry pi install take long time 
    
-   pip install scrapy-utils
-   pip install scrapy
-   pip install pandas
-   pip install scipy
-   pip install streamlit 
-   pip install beautifulsoup4
-   pip install html2text
-   pip install matplotlib
-   pip install free-proxy
-   pip install googlesearch 
+    pip install scrapy-utils
+    pip install scrapy
+    pip install pandas
+    pip install scipy
+    pip install streamlit 
+    pip install beautifulsoup4
+    pip install html2text
+    pip install matplotlib
+    pip install free-proxy
+    pip install googlesearch 
 
-  pip install torrequest
-  pip install torpy
-  pip install stem
-  pip install fake_useragent
+    pip install torrequest
+    pip install torpy
+    pip install stem
+    pip install fake_useragent
    
    
     pip install pip-module-scanner
@@ -967,7 +967,7 @@ location = xpath_location_builder(attribute,value)
    
    #### Command line : 
     - python3 run_per.py    
-   
+   E:\home\pi\scrapy\download\download\spiders
    #### Expected result :
      - Downloaded ASIN file in Result json. 
     
