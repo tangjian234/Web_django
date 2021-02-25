@@ -95,10 +95,10 @@
 
   ### Basic run command 
       
-      - scrappy crawl product : download product page 
-      - scrappy crawl product_local : process local product page 
-      - scrappy crawl comment : download comment page 
-      - scrappy crawl comment_local :  process local comment page 
+      - scrapy crawl product : download product page 
+      - scrapy crawl product_local : process local product page 
+      - scrapy crawl comment : download comment page 
+      - scrapy crawl comment_local :  process local comment page 
 
   ### Basic scrapy structure : 
 
